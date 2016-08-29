@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_main.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        订单详情
+    </section>
+</header>
+<div id="bm_my_order_detail">
+    <div class="order_detail">
+        <!--<a href="javascript:void(0)" class="order_item_hd">保养项目<i class="w_9_arr"></i></a>
+        <ul class="order_item_bd bm_item">
+           <li>空调滤清器</li>
+            <li>PM2.5滤芯</li>
+            <li>空调制冷剂 </li>
+            <li>刹车油  </li>
+        </ul>
+        <a href="javascript:void(0)" class="order_item_hd">优惠套餐<i class="w_9_arr"></i></a>
+        <ul class="order_item_bd package_item">
+          <li>小保养服务 <span>&yen;300</span></li>
+            <li>大保养服务 <span>&yen;300</span></li>
+        </ul>-->
+    </div>
+    <div class="unit_box">
+        <div class="shop_info">
+            <h3>
+                <div class="img_wrap">
+                    <!--<img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/car_logo_80_80.png" alt="" class="car_logo">-->
+                </div>
+                <span></span>
+            </h3>
+            <p class="store_addr map_icon"><!--上海市闵行区吴中路3998弄--></p>
+            <div class="shop_opt">
+                <a href="tel:" class="tel_icon"><span>拨打电话</span></a>
+                <a href="bm_shop_detail.html" class="home_icon"><span>进入店铺</span></a>
+                <a href="" class="view_map map_icon"><span>查看地图</span></a>
+            </div>
+            <!--<p>营业时间：<span class="store_time">&lt;!&ndash;18：00 - 18：00&ndash;&gt;</span></p>-->
+            <!--<i class="w_9_arr"></i>-->
+        </div>
+        <!--<a href="tel:400-400-888" class="shop_tel"></a>-->
+    </div>
+    <div class="brd_box">
+        <div class="time_adviser">
+           <div class="time_adviser_l">
+               <div class="bm_time"><span class="field">预约时间</span><p class="r_val"><!--<i class="discount">7折</i><span>2015-09-08 11:00</span>--></p></div>
+               <div class="bm_adviser"><span class="field">为您服务的顾问</span><p  class="r_val"><!--张三--></p></div>
+           </div>
+            <a href="tel:" class="adviser_tel"></a>
+        </div>
+    </div>
+    <div class="brd_box">
+        <div class="name_mobile flex_box">
+            <div class="name name_icon"><!--张三--></div>
+            <a href="<!--tel:13838383838-->" class="mobile mobile_icon"><!--13838383838--></a>
+        </div>
+    </div>
+    <div class="brd_box">
+        <div class="bm_car flex_box">
+            <span class="field">需要保养的车辆</span>
+            <p class="r_val"><!--2015款宝马 320i 运动设计套装--></p>
+        </div>
+    </div>
+    <div class="brd_box">
+        <div class="order_desc">
+            <div class="order_num flex_box">
+                <span class="field">订单编号</span>
+                <p class="r_val"><!--1542685710624--></p>
+            </div>
+            <div class="order_time flex_box">
+                <span class="field">下单时间</span>
+                <p class="r_val"><!--2015/03/25  09:28--></p>
+            </div>
+        </div>
+    </div>
+    <div class="expense_code">
+        <h2>消费码</h2>
+        <!--<div class="expense_info">
+            <div class="flex_box">
+                <div class="l">
+                    <span>消费码</span>
+                    <p class="expense_code_status">1234 1521 1214 4564 123</p>
+                </div>
+                <div class="flex">
+                    <span>有效期</span>
+                    <p>2015-12-21</p>
+                </div>
+            </div>
+        </div>
+        <div class="expense_info">
+            <div class="flex_box">
+                <div class="l">
+                    <span>消费码</span>
+                    <p class="expense_code_status expense_code_used">1234 1521 1214 4564 123</p>
+                </div>
+                <div class="flex">
+                    <span>有效期</span>
+                    <p>2015-12-21</p>
+                </div>
+            </div>
+        </div>
+        <div class="expense_info">
+            <div class="flex_box">
+                <div class="l">
+                    <span>消费码</span>
+                    <p class="expense_code_status expense_code_used">1234 1521 1214 4564 123</p>
+                </div>
+                <div class="flex has_refund">
+                    <span>退款中...</span>
+                    <p>&yen;79</p>
+                </div>
+            </div>
+            <a href="bm_refund_detail.html" class="refund_detail_link">[退款当前状态]客服正在审核处理中，点击查看退款详情]</a>
+        </div>-->
+    </div>
+</div>
+<!--<div class="order_sub">
+  &lt;!&ndash;  <a href="bm_cancel_order.html" class="order_btn grey_order_btn">取消订单</a>
+    <a href="bm_refund.html" class="order_btn grey_order_btn">申请退款</a>
+    <a href="bm_comment.html" class="order_btn grey_order_btn">评价</a>
+    <a href="" class="order_btn orange_order_btn">付款</a>&ndash;&gt;
+</div>-->
+<div class="loading" id="loading" ></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm.js"></script>
+<script src="http://wap.autostreets.com/js/require.js" data-main="http://wap.autostreets.com/js/main.js"></script>
+</html>

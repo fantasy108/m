@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>退款被拒原因-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/order_center.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        退款被拒原因
+    </section>
+</header>
+
+<div id="wrapper">
+	<div class="refuse_reason">
+		<div class="ask">
+			<p>2011-11-05 11:00</p>
+			<dl>
+				<dt>退款申请</dt>
+				<dd>退款申请退款申请退款申请退款申请退款申请退款申请退款申请退款申请退款申请</dd>
+			</dl>
+		</div>
+		<div class="answer">
+			<p>2011-11-05 11:00</p>
+			<dl>
+				<dt>拒绝原因</dt>
+				<dd>不退款就是不退款不退款就是不退款不退款就是不退款不退款就是不退款</dd>
+			</dl>
+		</div>
+		<div class="ask">
+			<p>2011-11-05 11:00</p>
+			<dl>
+				<dt>退款申请</dt>
+				<dd>退款申请退款申请退款申请退款申请退款申请退款申请退款申请退款申请退款申请</dd>
+			</dl>
+		</div>
+		<div class="answer">
+			<p>2011-11-05 11:00</p>
+			<dl>
+				<dt>拒绝原因</dt>
+				<dd>不退款就是不退款不退款就是不退款不退款就是不退款不退款就是不退款</dd>
+			</dl>
+		</div>
+		<div class="ask">
+			<p>2011-11-05 11:00</p>
+			<dl>
+				<dt>退款申请</dt>
+				<dd>退款申请退款申请退款申请退款申请退款申请退款申请退款申请退款申请退款申请</dd>
+			</dl>
+		</div>
+		<div class="answer">
+			<p>2011-11-05 11:00</p>
+			<dl>
+				<dt>拒绝原因</dt>
+				<dd>不退款就是不退款不退款就是不退款不退款就是不退款不退款就是不退款</dd>
+			</dl>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<!-- <script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script> -->
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>
+
+</body>
+</html>

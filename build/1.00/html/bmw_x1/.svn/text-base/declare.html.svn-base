@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/build/1.00/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/build/1.00/css/bmw_x1.css" type="text/css">
+</head>
+<body>
+<section class="declare">
+	<h1>个人信息保护法律声明</h1>
+	<h3>感谢您对汽车街网站的友好访问。上海澍勋电子商务有限公司，作为本网站的所有人，特此发布本声明如下，提醒您仔细阅读。</h3>
+	<h2>个人信息的范围</h2>
+	<article>
+		我们向您收集的个人信息系能够单独或者与其他信息结合识别您的个人身份的信息，包括但不限于您的姓名、性别、年龄、出生日期、身份证号、住址、联系方式、爱好、职业、紧急联系人、相关账号、使用我们的服务的时间和地点等个人信息（“个人信息”）。该等信息均是您自愿提供的。
+	</article>
+	<h2>个人信息收集和处理</h2>
+	<article>
+		我们收集您的个人信息的最终目的是为了向您提供更好的产品、服务，优化并丰富您的用户体验，具体收集方式或渠道包括但不限于：<br /><br />
+		□ 会员登记<br /><br />□ 网站注册<br /><br />□ 调查问卷<br /><br />□ 售后跟踪和回访<br /><br />□ 就有关产品或服务征求意见和建议<br /><br />□ 举办活动并征集参加者<br /><br />
+		您有权拒绝提供个人信息。但如果您拒绝提供某些个人信息，您将可能无法使用我们提供的产品、服务，或者可能对您使用产品或服务造成一定的影响。
+	</article>
+	<h2>个人信息使用和披露</h2>
+	<article>
+		(1)您同意，我们可以通过以下方式对个人信息进行使用和披露（包含对于个人信息的存储和处理）：<br /><br />(a)我们（含分支机构）自行使用；<br /><br />(b)在各自的正常业务范围内，我们及相关实体向各自受让人或继承人、法律及财务顾问、外部服务供应商、承包商/代理人/经纪人、信用资料或备咨机构、收账代理人披露并由其使用。<br /><br />(2)我们可能定期或不定期向您发送有关产品和服务的信息以及汽车街相关活动信息，您同意接收上述信息。 <br /><br />(3)在下列情况下或为下列目的之一，我们可能将个人信息提供给前述相关实体以外的第三方：<br /><br />-经过您的特别授权；<br /><br />-满足相关法律规定或满足政府机关（包括司法机关）的强制性要求； <br /><br />-执行适用的服务条款（包括调查可能存在的违规情况）；<br /><br />-查找、预防或处理欺诈、安全或技术方面的问题；<br /><br />-在法律要求或允许的范围内，保护用户或公众的权利、财产或安全免遭损害；或<br /><br />-在紧急情况下，向您的紧急联系人披露并由其使用。<br /><br />(4)个人信息的传输、存储方式包含电子方式，相应信息接受和/或使用方及其服务器可能位于中国境内或者境外。 <br /><br />(5)我们将严格保护您的个人信息安全。我们将采用适当制度、安全技术和程序等措施来保护您的个人信息不被未经授权的访问、使用或泄漏。我们亦将促使本法律声明所述各接收和使用方尽力保护和不予泄露您的个人信息。<br /><br />(6)您同意免除上述个人信息的接收和/或使用方在按照本法律声明所述情形下进行信息披露和使用而导致的或可能导致的所有索赔、责任和损失，除非上述索赔、责任和损失直接因该等接收和/或使用方的故意行为或重大过失造成。 <br /><br />(7)我们保留您的个人信息的时间，将不会超过为该等信息的预定使用目的而必需的时间，或任何合同或相关法律所规定的时间。<br />
+	</article>
+	<h2>适用法律</h2>
+	<article>
+		本声明适用中华人民共和国法律。<br /><br />如果您需要查询、修改或更正您的个人信息，或对个人信息保护问题有任何疑问或投诉，您可以拨打400-821-8889联系我们。
+	</article>
+	
+</section>
+
+
+<script src="http://img.autostreetscdn.com/m/build/1.00/js/lib/zepto.js"></script>
+
+<script>
+$(function(){
+	
+})
+</script>
+</body>
+</html>

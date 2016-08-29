@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="stylesheet" href="../css/b.css" type="text/css">
+<link rel="stylesheet" href="../css/hf.css" type="text/css">
+</head>
+<body>
+
+<header>
+	<h1>HSBC Experience Centre 2015</h1>
+	<p>English Version</p>
+</header>
+<div class="logo">
+	<img src="../img/logo.png" alt="">
+</div>
+
+<div class="main_wrap2">
+	<h5>Name:</h5>
+	<input type="text" class="survey_input">
+
+	<h5>Mobile No:</h5>
+	<input type="text" class="survey_input">
+
+	<h5>Gender:</h5>
+	<div class="radio">
+		<input type="radio" name="gender" id="male" class="selected">
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="female">
+		<label for="female">Female</label>
+	</div>
+	
+
+	<h5 class="mail">E-mail Add:</h5>
+	<input type="text" class="survey_input">
+
+	<h5>Are you an existing HSBC premier customer?</h5>
+	<div class="radio">
+		<input type="radio" name="select" id="yes">
+		<label for="yes">Yes</label>
+		<input type="radio" name="select" id="no">
+		<label for="no">No</label>
+	</div>
+
+	<div class="form">
+		<a href="gift_area3.html" class="btn">Next</a>
+	</div>
+</div>
+
+</body>
+<script src="../js/lib/zepto.min.js"></script>
+<script src="../js/main1.js"></script>
+<script>
+$(function(){
+	$('.radio input').on('click',function(){
+		$(this).addClass('selected').siblings().removeClass('selected')
+	})
+})
+</script>
+</html>

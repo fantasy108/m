@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>车辆详情-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/half_off_activity.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        车辆详情
+    </section>
+</header>
+<div id="wrapper">
+        <div id="half_off_detail">
+            <div class="car_banner">
+                <div class="car_banner_sub">
+                    <span>限时优惠</span>
+                    <span>定金可退</span>
+                    <span>现车保障</span>
+                </div>
+            </div>
+            <div class="title_wrap">
+                <div class="title_inner">
+                    <div class="title">
+                        <h3></h3>
+                        <div class="price_box flex_box">
+                            <div class="flex">
+                                <p class="discount_price"><span></span>万元</p>
+                                <span>折扣价</span>
+                            </div>
+                            <div class="flex">
+                                <p class="origin_price"><span></span>万元</p>
+                                <span>指导价</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--提车城市-->
+            <div class="mainbox topborder get_car_location">
+                <a id="get_car_location" href="javascript:void(0)">提车城市<i></i></a>
+            </div>
+            <div class="mainbox topborder get_car_range">
+                <a id="get_car_range" href="javascript:void(0)">售卖范围<i>全国</i></a>
+            </div>
+            <!--参数配置-->
+            <div class="mainbox topborder">
+                <a id="configParameters" href="">参数配置<span></span></a>
+            </div>
+            <!--购买流程-->
+            <div class="ho_box">
+                <h3>购买流程</h3>
+                <div class="liucheng_box">
+                    <ul>
+                        <li>
+                            <span>选择爱车</span>
+                            <span>在活动页选择自己心仪的车辆</span>
+                            <i>1</i>
+                        </li>
+                        <li>
+                            <span>下单支付</span>
+                            <span>用户下订单，提交信息完成订金支付，未提车可退订金</span>
+                            <i>2</i>
+                        </li>
+                        <li>
+                            <span>获取凭证</span>
+                            <span>获取购车凭证，包含验证码，订单编号，车辆信息，交易名店等</span>
+                            <i>3</i>
+                        </li>
+                        <li>
+                            <span>到店提车</span>
+                            <span>用户到店提车，4S店通过验证码确认用户身份</span>
+                            <i>4</i>
+                        </li>
+                        <li>
+                            <span>购车成功</span>
+                            <span>用户支付尾款后，交易成功</span>
+                            <i>5</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--活动协议-->
+            <div class="protocol_box">
+                <span>我已详细阅读并同意<a href="activity_protocol.html" class="agree_protocol">《活动协议》</a></span>
+            </div>
+        </div>
+        <div class="ho_sub">
+            <div class="inner">
+                <p></p>
+                <a href="" class="yellow_btn"></a>
+            </div>
+        </div>
+</div>
+<div class="tipbg" ></div>
+<div class="loading" id="loading" style="display: none;"></div>
+<!--弹出提示框-->
+<div class="error_layer">
+    <p class="error_txt"></p>
+    <a href="javascript:;" class="correct">确定</a>
+</div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/validate.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/half_off_activity.js"></script>
+<script>
+    $(function () {
+        $('.protocol_box').click(function () {
+            $(this).toggleClass("agree");
+        })
+        $('.yellow_btn').click(function () {
+            if(!$('.protocol_box').hasClass("agree")){
+                $('.error_txt').html('请同意活动协议')
+                validate.show();
+            }
+
+            return false;
+        })
+    })
+</script>
+</body>
+</html>

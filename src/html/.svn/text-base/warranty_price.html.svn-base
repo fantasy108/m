@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>质保报价-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/services.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        质保报价
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="main.html" class="home_icon"><span>首页</span></a>
+			<a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+<div id="wrapper">
+	<ul class="personal_list">
+		<li>
+			<label for="">所在省</label>
+			<div class="province">
+				<select name="area" id="area">
+					<option value="请选择省" >请选择省</option>
+					<option value="浙江" >浙江</option>
+					<option value="山东" >山东</option>
+					<option value="江苏" >江苏</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">所在市</label>
+			<div class="province">
+				<select name="city" id="city">
+					<option value="请选择市">请选择市</option>
+					<option value="浙江">浙江</option>
+					<option value="山东">山东</option>
+					<option value="江苏">江苏</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">品牌分类</label>
+			<div class="province">
+				<select name="brand" id="brand">
+					<option value="请选择品牌">请选择品牌</option>
+					<option value="宝马">宝马</option>
+					<option value="奥迪">奥迪</option>
+					<option value="奔驰">奔驰</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">行驶里程</label>
+			<input type="text" class="distance input-150" placeholder="请输入行驶里程"><span>(万公里)</span>
+		</li>
+		<li>
+			<label for="">发动机功率</label>
+			<input type="text" class="engine input-150" placeholder="请输入发动机功率"><span>KW</span>
+		</li>
+		<li>
+			<label for="">购车时间</label>
+			<div class="province">
+				<select name="year" id="year">
+					<option value="请选择年份" >请选择年份</option>
+					<option value="2012" >2012</option>
+					<option value="2013" >2013</option>
+					<option value="2014" >2014</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">购车时间</label>
+			<div class="province">
+				<select name="month" id="month">
+					<option value="请选择月份" >请选择月份</option>
+					<option value="01月" >01月</option>
+					<option value="02月" >02月</option>
+					<option value="03月" >03月</option>
+					<option value="04月" >04月</option>
+					<option value="05月" >05月</option>
+					<option value="06月" >06月</option>
+					<option value="07月" >07月</option>
+					<option value="08月" >08月</option>
+					<option value="09月" >09月</option>
+					<option value="10月" >10月</option>
+					<option value="11月" >11月</option>
+					<option value="12月" >12月</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">保修期限</label>
+			<div class="province">
+				<select name="period" id="period">
+					<option value="请选择保修期限" >请选择保修期限</option>
+					<option value="6个月" >6个月</option>
+					<option value="12个月" >12个月</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+	</ul>
+	<div class="clearfix"></div>
+	<a href="#" class="form_btn" id="warranty_price">计算</a>
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script>
+$(function(){
+	$("#warranty_price").click(function(){
+		if( validate.select($("#area").val(),"请选择省","请选择所在省") && validate.select($("#city").val(),"请选择市","请选择所在市") && validate.select($("#brand").val(),"请选择品牌","请选择品牌") &&　validate.price($(".distance"),"请输入行驶里程","请输入行驶里程") && validate.price($(".engine"),"请输入发动机功率","请输入发动机功率") && validate.select($("#year").val(),"请选择年份","请选择年份") &&　validate.select($("#month").val(),"请选择月份","请选择月份") &&　validate.select($("#period").val(),"请选择保修期限","请选择保修期限")){
+			if($("#period").val()=="6个月"){
+				window.location.href="warranty_booking.html"
+			}else{
+				$(".error_txt").text("您的车已超出二手车质保范围");validate.show();
+			}
+		}
+	})
+})
+</script>
+</body>
+</html>

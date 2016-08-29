@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>优惠券详情-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/coupon.css" type="text/css">
+    <script src="http://img.autostreetscdn.com/m/src/js/lib/flexible.js"></script>
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        优惠券详情
+    </section>
+</header>
+<div id="content">
+    <div class="coupon_detail">
+        <div class="coupon_num">
+            <p>优惠券券号</p>
+            <strong>24234364778484494949</strong>
+        </div>
+        <div class="coupon_info">
+            <ul>
+                <li>
+                    <label>面额</label>
+                    <span class="fee"><b>100</b>元</span>
+                </li>
+                <li>
+                    <label>有效期</label>
+                    <span>至2015.12.22</span>
+                </li>
+                <li>
+                    <label>奖励来源</label>
+                    <span>被推荐人注册成功奖励</span>
+                </li>
+            </ul>
+        </div>
+        <div class="notic">
+            <p>使用说明：</p>
+            <p>1.投资满足红包使用规则方可使用红包。</p>
+            <p>“例：小明有一个10元红包，充值1000元并投资项目A，在投资确认页面，勾选10元红包。投资期满后，小明就可以连本带息提现啦！既赚了利息，又能多赚10元钱。”</p>
+            <p>2.  红包均有有效期，请在红包使用期限前及时使用。</p>
+            <p>3.  红包不可以用于购买债权转让项目。</p>
+            <p class="red_color">注:目前优惠券仅可在线下支付竞拍尾款及手续费时使用,其他支付方式即将上线，敬请期待</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

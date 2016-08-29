@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>二手车检测报告</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs2.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/mobiscroll.custom-2.5.0.min.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='goback'>返回</a>
+        二手车检测报告
+        <a href="javascript:;" class="detele green">删除</a>
+        <a href="javascript:;" class="form green">上传</a>
+    </section>
+</header>
+<div id="container">
+	<div class="wrap_bg">
+		<div id="wrapper">
+			<div class="nav" id="scroller">
+				<ul>
+					<li><a href="javascript:;" class="cur">车辆概括</a></li>
+					<li><a href="javascript:;">车辆图片</a></li>
+					<li><a href="javascript:;">基本信息</a></li>
+					<li><a href="javascript:;">附件信息</a></li>
+					<li><a href="javascript:;">外观检测</a></li>
+					<li><a href="javascript:;">内饰检测</a></li>
+					<li><a href="javascript:;">骨架检测</a></li>
+					<li><a href="javascript:;">车况检测</a></li>
+					<li><a href="javascript:;">客户需求</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="state">
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/waiting.png" alt="">
+		<h2>待审核</h2>
+	</div>
+	<div class="state2">
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/pass.png" alt="">
+		<h2>审核通过</h2>
+	</div>
+	<div class="state3">
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/important.png" alt="">
+		<h2>审核失败</h2>
+		<p>失败原因：审核失败审核失败审核失败审核失败审核失败审核失败审核失败审核失败审核失败</p>
+	</div>
+	<div class="state4">
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/important.png" alt="">
+		<h2>未上传</h2>
+	</div>
+
+	<div class="car_title">
+		<h3>车辆概括</h3>
+	</div>
+	<div class="car_content">
+		<h4>奥迪 A1 Sportback(进口)奥迪 A1 Sportback(进口)奥迪 A1 Sportback(进口)奥迪</h4>
+		<div class="rank">100A+</div>
+		<ul class="outline">
+			<li><label for="">车辆编号：</label><p id="car_code">123123123123123123</p></li>
+			<li><label for="">车辆牌照：</label><p id="licenseCode">浙GA123123</p></li>
+			<li><label for="">上牌年月：</label><p id="registerLicenseYears">2015-04-22 13:22:57</p></li>
+		</ul>
+	</div>
+	<div class="car_title">
+		<h3>车辆图片</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content">
+		<ul class="cpic_list">
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+		</ul>
+	</div>
+	<div class="car_title">
+		<h3>基本信息</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content">
+		<img src="" alt="" class="base_info">
+		<ul class="info_list" id="base_info">
+			<li>
+				<label for="">车辆型号：</label>
+				<p id="vehicleModel"></p>
+			</li>
+			<li>
+				<label for="">表显里程：</label>
+				<p id="displayMileage"></p>
+			</li>
+			<li>
+				<label for="">上牌时间：</label>
+				<p class="" id="registerLicenseYears2"></p>
+			</li>
+			<li>
+				<label for="">出厂时间：</label>
+				<p id="producedYear"></p>
+			</li>
+			<li>
+				<label for="">发动机型号：</label>
+				<p id="engineCode"></p>
+			</li>
+			<li>
+				<label for="">排气量：</label>
+				<p id="sweptVolume"></p>
+			</li>
+			<li>
+				<label for="">车牌号：</label>
+				<p class="" id="licenseCode2"></p>
+			</li>
+			<li>
+				<label for="">燃油类型：</label>
+				<p id="oilType"></p>
+			</li>
+			<li>
+				<label for="">上牌城市：</label>
+				<p id="registerCity"></p>
+			</li>
+			<li>
+				<label for="">车辆所在地：</label>
+				<p id="currentProvince"></p>
+			</li>
+			<li>
+				<label for="">变速器：</label>
+				<p id="transmissionType"></p>
+			</li>
+			<li>
+				<label for="">车辆颜色：</label>
+				<p id="bodyColor"></p>
+			</li>
+			<li>
+				<label for="">最大功率：</label>
+				<p id="power"></p>
+			</li>
+			<li>
+				<label for="">vin码：</label>
+				<p id="vinCode"></p>
+			</li>
+			<li>
+				<label for="">基本配置：</label>
+				<ul class="base_config">
+					<!-- <li>自适应巡航</li>
+					<li>自适应巡航</li>
+					<li>轮毂材料</li>
+					<li>电动吸合门</li>
+					<li>氙气大灯</li>
+					<li>可变悬挂</li> -->
+				</ul>
+			</li>
+			<li>
+				<label for="">个性配置：</label>
+				<ul class="personal_config">
+					<!-- <li>自适应巡航</li>
+					<li>自适应巡航</li>
+					<li>轮毂材料</li>
+					<li>电动吸合门</li>
+					<li>氙气大灯</li>
+					<li>可变悬挂</li> -->
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="car_title">
+		<h3>附件信息</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content">
+		<ul class="info_list" id="attachment_info">
+			<!-- <li>
+				<label for="">使用说明书：</label>
+				<p>有</p>
+			</li>
+			<li>
+				<label for="">急救包：</label>
+				<p>未见</p>
+			</li>
+			<li>
+				<label for="">点烟器：</label>
+				<p>未见</p>
+			</li>
+			<li>
+				<label for="">随车工具：</label>
+				<p>未见</p>
+			</li>
+			<li>
+				<label for="">保养手册：</label>
+				<p>未见</p>
+			</li>
+			<li>
+				<label for="">三角警示牌：</label>
+				<p>未见</p>
+			</li>
+			<li>
+				<label for="">灭火器：</label>
+				<p>未见</p>
+			</li>
+			<li>
+				<label for="">千斤顶：</label>
+				<p>未见</p>
+			</li>
+			<li>
+				<label for="">备胎：</label>
+				<p>未见</p>
+			</li> -->
+		</ul>
+	</div>
+	<div class="car_title">
+		<h3>外观检测</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content padd_0">
+		<div class="harm">
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/car-img2.png" alt="">
+			<ul id="checked_point" class="checked_point">
+				
+			</ul>
+		</div>
+		<div class="score padd20"><p>得分<span id="outside_score">87.5</span></p></div>
+		<ul class="harm_list padd20" id="outside_list">
+			<!-- <li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<i></i>
+			</li>
+			<li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<i></i>
+			</li>
+			<li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<i></i>
+			</li> -->
+		</ul>
+	</div>
+	<div class="car_title">
+		<h3>内饰检测</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content padd_0">
+		<div class="harm">
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/car-img3.png" alt="">
+			<ul id="inside_checked_point" class="checked_point">
+				
+			</ul>
+		</div>
+		<div class="score padd20"><!-- <label for="">内饰完好</label> --><p>得分<span id="inside_score">100</span></p></div>
+		<ul class="harm_list padd20" id="inside_list">
+			<!-- <li>
+				<p>1.左后门玻璃是否完好，正常工作</p>
+				<span>一般-凹陷 变形</span>
+				<i></i>
+			</li>
+			<li>
+				<p>1.左后门玻璃是否完好，正常工作</p>
+				<span>一般-凹陷 变形</span>
+				<i></i>
+			</li>
+			<li>
+				<p>1.左后门玻璃是否完好，正常工作</p>
+				<span>一般-凹陷 变形</span>
+				<i></i>
+			</li>-->
+		</ul> 
+	</div>
+	<div class="car_title">
+		<h3>骨架检测</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content padd_0">
+		<div class="harm">
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/car-img1.png" alt="">
+			<ul id="skeleton_checked_point" class="checked_point">
+				
+			</ul>
+		</div>
+		<!-- <div class="score padd20"><label for="">内饰完好</label><p>得分<span id="skeleton_score">100</span></p></div> -->
+		<ul class="harm_list padd20" id="skeleton_list">
+			<!-- <li>
+				<p>1.左后门玻璃是否完好，正常工作</p>
+				<span>一般-凹陷 变形</span>
+				<i></i>
+			</li>
+			<li>
+				<p>1.左后门玻璃是否完好，正常工作</p>
+				<span>一般-凹陷 变形</span>
+				<i></i>
+			</li>
+			<li>
+				<p>1.左后门玻璃是否完好，正常工作</p>
+				<span>一般-凹陷 变形</span>
+				<i></i>
+			</li>-->
+		</ul> 
+	</div>
+	<div class="car_title">
+		<h3>车况检测</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content">
+		<ul class="state_list">
+			<!-- <li>
+				<p>车辆不启动踩下制动器踏板，保持10-15秒踏板无下移现象</p>
+				<span>无</span>
+			</li>
+			<li>
+				<p>皮带是否无老化、破损现象</p>
+				<span>是</span>
+			</li>
+			<li>
+				<p>皮带是否无老化、破损现象</p>
+				<span>是</span>
+			</li>
+			<li>
+				<p>皮带是否无老化、破损现象</p>
+				<span>是</span>
+			</li> -->
+		</ul>
+	</div>
+	<div class="car_title">
+		<h3>客户需求</h3>
+		<a href="#" class="edit">编辑</a>
+	</div>
+	<div class="car_content">
+		<ul class="need_list">
+			<li>
+				<label for="">销售需求</label>
+				<span id="requirementType">展厅</span>
+			</li>
+			<li>
+				<label for="">车辆描述</label>
+				<p id="vehicleDesc">自适应巡航自适应巡航自适应巡航自适应巡航自适应巡航自适应巡航自适应巡航自适应巡航</p>
+			</li>
+			<li>
+				<label for="">起拍价</label>
+				<span id="startBidPrice">123131</span>
+			</li>
+			<li>
+				<label for="">保底价</label>
+				<span id="reservePrice">123131</span>
+			</li>
+			<li>
+				<label for="">展售价</label>
+				<span id="salePrice">123131</span>
+			</li>
+			<li>
+				<label for="">如有违章，相关费用由</label>
+				<span id="trafficViolationFines">上家承担</span>
+			</li>
+			<li>
+				<label for="">保险是否随车销售</label>
+				<span id="saleInsurance">否</span>
+			</li>
+			<li>
+				<label for="">特殊约定</label>
+				<p id="remark">特殊约定特殊约定特殊约定特殊约定特殊约定特殊约定特殊约定特殊约定特殊约定特殊约定</p>
+			</li>
+			<li>
+				<label for="">其他备注</label>
+				<p id="other">其他备注其他备注其他备注其他备注其他备注其他备注其他备注其他备注其他备注其他备注</p>
+			</li>
+		</ul>
+		<ul class="need_pic">
+			<!-- <li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/eqs/car_pic.png" alt=""></li> -->
+		</ul>
+	</div>
+</div>
+
+<div class="pic_show">
+	<img src="http://img.autostreetscdn.com/m/build/1.00/images/eqs/driver_card.png" alt="">
+</div>
+
+<div class="error_layer2">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="cancel">取消</a>
+	<a href="javascript:;" class="correct">退出</a>
+</div>
+
+<div class="loading" id="loading"></div>
+<div class="tipbg" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/jquery-1.9.1.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/eqs2.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/iscroll2.0.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/sec_hand.js"></script>
+</body>
+</html>

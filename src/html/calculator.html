@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>个人金融计算器-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/services.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        个人金融计算器
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="main.html" class="home_icon"><span>首页</span></a>
+			<a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+
+<div id="wrapper">
+	<div class="service_title">
+		<ul class="calculator">
+			<li class="cur">月供计算器<span></span></li>
+			<li>可承受车价计算器<span></span></li>
+		</ul>
+	</div>
+
+	<div id="calc_0">
+		<div class="calculator_pool">
+			<p class="calc_name">预计月供总额(元)</p>
+			<p class="calc_price">￥<span>0.00</span></p>
+		</div>
+		<ul class="personal_list">
+			<li>
+				<label for="">车价</label>
+				<input type="text" class="car_price input-150" placeholder="请输入车价"><span>(万元)</span>
+			</li>
+			<li>
+				<label for="">首付款</label>
+				<input type="text" class="first_pay input-150" placeholder="请输入首付款"><span>(万元)</span>
+			</li>
+			<li>
+				<label for="">期限</label>
+				<div class="province">
+					<select name="term">
+						<option value="12期" >12期</option>
+						<option value="24期" >24期</option>
+						<option value="36期" >36期</option>
+					</select>
+					<div class="arrow"></div>
+				</div>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+		<a href="#" class="form_btn" id="term">计算</a>
+	</div>
+
+	<div id="calc_1">
+		<div class="calculator_pool">
+			<p class="calc_name">预计车价总额(元)</p>
+			<p class="calc_price">￥<span>0.00</span></p>
+		</div>
+		<ul class="personal_list">
+			<li>
+				<label for="">期望月供</label>
+				<input type="text" class="want_term input-150" placeholder="请输入期望月供" value=""><span>(元)</span>
+			</li>
+			<li>
+				<label for="">首付款</label>
+				<input type="text" class="first_pay input-150" placeholder="请输入首付款"><span>(元)</span>
+			</li>
+			<li>
+				<label for="">期限</label>
+				<div class="province">
+					<select name="term">
+						<option value="12期" >12期</option>
+						<option value="24期" >24期</option>
+						<option value="36期" >36期</option>
+					</select>
+					<div class="arrow"></div>
+				</div>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+		<a href="#" class="form_btn" id="amount">计算</a>
+	</div>
+
+	
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script>
+$(function(){
+	$("#term").click(function(){
+		if( validate.price($("#calc_0 .car_price"),"请输入车价","车价金额错误") &&　validate.price($("#calc_0 .first_pay"),"请输入首付","首付金额错误")){
+			var corpus = $("#calc_0 .car_price").val() - $("#calc_0 .first_pay").val();         //贷款本金(单位万元)
+	        var rate = 1.36/12;																		//利率(单位%)
+	        var month = $("#calc_0 select[name=term]").val().substr(0,2);              			//还款月数
+	        var amount = calculator.monthLoan(corpus,rate,month)
+        	$("#calc_0 .calc_price span").text(calculator.figure(amount))
+		}
+	})
+
+	$("#amount").click(function(){
+		if( validate.price($("#calc_1 .want_term"),"请输入期望月供","月供金额错误") &&　validate.price($("#calc_1 .first_pay"),"请输入首付","首付金额错误")){
+	        var _loan = $("#calc_1 .want_term").val();                                      	//期望月供(单位元)
+	        var _rate = 1.36/12;                                                              		//利率(单位%)
+	        var _month = $("#calc_1 select[name=term]").val().substr(0,2);            			//还款月数
+            var amount = calculator._corpus(_loan,_rate,_month)
+            $("#calc_1 .calc_price span").text(calculator.figure(amount)) 
+		}
+	})
+})
+</script>
+</body>
+</html>

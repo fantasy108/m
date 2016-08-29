@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>服务支持-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/services.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        服务支持
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="main.html" class="home_icon"><span>首页</span></a>
+			<a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+			<li><a href="finance.html">金融服务</a></li>
+			<li><a href="warranty.html">质保服务</a></li>
+			<li><a href="cosmetology.html">美容服务</a></li>
+			<li><a href="repair.html">维修保养</a></li>
+			<li class="cur"><a href="#">定损中心</a></li>
+		</ul>
+	</div>
+	<div class="gradient"></div>
+	<div class="finance_bn">
+		<img src="http://img.autostreetscdn.com/m/src/images/assess_bn.png" alt="">
+	</div>
+	
+	<p class="assess_title">本中心特色服务项目车辆保险续保、汽车维修、送车上门等服务。</p>
+	<ul class="assess_li">
+		<li>
+			<img src="http://img.autostreetscdn.com/m/src/images/addr.png" alt="" class="icon">
+			<p>上海市浦东新区金沪路1000号</p>
+			<div class="arrow"></div>
+		</li>
+		<li class="hide">
+			<img src="http://img.autostreetscdn.com/m/src/images/map.png" alt="" class="fl">
+		</li>
+		<li>
+			<img src="http://img.autostreetscdn.com/m/src/images/phone.png" alt="" class="icon">
+			<p><a href="tel://50701727">50701727</a></p>
+			<div class="arrow"></div>
+		</li>
+	</ul>
+	
+	<div class="other">
+		<div class="info">
+			<div class="title">其他信息</div>
+			<p>营业时间：8:30-17:00</p><p>传真号码：50701557</p>
+		</div>
+		<div class="intro">
+			<div class="title">简介</div>
+			<p class="content">上海市机动车物损交通事故保险理赔服务中心开隆分中心。<br />开隆分中心坐落于浦东金桥开发区金沪路1000号，自2012年3月12日起正式运营。本中心隶属于宝信汽车集团。宝信汽车集团（宝信汽车）是以经营众多世界知名品牌汽车4S店为主业的汽车销售售后服务集团。自创立以来，先后建立了宝马、奥迪、路虎、捷豹、凯迪拉克等豪华品牌及中高档汽车品牌的多家4S经销店。事故理赔中心作为一个面对社会的服务性窗口，本中心以诚信、公正、廉洁、高效的服务宗旨。本中心目前所展开的服务项目：事故处理、事故车辆定损、事故车辆保险理赔、车损超过交强险赔偿限额或当事人对赔偿有争议的，可由“服务中心警务室”进行鉴定及调解，方便广大客户快捷、快速得处理事故。</p>
+		</div>
+	</div>
+
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script type="text/javascript">
+$(function(){
+	var flag = false;
+	$(".assess_li li").eq(0).click(function(){
+		if(!flag){
+			$(".hide").show();
+			flag = true;
+		}else{
+			$(".hide").hide();
+			flag = false
+		}
+	})
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>【汽车报价_二手车交易_新车买卖】- 汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/index.css" type="text/css">
+</head>
+<body id="wap_index">
+<header class="index_header">
+    <div class="inner">
+        <img class="index_logo" src="http://img.autostreetscdn.com/m/src/images/new_index_logo.png" alt=""/>
+        <a href="usermain.html" class="index_user_btn"></a>
+    </div>
+</header>
+<div class="index_main">
+    <div class="menu_slider_wrap">
+        <ul id="menu_slider">
+            <li>
+                <!--新车-->
+                <p><a href="new_mall/main.html"><img src="http://img.autostreetscdn.com/m/src/images/index_new_car.png" alt=""/></a></p>
+                <!--保养预约-->
+                <p><a href="booking_maintenance/bm_main.html"><img src="http://img.autostreetscdn.com/m/src/images/index_maintain.png" alt=""/></a></p>
+                <!--汽车资讯-->
+                <p><a href="car_news.html"><img src="http://img.autostreetscdn.com/m/src/images/index_news.png" alt=""/></a></p>
+            </li>
+            <li>
+                <!--二手车-->
+                <p><a href="competitive.html"><img src="http://img.autostreetscdn.com/m/src/images/index_used_car.png" alt=""/></a></p>
+                <!--在线拍-->
+                <p><a href="online.html"><img src="http://img.autostreetscdn.com/m/src/images/index_online.png" alt=""/></a></p>
+                <!--现场拍-->
+                <p><a href="sync.html"><img src="http://img.autostreetscdn.com/m/src/images/index_offline.png" alt=""/></a></p>
+            </li>
+
+        </ul>
+        <ul class="slider_idx menu_idx"></ul>
+    </div>
+    <div class="index_ad_wrap">
+        <ul id="ad_slider">
+          <!--  <li><a href="activity_list.html"><img class="index_ad" src="http://img.autostreetscdn.com/m/src/images/index_ad.png" alt=""/></a></li>
+            <li><a href="activity_list.html"><img class="index_ad" src="http://img.autostreetscdn.com/m/src/images/index_ad.png" alt=""/></a></li>
+            <li><a href="activity_list.html"><img class="index_ad" src="http://img.autostreetscdn.com/m/src/images/index_ad.png" alt=""/></a></li>-->
+        </ul>
+
+    </div>
+</div>
+<div class="index_sub">
+    <div  class="trigger_handle">
+        <i class="arrow"></i>
+        <img  class="sub_title" src="http://img.autostreetscdn.com/m/src/images/sub_title.png" alt=""/>
+    </div>
+    <div class="inner">
+        <div class="service_slider_wrap">
+            <ul id="service_slider">
+                <li>
+                    <p>
+                        <a class="ser_item" href="repair.html"><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_01.png" alt=""/><span>维修保养</span></a>
+                        <a class="ser_item" href="finance.html"><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_02.png" alt=""/><span>金融服务</span></a>
+                        <a class="ser_item" href="warranty.html"><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_03.png" alt=""/><span>质保服务</span></a>
+                    </p>
+                    <p>
+                        <a class="ser_item" href="cosmetology.html"><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_04.png" alt=""/><span>美容服务</span></a>
+                        <a class="ser_item" href="assess.html"><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_05.png" alt=""/><span>定损中心</span></a>
+                        <a class="ser_item" href="road_service.html"><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_06.png" alt=""/><span>道路救援</span></a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a class="ser_item" href="offline.html"><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_09.png" alt=""/><span>线下直营店</span></a>
+                        <a class="ser_item vis_hid" href=""><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_07.png" alt=""/><span>咨询中心</span></a>
+                        <a class="ser_item vis_hid" href=""><img  class="ser_icon" src="http://img.autostreetscdn.com/m/src/images/ser_icon_08.png" alt=""/><span>交通罚款</span></a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="slider_idx service_idx"></ul>
+        </div>
+    </div>
+</div>
+<div class="ui_mask"></div>
+</body>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/index.js"></script>
+</html>

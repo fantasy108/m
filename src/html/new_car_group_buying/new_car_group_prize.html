@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>新车团购会-领奖</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/new_car_group_buying.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+<div class="wrap2">
+    <div class="idx_banner">
+        <img src="http://img.autostreetscdn.com/m/src/images/new_car_group_buying/prize_bg.png" alt=""/>
+        <div class="banner_txt2">
+			<p class="title">您的手机号码</p>
+			<p class="error_title"></p>
+            <input type="text" placeholder="请输入您的手机号码" id="mobile">
+            <a href="#" class="next">下一步</a>
+        </div>
+    </div>
+
+    <div class="mask_bg"></div>
+
+    <div class="error_layer">
+	    <p class="error_txt"></p>
+	    <a href="javascript:;" class="correct">确定</a>
+	</div>
+	<div class="error_layer2">
+	    <p class="notice">请输入手机短信验证码</p>
+	    <div class="verify">
+	    	<input type="text">
+	    	<a href="javascript:;">重发</a>
+	    	<p class="again"></p>
+	    </div>
+        <div class="code_error">验证码有误，请重新输入</div>
+	    <div class="error_btn">
+		    <a href="javascript:;" class="cancel">取消</a>
+		    <a href="javascript:;" class="correct">确定</a>
+	    </div>
+	</div>
+
+</div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fx.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/new_car_group_buying.js"></script>
+<script>
+$(function(){
+    $('.next').click(function(){
+        var mob_val = $('#mobile').val()
+        if(mob_val == ''){
+            $('.error_title').text('请输入您的手机号码').show()
+        }else if(mob_val == 0){
+            popup('很抱歉，未查到该手机号获奖记录')
+        }else if(checkMobile(mob_val) == false){
+            $('.error_title').text('手机号码格式有误').show()
+        }else{
+            popup2()
+        }
+    })
+
+    $('.verify a').click(function(){
+        $(this).hide()
+        var second = 60;
+        var obj = $('.again')
+        obj.text('重发(' + second + '秒)').show()
+        var time = setInterval(function () {
+            if (second == 0) {
+                clearInterval(time)
+                obj.hide()
+                $('.verify a').show()
+                flag = true
+            } else {
+                second--
+                obj.text('重发(' + second + '秒)')
+            }
+        }, 1000)
+    })
+
+    $('.error_layer .correct').click(function(){
+        
+    })
+    var flag = false;
+    $('.error_layer2 .cancel').click(function(){
+        popdown2()
+    })
+    $('.error_layer2 .correct').click(function(){
+        if(!flag){
+            $('.code_error').show()
+        }else{
+            $('.code_error').hide()
+            popdown2()
+        }
+    })
+})
+</script>
+</html>

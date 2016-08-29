@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>优惠券使用规则-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/coupon.css" type="text/css">
+    <script src="http://img.autostreetscdn.com/m/src/js/lib/flexible.js"></script>
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        优惠券使用规则
+    </section>
+</header>
+<div id="content">
+    <div class="coupon_rule">
+        <h2>1）投资满足红包使用规则方可使用红包。 </h2>
+        <p>例：小明有一个10元红包，充值1000元并投资项目A，在投资确认页面，勾选10元红包。投资期满后，小明就可以连本带息提现啦！既赚了利息，又能多赚10元钱。”</p>
+        <h2>2）红包均有有效期，请在红包使用期限前及时使用。</h2>
+        <h2>3）红包不可以用于购买债权转让项目。</h2>
+        <h2>4）普通红包有效期内能且仅能使用一次，使用后作废，过期作废。</h2>
+        <h2>5）红包不能与其他优惠（其他红包、加息券等）叠加使用。</h2>
+        <h2>6）红包不可直接提现。使用红包投资回款后，方可提现。</h2>
+        <p>使用过程中遇到问题，请联系客服，400-8334-100</p>
+    </div>
+</div>
+</body>
+</html>

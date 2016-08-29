@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_main.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        退款详情
+    </section>
+</header>
+<div id="bm_refund_detail">
+    <div class="brd_box">
+        <ul class="refund_detail_hd">
+            <li>
+                <span>退款金额</span>
+                <span class="fee"><!--&yen;300--></span>
+            </li>
+            <li>
+                <span>消费码</span>
+                <span class="expense_code"><!--1234 1521 1214 4564--></span>
+            </li>
+        </ul>
+    </div>
+    <div class="brd_box">
+        <h2>退款流程</h2>
+        <div class="refund_status">
+            <ul class="refund_status_list">
+
+                <!--<li>客服审核处理中<i  class="curr">1</i><span></span>2015/06/23 12:00</li>
+                <li>支付平台处理<i>2</i></li>
+                <li>退款成功<i>3</i></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="loading" id="loading" ></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm.js"></script>
+<script src="http://wap.autostreets.com/js/require.js" data-main="http://wap.autostreets.com/js/main.js"></script>
+</html>

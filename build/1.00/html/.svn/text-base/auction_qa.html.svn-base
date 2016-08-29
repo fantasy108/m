@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>常见问题</title>
+    <script src="http://img.autostreetscdn.com/m/src/js/lib/flexible.js"></script>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/auction_hall.css">
+</head>
+<body>
+<header>
+    <section><a href="javascript:history.go(-1);" class="back"></a>常见问题</section>
+</header>
+<section id="content">
+    <div class="white_box notice">
+        <div class="notice" id="qa">
+            <div class="bd">
+                <ul>
+                    <!--<li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="">【10月31日】  福建厦门建发中心拍卖公告</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="loading"></div>
+</body>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/notice_qa.js"></script>
+</html>

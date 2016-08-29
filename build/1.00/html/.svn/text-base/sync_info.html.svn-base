@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>现场拍,拍卖列表-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/sync.css" type="text/css">
+</head>
+<body>
+<div id="body">
+    <header>
+        <section>
+            <a href="javascript:history.go(-1);" class='back'></a>现场拍
+            <div class="top_nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="top_pop">
+                <a href="main.html" class="home_icon"><span>首页</span></a>
+                <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+                <i></i>
+            </div>
+        </section>
+    </header>
+    <div class="wrap">
+        <div class="sync_list sync_info">
+            <div class="sync_list_item">
+                <h2 class="title"></h2>
+                <p class="time"></p>
+                <p class="address"></p>
+                <p class="quantity"></p>
+                <p class="modelDesc"></p>
+            </div>
+            <div class="select-type-box-wrap">
+                <div class="select-type-box">
+                    <ul class="select-type">
+                        <li id="type-1" class="type_item"><a href="javascript:;" data-val="0">全部价格</a><span></span></li>
+                        <li class="select-type-line"></li>
+                        <li id="type-2" class="type_item"><a href="javascript:;" data-val="0">全部车龄</a><span></span></li>
+                        <li class="select-type-line"></li>
+                        <li id="type-3" class="type_item"><a href="javascript:;" data-val="0">行驶里程</a><span></span></li>
+                    </ul>
+                    <div class="select-list-box hide" id="typebox-1">
+                        <h3 class="select_list_item"><a href="javascript:;" class="on" data-val="0" id="typebox-1-all">全部价格</a></h3>
+                        <ul class="select-list">
+                        </ul>
+                    </div>
+                    <div class="select-list-box hide" id="typebox-2">
+                        <h3 class="select_list_item"><a href="javascript:;" class="on" data-val="0" id="typebox-2-all">全部车龄</a></h3>
+                        <ul class="select-list"></ul>
+                    </div>
+                    <div class="select-list-box hide" id="typebox-3">
+                        <h3 class="select_list_item"><a href="javascript:;" class="on" data-val="0" id="typebox-3-all">行驶里程</a></h3>
+                        <ul class="select-list"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competitive_list_wrap">
+                <ul class="competitive_list" id="competitive_list">
+
+                </ul>
+            </div>
+            <div class="link_live_room not_allow">
+                <a class="live_room" href="javascript:void(0)">进入直播室</a>
+            </div>
+            <div class="loading" id='loading'></div>
+            <div class="tipbg hide" id="tipbg"></div>
+        </div>
+
+    </div>
+
+</div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/sync_info.js"></script>
+</body>
+</html>

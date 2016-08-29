@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>美容服务-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/services.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        服务支持
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="main.html" class="home_icon"><span>首页</span></a>
+			<a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+			<li><a href="finance.html">金融服务</a></li>
+			<li><a href="warranty.html">质保服务</a></li>
+			<li class="cur"><a href="#">美容服务</a></li>
+			<li><a href="repair.html">维修保养</a></li>
+			<li><a href="assess.html">定损中心</a></li>
+		</ul>
+	</div>
+	<div class="gradient"></div>
+	<div class="finance_bn">
+		<img src="http://img.autostreetscdn.com/m/src/images/cosmetology_bn.png" alt="">
+	</div>
+	
+	<ul class="cosmetology">
+		<li>
+			<a href="cosm_package1.html">
+				<img src="http://img.autostreetscdn.com/m/src/images/cosmetology_pic_s1.png" alt="">
+				<h3>豪华超值套餐</h3>
+				<p>漆面覆膜内饰清洁车内消毒，送漆面维护美容项目8折</p>
+				<h4>超值价:2680元<span>6.5折</span></h4>
+			</a>
+		</li>
+		<li>
+			<a href="cosm_package2.html">
+				<img src="http://img.autostreetscdn.com/m/src/images/cosmetology_pic_s2.png" alt="">
+				<h3>超值套餐</h3>
+				<p>车身漆面还原轮毂钢圈清洁，赠送精致洗车一次</p>
+				<h4>超值价:888元<span>5.7折</span></h4>
+			</a>
+		</li>
+		<li>
+			<a href="cosm_package3.html">
+				<img src="http://img.autostreetscdn.com/m/src/images/cosmetology_pic_s3.png" alt="">
+				<h3>A级美容清洁套餐</h3>
+				<p>车身漆面封釉抛光精致洗车和发动机舱清洁养护</p>
+				<h4>超值价:888元<span>5.8折</span></h4>
+			</a>
+		</li>
+		<li>
+			<a href="cosm_package4.html">
+				<img src="http://img.autostreetscdn.com/m/src/images/cosmetology_pic_s4.png" alt="">
+				<h3>B级美容清洁套餐</h3>
+				<p>精致洗车和发动机舱清洁养护</p>
+				<h4>超值价:488元<span>6.1折</span></h4>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script type="application/javascript" src="http://img.autostreetscdn.com/m/src/js/iscroll.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script type="text/javascript">
+	var myScroll;
+	function loaded() {
+		myscroll = new iScroll("wrapper",{hScrollbar:false,vScrollbar:false});
+	}
+	document.addEventListener('touchmove');
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+</body>
+</html>

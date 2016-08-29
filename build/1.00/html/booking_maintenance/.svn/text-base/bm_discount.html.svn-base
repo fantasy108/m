@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>使用优惠券</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_consultant.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        使用优惠券
+    </section>
+</header>
+<div id="container">
+	<ul class="discount_tab">
+		<li class="cur">可用优惠券</li>
+		<li>历史优惠券</li>
+	</ul>
+	<ul class="discount_list">
+		<!-- <li>
+			<i class=""></i>
+			<blockquote>
+				<h3>￥<span>300</span>元</h3>
+				<p>优惠券类型：现金抵用券</p>
+				<div class="period">有效期至：2014-04-04</div>
+			</blockquote>
+		</li>
+		<li>
+			<i class=""></i>
+			<blockquote>
+				<h3>￥<span>300</span>元</h3>
+				<p>优惠券类型：现金抵用券</p>
+				<div class="period">有效期至：2014-04-04</div>
+			</blockquote>
+		</li> -->
+	</ul>
+	<ul class="history_list">
+		<!-- <li>
+			<div class="expire">已过期</div>
+			<blockquote>
+				<h3>￥<span>300</span>元</h3>
+				<p>优惠券类型：现金抵用券</p>
+				<div class="period">有效期至：2014-04-04</div>
+			</blockquote>
+		</li>
+		<li>
+			<div class="expire">已过期</div>
+			<blockquote>
+				<h3>￥<span>300</span>元</h3>
+				<p>优惠券类型：现金抵用券</p>
+				<div class="period">有效期至：2014-04-04</div>
+			</blockquote>
+		</li> -->
+	</ul>
+	<div class="no_ticket">
+		<img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/ticket.png" alt="">
+		<p>很遗憾<br /><span>您暂无可以使用的优惠券</span></p>
+	</div>
+	<div class="find_him">
+		<a href="#">确认</a>
+	</div>
+</div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_2.js"></script>
+<script>
+$(function(){
+	$(".discount_list li").live("click",function(){
+		if($(this).children("i").hasClass("select")){
+			$(this).children("i").removeClass("select")
+		}else{
+			$(this).children("i").addClass("select")
+			$(this).siblings().children("i").removeClass("select")
+			
+		}
+	})
+
+	$(".discount_tab li").live("click",function(){
+		var index = $(".discount_tab li").index(this);
+		$(this).addClass("cur").siblings().removeClass("cur")
+		if(index == 0){
+			$(".discount_list").show()
+			$(".history_list").hide()
+		}else{
+			$(".discount_list").hide()
+			$(".history_list").show()
+		}
+	})
+
+	var obj = request()
+	couponList(obj.memberSid,"")
+
+	$('.find_him a').click(function(){
+		$('.discount_list li').each(function(){
+			if($(this).children('i').hasClass('select')){
+				var _price = $(this).find('h3').children('span').text()
+				if(!obj.payment){
+					$('.find_him a').attr('href','bm_confirm.html' + location.search + '&discount=' + _price )
+				}else{
+					$('.find_him a').attr('href','bm_confirm.html?type=2&maintainSid=' +obj.maintainSid+ '&customerName=' + obj.customerName + '&customerCellphone=' +obj.customerCellphone + '&appointmentTime=' + obj.appointmentTime + '&memberSid=' + obj.memberSid + '&payment=' + obj.payment + '&discount=' + _price )
+				}
+				return;
+			}
+		})
+	})
+
+	
+})
+</script>
+<script>
+   
+
+ 
+
+
+</script>
+
+</body>
+</html>

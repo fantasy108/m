@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/build/1.00/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/build/1.00/css/dms.css" type="text/css">
+</head>
+<body>
+
+<div id="container">
+	<div class="login_title">
+		<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/autost.png" alt="">
+		<p>汽车街经销商后台</p>
+	</div>
+	<div class="form">
+		<p class="error">用户名或密码错误</p>
+		<input type="text" class="name" placeholder="用户名">
+		<input type="text" class="pwd" placeholder="密码">
+		<button class="able">登录</button>
+		<button class="disable">登录</button>
+	</div>
+</div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/build/1.00/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/build/1.00/js/lib/touch.js"></script>
+<script>
+$(function(){
+
+})
+</script>
+</body>
+</html>

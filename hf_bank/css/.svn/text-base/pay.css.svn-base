@@ -1,0 +1,85 @@
+body{ background: #f3f3f3}
+.paybox{ font-size:0.1574rem; padding-top: 0.1687rem}
+.statusbody{ font-size:0.1574rem; padding-top: 0.1687rem}
+.pay-sucess{background:url('http://img.autostreetscdn.com/m/src/images/success.png') no-repeat center top; background-size:0.675rem 0.675rem; padding:1rem 0.6rem 0rem 0.6rem ;text-align: center; margin-top:0.5rem; font-size: 0.18rem}
+
+.pay-error{background:url('http://img.autostreetscdn.com/m/src/images/warning-2.png') no-repeat center top; background-size:0.675rem 0.675rem; padding:1rem 0.6rem 0rem 0.6rem ;text-align: center; margin-top:0.5rem; font-size: 0.18rem}
+
+.status-btnbox{}
+.status-btnbox a{ font-size: 0.1574rem; display: block;border: 1px solid #ddd; background: #fff; margin:0 0.1125rem 0.1125rem 0.1125rem;height: 0.4612rem; line-height:0.4612rem;text-align: center; font-size:0.1874rem; border-radius: 0.05rem; color: #356fc4; text-decoration: none }
+.status-btnbox a.tel{ color: #f47410;background:#fff url('http://img.autostreetscdn.com/m/src/images/phone-1.png') no-repeat 0.47rem center; background-size:0.225rem 0.225rem;}
+.status-btnbox a.link1{ color: #f47410;background:#fff; background-size:0.225rem 0.225rem;}
+
+.pay-txt{ color: #999; text-align: center; margin:0.2rem 0}
+
+.payform{border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd; background: #fff; margin-bottom:0.1687rem }
+.payform li{ height: 0.5006rem; margin-left: 0.1125rem; border-top: 1px solid #dddddd; position: relative; margin-top: -1px}
+
+.label-1{ display: inline-block; height: 0.5006rem; line-height: 0.5006rem;font-size:0.1574rem; float: left;padding-right: 0.1125rem;}
+
+.label-2{ width: 0.8rem; display: inline-block}
+.input-1{background: #fff; -webkit-appearance : none ; border-radius: 0px;  /*解决iphone safari上的圆角问题*/height: 0.4006rem; line-height: 0.4006rem; padding:0.05rem 0;border: 0px; width: 2.35rem;font-size:0.1574rem; float: left}
+
+.money{height: 0.4006rem; line-height: 0.4006rem; padding:0.05rem 0;border: 0px; width: 2.35rem;font-size:0.1574rem; float: left;background: #fff; display: inline-block; color:#F37310; font-family: Arial}
+
+.province{float:left;width: 2.35rem;}
+.select-1{float:left;border:none;color:#b2afaf;font-size: 0.1574rem;width:2.2499rem;height:0.5006rem;line-height: 0.5006rem;-webkit-appearance:none;border-radius: 0px; padding-left: 0rem; background:none}
+.arrow{width:0.1124rem;height:0.1124rem;border-top: 0.025rem solid #ddd;border-right: 0.025rem solid #ddd;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);position:absolute;right:0.2124rem;top:0.1874rem;}
+
+.submitbox{ padding: 0rem 0.09rem 0.1125rem 0.09rem}
+.submitbox p{ color: #999;margin-top: 0.1rem}
+.btn-1{ background:#f5770f; height: 0.4612rem; line-height:0.4612rem;  display: block; text-align: center; color: #fff;font-size:0.1874rem; border-radius: 0.05rem}
+
+.orderinfo{border-top: 1px solid #dddddd; border-bottom: 1px solid #ddd; background: #fff}
+
+.banklogo{ width: 0.8887rem; display: inline-block;}
+.banklogo img{ width: 100%; margin:0.1rem 0 0 0}
+
+.payorderinfo{ margin: 0 0.1rem; border-top:1px dotted #bbb; padding: 0.1rem 0}
+.payorderinfo li{ min-height: 0.35rem; line-height:130%; text-align: right; padding-left: 0.45rem;}
+
+.payorderinfo li label{position: absolute; left: 0.1rem; color:#999; height: 0.35rem; line-height: 0.35rem; display: inline-block}
+.payorderinfo li span{text-overflow:ellipsis;height: 0.35rem; display: inline-block; overflow: hidden; line-height: 0.35rem; white-space: nowrap; width: 85%; }
+
+.ordermoney{ font-size: 0.5rem; text-align: center; height: 1rem; line-height: 1rem;}
+
+.orderinfo{ overflow: hidden; margin-bottom:0.1687rem; padding: 0.08rem 0.08rem}
+.orderinfo img{ width: 1.1643rem; height: 0.6974rem; float: left; margin-right: 0.08rem}
+.orderinfo h3{ color: #333; line-height: 0.2rem; font-size: 0.17rem; margin-top: 0.05rem}
+.orderinfo p{ color: #999; font-size: 0.14rem; }
+.car_info_fl{overflow:hidden;}
+.car_info_fl img{float:left;}
+.car_info_fl h3{font:bold 0.1574rem/0.2374rem "微软雅黑";color:#333;float:left;width:2.2499rem;overflow: hidden;}
+.car_info_fl p{font:normal 0.1574rem/0.2374rem "微软雅黑";color:#999;float:left;width:2.2499rem;overflow: hidden;/*text-overflow:ellipsis;white-space:nowrap;*/line-height:0.2249rem;font-size:0.1349rem;}
+
+.dealinfo{overflow: hidden;
+    margin-bottom: .1687rem;
+    padding: 0.1574rem 0;border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #fff;text-align:center;}
+.dealinfo a{color:#1F7FF7;text-decoration:none;}
+.dealinfo strong{font-weight:normal;}
+.dealinfo span{display:inline-block;vertical-align:middle;}
+.deal_icon{display:inline-block;background:url('http://img.autostreetscdn.com/m/src/images/s_bf.png');width:0.2249rem;height:0.2249rem;background-size:contain;margin-right:0.1124rem;vertical-align:middle;}
+.s_ed{background-image:url('http://img.autostreetscdn.com/m/src/images/s_ed.png')}
+.info_fr{overflow:hidden;}
+.info_fr h3{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.info_fr label{width: 0.75rem; display: inline-block;}
+.info_fr span{color:#000;}
+.info_fr p{margin:0.0224rem 0;}
+
+
+.get_car_location,.get_car_range{
+    padding-left:0.1125rem;
+}
+#get_car_location ,#get_car_range {
+    color:#000;
+}
+#get_car_location i,#get_car_range i{
+    font-style:normal; float:right;
+    margin-right:0.1125rem;
+}
+.topborder { border-top:1px solid #ddd; margin-bottom:0.1687rem; }
+
+.topborder a { text-indent:0rem }
+.get_car_location{ margin-bottom:0; border-bottom:none;}

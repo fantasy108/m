@@ -1,0 +1,12 @@
+K 15
+tsvn:logminsize
+V 2
+30
+K 16
+tsvn:logtemplate
+V 25
+NEW:
+DEV:
+FIXBUG:
+Merged:
+END

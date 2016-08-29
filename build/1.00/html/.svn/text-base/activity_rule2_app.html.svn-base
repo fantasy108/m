@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/activity.css" type="text/css">
+</head>
+<body>
+<div class="activity_rule">
+    <h2>活动对象：</h2>
+    <p>招行信用卡主卡持卡人（商务卡除外）</p>
+    <h2>活动细则：</h2>
+    <p>1 持卡人凭抵用券验证码前往汽车街门店或全国指定合作4S门店，享受专属优惠；</p>
+    <p>2 所有积分换购的购车券、保养券、美容券、漆面维修券，每种抵用券使用请参考优惠细则；</p>
+    <p>3 抵用券到期未使用，可在招行“掌上生活”退券。具体兑换流程请参阅“掌上生活”首页。</p>
+    <h2>招行 “掌上生活”在线操作步骤：</h2>
+    <p>通过招行“掌上生活”APP，参加积分兑换优惠活动，兑换成功后，手机获得相应的兑换码短信，凭验证码到汽车街或者特约合作线下经销商门店购车，获得相应的优惠。</p>
+    <p>注明：每张购车券抵扣1000元车款，使用多张需多次购买，同时用户凭验证码可前往汽车街合作的4S店验证直抵购车款。</p>
+    <h2 class="red_color">合作商优惠券</h2>
+    <h2>活动时间：</h2>
+    <p>2015年3月20日-2015年5月30日（汽车街线下合作4S店活动时间）</p>
+    <h2>合作商优惠券:</h2>
+    <p>100积分=1000元汽车街指定经销商车型购车抵用券一张（仅限购买新车时抵扣一次，与店内其他新车优惠活动同享）<br/>
+        200积分=2000元新车装潢套餐抵用券一张（仅限购买洗车时抵扣一次，使用于汽车街指定经销商任意装潢套餐）<br/>
+        300积分=3000元新车漆面维修抵用券一张（仅限购买新车时抵扣一次，维修券500元一张，共计6张，每次维修仅限使用一张）</p>
+    <h2>经销商门店</h2>
+</div>
+<a href="javascript:history.go(-1)" style="display: block;" class="app_back_menu"></a>
+<script type="application/javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script type="text/javascript" src="http://img.autostreetscdn.com/m/src/js/activity.js"></script>
+</body>
+</html>

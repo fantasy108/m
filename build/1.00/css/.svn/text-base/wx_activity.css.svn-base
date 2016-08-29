@@ -1,0 +1,6 @@
+/**
+ * binqing.liu
+ * @version v1.00
+ * Modify-Date:2016-4-13 11:6:54
+ */
+@charset "UTF-8";#wx_activity,.pr{position:relative}#wx_activity{max-width:4.05rem;margin:0 auto}#wx_activity img{width:100%;display:block;border:none}#wx_activity .link{display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;right:.69187rem;left:.69187rem;background-color:#b7bd41;color:#fff;font-size:.16875rem;height:.50625rem;line-height:.53437rem;position:absolute;text-align:center;text-decoration:none;top:.05625rem}

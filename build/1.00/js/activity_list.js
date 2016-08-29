@@ -1,0 +1,6 @@
+/*
+ * Build by xuelei.kong@autostreets.com
+ * Date: 2016-04-07 10:30:42
+ * Version: 1.00
+ */
+function getUrlVars(){for(var t,e={},a=window.location.href.slice(window.location.href.indexOf("?")+1).split("&"),s=0;s<a.length;s++)t=a[s].split("="),e[t[0]]=t[1];return e}var imgurl="http://images.autostreets.com/",_daq=_daq||[];_daq.push(["_setAccount","wap"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://da":"http://da")+".autostreets.com/da.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}(),$.ajax({type:"GET",url:"http://wap.autostreets.com/activity/findAdvertise",dataType:"jsonp",jsonp:"jsoncallback",scriptCharset:"GBK",jsonpCallback:"getActivityList",cache:!1,success:function(t){var e="";$.each(t.data,function(t,a){e+='<li><a href="'+a.clickUrl+"\" onClick=\"_traceEvent('活动','点击','"+t+"','6','false')\" ><img src=\""+imgurl+a.photoUrl+'" alt=""/></a></li>'}),$(".activity_list ul").empty().append(e)}}),"app"==getUrlVars().source&&($("header").hide(),sessionStorage.isapp=!0);

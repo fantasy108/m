@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url(reset.css);
+img {
+  display: block;
+  border: none; }
+
+#sub_nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#sub_nav ul li {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.hide {
+  display: none; }
+
+/*头部*/
+.headerSection, header section {
+  background: #fff;
+  height: 44px;
+  line-height: 44px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  z-index: 99;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+header {
+  height: 44px;
+  z-index: 99;
+  position: relative; }
+
+/*返回按钮*/
+.back {
+  display: block;
+  height: 100%;
+  width: 38px;
+  position: absolute; }
+
+.back::after {
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  display: inline-block;
+  position: absolute;
+  left: 13px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 14px;
+  content: ' '; }
+
+/*公用底部*/
+<<<<<<< .mine
+#sub_nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  height: 45px; }
+  #sub_nav ul {
+    height: 100%; }
+    #sub_nav ul li {
+      text-align: center;
+      height: 100%; }
+      #sub_nav ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 5px; }
+        #sub_nav ul li a .icon {
+          -webkit-background-size: contain;
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: block;
+          margin: 0 auto 3px; }
+        #sub_nav ul li a b {
+          font-weight: normal;
+          display: block; }
+    #sub_nav ul .curr {
+      background-color: #adb33c; }
+    #sub_nav ul > :nth-child(1) a .icon {
+      background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav1.png");
+      width: 20px;
+      height: 20px; }
+    #sub_nav ul > :nth-child(2) a .icon {
+      background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav2.png");
+      width: 20px;
+      height: 21px; }
+    #sub_nav ul > :nth-child(3) a .icon {
+      background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav3.png");
+      width: 20px;
+      height: 20px; }
+    #sub_nav ul > :nth-child(4) a .icon {
+      background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav4.png");
+      width: 23px;
+      height: 20px; }
+=======
+#sub_nav { position: fixed; bottom: 0; width: 100%; background-color: #000; height: 45px; }
+#sub_nav ul { height: 100%; }
+#sub_nav ul li { text-align: center; height: 100%; }
+#sub_nav ul li a { display: block; width: 100%; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 5px; }
+#sub_nav ul li a .icon { -webkit-background-size: contain; background-size: contain; background-repeat: no-repeat; display: block; margin: 0 auto 3px; }
+#sub_nav ul li a b { font-weight: normal; display: block; }
+#sub_nav ul .curr { background-color: #adb33c; }
+#sub_nav ul > :nth-child(1) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav1.png"); width: 20px; height: 20px; }
+#sub_nav ul > :nth-child(2) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav2.png"); width: 20px; height: 21px; }
+#sub_nav ul > :nth-child(3) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav3.png"); width: 20px; height: 20px; }
+#sub_nav ul > :nth-child(4) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav4.png"); width: 22px; height: 21.5px; }
+>>>>>>> .r6968
+
+.right_arr {
+  position: absolute;
+  border-right: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  width: 10px;
+  height: 10px;
+  right: 15px;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -moz-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  -o-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  top: 50%; }
+
+.ui_mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  /*visibility:hidden;*/
+  z-index: 99;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  pointer-events: none; }
+
+.ui_mask_show {
+  opacity: 1;
+  /*visibility:visible;*/
+  pointer-events: auto; }
+
+.loading {
+  background: url("http://img.autostreetscdn.com/m/src/images/loading.gif");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  height: 32px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: auto;
+  z-index: 999;
+  background-position: center center;
+  display: none;
+  width: 32px; }
+
+#content {
+  width: 10rem;
+  margin: 0 auto; }
+
+<<<<<<< .mine
+#car_news {
+  background: #fff;
+  padding-left: 0.40625rem; }
+  #car_news .car_news_list .car_news_desc {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    position: relative; }
+  #car_news .car_news_list .car_news_sm_img {
+    float: left;
+    width: 2.5rem;
+    height: 1.875rem;
+    margin-right: 0.3125rem; }
+  #car_news .car_news_list .car_news_title {
+    font-size: 0.4375rem;
+    color: #000;
+    margin-right: 0.3125rem; }
+  #car_news .car_news_list .news_date {
+    color: #545454;
+    font-size: 0.34375rem;
+    line-height: 0.42188rem;
+    float: left;
+    position: absolute;
+    left: 2.8125rem;
+    bottom: 0.5rem; }
+=======
+#car_news { background: #fff; padding-left: 0.40625rem; }
+#car_news .car_news_list .car_news_desc { overflow: hidden; display: block; border-bottom: 1px solid #ddd; padding: 0.5rem 0; text-decoration: none; position: relative; }
+#car_news .car_news_list .car_news_sm_img { float: left; width: 2.5rem; height: 1.875rem; margin-right: 0.3125rem; }
+#car_news .car_news_list .car_news_title { font-size: 0.4375rem; color: #000; margin-right: 0.3125rem; }
+#car_news .car_news_list .news_date { color: #545454; font-size: 0.34375rem; line-height: 0.42188rem; float: left; left: 2.8125rem; bottom: 0.5rem; display: block; }
+>>>>>>> .r6968
+
+#car_news_detail {
+  background: #fff;
+  font-size: 0.4375rem;
+  color: #525252;
+  padding: 0.46875rem 0.46875rem 1.5625rem; }
+  #car_news_detail h2 {
+    font-weight: bold;
+    line-height: 0.53125rem;
+    margin-bottom: 0.07813rem; }
+  #car_news_detail .createTime {
+    font-size: 0.34375rem;
+    line-height: 0.42188rem;
+    display: block;
+    margin-bottom: 0.3125rem; }
+  #car_news_detail img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    border: none; }
+    #car_news_detail img ~ span {
+      display: block;
+      margin-top: 0.15625rem; }
+  #car_news_detail p {
+    line-height: 0.75rem;
+    margin: 0.5rem 0; }
+
+.loadMoreText {
+  text-align: center;
+  font-size: 0.1574rem;
+  color: #999;
+  height: 0.2812rem;
+  line-height: 0.2812rem;
+  display: none; }
+
+/*# sourceMappingURL=car_news.css.map */

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>活动核销-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/write_off.css" type="text/css">
+</head>
+<body>
+<div id="write_off">
+   <div class="form_module">
+       <ul>
+           <li>
+               <label for="verify_code">验证码</label>
+               <input placeholder="请输入验证码" type="text" id="verify_code"/>
+           </li>
+           <li>
+               <label for="name">姓名</label>
+               <input placeholder="请输入姓名" type="text" id="name"/>
+           </li>
+           <li>
+               <label for="tel_num">手机号码</label>
+               <input placeholder="请输入手机号码" type="tel" id="tel_num"/>
+           </li>
+       </ul>
+   </div>
+    <div class="write_off_sub">
+        <div class="upload_pic">
+            <h3>凭证上传</h3>
+            <ul>
+                <li><div class="upload_btn"><input type="file" id="invoice" class="file" accept="image/*"><div class="image_wrap"></div><i class="icon">+</i></div><p>购车发票</p></li>
+                <li><div class="upload_btn"><input type="file" id="id_front" class="file" accept="image/*"><div class="image_wrap"></div><i class="icon">+</i></div><p>身份证正面</p></li>
+                <li><div class="upload_btn"><input type="file" class="file" accept="image/*"><div class="image_wrap"></div><i class="icon">+</i></div><p>其他</p></li>
+            </ul>
+        </div>
+        <button class="query_btn">提交</button>
+    </div>
+</div>
+<a href="data_query.html" class="write_off_link">点击切换至数据查询页面</a>
+<div class="error_layer">
+    <p class="error_txt"></p>
+    <a href="javascript:;" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/validate.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/write_off.js"></script>
+<script>
+    $(function () {
+        $(".query_btn").click(function () {
+            if (validate.input($("#merchant_name"), "请输入经销商") && validate.input($("#verify_code"), "请输入验证码") && validate.input($("#name"), "请输入姓名") && validate.mobile($("#tel_num"), "手机号码","请输入有效的手机号码") && validate.input($('#invoice'),"请上传发票") && validate.input($('#id_front'),"请上传身份证正面")) {
+
+            }
+        })
+    })
+</script>
+</html>

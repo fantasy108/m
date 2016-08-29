@@ -1,0 +1,21 @@
+K 18
+svn:global-ignores
+V 138
+.classpath
+.project
+*.bak
+*.class
+*.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo __pycache__ *.rej *~ #*# .#* .*.swp .DS_Store
+
+K 15
+tsvn:logminsize
+V 2
+30
+K 16
+tsvn:logtemplate
+V 25
+NEW:
+DEV:
+FIXBUG:
+Merged:
+END

@@ -1,0 +1,6 @@
+/*
+ * Build by xuelei.kong@autostreets.com
+ * Date: 2016-04-07 10:30:42
+ * Version: 1.00
+ */
+var _infourl="http://wap.autostreets.com/member/loadMemberInfo?memberSid="+userUtils.getMemberSid(!0);$(function(){$.ajax({type:"GET",url:_infourl,dataType:"jsonp",jsonp:"jsoncallback",scriptCharset:"GBK",jsonpCallback:"getinfo",cache:!1,success:function(a){$("#u-name").html(a.data.name),$("#u-sex").html(a.data.gender),$("#u-tel").html(a.data.cellphone),$("#u-idcard").html(a.data.idCardNum),$("#u-vipid").html(a.data.memberCode),$("#u-viplv").html(a.data.memberLevel),$("#u-vipcate").html(a.data.memberCategory),$("#uc-name").html(a.data.username),$("#uc-viplv").html(a.data.memberLevel),$("#money-1").html(a.data.cash),$("#money-2").html(a.data.cashFreeze),$("#b-name").html(a.data.corpName),$("#b-area").html("undefined"!=typeof a.data.province&&"undefined"!=typeof a.data.city?a.data.province.toString()+a.data.city.toString():""),$("#b-addr").html(a.data.address),$("#b-phone").html(a.data.telephone),$("#b-mail").html(a.data.email),$("#b-wechat").html(a.data.weixin)}})});

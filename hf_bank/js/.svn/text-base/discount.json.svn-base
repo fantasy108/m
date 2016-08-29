@@ -1,0 +1,60 @@
+﻿getlist([{"name":"宝马Z4 sDrive35i Character","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/1.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2505&city=","intro":"经典轿跑 两门敞篷 劲炫造型 精准驾控 释放年轻","n_price":"43.57","o_price":"83.8","sold":"0"},
+
+{"name":"路虎极光耀动版","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/2.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=1113&city=","intro":"动感时尚 智能四驱 九速变速箱 全地形能力 尖峰科技","n_price":"49.8","o_price":"62.8","sold":"1"},
+
+{"name":"广汽丰田凯美瑞混动2.5G豪华版","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/3.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=13&city=","intro":"“双擎”动力 动力提升12%  油耗降30% 噪音降24%  排放降72%","n_price":"22.48","o_price":"25.98","sold":"1"},
+
+{"name":"捷豹XJ 3.0全景商务版","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/4.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=553&city=","intro":"英伦座驾 尊享奢华 优雅轿跑设计 商务典范 全铝航空车身","n_price":"72","o_price":"105.8","sold":"1"},
+
+{"name":"MINI COOPER ROADSTER","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/5.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2513&city=","intro":"软顶敞篷 外形炫酷 扎实硬朗不失灵活 操控灵活乘坐舒适","n_price":"30.1","o_price":"37.6","sold":"0"},
+
+{"name":"宝马740li领先","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/7.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2525&city=","intro":"行政座驾 宝马旗舰 V6发动机 前置后驱 豪华车驾控首选","n_price":"73.66","o_price":"118.8","sold":"0"},
+
+{"name":"宝马X1 xDrive28i Standard Equipment","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/8.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2483&city=","intro":"原装进口 3.0直列六缸 全时四驱","n_price":"33.54","o_price":"55.9","sold":"0"},
+
+{"name":"宝马X1 xDrive20i Standard Equipment","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/9.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2485&city=","intro":"原装进口 四轮驱动  运动套装","n_price":"31.15","o_price":"44.5","sold":"0"},
+
+{"name":"宝马x5 35i豪华版","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/10.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2489&city=","intro":"原装进口 3.0T六缸增压 四轮驱动 7座","n_price":"70.35","o_price":"100.5","sold":"0"},
+
+{"name":"广汽丰田杰路驰2.5豪华版","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/11.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2515&city=","intro":"两门轿跑 敏捷操控 加速性能及燃油经济性领先同级","n_price":"25","o_price":"28","sold":"0"},
+
+{"name":"大众速腾1.4T手动豪华","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/12.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=221&city=","intro":"A级车销量冠军 外观时尚 吸入式手动挂档 双区独立恒温空调 ","n_price":"13.68","o_price":"15.38","sold":"1"},
+
+{"name":"宝马640I coupe","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/13.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2491&city=","intro":"旗舰双门轿跑 动感外观  2+2跑车 前置后驱 3.0T动力","n_price":"77.83","o_price":"112.8","sold":"1"},
+
+{"name":"宝马320i Coupe","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/15.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2497&city=","intro":"coupe轿跑 动感时尚 两门四座 前置后驱 运动方向盘","n_price":"32.37","o_price":"49.8","sold":"0"},
+
+{"name":"宝马Z4 sDrive35i","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/16.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2499&city=","intro":"动感跑车 强劲动力 纯粹驾驶乐趣","n_price":"50.28","o_price":"83.8","sold":"0"},
+
+{"name":"宝马740Li Sedan","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/17.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2501&city=","intro":"极致空间 豪华内饰 完美细节","n_price":"82.68","o_price":"137.8","sold":"0"},
+
+{"name":"宝马X1 sDrive18i Sport Luxury","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/18.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=730&city=","intro":"运动设计 时尚外观 半高式座椅 前置后驱","n_price":"25.08","o_price":"33.9","sold":"0"},
+
+{"name":"宝马335Li Modern","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/19.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2511&city=","intro":"动感时尚  前置后驱","n_price":"34.86","o_price":"59.96","sold":"1"},
+
+{"name":"宝马550i GT Luxury","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/20.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=1005&city=","intro":"精英座驾 跨界旗舰 7系底盘 豪华座舱 塔尖人群定制车型","n_price":"110.89","o_price":"169.3","sold":"1"},
+
+{"name":"路虎神二2.0HSE经典典藏版","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/21.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=1105&city=","intro":"经典越野风格 全时四驱系统 全地形反馈系统 殿堂级音响系统","n_price":"52.5","o_price":"60.8","sold":"0"},
+
+{"name":"宝马750Li ActiveHybrid 7L","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/22.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2507&city=","intro":"行政座驾 宝马旗舰 混合动力 前置后驱 豪华车驾控首选","n_price":"137.88","o_price":"229.8","sold":"0"},
+
+{"name":"宝马740Li Sedan Vantage","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/24.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2509&city=","intro":"BMW旗舰车型 哈瓦那灰/威尼托米 外观休闲大气 内饰温馨","n_price":"85.82","o_price":"122.6","sold":"1"},
+
+{"name":"凯迪拉克ATS领先型","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/25.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=481&city=","intro":"百公里加速6.2秒 MRC电磁感应悬挂 ESS安全强化策略","n_price":"38","o_price":"43.8","sold":"0"},
+
+{"name":"奥迪A8L 3.0T高功率豪华型","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/27.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2503&city=","intro":"豪华躺椅 8速变速器 全新轻量化科技 多媒体信息交互系统","n_price":"96.39","o_price":"137.7","sold":"1"},
+
+{"name":"GMC 2500经典款(灰)","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/28.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2493&city=","intro":"豪华商务房车 吧台隔断 24吋液晶电视 多功能按摩座椅","n_price":"66","o_price":"98","sold":"0"},
+
+{"name":"玛莎拉蒂 总裁V6","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/29.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2487&city=","intro":"3.0升V6双涡轮增压直喷发动机 意大利皇家定制座椅沙发","n_price":"127.15","o_price":"142.15","sold":"1"},
+
+{"name":"玛莎拉蒂Ghibli","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/30.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2481&city=","intro":"3.0升V6双涡轮增压直喷发动机 最大功率330hp 最大扭矩500Nm","n_price":"93.01","o_price":"95.01","sold":"1"},
+
+{"name":"MINI ONE COUNTRYMAN","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/6.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=842&city=","intro":"MINI首款SUV MINI家族设计 个性米奇中控","n_price":"21.75","o_price":"25.9","sold":"1"},
+
+{"name":"宝马120i Coupe Advantage","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/14.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2495&city=","intro":"coupe轿跑 动感时尚 无框门设计 两门四座 前置后驱","n_price":"21.52","o_price":"33.1","sold":"1"},
+
+{"name":"宝马325I COPE","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/23.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=2527&city=","intro":"coupe轿跑 动感时尚 两门四座 前置后驱 内饰全套M改装","n_price":"40.25","o_price":"57.5","sold":"1"},
+
+{"name":"奥迪A6 2.8四驱豪华型","src":"http://img.autostreetscdn.com/activity/build/1.00/images/off/26.png","url":"http://www.autostreets.com/replacement/toNewVehicleDetail?modelSid=608&city=","intro":"全时四驱 BOSE音响 记忆通风座椅","n_price":"34.86","o_price":"66.96","sold":"1"}
+]);

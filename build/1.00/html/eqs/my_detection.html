@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>eqs-我的检测</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs_k.css" type="text/css">
+</head>
+<body>
+<header>
+    <div>
+        我的检测
+        <a href="" id="userCenter"></a>
+        <a href="###" class="search_light" id="search_light"></a>
+    </div>
+</header>
+<nav id="top_filter_wrap">
+        <div class="top_filter">
+            <span data-code="1" id="filter1"><a href="javascript:void(0)">审核通过</a></span>
+            <span data-code="2" id="filter2"><a href="javascript:void(0)">审核失败</a></span>
+            <span data-code="0" id="filter0"><a href="javascript:void(0)">待审核</a></span>
+            <span data-code="99" id="filter99" class="curr"><a href="javascript:void(0)">未上传</a></span>
+        </div>
+</nav>
+<div id="wrapper">
+    <div class="detection_list">
+        <ul class="item" id="detection_list_1"></ul>
+        <ul class="item" id="detection_list_2"></ul>
+        <ul class="item" id="detection_list_0"></ul>
+        <ul class="item" id="detection_list_99"></ul>
+
+        <!--<div class="no_result">
+            <div>
+                <p>很抱歉，没有符合条件的车辆</p>
+            </div>
+        </div>-->
+    </div>
+    <div class="searchWrap">
+        <ul class="item" id="detection_list_s"></ul>
+    </div>
+    <div class="sub_opt">
+        <a href="add_car.html" id="addCar">+新增车辆</a>
+    </div>
+</div>
+<div id="search">
+    <div class="search">
+        <a href="###" id="closeSearch"></a>
+        <div class="filter focus">
+            <form action="" id="search_form">
+                <!--<span class="select_wrap">
+                </span>-->
+                <select name="" id="filter_type">
+                    <option value="0">请选择</option>
+                    <option value="searchBrand">品牌</option>
+                    <option value="searchModel">型号</option>
+                    <option value="searchLicenseCode">车牌号</option>
+                    <option value="searchCode">车辆编号</option>
+                </select>
+                <input type="text"  autocomplete="off" id="searchIpt"/>
+                <a href="###" id="clean_search_word"></a>
+                <button type="submit" id="search_submit"/>提交</form>
+            </form>
+        </div>
+    </div>
+    <!--<div class="search_mask"></div>-->
+</div>
+<div class="loading"></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/eqs/eqs_k.js"></script>
+</html>

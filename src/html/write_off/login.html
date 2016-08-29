@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>汽车街核销后台登录-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/write_off.css" type="text/css">
+</head>
+<body>
+<div id="write_off_login">
+    <img class="login_img" src="http://img.autostreetscdn.com/m/src/images/logo_358_181.png" alt=""/>
+    <div class="login_wrap">
+        <ul>
+            <li class="user_name"><label for="user_name"><img src="http://img.autostreetscdn.com/m/src/images/write_off_user.png" alt=""/></label><input id="user_name" type="text"/></li>
+            <li class="psw"><label for="psw"><img src="http://img.autostreetscdn.com/m/src/images/write_off_psw.png" alt=""/></label><input id="psw" type="password"/></li>
+            <li class="login"><a class="login_btn disable">登录</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+<div class="error_layer">
+    <p class="error_txt"></p>
+    <a href="javascript:;" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/validate.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/write_off.js"></script>
+<script>
+    $(function () {
+       /* $(".login_btn").click(function () {
+            if (validate.input($("#user_name"), "请输入用户名") && validate.input($("#psw"), "请输入密码") ) {
+                $(".login_btn").removeClass("disable");
+            }
+        })*/
+        $('input').keyup(function () {
+            if($.trim($('#user_name').val())=="" || $.trim($('#psw').val())==""){
+                $(".login_btn").addClass("disable");
+            }else{
+                $(".login_btn").removeClass("disable");
+                /*这里继续验证用户名和密码是否正确*/
+
+            }
+        })
+    })
+</script>
+</html>

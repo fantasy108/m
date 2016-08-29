@@ -1,0 +1,6 @@
+/*
+ * Build by xuelei.kong@autostreets.com
+ * Date: 2016-04-07 10:30:42
+ * Version: 1.00
+ */
+$(function(){var i,s=localStorage.maintainitem;i=JSON.parse(s);var e="";$.each(i,function(i,s){e+='<li><i class="select"></i><p id="'+s.id+'">'+s.name+"</p>"}),$("#maintain_item").append(e);var t=request();packageList(t.orgSid),$(".form_order").find("a").click(function(){var i=[];$("#packageList ul li").each(function(){if($(this).find("i").hasClass("select")){var s={id:$(this).find("h4").attr("id"),name:$(this).find("h4").text(),old_price:$(this).find(".old").text(),new_price:$(this).find(".new").text()};i.push(s)}}),console.log(i),localStorage.packageitem=JSON.stringify(i);var s="http://wx.autostreets.com/html/shop_bm/bm_confirm.html?orgSid="+t.orgSid;require(["userUtils"],function(){userUtils.login(s)})}),$(".correct").click(function(){popdown()}),$(".remm_packageList").on("click","blockquote",function(){$(this).children("i").hasClass("unselect")?($(this).children("i").removeClass("unselect").addClass("select"),$(this).find("ins").removeClass("arrow-down").addClass("arrow-up"),$(this).siblings("section").show()):($(this).children("i").removeClass("select").addClass("unselect"),$(this).find("ins").removeClass("arrow-up").addClass("arrow-down"),$(this).siblings("section").hide())})});

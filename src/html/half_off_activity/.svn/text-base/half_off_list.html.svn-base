@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>五折豪车活动-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/half_off_activity.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+    </section>
+</header>
+<div id="half_off_list">
+    <div class="half_off_banner">
+        <img class="banner" src="http://img.autostreetscdn.com/m/src/images/ho_banner.png" alt=""/>
+        <img class="zh_logo" src="http://img.autostreetscdn.com/m/src/images/bank-2.png" alt=""/>
+        <div class="inner_text">
+            <h2>百辆特价车</h2>
+            <p>招行专享，低至6折起，99抵1000</p>
+            <a class="tel" href="tel:400-821-8889">400-821-8889</a>
+        </div>
+    </div>
+    <div class="desc">
+        <p>即日起参与汽车街“百辆特价车”活动，</p>
+        <p>在线订车可享99元抵1000元购车款。</p>
+        <p>此次活动提车限经销商所在地区，车源有限，欲购从速！</p>
+    </div>
+    <div class="half_off_bd">
+        <ul class="half_off_ul">
+            <!-- <li class="half_item_wrap">
+                 <a class="half_item" href="">
+                     <p class="img_wrap">
+                         <img src="http://img.autostreetscdn.com/m/src/images/car_248_136.png" alt=""/>
+                     </p>
+                     <div class="r_box">
+                         <strong class="discount">7折</strong>
+                         <p class="title">MINI COOPER ROADSTER 设计套装  2014款</p>
+                         <div class="price">
+                             <span class="curr_price">&yen;<span class="curr_price_num">30.64</span>万</span>
+                             <span class="origin_price">市场价：<span class="origin_price_num">37.6万</span></span>
+                         </div>
+                         <span class="location">上海</span>
+                     </div>
+                 </a>
+             </li>
+             <li class="half_item_wrap">
+                 <a class="half_item" href="">
+                     <p class="img_wrap">
+                         <img src="http://img.autostreetscdn.com/m/src/images/car_248_136.png" alt=""/>
+                     </p>
+                     <div class="r_box">
+                         <strong class="discount">7折</strong>
+                         <p class="title">MINI COOPER ROADSTER 设计套装  2014款</p>
+                         <div class="price">
+                             <span class="curr_price">&yen;<span class="curr_price_num">30.64</span>万</span>
+                             <span class="origin_price">市场价：<span class="origin_price_num">37.6万</span></span>
+                         </div>
+                         <span class="location">上海</span>
+                     </div>
+                 </a>
+             </li>
+             <li class="half_item_wrap">
+                 <a class="half_item" href="">
+                     <p class="img_wrap">
+                         <img src="http://img.autostreetscdn.com/m/src/images/car_248_136.png" alt=""/>
+                     </p>
+                     <div class="r_box">
+                         <strong class="discount">7折</strong>
+                         <p class="title">MINI COOPER ROADSTER 设计套装  2014款</p>
+                         <div class="price">
+                             <span class="curr_price">&yen;<span class="curr_price_num">30.64</span>万</span>
+                             <span class="origin_price">市场价：<span class="origin_price_num">37.6万</span></span>
+                         </div>
+                         <span class="location">上海</span>
+                     </div>
+                 </a>
+             </li>-->
+        </ul>
+        <a href="javascript:void(0)" class="load_others">换一批看看</a>
+    </div>
+</div>
+</body>
+<div class="loading" id="loading" style="display: none;"></div>
+<div class="ui_mask"></div>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/half_off_activity.js"></script>
+</html>

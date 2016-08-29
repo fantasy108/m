@@ -1,0 +1,1751 @@
+@charset "utf-8";
+@import "scss_common";
+@import "bm_common.css";
+body{
+  background:#f3f3f3; font-size:j(24); font-family:"Microsoft Yahei";
+}
+.bgWhite,.bm_img {
+  background:#fff;
+}
+
+@mixin bgf3{
+  background-color:#f3f3f3;
+}
+.bm_sdg{
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_sdy.png) no-repeat;
+ @include bs(129,66);@include wh(129,66);
+  position:fixed;
+  right:0; top:50%;
+
+} 
+.top_tip{
+  @extend %b_b_3c;
+  @include bgf3;
+  height:j(80); line-height:j(80);
+  padding:0 j(20);
+  .top_tip_l{
+    width:70%;
+    @at-root .top_tip_l_icon{
+      width:j(32);
+      height:j(32);
+      position:relative;
+      top:j(6);
+      margin-right:j(5);
+    }
+  }
+  .edit_car{
+    text-align:right; display:block; color:#666;
+    .w_9_arr{
+      border-color:#666; margin-left:j(4);
+      position:relative; top:j(-2);
+    }
+  }
+}
+
+
+
+.great_set_meal{
+  color:#666;
+  @at-root .bm_hd{
+    font-weight:normal;
+    height:j(43);
+    line-height:j(43);
+    padding-left:j(13);
+    @extend %b_b_3c;
+  }
+  @at-root .bm_bd{
+    padding-left:j(30);
+    background:#fff;
+  }
+
+  .bm_bd{
+    .flex_box{
+      position:relative;
+    }
+    @at-root .great_set_meal_r{
+      color:#666;
+      @extend %flex;
+      .title{
+        font-size:j(28); line-height:j(34); color:#000;
+        margin-bottom:j(10);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .address{
+        line-height:j(27); font-size:j(22); color:#545454;
+      }
+
+      .price{
+        position:absolute; left:j(180); bottom:0; line-height:j(30);
+        .curr_price{
+          font-size:j(30); color:#f63;
+        }
+        .origin_price{
+          text-decoration:line-through; font-size:j(22); margin-left:j(5);
+        }
+      }
+
+      .distance{
+        position:absolute; right:j(5); bottom:0;
+      }
+    }
+    ul{
+      li{
+        @extend %b_b_3c; height:j(120); overflow:hidden;
+        padding:j(30) j(30) j(30) 0;
+      }
+      >:last-child{
+        //background:#ddd;
+        border-bottom:none;
+      }
+    }
+    .img_wrap{
+      @include wh(160, 120);
+      margin-right:j(20);
+      @include placeholderBg($package, 75%)
+    }
+
+  }
+  #package{
+    .no_result{
+      .no_result_pic{
+        @include wh(118,88);
+        background-image:url($package);
+      }
+    }
+  }
+}
+
+.distance{
+  font-size:j(20);
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_location.png) no-repeat left top;
+  background-size:j(20) j(30);
+  height:j(30); padding-left:j(30);
+  span{
+    position:relative; top:j(8);
+  }
+}
+
+.coupon_pop_wrap{
+  @extend %box_alignCenter;
+}
+
+.coupon_pop{
+  font-size:j(24);
+  width:j(580);
+  text-align:center;
+  color:#fff;
+  .coupon_pop_content{
+    @include bxs(0, 0, 30, 3, #666);
+    background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_coupon_bg.png) no-repeat;
+    background-size:contain;
+    width:j(580); height:j(310);
+  }
+  .coupon_title{
+    padding-top:j(30); margin-bottom:j(40);
+    font-size:j(40); line-height:j(50);
+  }
+  .coupon_msg{
+    font-size:j(36); line-height:j(45);
+  }
+
+  .valid_time{
+    margin:j(20) 0 j(30) 0;
+  }
+  .notice_txt{
+    color:rgba(255, 255, 255, .5);
+  }
+
+  .confirm_btn{
+    width:j(300); height:j(80); -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    background:#ffde59; border:j(3) solid #f6b54d; display:block; line-height:j(80);
+    margin:j(40) auto 0;
+    -webkit-border-radius:j(50); -moz-border-radius:j(50); border-radius:j(50);
+    cursor:pointer; font-size:j(36); color:#744100;
+  }
+
+}
+
+#bm_package{
+}
+
+
+
+
+/*选择车型*/
+#bm_complete_car{
+}
+
+.complete_car_hd{
+  background-color:#778C93; font-size:j(26); color:#fff; text-align:center;
+  height:j(60); line-height:j(60);
+}
+
+.complete_car_bd{
+  position:absolute;
+  bottom:0;
+  right:0;
+  left:0;
+  top:j(88); 
+}
+
+#brand_list{
+  width:100%; height:100%; overflow:hidden;
+}
+
+#brand_list dt{ height:0.3374rem; width:100%; background:#f3f3f3; border-bottom:solid 1px #ddd; color:#999; font:bold 0.1799rem/0.3374rem "Arial"; text-indent:.1687rem; }
+
+#brand_list dd{ padding:0 0 0 0.1125rem; border-bottom:solid 1px #ddd; width:100%; background:#fff; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+
+#brand_list dd ul li{
+  border-bottom:solid 1px #ddd; margin-bottom:-1px; cursor:pointer;width: 100%;  height: .6750rem;
+  @extend %flex_box;
+  @extend %item_alignCenter;
+  .img_wrap{
+    @include wh(56, 56);
+    @include placeholderBg($car,100%);
+    margin-right:j(30);
+  }
+  p{
+    @extend %flex;
+  }
+}
+
+#brand_list dd a{ display:block; }
+
+#brand_list dd img{
+  background: #fff;
+}
+
+#brand_list dd p{ font:0.1799rem/.6750rem "Microsoft Yahei"; color:#000; }
+.series_list{
+  position:absolute;
+  background:#fff;
+  //box-shadow:0 0 0.1124rem #ccc;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  z-index:98;
+  // -webkit-transition:all .3s ease-out;
+  // -moz-transition:all .3s ease-out;
+  // -ms-transition:all .3s ease-out;
+  // -o-transition:all .3s ease-out;
+  // transition:all .3s ease-out;
+  // -webkit-transform:translateX(100%); -moz-transform:translateX(100%); -ms-transform:translateX(100%); -o-transform:translateX(100%); transform:translateX(100%);
+  .iScroll_series_list{ background:#fff;}
+}
+
+.series_list.show{
+  -webkit-transform:translateX(0); -moz-transform:translateX(0); -ms-transform:translateX(0); -o-transform:translateX(0); transform:translateX(0);
+}
+ 
+.iScroll_brand_list{
+  -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+}
+
+.series_list li{ border-bottom:solid 1px #ddd; height:j(140);
+  padding:j(10) 0 j(10) j(30);}
+
+.series_list li a{ width:100%; @extend %flex_box; }
+
+.series_list li h3{ font-size:j(30); font-weight:normal; line-height:j(140); @extend %flex; word-break:normal; white-space:nowrap; }
+
+.iScroll_series_list{
+  .img_wrap{
+    @include wh(210, 140);
+    @include placeholderBg($car, 66.6666%);
+    margin-right:j(20);
+  }
+  h2{ color:#999; font-size:0.1799rem; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; z-index:9; padding-left:0.09rem; height:0.3544rem; line-height:0.3544rem; background:#f3f3f3; }
+  .hd_wrap{height: .3544rem;  line-height: .3544rem;  background: #f3f3f3;}
+}
+.img_wrap{
+  @extend %imgWrap;
+}
+.letter_index{
+  position:absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  width:j(70);
+}
+.letter_index a{
+  display:block;
+  color:#999;
+  width:100%;
+  font-size:.1349rem;
+  //height:4.7%;
+  @extend %flex;
+  text-align:center;
+  font-family:"Microsoft YaHei";
+}
+
+/*选择车型列表*/
+#bm_complete_car_list{
+}
+
+#complete_car_list{ background:#fff; }
+#complete_car_list .hd_wrap{height: .3544rem;  line-height: .3544rem;  background: #f3f3f3;}
+#complete_car_list .hd{ color:#999; font-size:0.1799rem; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; z-index:9; padding-left:0.09rem; height:0.3544rem; line-height:0.3544rem; background:#f3f3f3; }
+
+#complete_car_list ul{ border-bottom:1px solid #ddd; }
+
+#complete_car_list ul li{
+  height:j(123); padding:j(20) 0 j(20) j(30); border-top:1px solid #ddd; background:#fff;
+}
+
+#complete_car_list ul li{
+  a{
+    @extend %flex_box;
+  }
+  .img_wrap{
+    @include wh(184, 123);
+    @include placeholderBg($car, 66.6666%);
+    margin-right:j(25);
+  }
+  h3{
+    font-size:j(30); font-weight:normal; line-height:j(123); @extend %flex; word-break:normal; white-space:nowrap;
+    @extend %flex; overflow:hidden;
+  }
+}
+
+/*我的爱车*/
+#my_car{
+}
+
+.my_car_hd{
+  background:#fff; padding:j(30) j(10) j(30) j(20); font-size:j(28); color:#333;
+  @extend %flex_box;
+  @extend %item_alignCenter;
+  margin-bottom:j(20);
+  border-bottom:1px solid #ddd;
+  .img_wrap{
+    @include wh(80,80);
+    @include placeholderBg($car,100%);
+    margin-right:j(10);
+    &:after{
+      -webkit-border-radius:j(40); -moz-border-radius:j(40); border-radius:j(40);
+    }
+    img{
+      background-color:#fff;
+    }
+  }
+}
+
+.my_car_logo{
+  width:j(80); height:j(80);
+}
+
+.my_car_title{
+  @extend %flex_box;
+  -webkit-align-items:center;
+  align-items:center;
+  @extend %flex;
+  margin-left:j(5);
+}
+
+.my_car_bd{
+  font-size:j(32);
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  background:#fff;
+  li{
+    @extend %flex_box;
+    @extend %item_alignCenter;
+    margin-left:j(20); height:j(90); line-height:j(90); margin-bottom:-1px;
+    p{
+      @extend %flex;
+      color:#999; position:relative;
+      margin-right:j(20);
+      -webkit-align-items:center;
+      align-items:center;
+      span{
+        text-align:right; display:inline-block;width:20%;
+      }
+    }
+    >span{
+      width:40%;
+    }
+    input{
+      width:80%; height:j(50); font-size:j(32); color:#000; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+      padding-left:j(30);
+    }
+    #drive_date_android{
+      width:80%; height:j(50); font-size:j(32); color:#000; display:inline-block;
+    }
+    .w_9_arr{
+      margin-right:j(15);
+    }
+  }
+
+
+
+}
+
+#edit_my_car{
+}
+
+.my_car_list{
+  ul{ padding-bottom:j(150);}
+  .my_car{
+    background:#fff;
+    margin-bottom:j(20);
+    border:1px solid #ddd;
+    border-left:none;
+    border-right:none;
+    font-size:j(26);
+    -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+    opacity:1;
+  }
+  .delete_my_car{
+    opacity:0;
+  }
+  .my_car_desc{
+    margin-left:j(20);
+    padding:j(30) 0;
+    @extend %flex_box;
+    border-bottom:1px solid #ddd;
+    .img_wrap{
+      @include wh(80,80);
+      @include placeholderBg($car,100%);
+      &:after{
+        -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+      }
+    }
+    .my_car_logo{
+        width:j(80);
+        height:j(80);
+    }
+    .car_info{
+      @extend %flex; margin-left:j(30); background-color:#fff; height:auto; padding:0;
+    }
+    .car_title{
+      display:block; margin:j(5) 0;
+    }
+    .car_dis{
+      color:#999;
+    }
+  }
+  .my_car_opt{
+    margin-left:j(20);
+    line-height:j(71); font-size:j(22); color:#666;
+    @extend %flex_box;
+    .set_default{
+      width:25%; cursor:pointer; display:block; height:j(71);
+    }
+    p{
+      @extend %flex; text-align:right; padding-right:j(20);
+    }
+
+    .module_radio{
+      padding-left:j(44);
+    }
+    .edit_icon{
+      display:inline-block; height:j(71);
+      padding-left:j(35); color:#666; margin-left:j(40);
+    }
+    .delete_icon{
+      display:inline-block; height:j(71);
+      padding-left:j(35); color:#666; margin-left:j(40);
+    }
+  }
+  .no_car{
+    margin-top:j(50);
+    text-align:center;
+    img{
+      @include wh(100,100)
+    }
+    p{ font-size:j(28); color:#999; margin-top:j(50);}
+  }
+  .no_result{
+    //background:#fff;
+    color:#999;
+    .no_result_pic{
+      @include wh(100,100);
+      background-image:url($fxp);
+
+    }
+  }
+}
+
+.module_radio{
+  background:url(http://img.autostreetscdn.com/m/src/images/s_bf.png) left center no-repeat;
+  background-size:j(32) j(32);
+}
+
+.radio_checked{
+  background-image:url(http://img.autostreetscdn.com/m/src/images/success.png);
+}
+
+.edit_icon{
+  background:url(http://img.autostreetscdn.com/m/src/images/edit_icon.png) left center no-repeat;
+  background-size:j(24) j(24);
+}
+
+.delete_icon{
+  background:url(http://img.autostreetscdn.com/m/src/images/delete_icon.png) left center no-repeat;
+  background-size:j(26) j(27);
+}
+
+.add_new_car{
+  display:block; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;  height:j(84); border:1px solid #ddd;
+  -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+  line-height:j(84); color:#f47410; text-align:center; background-color:#fff; position:fixed; bottom:j(20); left:j(20); right:j(20);
+}
+.add_new_car.disable {
+  background: #ccc;
+  color: #fff;
+  border-color: #ccc;
+}
+.set_default_success{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:999;
+  width:100%;
+  height:100%;
+  @extend %box_alignCenter;
+  .success_pop{
+    background:rgba(000, 000, 000, .75); width:j(350); height:j(160);
+    text-align:center;
+    -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+    font-size:j(30); color:#fff;
+    .pop_icon{
+      width:j(50); height:j(50);
+      margin-top:j(30); margin-bottom:j(10);
+      background-size:100% 100%;
+      background-repeat:no-repeat;
+      display:inline-block;
+      font-size:0;
+    }
+  }
+  .correct_icon{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_correct_icon.png);
+  }
+  .warning_icon{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_warning.png);
+  }
+  .smile_icon{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_smile.png);
+  }
+
+}
+
+.error_layer .error_txt{
+  border-bottom:1px solid #ccc;
+}
+
+.opt_btn{
+  @extend %flex_box;
+  .btn{
+    color:#2081F7; font-size:j(35);
+    font-weight:normal;
+    line-height:0.4499rem;
+    text-align:center;
+    @extend %flex;
+    display:block;
+    &:nth-child(1){
+      border-right:1px solid #ccc;
+    }
+  }
+}
+
+/*套餐详情*/
+#bm_package_detail{
+  >:first-child{
+    @extend %item_alignCenter;
+  }
+  color:#666;
+  font-size:j(24);
+  padding-bottom:j(150);
+  .unit_box{
+    @extend %flex_box;
+  }
+  h2{
+    padding-left:j(28);
+    font-weight:normal;
+    height:j(62); line-height:j(62);
+  }
+
+  .img_wrap{
+    @include wh(160,120);
+    @include placeholderBg($package,75%);
+    margin-right:j(25);
+  }
+  .shop_info{
+    .img_wrap{
+      @include wh(42, 42);
+      margin-right:j(20);
+      @include placeholderBg($car, 100%);
+      &:after{
+        -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+      }
+    }
+  }
+  .package_desc{
+    color:#535353;
+    @extend %flex;
+    .title{
+      font-size:j(28); color:#000; line-height:j(34); margin-bottom:j(8);
+    }
+
+    .cars{
+      margin-top:j(8);
+    }
+  }
+}
+.match_carType{
+  span{
+    margin-right:j(20);
+  }
+}
+.shop_info{
+  position:relative; display:block; color:#666;
+ @extend %flex;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  //border-right:1px dashed #ddd;
+  line-height:j(30);
+  h3{
+    @extend %flex_box;
+    font-weight:normal;
+    color:#000;
+    font-size:j(32);
+    line-height:j(42);
+    height:j(42);
+      .img_wrap{
+        @include wh(42, 42);
+        margin-right:j(20);
+        @include placeholderBg($car, 100%);
+        img{
+          -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+        }
+        &:after{
+          -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+        }
+      }
+    span{
+      @extend %flex;
+    }
+  }
+  .car_logo{
+    @include wh(42,42); vertical-align:middle; margin-right:j(15); display:block; float:left;
+  }
+  p{
+    margin-top:j(20);
+    color:#666;
+  }
+  //.w_9_arr{
+  //  position:absolute;
+  //  right:j(20);
+  //  top:50%;
+  //  margin-top:j(-9);
+  //  color:#ccc;
+  //}
+  .store_addr.map_icon{
+    @include bs(20,27);
+     padding-left:j(30); margin-bottom:j(20);
+  }
+}
+
+.shop_opt{
+  @extend %flex_box;
+  padding-right:j(28);
+  a{
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    border:1px solid #C2C6CB; display:block;
+    -webkit-border-radius:j(5); -moz-border-radius:j(5); border-radius:j(5);
+    color:#666;
+    @extend %flex;
+    height:j(52); line-height:j(52);
+    text-align:center;
+    background-position:15% center;
+    span{
+      padding-left:20%;
+    }
+  }
+  .tel_icon{background-size:j(24) j(24);}
+  .home_icon{background-size:j(27) j(25);}
+  .map_icon{background-size:j(20) j(27);}
+  :nth-child(2){
+    margin:0 j(15);
+  }
+}
+.shop_tel{
+  display:block;
+  @include wh(178,176);
+  @extend %flex;
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_phone_96_96.png) no-repeat center center;;
+  background-size:j(48) j(48);
+}
+
+.bm_content{
+  margin-bottom:j(20);
+}
+
+.bm_time{
+  @extend %item_alignCenter;
+}
+
+.during_text{
+  @extend %flex;
+  font-size:j(32); color:#000;
+}
+
+.during_time{
+  width:60%;
+  text-align:right;
+  color:#525252;
+  padding-right:j(20);
+}
+
+.package_desc_text{
+  padding-right:j(30); line-height:j(38); color:#535353;
+}
+
+.package_sub{
+  position:fixed;
+  bottom:0; left:0;
+  width:100%;
+  background:#fff;
+  @extend %item_alignCenter;
+  border-top:1px solid #ddd;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  padding:0 j(34) 0 j(30);
+  .curr_price{ font-size:j(30); color:#FF6633; margin-right:j(5); }
+  .origin_price{ font-size:j(20); color:#666; }
+  p{
+    width:70%;
+  }
+  .yellow_btn{
+    @extend %flex;
+    background:#FF8000;
+    text-align:center;
+    color:#fff;
+    font-size:j(32);
+    -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+    line-height:j(88);
+    margin:j(20) 0;
+    display:block;
+  }
+}
+
+.unit_box{
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  background-color:#fff;
+  padding:j(28) 0 j(28) j(28);
+  color:#535353;
+}
+
+/*我的优惠券*/
+#bm_my_coupon{
+  //padding-top:j(25);
+  //max-width:j(580);
+  //margin:0 auto;
+}
+
+.bm_tab{
+  @extend %flex_box;
+  height:j(88); background-color:#fff;
+  line-height:j(88);
+  border-bottom:1px solid #ddd;
+
+  a{
+    color:#333; font-size:j(28);
+    display:block;
+    text-align:center;
+    @extend %item_alignCenter;
+    @extend %flex;
+    span{
+      width:j(88);
+      height:j(88);
+      display:block;
+      margin:0 auto;
+      -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    }
+  }
+  > .curr{
+    color:#85860C;
+    span{
+      border-bottom:3px solid #85880C;
+    }
+  }
+}
+
+.coupon_list{
+  padding:j(25) j(30);
+  .coupon{
+    margin-bottom:j(40);
+    width:100%;
+    height:j(234);
+    text-align:center;
+    color:#fff;
+    background-repeat:no-repeat;
+    position:relative;
+    background-size:100% 100%;
+    h2{
+      font-weight:normal; font-size:j(32);
+      padding-top:j(24); margin-bottom:j(10);
+    }
+    .status, .coupon_value{
+      position:absolute;
+    }
+    .status{
+      right:j(20); top:j(20);
+    }
+    .coupon_value{
+      right:j(20); bottom:j(30);
+      span{
+        font-size:j(50); margin-left:j(10);
+      }
+
+    }
+    @include bxs(0, 10, 20, 0, rgba(000, 000, 000, .1));
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_coupon_150_bg.png);
+  }
+  /*.coupon_200{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_coupon_200_bg.png);
+  }
+  .coupon_150{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_coupon_150_bg.png);
+  }
+  .coupon_100{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_coupon_100_bg.png);
+  }*/
+
+ .coupon_disable{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_coupon_used.png);
+  }
+  //.no_coupon{
+  //  padding-top:j(100);
+  //  text-align:center;
+  //  img{
+  //    width:j(486); height:j(234); margin:0 auto;
+  //  }
+  //  p{ font-size:j(32); color:#000; margin:j(50) 0 j(10) 0; }
+  //  span{ font-size:j(26); color:#999; }
+  //}
+  .no_result{
+    .no_result_pic{
+      @include wh(486,234);
+      background-image:url($coupon);
+
+    }
+  }
+}
+
+
+/*靠谱门店*/
+#bm_shop_list{
+  background: #f3f3f3;
+}
+
+.bm_shop_list{
+
+  .link{
+    display:block;
+    p{
+      color:#545454;
+    }
+  }
+  .no_result{
+    background:#fff;
+    .no_result_pic{
+      @include wh(100,95);
+      background-image:url($shop);
+
+    }
+  }
+}
+
+.bm_shop{
+  margin-top:-1px;
+  background-color:#fff;
+  padding-left:j(26);
+  border-bottom:1px solid #ddd; margin-bottom:j(21);
+  border-top:1px solid #ddd;
+  h3{
+    font-weight:normal;
+    color:#000;
+    font-size:j(28);
+    line-height:j(34);
+  }
+  .brandLogo{
+    @include wh(42,42); vertical-align:middle; margin-right:j(15);
+  }
+}
+
+.bm_shop_hd{
+  @extend %flex_box;
+  position:relative;
+  padding:j(20) 0 j(20) 0;
+
+  .img_wrap{
+    margin-right:j(20);
+    @include wh(160, 120);
+    @include placeholderBg($shop, 75%);
+
+  }
+  .bm_shop_r{
+    @extend %flex;
+    .special{
+      background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/special.png) no-repeat left center;
+      background-size:j(30) j(30);
+      padding-left:j(42);
+    }
+  }
+
+  @at-root .stars{
+    .level, .level i{
+      background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_star_blank.png) no-repeat left center;
+      background-size:j(20) j(21);
+      float:left; margin-right:j(7);
+      width:j(20); height:j(21);
+      position:relative;
+
+      i{
+        float:none; margin:0;
+        position:absolute;
+        left:0; top:0;
+        background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_star_fill.png);
+        width:0%;
+      }
+      .full{
+        width:100%;
+      }
+    }
+
+    margin:j(18) 0;
+    overflow:hidden;
+  }
+  .location{
+    clear:both;
+    color:#545454;
+  }
+  .distance{
+    position:absolute;
+    right:j(30);
+    top:j(20);
+    color:#666;
+    //display:none;
+
+  }
+}
+
+.bm_shop_bd{
+  li{
+    border-top:1px solid #ddd;
+    padding:j(20) 0;
+    position:relative; color:#666;
+    h3{
+      font-size:j(32); line-height:j(40); color:#000;
+      margin-bottom:j(5);
+    }
+    .fee{
+      position:absolute;
+      bottom:j(20); right:j(30);
+      font-size:j(26); color:#FF6633;
+      span{
+        font-size:j(30); margin-left:j(4);
+      }
+    }
+  }
+}
+
+/*门店详情*/
+#bm_shop_detail{
+  padding-bottom:j(100);
+  .bm_shop_hd{
+    padding:j(30) 0 j(30) j(20); background-color:#fff;
+    border-bottom:1px solid #ddd;
+  }
+  h2{
+    font-weight:normal;
+    font-size:j(24); color:#666;
+    padding-left:j(25);
+    height:j(50); line-height:j(50);
+    margin-bottom:j(-20);
+  }
+}
+
+.bm_shop_box{
+  background-color:#fff;
+  border-bottom:1px solid #ddd;
+  border-top:1px solid #ddd;
+  margin-top:j(20);
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  .location, .tel{
+    color:#000;
+    font-size:j(32);
+    @extend %item_alignCenter;
+    padding-left:j(25); line-height:j(100);
+    height:j(100);
+    p{
+      @extend %flex;
+      padding-left:j(40);
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .w_9_arr{
+      margin-right:j(30);
+      color: #ccc;
+    }
+  }
+  .tel_icon{
+    background-size:j(24) j(23);
+    background-position:j(25) center;
+  }
+  .map_icon{
+    background-size:j(20) j(27);
+    background-position:j(25) center;
+  }
+
+
+  #service_list{
+    overflow:hidden;
+    position:relative;
+  }
+  .service_list{
+    //@extend %flex_box;
+    padding:j(25) 0;
+    overflow:hidden;
+    span{
+      //@extend %flex;
+      //width:j(212);
+      float:left;
+      text-align:center;
+      //@extend %item_alignCenter;
+      //margin-left:j(-20);
+
+      img{
+        width:j(30); height:j(30);
+        margin-right:j(5);
+        position:relative; top:j(6);
+
+      }
+    }
+    > span:nth-child(2){
+      //margin-left:j(-50);
+    }
+    > span:nth-child(3){
+      //margin-left:j(-40);
+    }
+
+  }
+  .package_list{
+    .package{
+      margin-left:j(25);
+      border-bottom:1px solid #ddd;
+      -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+      background-color:#fff;
+    }
+    > :last-child{
+      border-bottom:none;
+    }
+    .package_link{
+      @extend %flex_box; color:#535353;
+      @extend %item_alignCenter;
+      padding:j(20) 0;
+      .package_l{
+        @extend %flex;
+        h3{
+          font-size:j(32); color:#000; margin-bottom:j(10);
+          font-weight:normal;
+        }
+
+      }
+      .package_r{
+        @extend %flex_box;
+        @extend %item_alignCenter;
+        text-align:right;
+        margin-right:j(25);
+        .curr_price{
+          font-size:j(26);
+          color:#FF6633;
+          span{
+            font-size:j(30);
+          }
+        }
+        .origin_price{
+          color:#666; margin-left:j(20);
+        }
+      }
+    }
+  }
+
+}
+.main_brand{
+  line-height:j(80); height:j(80); padding:0 j(25);
+}
+.shop_description{
+  padding:j(15) j(25);
+}
+.view_more{
+  display:none;
+  background-color:#fff;
+  border-bottom:1px solid #ddd;
+  text-align:center;
+  font-size:j(28); color:#333;
+  height:j(78);
+  line-height:j(78);
+}
+#adviser_list{
+  overflow:hidden;
+  width:100%;
+  position:relative;
+}
+.adviser_list{
+  //@extend %flex_box;
+  overflow:hidden;
+  padding:j(35) 0 j(20) 0;
+}
+
+.adviser{
+  //width:j(212);
+  float:left;
+  //@extend %flex;
+  text-align:center;
+  .adviser_link{
+    display:block;
+    .img_wrap{
+      @include wh(100, 100);
+      margin:0 auto;
+      @include placeholderBg($adviser,100%);
+    }
+    .adviser_name{
+      margin-top:j(15);
+    }
+  }
+  .bm_img{ -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;}
+  .stars{
+    @extend %item_alignCenter;
+  }
+}
+
+/*我的预约订单*/
+#bm_my_order_list{
+}
+
+.brd_box{
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  background-color:#fff; overflow:hidden;
+}
+
+#bm_my_order_list{
+  .brd_box{
+    padding:0 j(30) 0 j(30);
+    margin-top:j(20);
+  }
+  >:first-child{
+    margin-top:0;
+  }
+
+  @at-root .order_info{
+    @extend %flex_box;
+    padding:j(30) 0;
+    .order_detail_link{
+      @extend %flex_box;
+      @extend %flex;
+
+    }
+    .img_wrap{
+      @include wh(120, 120);
+      margin-right:j(20);
+      @include placeholderBg($package, 100%);
+    }
+
+    .r{
+      @extend %flex;
+    }
+
+    h3{
+      white-space:nowrap;
+      word-break:normal;
+    }
+
+    .r_sub{
+      margin-top:j(18);
+    }
+
+    .status{
+      color:#FF5000;
+    }
+
+    .fee{
+      float:right; color:#333;
+    }
+  }
+
+  .order_opt{
+    border-top:1px solid #ddd;
+    padding:j(20) 0;
+    text-align:right;
+    font-size:j(0);
+  }
+
+}
+
+.order_btn{
+  height:j(52); text-align:center; color:#666;
+  -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10); line-height:j(48); -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  border:2px solid #5f646e; display:inline-block;
+  font-size:j(24);
+  margin-left:j(15);
+}
+
+.grey_order_btn{
+  width:j(142);
+}
+
+.grey_order_short_btn{
+  width:j(114);
+}
+
+.blue_order_btn{
+  border-color:#0074E1;
+  color:#0074E1;
+  width:j(114);
+}
+
+.orange_order_long_btn{
+  display:block;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  height:j(84); line-height:j(84);
+  margin:j(30) j(20) 0;
+  font-size:j(42); text-align:center; color:#fff;
+  -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+  background:#0074e1;
+  //border-bottom:2px solid #EB6D06;
+}
+
+
+.white_long_btn{
+  background-color:#fff; border:1px solid #ddd;
+  display:block;
+  margin:j(30) j(20);
+  @include orangeTxt;
+  height:j(84); line-height:j(82);
+}
+
+.comment_btn{
+  color:#666;
+  border-color:#5f646e;
+}
+
+/*订单详情*/
+
+#bm_my_order_detail{
+  padding-bottom:j(150);
+  .unit_box{
+    margin-bottom:j(20);
+  }
+  .brd_box{
+    padding:0 j(20); margin-bottom:j(20);
+    .field{ color:#999; width:40%; font-size:j(26);}
+    .r_val{ @extend %flex;text-align:right;}
+  }
+  .time_adviser{
+    padding:j(25) 0;
+    @extend %flex_box;
+    .time_adviser_l{
+      @extend %flex;
+      >div{
+        @extend %flex_box;
+      }
+      .field{
+       width:auto;
+      }
+      border-right:1px dashed #ddd;
+      padding-right:j(30);
+    }
+    .adviser_tel{
+      display:block; width:25%;
+      margin-right:j(-20);
+    }
+    .bm_time{
+      margin-bottom:j(30);
+    }
+    .adviser_tel{
+      background:url(http://img.autostreetscdn.com/m/src/images/phone_blue_48_48.png) no-repeat center center;
+      @include bs(48,48);
+    }
+    .r_val{
+      span{
+        margin-left:j(25);
+      }
+      .discount{
+        margin-right:j(25);
+        background:#F47410;@include wh(77,37);text-align:center; color:#fff; display:inline-block; vertical-align:middle; font-style:normal;
+
+      }
+
+    }
+
+
+  }
+
+.name_mobile{
+  padding:j(10) 0;
+  line-height:j(81);
+  .name_icon{    @include bs(42,42);  }
+  .mobile_icon{    @include bs(26,46);  }
+  .name,{ padding-left:j(69); width:30%; border-right:1px dashed #ddd;}
+  .mobile{ padding-left:j(60); display:block; margin-left:j(66);@extend %flex;}
+  .name,.mobile{ background-position:left center;}
+
+}
+  .bm_car{
+    height:j(100); line-height:j(100);
+
+  }
+  .order_desc{
+    >div{
+      line-height:j(88); height:j(88);
+    }
+  }
+  .order_num{ border-bottom:1px solid #ddd; /*padding:0 1000px;margin:0 -1000px;*/}
+  .order_time{}
+    .order_desc{
+      li{
+        @extend %flex_box;
+        -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+        height:j(88); line-height:j(88);
+        padding-right:j(30);
+        border-top:1px solid #ddd;
+        span{
+          width:30%; color:#999; font-size:j(28);
+        }
+        P{
+          @extend %flex; text-align:right;
+        }
+      }
+    }
+  .order_opt{
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    position:fixed;
+    bottom:0; left:0; width:100%; text-align:right; padding:j(20) j(20) j(20) 0; font-size:0; background-color:#fff;
+    border-top:2px solid #ddd;
+    .order_btn{
+      width:j(200); height:j(86); line-height:j(82);
+    }
+  }
+
+  }
+.order_detail{
+  margin-bottom:j(20);
+  .order_item_hd{
+    padding-left:j(20); color:#666; line-height:j(62); display:block; border-bottom:1px solid #ddd;
+    position:relative;
+    .w_9_arr{
+      position:absolute; right:j(20);top:50%; margin-top:j(-9);
+      @include rotate(45); border-color:#959595;
+      -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+      -webkit-transform-origin:50% 50%; -moz-transform-origin:50% 50%; -ms-transform-origin:50% 50%; -o-transform-origin:50% 50%; transform-origin:50% 50%;
+    }
+    .toggle_arr{
+      -webkit-transform:rotate(225deg); -moz-transform:rotate(225deg); -ms-transform:rotate(225deg); -o-transform:rotate(225deg); transform:rotate(225deg);
+    }
+  }
+.order_item_bd{
+  -webkit-transition:height .3s cubic-bezier(0.01, 1.24, 1, 1); -moz-transition:height .3s cubic-bezier(0.01, 1.24, 1, 1); -ms-transition:height .3s cubic-bezier(0.01, 1.24, 1, 1); -o-transition:height .3s cubic-bezier(0.01, 1.24, 1, 1); transition:height .3s cubic-bezier(0.47, 0.07, 0.53, 1.08);
+  height:0; overflow:hidden;
+  li{
+    padding-left:j(90); line-height:j(88); height:j(88); color:#535353;border-bottom:1px solid #ddd;
+    background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/select.png) no-repeat j(20) center #fff;
+    @include bs(42,42);
+    span{
+      float:right; margin-right:j(20);@include orangeTxt;
+    }
+  }
+}
+  .showItem{
+    height:400px;
+  }
+}
+.order_sub{
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  position:fixed;
+  bottom:0; left:0; width:100%; text-align:right; padding:j(20) j(20) j(20) 0; font-size:0; background-color:#fff;
+  border-top:2px solid #ddd;
+  .order_btn{
+    width:j(200); height:j(86); line-height:j(82);
+  }
+}
+
+.expense_code{
+  @extend %pl30;
+  padding-right:j(23);
+  color:#999;
+  h2{ font-size:j(22); line-height:j(34); margin:j(28) 0; }
+  .expense_info{
+    text-align:left;
+    background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_expens_code.png) no-repeat;
+    background-size:100% 100%;
+    width:100%; height:j(184);
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    padding:j(60) 0 0 5%;
+
+    .l{
+      width:55%;
+      border-right:1px dashed #ddd; margin-right:j(20);
+      padding-right:j(10);
+    }
+    .has_refund{
+      > :first-child{
+        @include greenTXT;
+      }
+      > :last-child{
+        @include orangeTxt;
+      }
+    }
+    @at-root .refund_detail_link{
+      position:absolute;
+      width:100%;
+      height:j(46);
+      line-height:j(46);
+      left:0;
+      top:100%;
+      border:2px solid #ddd;
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+      border-top:none;
+      font-size:j(20);
+      color:#999;
+      @extend %pl30;
+    }
+    position:relative;
+  }
+}
+
+.expense_code_status{ color:#FF5B25; font-size:j(28); }
+
+.expense_code_used{
+  text-decoration:line-through;
+  color:#999;
+}
+
+/*取消订单*/
+#bm_cancel_order{
+  h2{
+    color:#999; line-height:j(66); height:j(66);
+    @extend %pl30;
+  }
+  @at-root .cancel_reason{
+    li{
+      font-size:j(32); cursor:pointer;
+      margin:0 j(30);
+      height:j(90); line-height:j(90); border-bottom:1px solid #ddd;
+    }
+
+    > li:last-child{
+      border-bottom:none;
+    }
+
+    @at-root .selected{
+      background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_correct_48_49.png) no-repeat right center;
+      background-size:j(24) j(25);
+    }
+  }
+}
+
+/*评价*/
+#bm_comment{
+  .brd_box{
+    @extend %pl30;
+    .order_info .fee{
+      float:left;
+      color:#999;
+    }
+  }
+  .comment{
+  }
+  .comment_item{
+    @extend %flex_box;
+    @extend %item_alignCenter;
+    height:j(92);
+    border-top:1px solid #ddd;
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    > span{ width:30%; }
+    .stars{
+      @extend %flex;
+      text-align:right;
+      margin-right:j(20);
+      span{
+        @include wh(50,51);
+        display:inline-block;
+        float:none;
+        background-size:100% 100%;
+        position:relative;
+        background:none;
+        &:after{
+          position:absolute;
+          @include wh(42,43);
+          content: '';
+          display: block;
+          left:50%;top:50%;
+          margin-top:j(-43/2);
+          margin-left:j(-42/2);
+          background: url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_star_blank.png) no-repeat;
+          background-size:100% 100%;
+        }
+        i{
+          left:50%;top:50%;
+          margin-top:j(-43/2);
+          margin-left:j(-42/2);
+          z-index:9;
+        }
+        i.full{
+          @include wh(42,43);
+          background-size:100% 100%;
+          -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+        }
+
+      }
+    }
+  }
+}
+
+/*申请退款*/
+#bm_refund{
+  padding-bottom:j(120);
+  h2{
+    font-size:j(24); color:#999;
+    height:j(86);
+    line-height:j(86);
+    @extend %pl30;
+  }
+  > .cancel_title{
+    line-height:j(67); height:j(67);
+  }
+  font-size:j(32);
+
+  .brd_box{
+    padding:j(30);
+    @extend %flex_box;
+    @extend %item_alignCenter;
+    span{
+      display:block;
+    }
+    > :first-child{
+      width:80%;
+      span{
+        font-size:j(22); color:#999;
+      }
+    }
+    > :last-child{
+      @extend %flex;
+    }
+    .refund_sum{
+      @include orangeTxt;
+      text-align:right;
+    }
+    > .selected{
+      @extend %flex;
+    }
+    .cancel_reason{
+      li{
+        margin:0;
+      }
+    }
+  }
+
+  .brd_box:nth-of-type(3){
+    padding:0 j(30);
+  }
+}
+
+/*退款详情*/
+#bm_refund_detail{
+  font-size:j(28); color:#999;
+  .brd_box{
+    padding:j(30); margin-bottom:j(20);
+  }
+
+  .refund_detail_hd{
+    font-size:j(24);
+    li{
+      margin-bottom:j(20);
+      line-height:j(30);
+      @extend %flex_box;
+      @extend %item_alignCenter;
+      > :first-child{
+        width:30%;
+      }
+      > :last-child{
+        @extend %flex;
+      }
+      .fee{
+        font-size:j(30); @include orangeTxt;
+      }
+      .expense_code{
+        color:#000; padding-left:0;
+      }
+    }
+    > :last-child{
+      margin-bottom:0;
+    }
+
+  }
+
+  .brd_box:nth-of-type(2){
+    padding:0;
+    h2{
+      border-bottom:1px solid #ddd;
+      height:j(66); line-height:j(66);
+      padding-left:j(30);
+    }
+
+    .refund_status{
+      padding:j(34) 0 j(34) j(30);
+      @at-root .refund_status_list{
+        border-left:2px solid #ddd;
+
+        li{
+          position:relative;
+          font-size:j(28);
+          color:#000;
+          padding-left:j(42); line-height:j(30); margin-bottom:j(50);
+
+          i{
+            position:absolute;
+            left:j(-15); top:50%; margin-top:j(-30/2); background-color:#bbb; width:j(30); height:j(30);
+            -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+            font-style:normal; text-align:center; color:#fff; font-size:j(24); line-height:j(30);
+          }
+          span{ float:right; color:#bbb; margin-right:j(20);}
+          .curr{
+            background-color:#ff5000;
+          }
+        }
+
+        > :last-child{
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+}
+
+/*订单确认*/
+#bm_pay_confirm{
+  .hd{ margin:0 j(20); padding-bottom:j(20); }
+  .fee{ font-size:j(80); text-align:center; border-bottom:1px dashed #ddd; line-height:j(100);
+    padding:j(45) 0 j(30) 0;
+  }
+  .pay_info{
+    li{
+      @extend %flex_box; line-height:j(33);
+      padding:j(25) 0 0 0;
+    }
+    font-size:j(26);
+    span{
+      color:#333; width:35%; display:block;
+    }
+    p{
+      @extend %flex;
+      text-align:right;
+      color:#999;;
+    }
+  }
+  .pay_by{
+    @extend %flex_box;
+    @extend %item_alignCenter;
+    height:j(99);
+    span{
+      @extend %flex; margin-left:j(20);
+    }
+    .bank_img_wrap{
+      @extend %flex;
+    }
+    .bank_img{
+      width:j(168);
+    }
+  }
+}
+
+/*结果页*/
+#bm_result{
+  padding-top:15%;
+  text-align:center;
+  .fz32{
+    line-height:j(40);
+    margin:j(50) 0 j(70) j(25);
+    + span{
+      display:block;
+      margin-top:j(-20); font-size:j(26); color:#999;
+    }
+  }
+}
+
+.result_img{
+  width:j(120); height:j(120);
+}
+
+.tel_btn{
+  @extend %item_alignCenter;
+}
+
+.tel_img{
+  width:j(40); height:j(40);
+  margin-right:j(20);
+}
+
+.white_long_btn.tel_btn{
+  @extend %flex_box;
+}
+
+
+/*Btn*/
+.bmBtn{ background:#f47410; height:j(84); color:#fff;
+  line-height:j(84);font-size:j(36); position:fixed; bottom:j(20); right:j(20); -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10); text-align:center;}
+.btnWrap{
+  padding:j(30) j(20) 0;
+}
+.grey_long_btn{
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #838383), color-stop(0.5, #999999), color-stop(1, #838383));
+  border-bottom: 2px solid #ccc;
+}
+
+#cancel_btn,#comment_btn,#save_my_car_btn{
+  position:relative; width:100%;display:block; bottom:0; right:0;;
+}
+/*orderBanner*/
+.banner{ height:j(130);}
+.order_banner{
+  height:j(130);
+  @extend %item_alignCenter;
+  .orderStatusIcon{@include wh(64,64); display:block;
+  background-size:(100%,100%);
+  }
+  .orderStatus{@extend %flex; color:#fff; margin-left:j(20);}
+  padding-left:j(20);
+}
+
+.warning{
+  background-color:#FF8420;
+  i{
+    background:url(http://img.autostreetscdn.com/m/src/images/warning_icon_64_64.png) no-repeat;
+
+  }
+}
+.waiting{
+  background-color:#92BAE6;
+  i{
+    background:url(http://img.autostreetscdn.com/m/src/images/waiting_icon_64_64.png) no-repeat;
+  }
+}
+.over{
+  background-color:#6cce29;
+  i{
+    background:url(http://img.autostreetscdn.com/m/src/images/correct_icon_64_64.png) no-repeat;
+  }
+}
+
+#refund_btn,#select_shop{
+  position:fixed; left:j(20);
+}

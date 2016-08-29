@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>支付方式</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_consultant.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        支付方式
+    </section>
+</header>
+<div id="container">
+	<div class="confirm_con clearfix">
+		<h3>在线支付</h3>
+		<p><img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/gou.png" alt="" class="gou"></p>
+	</div>
+	<div class="confirm_con clearfix">
+		<h3>到店支付</h3>
+		<p><img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/gou.png" alt="" class="gou"></p>
+	</div>
+	<!-- <div class="find_him">
+		<a href="#">确定</a>
+	</div> -->
+</div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_2.js"></script>
+<script>
+$(function(){
+	var obj = request();
+	$(".confirm_con").click(function(){
+		$(".confirm_con").find("img").hide()
+		$(this).find("img").show();
+		var payment = $(this).children('h3').text();
+		if(!obj.payment){
+			window.location.href = 'bm_confirm.html' + location.search + '&payment=' + payment
+		}else{
+			window.location.href = 'bm_confirm.html?brandLogo='+param.brandLogo+'&scviSid='+779+'&address='+param.address+'&orgNameAbbr='+param.orgNameAbbr+'&orgSid='+param.orgSid + '&payment=' + payment
+		}
+	})
+})
+</script>
+</body>
+</html>

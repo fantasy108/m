@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>我的关注-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/user_list.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        我的关注
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div>
+    <ul class="pro_list" id="pro_list">
+        <li class="online_li">
+            <img src="">
+            <h3>日产 1.8 无级 XL 豪华版</h3>
+            <p>上海
+                <ins>|</ins>
+                11年01月
+                <ins>|</ins>
+                2.8万公里
+                <ins>|</ins>
+                鲁b10399
+            </p>
+            <span class="pai_ing">拍卖中</span>
+            <div class="sub">
+                <strong>28.3万起拍</strong>
+                <span class="right_info">
+                    结束时间：09-06 15:30
+                </span>
+            </div>
+            <i>在线拍</i>
+        </li>
+        <li class="sync_li">
+            <img src="">
+            <h3>日产 1.8 无级 XL 豪华版</h3>
+            <p>上海
+                <ins>|</ins>
+                11年01月
+                <ins>|</ins>
+                2.8万公里
+                <ins>|</ins>
+                鲁b10399
+            </p>
+            <span class="pai_ing">拍卖中</span>
+            <div class="sub">
+                <strong>28.3万起拍</strong>
+                <span class="right_info">
+                    结束时间：09-06 15:30
+                </span>
+            </div>
+            <i>现场拍</i>
+        </li>
+        <li class="used_car_li" >
+            <img src="">
+            <h3>日产 1.8 无级 XL 豪华版</h3>
+            <p>上海
+                <ins>|</ins>
+                11年01月
+                <ins>|</ins>
+                2.8万公里
+                <ins>|</ins>
+                鲁b10399
+            </p>
+            <div class="sub">
+                <strong>28.3万元</strong>
+                <span class="right_info">
+                    新车价：38.2万+2万（购置税）
+                </span>
+            </div>
+            <i>二手车</i>
+        </li>
+        <li class="new_car_li">
+            <img src="">
+            <h3>日产 1.8 无级 XL 豪华版</h3>
+            <div class="sub">
+                <strong>28.3万</strong>
+            </div>
+            <i>新车</i>
+        </li>
+    </ul>
+</div>
+<div class="loading" id='loading'></div>
+<div class="tipbg hide" id="tipbg"></div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/favorites.js"></script>
+</body>
+</html>

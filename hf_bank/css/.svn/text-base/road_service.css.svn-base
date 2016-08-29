@@ -1,0 +1,42 @@
+.road_service {
+  font-size: 0.1125rem;
+  padding-top: 0.27rem; }
+.road_service .hd {
+  text-align: center; }
+.road_service .hd .free_tel {
+  text-align: left;
+  width: 2.18812rem;
+  height: 0.50625rem;
+  font-size: 0.19125rem;
+  line-height: 0.50625rem;
+  text-indent: 0.53437rem;
+  display: inline-block;
+  -webkit-border-radius: 0.045rem;
+  -moz-border-radius: 0.045rem;
+  border-radius: 0.045rem;
+  color: #fff;
+  text-decoration: none;
+  background: url(http://img.autostreetscdn.com/m/src/images/phone_44_44.png) #F47410 no-repeat 0.225rem 0.12937rem;
+  background-size: 0.2475rem 0.2475rem; }
+.road_service .hd p {
+  font-size: 0.12937rem;
+  text-align: left;
+  margin-left: 0.1125rem;
+  margin-top: 0.08437rem; }
+.road_service .hd p span {
+  color: #ff4000; }
+.road_service .hd p strong {
+  font-size: 0.18rem; }
+.road_service .bd {
+  margin: 0.1125rem;
+  padding-top: 0.1125rem; }
+.road_service .bd h2 {
+  color: #000;
+  margin-bottom: 0.08437rem; }
+.road_service .bd p {
+  line-height: 0.2475rem;
+  color: #666666;
+  text-indent: -0.16875rem;
+  margin-left: 0.16875rem; }
+
+/*# sourceMappingURL=road_service.css.map */

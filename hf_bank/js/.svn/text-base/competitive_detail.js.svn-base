@@ -1,0 +1,212 @@
+var _infourl = "http://wap.autostreets.com/noHaggle/loadVehicleBySid?&fpSid="+GetQueryString('id');
+var _usedcar_pay_url = "http://wap.autostreets.com/html/usedcar/pay.html";
+
+var imgurl = "http://images.autostreets.com/";
+
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r!=null) return (r[2]); return null;
+}
+
+
+
+
+$(function(){
+    var w=window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+//    $('#wrapper').width(w);
+    //$('#thelist li').width(w);
+
+
+    $.ajax({type: "GET",url:_infourl,dataType: "jsonp",jsonp: 'jsoncallback',scriptCharset:"GBK",jsonpCallback:"getinfo",cache:false,
+        success:function(data){
+            //本地存储 所在门店信息
+            console.dirxml(data.data);
+            sessionStorage.vehicleDetails=JSON.stringify(data.data);
+            if(window.sessionStorage){
+                sessionStorage.storeName=data.data.orgStore;
+                sessionStorage.storeAdd=data.data.orgStoreAddr;
+                sessionStorage.storeTime=data.data.orgServiceTime;
+                sessionStorage.storeTel=data.data.orgPhone;
+                sessionStorage.vehicleTitle=data.data.vehicleTitle;
+            }
+            $('.storeName').html(data.data.orgStore);
+            //车辆标题
+            $('#id_title').html(data.data.vehicleTitle);
+            insertTitle(data.data.vehicleTitle);
+            //车辆价格
+            if(data.data.hidden){
+                $('#infodetail_price').html("面议");
+                // $('#infodetail_price').html(data.data.price/10000 +" <ins>万元</ins>")
+            }
+            else{
+                //$('#infodetail_price').html("面议")
+                $('#infodetail_price').html(data.data.price/10000 +" <ins>万元</ins>")
+            }
+            $('#newCar_price').html(data.data.suggestionPrice/10000);
+            $('#detaillink').attr('href','competitive_detail_info.html?vehicleSid='+data.data.vehicleSid);
+
+            //车辆信息
+            $.each(data.data.vehicleAttribute,function(i,item){
+
+                if(item.key=="表显里程"){
+                    item.value = item.value + "万公里"
+                }
+
+                if(item.key=="首次上牌"){
+                    item.value = (new Date(item.value)).Format("yyyy年M月")
+                }
+                if(item.key=="原车牌号"){
+                    item.value = item.value.substr(0,2);
+                }
+
+                var _vehicleAttribute = "<li>"+"<span>"+item.key+"</span>"+"："+item.value+"</li>";
+                $("#vehicleAttribute").append(_vehicleAttribute);
+
+            });
+
+            //alert(data.data.vehiclePhotoList);
+            //车辆图片
+            $('#scroller').width(w*data.data.vehiclePhotoList.length);
+            if (data.data.fpStatus != 3)
+                $(".tel_400_body").empty().append("<span class='no_status'>" + data.data.fpStatusDesc + "</span>");
+            else {
+
+                if(data.data.canOrder){
+                    var tel = '<a class="tel_400" href="javascript:;" id="prePay">在线预订</a><a class="tel_400-1" href="tel:400-821-8889">预约看车</a>';
+                }else{
+                    var tel = '<a class="tel_400-1 only_tel" href="tel:400-821-8889">预约看车</a>';
+                }
+
+                $(".tel_400_body").append(tel);
+                $("#prePay").click(function() {
+                    require(['userUtils'], function(){
+                        userUtils.login(_usedcar_pay_url);
+                    });
+                })
+            }
+            var myScroll;
+            myScroll = new iScroll('scroller_wrap', {
+                snap:true,
+                momentum:false,
+                hScrollbar:false,
+                lockDirection:false,
+                vScroll:false,
+                fixedScrollbar:true,
+                onScrollStart:function(e){
+                    e.preventDefault();
+                },
+                onScrollEnd: function () {
+                    //document.querySelector('#indicator > li.active').className = '';
+                    //document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+                }
+            });
+
+            //alert(data.data.vehiclePhotoList);
+
+            //$('#thelist').width(w*data.data.vehiclePhotoList.length);
+            //alert(data.data.vehiclePhotoList);
+            $.each(data.data.vehiclePhotoList,function(i,item){
+                // alert($('#scroller').width());
+                var _proimgbig = "<li style='width:"+w+"px'><img src='"+ imgurl + item +"'></li>"
+                $("#thelist").append(_proimgbig);
+
+            });
+            //车辆图片
+            $('#scroller').width(w*data.data.vehiclePhotoList.length);
+            /*确定图片宽度*/
+            var _width = $(window).width();
+            var scro_len = $("#scroller li").length;
+            var indi_len = $("#indicator li").length;
+            $("#scroller li").width(_width);
+            $("#scroller li img").width(_width);
+            $("#nav").width(_width);
+            $("#scroller").height(Math.ceil((_width/640)*453));
+//	$("#indicator").width(12*indi_len)
+
+            //轮播索引点
+            if(scro_len>1){
+                var dot="";
+                for(var i=1;i<scro_len;i++){
+                    if(i==1){
+                        dot+='<li class="active"></li>';
+                    }
+                    dot+='<li></li>';
+                }
+            }
+            $('#indicator').append(dot);
+            var myScroll;
+                myScroll = new iScroll('scroller_wrap', {
+                    snap:true,
+                    momentum:false,
+                    hScrollbar:false,
+                    lockDirection:false,
+                    vScroll:false,
+                    fixedScrollbar:true,
+                    onScrollStart:function(e){
+                        e.preventDefault();
+                    },
+                    onScrollEnd: function () {
+                        document.querySelector('#indicator > li.active').className = '';
+                        document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+                    }
+                });
+
+            //$('#proimgbig').html("<img src='"+ imgurl + data.data.vehiclePhotoList[0] +"'>");
+
+            //thelist
+
+            //车辆描述
+            $('#vehicleDesc').html(data.data.vehicleDesc);
+
+
+        }
+    });
+
+
+
+
+});
+
+
+
+//事件字符转换
+Date.prototype.Format = function(fmt){
+    var o = {
+        "M+" : this.getMonth()+1,                 //月份
+        "d+" : this.getDate(),                    //日
+        "h+" : this.getHours(),                   //小时
+        "m+" : this.getMinutes(),                 //分
+        "s+" : this.getSeconds(),                 //秒
+        "q+" : Math.floor((this.getMonth()+3)/3), //季度
+        "S"  : this.getMilliseconds()             //毫秒
+    };
+    if(/(y+)/.test(fmt))
+        fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+    for(var k in o)
+        if(new RegExp("("+ k +")").test(fmt))
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+    return fmt;
+}
+
+
+/*title 处理*/
+var _daq = _daq || [];
+function insertTitle(title){
+    var t=document.createElement("title")
+    t.innerHTML=title;
+    var l = document.getElementsByTagName('link')[0];
+    l.parentNode.insertBefore(t, l);
+
+    _daq.push(['_setAccount', 'wap']);
+    (function() {
+        var da = document.createElement('script');
+        da.type = 'text/javascript';
+        da.async = true;
+        da.src = ('https:' == document.location.protocol ? 'https://da' : 'http://da') + '.autostreets.com/da.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(da, s);
+    })();
+
+}

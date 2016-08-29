@@ -1,0 +1,434 @@
+@charset "utf-8";
+@import "common";
+html{ height:100%; }
+a{
+  color:#000; text-decoration:none;
+}
+
+#no_result{
+  text-align:center;
+  padding-top:20%;
+  height:auto;
+  border:none;
+  .no_result_pic{
+    margin:0 auto;background-size:100% 100%;
+  }
+  p{
+    padding-top:j(40);
+  }
+}
+
+h2,h3,h4{
+  font-weight:normal;
+}
+.fz32{
+  font-size:j(32);
+}
+.bm_img_trans{
+  -webkit-transition:all .3s ease-in; -moz-transition:all .3s  ease-in; -ms-transition:all .3s  ease-in; -o-transition:all .3s  ease-in; transition:all .3s ease-in;
+}
+.select_module{
+  position:relative;
+  background:#fff;
+  color:#666;
+  z-index:91;
+  @extend %b_b_3c; height:j(87); line-height:j(87);
+  .sm_hd{
+    position:relative;
+    @extend %flex_box;
+    .sm_hd_item{
+      @extend %flex;
+      display:block; text-align:center;
+      .w_9_arr{
+        -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg);
+        margin-left:j(20); position:relative; top:j(-4);
+        -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+        -webkit-transform-origin:50% 50%; -moz-transform-origin:50% 50%; -ms-transform-origin:50% 50%; -o-transform-origin:50% 50%; transform-origin:50% 50%;
+
+      }
+      .toggle_arr{
+        -webkit-transform:rotate(225deg); -moz-transform:rotate(225deg); -ms-transform:rotate(225deg); -o-transform:rotate(225deg); transform:rotate(225deg);
+        top:j(2);
+
+      }
+    }
+    .gradient_line{
+      width:1px;
+      height:j(50);
+      background:-webkit-linear-gradient(#fff, #ccc, white);
+      background:linear-gradient(white, #ccc, white);
+      position:absolute; left:50%; top:50%; margin-top:j(-50/2);
+    }
+  }
+  .sm_bd{
+    position:absolute; width:100%;
+    background-color:#fff;
+    z-index:99;
+    left:0; top:j(88);
+    -webkit-perspective: 700px;
+    perspective: 700px;
+    .sm_bd_item{
+      @extend %flex_box;
+      max-height:j(480); overflow:hidden;
+      position:absolute;
+      padding-bottom:j(20);
+      left:0; right:0; background-color:#fff;
+      @include bxs(0, 10, 20, 0, rgba(000, 000, 000, .3));
+      //display:none;
+      -webkit-transform: rotateX(-90deg);
+      transform: rotateX(-90deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      -webkit-transition: -webkit-transform .3s ease;
+      transition: transform .3s ease;
+      .curr{
+        @include orangeTxt;
+      }
+
+      li{
+        font-size:j(28); height:j(65); line-height:j(65);
+      }
+      .area{
+        text-align:center; overflow:hidden;
+
+      }
+      .area_l{
+        width:43.75%; background:#eee;
+        .province_list{
+
+          .province.curr{
+            background:#fff;
+            color:#666;
+          }
+          >:first-child.sel{
+            @include orangeTxt;
+          }
+        }
+      }
+      .area_r{
+        @extend %flex;
+        .city{
+          @extend %b_b_3d; margin-left:j(20);
+        }
+        .city_list{
+          /*> :last-child{
+            border-bottom:none;
+          }*/
+          //> :first-child{
+          //  color:#ff7f00;
+          //}
+
+        }
+
+      }
+      .sort{
+        @extend %flex;
+        .sort_list{
+          .sort_by{
+            margin-left:j(20);
+            @extend %b_b_3c;
+          }
+        }
+      }
+
+    }
+    .toggle_down{
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+      z-index:999;
+    }
+  }
+}
+
+.z90{
+  z-index:90;
+}
+
+.UI_animated{
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+  animation-fill-mode:both;
+}
+
+.UI_speed_fast, .UI_speed_200{
+  -webkit-animation-duration:0.2s;
+  -moz-animation-duration:0.2s;
+  -o-animation-duration:0.2s;
+  animation-duration:0.2s;
+}
+
+@-webkit-keyframes bounceIn{
+  0%{
+    -webkit-transform:scale(.5);
+    opacity:0;
+  }
+
+  70%{
+    -webkit-transform:scale(1.03);
+  }
+
+  100%{
+    -webkit-transform:scale(1);
+  }
+}
+
+@-moz-keyframes bounceIn{
+  0%{
+    -moz-transform:scale(.5);
+    opacity:0;
+  }
+
+  70%{
+    -moz-transform:scale(1.03);
+  }
+
+  100%{
+    -moz-transform:scale(1);
+  }
+}
+
+@-o-keyframes bounceIn{
+  0%{
+    -o-transform:scale(.5);
+    opacity:0;
+  }
+
+  70%{
+    -o-transform:scale(1.03);
+  }
+
+  100%{
+    -o-transform:scale(1);
+  }
+}
+
+@keyframes bounceIn{
+  0%{
+    transform:scale(.5);
+    opacity:0;
+  }
+
+  70%{
+    transform:scale(1.03);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+}
+
+.UI_ani_bounceIn{
+  -webkit-animation-name:bounceIn;
+  -moz-animation-name:bounceIn;
+  -o-animation-name:bounceIn;
+  animation-name:bounceIn;
+}
+
+@-webkit-keyframes bounceOut{
+  100%{
+    -webkit-transform:scale(.7);
+    opacity:0;
+  }
+
+  30%{
+    -webkit-transform:scale(1.03);
+  }
+
+  0%{
+    -webkit-transform:scale(1);
+  }
+}
+
+@-moz-keyframes bounceOut{
+  100%{
+    -moz-transform:scale(.7);
+    opacity:0;
+  }
+
+  30%{
+    -moz-transform:scale(1.03);
+  }
+
+  0%{
+    -moz-transform:scale(1);
+  }
+}
+
+@-o-keyframes bounceOut{
+  100%{
+    -o-transform:scale(.7);
+    opacity:0;
+  }
+
+  30%{
+    -o-transform:scale(1.03);
+  }
+
+  0%{
+    -o-transform:scale(1);
+  }
+}
+
+@keyframes bounceOut{
+  100%{
+    transform:scale(.7);
+    opacity:0;
+  }
+
+  30%{
+    transform:scale(1.03);
+  }
+
+  0%{
+    transform:scale(1);
+  }
+}
+
+.UI_ani_bounceOut{
+  -webkit-animation-name:bounceOut;
+  -moz-animation-name:bounceOut;
+  -o-animation-name:bounceOut;
+  animation-name:bounceOut;
+}
+.set_default_success{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:999;
+  width:100%;
+  height:100%;
+  @extend %box_alignCenter;
+  .success_pop{
+    background:rgba(000, 000, 000, .75); width:j(350); height:j(160);
+    text-align:center;
+    -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+    font-size:j(30); color:#fff;
+    .pop_icon{
+      width:j(50); height:j(50);
+      margin-top:j(30); margin-bottom:j(10);
+      background-size:100% 100%;
+      background-repeat:no-repeat;
+      display:inline-block;
+      font-size:0;
+    }
+  }
+  .correct_icon{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_correct_icon.png);
+  }
+  .warning_icon{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_warning.png);
+  }
+  .smile_icon{
+    background-image:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_smile.png);
+  }
+
+}
+/*icon*/
+.tel_icon{
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_phone_grey_24_24.png) no-repeat;
+}
+.home_icon{
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_home_27_25.png) no-repeat;
+}
+.map_icon{
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_location.png) no-repeat;
+
+}
+.name_icon{
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/name.png) no-repeat;
+}
+.mobile_icon{
+  background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/mobile.png) no-repeat;
+}
+
+/*搜索模块*/
+.search_btn{
+  width:j(75);
+  height:100%;
+  position:absolute;
+  right:j(80); top:0;
+  &:after{
+    background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_search.png) no-repeat;
+    @include wh(40,40);
+    background-size:100% 100%;
+    content: '';
+    position:absolute;
+    top:50%;left:50%;
+    margin-left:j(-20);
+    margin-top:j(-20);
+    display:block;
+  } 
+}
+
+
+.uiFix{
+  position:fixed;
+  width:100%; height:100%;
+  top:0;bottom:0; left:0; right:0;
+}
+.search_module{
+  background:#f0f0f0;
+  position:fixed;
+  width:100%;
+  top:0; left:0; right:0;
+  z-index:99;
+  display:none;
+  .sea_top{
+    width:100%; height:j(88); -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    @extend %b_b_3c;
+    padding:0 j(20) 0 j(26);
+    @extend %item_alignCenter; background:#fff;
+    form{
+      width:80%;    margin-right:j(10);
+
+    }
+  }
+  .search_ipt{
+    background:url(http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_search_24_24.png)  no-repeat #f3f3f3 j(15) center;
+    background-size:j(24) j(24);
+    display:block;
+    width:100%; height:j(50);
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    padding-left:j(50); color:#666;
+    -webkit-border-radius:j(5); -moz-border-radius:j(5); border-radius:j(5);
+
+  }
+  .cancel_search{
+    display:block;@extend %flex; color:#92960d; font-size:j(28); text-align:right;
+  }
+  .sea_bot{
+    position:fixed;top:j(88);bottom:0; width:100%; background-color:#f3f3f3; color:#666;
+    .sea_history{
+      display:none;
+      .his_tit{
+        line-height:j(32); padding:j(10) 0 j(10) j(26); display:block;@extend %b_b_3c;
+        
+      }
+      .his_list{
+        background:#fff;
+        li{
+          padding-left:j(26);@extend %b_b_3c;
+          a{
+            display:block; height:j(80); line-height:j(80);
+          }
+        }
+      }
+      .clear_his{
+        @include wh(182,52);border:1px solid #C2C6CB; -webkit-border-radius:j(5); -moz-border-radius:j(5); border-radius:j(5);
+        line-height:j(52);text-align:center; display:block; margin:j(20) auto; background-color:#fff;
+
+      }
+    }
+  }
+}
+
+.car_info{height:j(40);background:#f6f6f6;padding:j(20);
+  a{text-decoration:none;display:block;width:100%;height:j(40)}
+  a img{width:j(42);height:j(42);float:left;margin-right:j(20)};
+  a h3{font-size:j(24);color:#000;font-weight:normal;line-height:j(42);float:left};
+  a span{float:right;font-size:j(24);color:#000;line-height:j(42);};
+  a i{float:right;width:0.07rem;height:0.07rem; border-bottom: 0.025rem solid #999;border-left: 0.025rem solid #999; display: inline-block;-webkit-transform:rotate(-135deg);-moz-transform:rotate(-135deg); transform:rotate(-135deg);margin:j(12) 0 0 0}
+}
+
+

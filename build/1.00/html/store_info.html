@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>所在门店-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/competitive_list.css" type="text/css">
+    <style type="text/css" media="all">
+    </style>
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        所在门店
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div class="store_info">
+    <ul>
+        <li>
+            <span>门店名称</span>
+            <span class="r_val store_name"></span>
+        </li>
+        <li>
+            <span>门店地址</span>
+            <span class="r_val store_add"></span>
+        </li>
+        <li>
+            <span>服务时间</span>
+            <span class="r_val store_time"></span>
+        </li>
+        <li>
+            <span>门店电话</span>
+            <span class="r_val store_time"></span>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    /*function getCookie(c_name) {
+        if (document.cookie.length > 0) {
+            c_start = document.cookie.indexOf(c_name + "=");
+            if (c_start != -1) {
+                c_start = c_start + c_name.length + 1
+                c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1) c_end = document.cookie.length;
+                return unescape(document.cookie.substring(c_start, c_end))
+            }
+        }
+        return ""
+    }*/
+
+    function getClass(tagName, className)
+    {
+        if (document.getElementsByClassName)
+        {
+            return document.getElementsByClassName(className);
+        }
+        else {
+            var tags = document.getElementsByTagName(tagName);
+            var tagArr = [];
+            for (var i = 0; i < tags.length; i++) {
+                if (tags[i].class == className) {
+                    tagArr[tagArr.length] = tags[i];
+                }
+            }
+            return tagArr;
+        }
+    }
+
+    var names = ["storeName", "storeAdd", "storeTime", "storeTel"];
+
+    window.onload = function () {
+        var rVal = getClass("span","r_val");
+        var len = rVal.length;
+        for (var i = 0; i < len; i++) {
+            rVal[i].innerHTML = localStorage[names[i]];
+        }
+    };
+
+
+</script>
+</body>
+</html>

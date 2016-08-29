@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import url(reset.css);
+img { display: block; border: none; }
+
+.main_container .more_main .hd, .main_container .more_main .bd a, #sub_nav ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+#sub_nav ul li { flex: 1; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+
+.main_container .more_main .bd a .icon { -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); position: absolute; top: 50%; }
+
+.main_container .more_main .hd, .main_container .more_main .bd a { -ms-flex-align: center; -webkit-box-align: center; box-align: center; -webkit-align-items: center; align-items: center; }
+
+.hide { display: none; }
+
+/*头部*/
+.headerSection, header section { background: #fff; height: 44px; line-height: 44px; font-size: 18px; color: #333; text-align: center; z-index: 99; border-bottom: 1px solid #ddd; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: fixed; width: 100%; top: 0; left: 0; }
+
+header { height: 44px; z-index: 99; position: relative; }
+
+/*返回按钮*/
+.back { display: block; height: 100%; width: 38px; position: absolute; }
+
+.back::after { width: 12px; height: 12px; border-top: 1px solid #999; border-left: 1px solid #999; display: inline-block; position: absolute; left: 13px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); top: 14px; content: ' '; }
+
+/*公用底部*/
+#sub_nav { position: fixed; bottom: 0; width: 100%; background-color: #000; height: 45px; }
+#sub_nav ul { height: 100%; }
+#sub_nav ul li { text-align: center; height: 100%; }
+#sub_nav ul li a { display: block; width: 100%; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 5px; }
+#sub_nav ul li a .icon { -webkit-background-size: contain; background-size: contain; background-repeat: no-repeat; display: block; margin: 0 auto 3px; }
+#sub_nav ul li a b { font-weight: normal; display: block; }
+#sub_nav ul .curr { background-color: #adb33c; }
+#sub_nav ul > :nth-child(1) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav1.png"); width: 20px; height: 20px; }
+#sub_nav ul > :nth-child(2) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav2.png"); width: 20px; height: 21px; }
+#sub_nav ul > :nth-child(3) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav3.png"); width: 20px; height: 20px; }
+#sub_nav ul > :nth-child(4) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav4.png"); width: 22px; height: 21.5px; }
+
+.right_arr { position: absolute; border-right: 1px solid #d0d0d0; border-bottom: 1px solid #d0d0d0; width: 10px; height: 10px; right: 15px; -webkit-transform: translateY(-50%) rotate(-45deg); -moz-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); -o-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); top: 50%; }
+
+.ui_mask { position: fixed; width: 100%; height: 100%; background: #000; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); opacity: 0; /*visibility:hidden;*/ z-index: 99; -webkit-transition: opacity .3s; -moz-transition: opacity .3s; -ms-transition: opacity .3s; -o-transition: opacity .3s; transition: opacity .3s; pointer-events: none; }
+
+.ui_mask_show { opacity: 1; /*visibility:visible;*/ pointer-events: auto; }
+
+.loading { background: url("http://img.autostreetscdn.com/m/src/images/loading.gif"); background-size: 16px 16px; background-repeat: no-repeat; height: 32px; top: 0; left: 0; bottom: 0; right: 0; position: fixed; margin: auto; z-index: 999; background-position: center center; display: none; width: 32px; }
+
+a { color: #fff; }
+
+.main_container .more_main .hd, .main_container .more_main .bd { background-color: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+
+.css3Transition, .main_container .main_panel { -webkit-transition: all .3s ease-in; -moz-transition: all .3s ease-in; -ms-transition: all .3s ease-in; -o-transition: all .3s ease-in; transition: all .3s ease-in; }
+
+#content { width: 10rem; margin: 0 auto 57.5px; }
+
+.main_container { overflow: hidden; position: relative; padding-bottom: 50px; }
+.main_container .hide_main_panel { -webkit-transform: translate(100%, 0); -moz-transform: translate(100%, 0); -ms-transform: translate(100%, 0); -o-transform: translate(100%, 0); transform: translate(100%, 0); }
+.main_container .more_main { font-size: 12px; color: #929292; }
+.main_container .more_main .hd { height: 82px; margin-top: -1px; padding-left: 15px; font-size: 0; }
+.main_container .more_main .hd .loginBtn { display: block; width: 100%; position: relative; }
+.main_container .more_main .hd .user_header { display: inline-block; vertical-align: middle; margin-right: 14px; }
+.main_container .more_main .hd .user_header img { width: 45px; height: 45px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border: 2px solid #E1E1E1; }
+.main_container .more_main .hd .user_name_wrap { font-weight: normal; font-size: 16px; color: #333; display: inline-block; vertical-align: middle; }
+.main_container .more_main .hd .user_name_wrap .user_sub_name { font-size: 14px; color: #777777; }
+.main_container .more_main .user_title { margin: 12.5px 15px 7.5px; }
+.main_container .more_main .bd ul li:last-child a { border-bottom: none; }
+.main_container .more_main .bd a { height: 44px; position: relative; color: #666; text-decoration: none; border-bottom: 1px solid #E3E3E3; margin-left: 15px; padding-left: 34px; font-size: 12px; }
+.main_container .more_main .bd a .icon { background-size: contain; background-repeat: no-repeat; left: 0; }
+.main_container .more_main .bd a .icon_01 { width: 17px; height: 18.5px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_01.png"); }
+.main_container .more_main .bd a .icon_02 { width: 17px; height: 18px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_02.png"); }
+.main_container .more_main .bd a .icon_03 { width: 17px; height: 16.5px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_03.png"); }
+.main_container .more_main .bd a .icon_04 { width: 17px; height: 12.5px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_04.png"); }
+.main_container .more_main .bd a .icon_05 { width: 19px; height: 14.5px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_05.png"); }
+.main_container .more_main .bd a .icon_06 { width: 19px; height: 15px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_06.png"); }
+.main_container .more_main .bd a .icon_07 { width: 19px; height: 11.5px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_07.png"); }
+.main_container .more_main .bd a .icon_08 { width: 16px; height: 14px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_08.png"); }
+.main_container .more_main .bd a .icon_09 { width: 16px; height: 11.5px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_09.png"); }
+.main_container .more_main .bd a .icon_10 { width: 16px; height: 15px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_10.png"); }
+.main_container .more_main .bd a .icon_11 { width: 21.5px; height: 13.5px; background-image: url("http://img.autostreetscdn.com/m/src/images/icon_11.png"); }
+.main_container .more_main .bd a > s.msg { text-decoration: none; background: #f00; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; color: #fff; font-size: 0.375rem; width: 0.59375rem; height: 0.59375rem; position: absolute; line-height: 0.59375rem; text-align: center; left: 3.29688rem; top: 50%; margin-top: -0.29688rem; }
+
+.more_sub { position: fixed; top: 100%; left: 0; width: 100%; z-index: 299; font-size: 14px; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
+.more_sub ul li { height: 48px; border-top: 1px solid #eee; line-height: 48px; text-align: center; background: #fff; }
+.more_sub ul li a { color: #fff; text-decoration: none; display: block; color: #a5c16b; }
+.more_sub ul li:last-child { background: #eee; }
+.more_sub ul li:last-child a { color: #aeaeae; }
+
+.show_more_sub { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); }
+
+.down_apps { /*display:none;*/ }
+
+/*tip*/
+.tipbg { position: fixed; width: 100%; height: 100%; background: #000; z-index: 99; top: 0; background: rgba(0, 0, 0, 0.5); display: none; }
+
+.ui_fix { overflow: hidden; }
+
+.error_layer { display: none; width: 6.25rem; height: auto; background: #fff; position: fixed; top: 2.2499rem; z-index: 100; left: 50%; margin-left: -3.125rem; border-radius: 0.0562rem; }
+
+.error_layer .error_txt { padding: 0.1749rem; font-size: 0.1574rem; color: #333; border-bottom: solid 0.0112rem #ccc; text-align: center; }
+
+.error_layer .correct { line-height: 0.4499rem; text-align: center; font-size: 0.1574rem; color: #2181f7; font-weight: bold; display: block; text-decoration: none; }
+
+.indexbox a { width: 145px; height: 101px; display: inline-block; float: left; background-size: 145px 101px; background-repeat: no-repeat; }
+
+/*# sourceMappingURL=user_main.css.map */

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <link rel="stylesheet" href="../../css/b.css" type="text/css">
+    <link rel="stylesheet" href="../../css/bmw_x1.css" type="text/css">
+</head>
+<body>
+
+<div class="banner">
+	<img src="../../images/bmw_x1/banner.png" alt="">
+</div>
+<section>
+	<h2>选配变标配，<br />同样价格，更多装备。<br />BMW X1晋级版，晋级行动等你启动。</h2>
+	<div class="link">
+		<a href="finance.html" class="more">了解更多金融计划 <i></i> </a>
+		<a href="http://www.bmw.com.cn/cn_mobi/zh/index.html" class="more">进入官网 <i></i> </a>
+	</div>
+	<article>
+		晋级行动，自由启动！即日起，购买BMW X1，专业导航系统、18寸合金轮毂、Harman/Kardon音响系统等选配装备将作为标配装备特别提供，同时配备前排座椅加热功能、方向盘加热功能等。以标配投入，尽享至臻升级，超值机会仅此一次！
+	</article>
+	<ul>
+		<li><img src="../../images/bmw_x1/free.png" alt=""><p>BMW专业导航</p></li>
+		<li><img src="../../images/bmw_x1/free2.png" alt=""><p>方向盘</p></li>
+		<li><img src="../../images/bmw_x1/free3.png" alt=""><p>BMW专业导航</p></li>
+		<li><img src="../../images/bmw_x1/free4.png" alt=""><p>BMW专业导航</p></li>
+		<li><img src="../../images/bmw_x1/free5.png" alt=""><p>BMW专业导航</p></li>
+		<li><img src="../../images/bmw_x1/free6.png" alt=""><p>BMW专业导航</p></li>
+		<li><img src="../../images/bmw_x1/free7.png" alt=""><p>BMW专业导航</p></li>
+		<li><img src="../../images/bmw_x1/free8.png" alt=""><p>BMW专业导航</p></li>
+	</ul>
+	<div class="drive_btn">
+		<a href="login.html">即刻免费试驾</a>
+	</div>
+</section>
+<div class="banner">
+	<img src="../../images/bmw_x1/banner2.png" alt="">
+</div>
+<section>
+	<h2>自由无界，动感升级。<br />BMW X1 M运动限量版，<br />仅限500台。</h2>
+	<div class="link">
+		<a href="finance.html" class="more">了解更多金融计划<i></i></a>
+		<a href="http://www.bmw.com.cn/cn_mobi/zh/index.html" class="more">进入官网<i></i></a>
+	</div>
+	<article>
+		路的尽头，并非自由的尽头。BMW X1 M运动限量版风格独具的M空气动力学套件，彰显强烈的运动气质。M专属18英寸双五幅轮毂霸气难挡，带你领略前人未敢领略的风景。N20发动机、8速手自一体变速箱和xDrive智能全轮驱动系统等配置更让您从容应对，拓宽自由的地平线。敬请驾驶澎湃座驾，向路无法抵达的地方全力出发！
+		<span>BMW X1 M运动限量版是在X1 xDrive 20i 时尚晋级版基础上，通过售后加装M套件的形式实现。</span>
+	</article>
+	<div class="drive_btn">
+		<a href="login.html">即刻免费试驾</a>
+	</div>
+</section>
+
+<script src="../../js/lib/zepto.js"></script>
+<script src="http://wap.autostreets.com/js/require.js" data-main="http://wap.autostreets.com/js/main.js"></script>
+
+<script>
+$(function(){
+	
+})
+</script>
+</body>
+</html>

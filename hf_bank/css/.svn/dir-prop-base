@@ -1,0 +1,39 @@
+K 18
+svn:global-ignores
+V 138
+.classpath
+.project
+*.bak
+*.class
+*.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo __pycache__ *.rej *~ #*# .#* .*.swp .DS_Store
+
+K 10
+svn:ignore
+V 152
+*
+*.map
+*.scss
+b.css.map
+b.new.css
+b.old.css
+b.scss
+common.css
+index.css.map
+index.scss
+new_mall.css.map
+new_mall.scss
+user_list.css.map
+user_list.scss
+
+K 15
+tsvn:logminsize
+V 2
+30
+K 16
+tsvn:logtemplate
+V 25
+NEW:
+DEV:
+FIXBUG:
+Merged:
+END

@@ -1,0 +1,432 @@
+@import "common";
+body{
+  background:#f3f3f3; font-size:j(24);
+}
+
+/*数据查询*/
+#data_query{
+  h2{ font-weight:normal; font-size:j(32); line-height:j(40); margin-bottom:j(20);}
+  padding:j(30);
+  .query_hd{
+    text-align:center;
+    margin:j(0) j(56);
+    .merchant_code{
+      width:100%;
+      -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+      border:j(2) solid #E9E9E9; height:j(74); font-size:j(32);text-align:center;
+
+    }
+
+  }
+}
+
+.query_btn{
+  border:j(2) solid #F57E22; width:100%;
+  -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-border-radius:j(5); -moz-border-radius:j(5); 
+  height:j(84); font-size:j(36); margin-top:j(30); cursor:pointer; color:#F27211;
+}
+
+.query_bd{
+  margin-top:j(40);
+}
+.query_table{
+  background-color:#fff;
+
+  th,td{
+    text-align:center;
+    border:j(2) solid #F0F0F0;
+    font-weight:normal;
+    padding:j(20) 0;
+  }
+  thead th{
+    background:#646473; color:#fff;
+    border-color:#9999A1;
+  }
+  tbody tr th{
+    text-align:left;
+    padding-left:j(30);
+    a{
+      text-decoration:underline;
+      color:#F27211;
+    }
+  }
+
+}
+
+.form_module{
+  font-size:j(32); background-color:#fff;
+  li{
+    @extend %flex_box;
+    margin-left:j(20);
+    @extend %b_b_3c;
+    height:j(80); padding:j(10) 0; line-height:j(80);
+  }
+  li:last-child{
+    border-bottom:none;
+  }
+  label{
+    width:40%; display:block;
+    
+  }
+  input{
+    @extend %flex; font-size:j(32); display:block; height:j(80);
+    margin-right:j(30);
+  }
+  @extend %b_b_3c;
+}
+#write_off{
+   padding-bottom:j(40);
+ }
+.write_off_sub{
+  margin:0 j(20);
+
+  .upload_pic{
+    h3{
+      font-size:j(32); color:#B8B8B8; font-weight:normal; margin:j(30) 0 j(50);
+    }
+    ul{
+      @extend %flex_box;
+      margin:0 j(50);
+      li{
+        @extend %flex;
+        text-align:center;
+        .upload_btn{
+          position:relative;
+          -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+          border:1px solid #ccc;
+          @extend %item_alignCenter;
+          -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+          width:j(140);
+          height:j(140);
+          text-align:center;
+        }
+        .image_wrap{
+          position:absolute; left:0;top:0;
+          z-index:9;width:100%; height:100%;
+          //@extend %item_alignCenter;
+          img{
+            height:100%;
+            width:auto;
+          }
+        }
+        input[type=file]{
+          width:100%; height:100%; opacity:0;
+          position:absolute; left:0; top:0;
+          z-index:10;
+        }
+
+        p{
+          width:j(140);
+          margin:j(20) 0;
+        }
+        .icon{
+          font-style:normal;
+        }
+
+      }
+      >:nth-child(2){
+        margin:0 j(40);
+      }
+    }
+  }
+}
+
+#query_result{
+  padding:0 j(20);
+  color:#999;
+   .query_table tr span{
+    margin-right:j(20);
+  }
+  strong{
+    color:#000; font-weight:normal;
+  }
+  .verify_code_td{
+    text-align:left; padding-left:j(30);
+
+  }
+}
+/*pc 五折买豪车*/
+#half_off_list{
+  .banner{
+    @extend %imgB; width:100%; height:auto;
+  }
+  .half_off_bd{
+    padding:j(20);
+  }
+  .half_item_wrap{
+    background:#fff; margin-bottom:j(25);
+  }
+  .half_item{
+    padding:j(14) j(26);
+    @extend %flex_box;
+    .img_wrap{
+      position:relative; width:j(200); height:j(150); float:left;
+      margin-top:j(20);
+      margin-right:j(20);
+      img{
+        position:absolute;
+        width:100%; height:100%; left:0; top:0;
+      }
+      &:after{
+        @extend %after;
+        @extend %placeholderBg;
+        padding-top:75%;
+      }
+    }
+    .r_box{
+      @extend %flex; position:relative;
+      border-left:1px solid #eee;
+      padding-left:j(20);
+      .discount{
+        background:#F27210; width:j(64); height:j(34); line-height:j(34);
+        color:#fff; font-size:j(20);text-align:center; display:block; font-weight:normal;
+      }
+      .title{
+        line-height:j(40); margin-top:j(10); padding-bottom:j(10);
+        border-bottom:1px dashed #eee;word-break:break-all;white-space:normal;
+        margin-bottom:j(5);
+      }
+
+      @at-root .price{
+        @extend %flex_box;
+        .curr_price{
+         width:48%;
+          color:#E93E37;
+          .curr_price_num{
+            font-size:j(38);
+          }
+        }
+        .origin_price{
+          @extend %flex;
+          color:#999; font-size:j(18); margin-left:j(3);
+          text-align:right; line-height:j(54);
+        }
+      }
+      @at-root .location{
+        position:absolute;
+        right:0;top:0;
+        font-size:j(26);
+      }
+    }
+  }
+}
+
+.load_others{
+  display:block; height:j(86);text-align:center;border:1px solid #E6E6E6;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  line-height:j(86);
+
+  background-color:#fff; font-size:j(32); color:#F27210;
+  -webkit-border-radius:j(5); -moz-border-radius:j(5); border-radius:j(5);
+}
+
+#half_off_detail{
+  padding-bottom:j(120);
+}
+.car_banner{
+  width:100%; position:relative; overflow:hidden;
+  margin-bottom:j(30);
+  .car_banner_img{
+    position:absolute; width:100%;
+    top:0; left:0; height:100%;
+  }
+  &:after{
+    @extend %after;
+    @extend %placeholderBg;
+    padding-top:75%;
+  }
+}
+
+.car_banner_sub{
+  color:#fff; font-size:j(32); line-height:j(88);
+  text-align:center;
+  width:100%; height:j(88);
+  background:url(http://img.autostreetscdn.com/m/src/images/car_banner_sub.png) no-repeat; background-size:100% j(88); position:absolute; bottom:0; left:0;
+>span:nth-child(2){
+  margin:0 j(40);
+}
+}
+
+.price_box{
+  color:#999; font-size:j(24);
+  margin-top:j(10);
+  p{
+    margin-bottom:j(5);
+  }
+  .discount_price{
+     font-size:j(26);color:#D80000;
+    span{
+      font-size:j(50);color:#D80000; margin-right:j(10);
+    }
+    
+  }
+  .origin_price{
+     font-size:j(26);color:#A6A77A;
+    span{
+      font-size:j(50);color:#A6A77A; margin-right:j(10);
+    }
+
+  }
+}
+#get_car_location,#get_car_range{
+  i{
+    font-style:normal; float:right; font-size:j(32);
+    margin-right:j(20); color:#ccc;
+  }
+}
+.ho_box{
+  background-color:#fff; padding:0 j(20) 0 j(25);
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  padding:j(24) j(50) j(50) j(24);
+  color:#999;font-size:j(24);
+  margin-bottom:j(20);
+  h3{
+    font-weight:normal;
+  }
+}
+
+.liucheng_box{
+  border-left:1px solid #f9ab6c; margin-top:j(60); margin-left:j(30);
+  ul{}
+  li{
+    margin-bottom:j(50);
+    padding-left:j(40);
+    @extend %flex_box; position:relative;
+    >span:nth-child(2){
+      @extend %flex;
+    }
+    >span:nth-child(1){
+      color:#000;
+      width:j(160);
+    }
+
+    i{
+      position:absolute; background-color:#f9ab6c; width:j(49); height:j(49);
+      color:#fff; font-weight:bold;font-style:normal;text-align:center; line-height:j(49); left:j(-49/2);top:j(-10);
+      -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+    }
+  }
+}
+
+.protocol_box{
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  color:#999;
+  font-size:j(28);
+  margin-bottom:j(20);
+  height:j(90); line-height:j(90);
+  padding:0 j(50) 0 j(110);
+  background:url(http://img.autostreetscdn.com/m/src/images/s_bf.png) no-repeat #fff j(40)  center;
+  background-size:j(44) j(44);
+
+}
+.protocol_box.agree{
+  background-image:url(http://img.autostreetscdn.com/m/src/images/success.png);
+}
+.agree_protocol{
+  color:#1F7FF7;
+}
+
+/*活动协议*/
+#activity_protocol{
+  color:#aaa;
+  padding:j(20) j(20) j(30) j(30);
+  h3{
+    font-weight:normal; font-size:j(30);
+
+    margin-bottom:j(30);
+  }
+  p{
+    margin-bottom:j(20); line-height:j(45);
+  }
+}
+
+/*ho_sub*/
+.ho_sub{
+  position:fixed; bottom:0; left:0; background-color:#F3F3F3;
+  width:100%;
+  .inner{
+    padding:j(20) j(20) j(20) j(30);
+    @extend %flex_box;
+  }
+  p{
+    width:j(404); color:#999; font-size:j(24); margin-top:j(10);
+  }
+  .yellow_btn{
+    @extend %flex; color:#fff; width:j(200); height:j(86); background-color:#F47410;
+    line-height:j(86);text-align:center;
+    -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+    display:block;
+  }
+}
+
+.title_wrap{
+  margin:j(30) 0;border-bottom: solid 1px #ddd;border-top:solid 1px #ddd;
+  .title_inner{
+    width:100%;  background-color:#fff;
+    .title {
+      background:#fff; padding:j(20) j(20) j(20) j(30);
+    }
+  }
+  >.title_fixed{
+    position:fixed; left:0;top:44px; z-index:99;border-bottom: solid 1px #ddd;border-top:solid 1px #ddd;
+  }
+}
+
+
+.title h3 { font:bold 0.1687rem/0.3374rem "Microsoft Yahei"; color:#525252; }
+
+.title p { line-height:0.2249rem }
+
+.title p span { font:bold 0.2474rem/0.2249rem "Arial"; color:#ff8e1f; }
+.topborder { border-top:1px solid #ddd; margin-bottom:0.1687rem; }
+
+.topborder a { text-indent:0rem }
+.get_car_location{ margin-bottom:0; border-bottom:none;}
+
+.write_off_link{
+  text-align:center;
+  color:#00228c; font-size:j(24); display:block; position:fixed; bottom:j(73); line-height:j(30);
+  width:100%;text-decoration:underline;
+}
+
+#write_off_login{
+  max-width:j(640);
+  margin:0 auto;
+  .login_img{
+    width:j(358);
+    margin:j(60) auto; display:block;
+  }
+  .login_wrap{
+    margin:j(50) j(25);
+    li{
+      @extend %flex_box;
+      -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+      border:1px solid #ddd;
+      background-color:#fff; height:j(76); margin-bottom:j(20);
+      -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+      line-height:j(76);
+      label{
+      display:block;width:10%;
+      text-align:center;
+    }
+      input{
+        @extend %flex; margin-right:j(10); font-size:j(28);
+      }
+    }
+    .user_name label img{width:j(24); height:j(28);}
+    .psw label img{width:j(21); height:j(28);}
+    .login{border:none;}
+    .login_btn{
+      @extend %flex; border:0; display:block; background-color:#5B6D86; color:#fff;
+      -webkit-border-radius:j(10); -moz-border-radius:j(10); border-radius:j(10);
+      font-size:j(32); font-weight:normal; padding:0; text-align:center;
+
+    }
+    .disable{
+      background-color:#E2E2E2; color:#ccc;
+    }
+  }
+}

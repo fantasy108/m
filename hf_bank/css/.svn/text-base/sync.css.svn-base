@@ -1,0 +1,253 @@
+html { height: 100%; }
+
+body { height: 100%; font-family: helvetica; }
+
+#body { position: relative; }
+
+.sync_list { font-size: 0.1349rem; color: #666; background: #fff; }
+
+.sync_list_item { border-bottom: 1px solid #ddd; padding: 0.1124rem 0.5062rem 0.1124rem 0.1124rem; }
+
+.sync_list, .competitive_list { background: #fff; }
+
+.sync_list_item h2 { font-size: 0.1687rem; font-weight: normal; color: #000; margin-bottom: 0.0562rem; }
+
+.sync_list_item p, .sub_info { margin-bottom: 0.0562rem; }
+
+.pmai_end { margin-left: 0.0562rem; }
+
+.sub_info ul li { display: inline-block; vertical-align: middle; padding-right: 0.1124rem; }
+
+.status { color: #D80000; }
+
+.status_end { color: #666; }
+
+.sync_info .sync_list_item { padding: 0.1574rem 0.3934rem 0.1124rem 0.1124rem; }
+
+.sync_info .sync_list_item h2 { font-weight: bold; }
+
+.select-type-box-wrap { height: 0.4949rem; background: #fff; width: 100%; }
+
+.select-type-box { height: 0.4949rem; border-bottom: 1px solid #dddddd; position: relative; z-index: 98; background: #fff; width: 100%; }
+
+.select-type { font-size: 0.1349rem; height: 0.4949rem; }
+
+.select-type li { width: 33%; float: left; text-align: center; padding-top: 0.18rem; height: 0.3149rem; }
+
+.select-type li.curr span { border-color: #979B0D; -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg); top: .02rem; }
+
+.select-type li.select-type-line { float: left; width: 1px; background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.5, #ddd), to(#fff)); height: 0.2149rem; margin-top: 0.05rem; }
+
+.select-type li a { margin-right: 0.07rem; color: #666; text-decoration: none; }
+
+.select-type li span { width: 0.07rem; height: 0.07rem; border-bottom: 0.025rem solid #999; border-left: 0.025rem solid #999; display: inline-block; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); position: relative; top: -0.02rem; }
+
+.sync_info { padding-bottom: 0.7512rem; }
+
+.competitive_list_wrap { background: #F3F3F3; padding-top: 0.1574rem; }
+
+.competitive_list { font-family: Arial; }
+
+.competitive_list li { padding: 0.1124rem; border-bottom: 1px solid #ddd; overflow: hidden; font-size: 0.1462rem; position: relative; }
+
+.prolist_img { float: left; position: relative; }
+
+.prolist_img img { display: inline-block; border: none; float: left; width: 1.1249rem; height: 0.8437rem; margin-right: 0.1124rem; background: url(http://img.autostreetscdn.com/m/src/images/car_bg.png) no-repeat; background-size: contain; }
+
+.competitive_list div { float: left; width: 1.1249rem; }
+
+.competitive_list li h3 { font-size: 0.1462rem; color: #3f3f3f; height: 0.2rem; overflow: hidden; line-height: 0.2rem; margin-bottom: 0.05rem; text-overflow: ellipsis; white-space: nowrap; }
+
+.competitive_list li p { font-size: 0.1rem; color: #666; line-height: 0.12rem; }
+
+.competitive_list li p ins { font-style: normal; text-decoration: none; color: #d9d9d9; width: 0.1rem; display: inline-block; text-align: center; }
+
+.competitive_list li strong { font-size: 0.1462rem; color: #D90000; font-family: Arial; position: absolute; left: 1.3497rem; bottom: 0.1124rem; }
+
+.select-list-box h3 a.on, .select-list-box li a.on { color: #979B0D; background: url(http://img.autostreetscdn.com/m/src/images/gou_g.png) no-repeat right center; background-size: .1349rem .1406rem; }
+
+.endtime { position: absolute; right: 0.1rem; bottom: 0.1324rem; font-size: 0.1rem; color: #666; line-height: 0.12rem; }
+
+.select-list-box { position: absolute; width: 100%; top: 0.4949rem; z-index: 99; background: #fff; font-size: 0.1462rem; margin-top: 1px; max-height: 200px; overflow-y: auto; }
+
+.select-list-box h3 { margin-left: 0.2249rem; height: 0.5624rem; line-height: 0.5624rem; font-size: 0.1574rem; font-weight: normal; padding-right: 0.2249rem; }
+
+.select-list-box h3 a { color: #000; text-decoration: none; height: 0.5624rem; width: 100%; display: inline-block; }
+
+.select-list-box ul { margin-left: 0.2249rem; }
+
+.select-list-box li { height: 0.5624rem; line-height: 0.5624rem; border-top: 1px solid #ddd; padding-right: 0.2249rem; }
+
+.select-list-box li a { font-size: 0.1574rem; text-decoration: none; color: #000; height: 0.5624rem; width: 100%; display: inline-block; }
+
+.select-list-box li a img { position: relative; top: 0.105rem; width: 0.3599rem; height: 0.3599rem; margin-right: 0.11rem; }
+
+.link_live_room { position: fixed; bottom: 0; width: 100%; background: #fff; height: 0.5512rem; padding: 0.08rem 0; box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3); }
+
+.live_room { font-size: 0.199rem; color: #fff; text-decoration: none; height: 0.5512rem; line-height: 0.5512rem; background: #f47410; display: block; font-family: Arial; margin: 0 0.08rem; border-radius: 0.05rem; text-align: center; background-repeat: no-repeat; background-size: 0.2474rem 0.2474rem; background-position: 0.4rem center; overflow: hidden; }
+
+.not_allow .live_room { background: #aaa; }
+
+.nodata { background: #f3f3f3 url("http://img.autostreetscdn.com/m/src/images/nodata.png") no-repeat center 0.3rem; background-size: 1.4624rem 0.9562rem; padding-top: 1.5rem !important; border-bottom: 0px; text-align: center; color: #7d8592; font-size: 0.2rem !important; height: 3rem; }
+
+.competitive_list .auction_status { color: #666; }
+
+.competitive_list .auction_ing { color: #D80000; }
+
+.mb5 { margin-bottom: 0.05rem; }
+
+/*live room*/
+header { overflow: visible; }
+
+.fr { float: right; }
+
+.pa { position: absolute; }
+
+.auction_list { top: 0.1574rem; right: 0.5624rem; cursor: pointer; }
+
+.top_menu { top: 0.1574rem; right: 0.1462rem; line-height: 6px; z-index: 9; cursor: pointer; }
+
+.auction_list span { display: block; height: 0.0336rem; width: 0.2016rem; background: #fff; margin-bottom: 0.0336rem; }
+
+.top_menu span { display: inline-block; border-radius: 3px; -webkit-border-radius: 3px; height: 6px; width: 6px; background: #fff; }
+
+@media (max-width: 320px) { .top_menu span { border-radius: 2px; -webkit-border-radius: 2px; height: 4px; width: 4px; } }
+.pop_menu { background: rgba(0, 0, 0, 0.95); width: 1.288rem; height: 0.9554rem; position: absolute; right: 0.0336rem; top: 0.3808rem; border-radius: 0.0562rem; display: flex; display: -webkit-flex; flex-flow: column; display: none; }
+
+.pop_menu p { margin-left: 0.1124rem; border-bottom: 1px solid #676B6D; overflow: hidden; }
+
+.pop_menu .jcxx { border: none; }
+
+.pop_menu a { color: #ccc; font-size: 0.1799rem; height: 100%; text-decoration: none; text-align: left; display: block; }
+
+.pop_menu i { display: block; background: rgba(0, 0, 0, 0.95); width: 0.1124rem; height: 0.1124rem; right: 0.18rem; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; top: -0.0562rem; }
+
+#wrapper { font-size: 1.5rem; height: 2.6999rem; /*float: left;*/ position: relative; z-index: 1; overflow: hidden; background: #e3e3e3; }
+
+#scroller { height: 100%; /* float: left;  */ padding: 0; }
+
+#scroller ul { list-style: none; display: block; float: left; width: 100%; height: 100%; padding: 0; margin: 0; text-align: left; }
+
+#scroller li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: block; float: left; text-align: center; font-family: georgia; font-size: 18px; line-height: 140%; }
+
+#scroller li img { width: 100%; }
+
+#nav { width: 300px; float: left; display: none; }
+
+#indicator, #indicator > li { display: block; float: left; list-style: none; padding: 0; margin: 0; }
+
+#indicator { width: 110px; padding: 12px 0 0 30px; }
+
+#indicator > li { text-indent: -9999em; width: 8px; height: 8px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #ddd; overflow: hidden; margin-right: 4px; }
+
+#indicator > li.active { background: #888; }
+
+#indicator > li:last-child { margin: 0; }
+
+#thelist li img { width: 100%; }
+
+.price_box { color: #fff; position: absolute; z-index: 999; bottom: 0; height: 0.843rem; width: 100%; background: rgba(0, 0, 0, 0.5); }
+
+/*video*/
+.video_box a { bottom: 0.9554rem; position: absolute; width: 0.4256rem; height: 0.4256rem; }
+
+.video_box .video { right: 0.6749rem; }
+
+.video_box .stop_video { background: url(http://img.autostreetscdn.com/m/src/images/no_video.png) no-repeat; background-size: 0.4256rem 0.4256rem; }
+
+.video_box .play_video { background: url(http://img.autostreetscdn.com/m/src/images/play_video.png) no-repeat; background-size: 0.4256rem 0.4256rem; }
+
+.video_box .zoom { right: 0.1124rem; }
+
+.video_box .zoom_b { background: url(http://img.autostreetscdn.com/m/src/images/zoom_b.png) no-repeat; background-size: 0.4256rem 0.4256rem; }
+
+.video_box .zoom_s { background: url(http://img.autostreetscdn.com/m/src/images/zoom_s.png) no-repeat; background-size: 0.4256rem 0.4256rem; }
+
+.price_box p { font-size: 0.1462rem; padding-left: 0.0896rem; padding-top: 0.0896rem; }
+
+.price_box p label { float: left; width: 0.7874rem; margin-top: 0.0562rem; }
+
+.price_box p span { font-size: 0.2249rem; margin-right: 0.1799rem; }
+
+.price_box .curr_price { color: #F89633; }
+
+.price_box .highest { position: relative; background: #979B0D; border-radius: 0.0224rem; width: 0.7306rem; height: 0.2249rem; line-height: 0.2249rem; color: #fff; font-size: 0.1349rem; display: inline-block; text-align: center; margin-left: 0.1574rem; visibility: hidden; }
+
+.highest i { display: block; width: 0.0562rem; height: 0.0562rem; border-top: .035rem solid #979B0D; border-left: .035rem solid #979B0D; position: absolute; left: -.02rem; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); top: 0.0686rem; background: #979B0D; }
+
+.auction_top { width: 100%; position: absolute; top: 0; left: 0; background: url(http://img.autostreetscdn.com/m/src/images/auction_top.png) no-repeat; height: 0.28125rem; line-height: 0.28125rem; background-size: cover; color: #fff; font-size: 0.14625rem; }
+
+.auction_top span { padding-left: 0.08437rem; }
+
+.auction_top a { color: #000; margin-right: 0.1125rem; }
+
+.auction_num { display: inline-block; }
+
+.auction_top_menu { display: inline-block; float: right; }
+
+.auction_flow { padding: 0.1124rem 0 0.8999rem 0.1124rem; font-size: 0.1349rem; line-height: 0.2812rem; clear: both; position: relative; }
+
+/*.auction_flow ul{max-height:1.288rem;overflow-x:auto;}*/
+.auction_flow span { color: #333; }
+
+.curr_bid { color: #D80000; }
+
+.bid_box { background: #F3F3F3; border-top: 1px solid #BABABA; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 80; }
+
+.bid { padding: 0.0896rem 0.1124rem; overflow: hidden; }
+
+.bid li { border: 1px solid #CBCBCB; width: 0.3136rem; height: 0.3136rem; float: left; margin-right: 0.0562rem; background: #fff; position: relative; }
+
+.minus, .plus { cursor: pointer; }
+
+.minus i, .plus i { display: block; height: 0.0224rem; width: 0.1799rem; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background: #000; }
+
+.plus s { display: block; height: 0.1799rem; width: 0.0224rem; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background: #000; }
+
+.bid .bid_ipt { width: 50%; font-size: 0.2016rem; line-height: 0.3136rem; }
+
+.bid .bid_ipt p { padding-left: 0.1124rem; }
+
+.bid .bid_ipt p span { float: right; margin-right: 0.1124rem; }
+
+.bid .bid_btn { background: #F47410; float: right; width: 0.5624rem; border: 1px solid #F47410; border-radius: 0.0448rem; margin-right: 0; }
+
+.bid .bid_btn a { text-align: center; color: #fff; font-size: 0.2016rem; line-height: 0.3136rem; display: block; text-decoration: none; }
+
+.bid .bid_not_allow { background: #aaa; border-color: #aaa; }
+
+.bid .bid_not_allow a { cursor: default; }
+
+.plus.disable i, .plus.disable s, .minus.disable i, .minus.disable s { background: #cbcbcb; }
+
+.tipbg { position: fixed; width: 100%; height: 100%; background: #000; z-index: 90; top: 0; background: rgba(0, 0, 0, 0.5); display: none; }
+
+/*list*/
+.auction_list_page { position: fixed; left: 100%; top: 0; width: 100%; height: 100%; background: #fff; z-index: 99; padding-bottom: 200px; margin-bottom: -200px; }
+
+.close_auction_list_page { right: 0.1124rem; position: absolute; color: #fff; text-decoration: none; }
+
+#auction_list { overflow-y: auto; overflow-x: hidden; }
+
+#auction_list li { padding: 0.1124rem 0.0896rem 0.1124rem 0.1687rem; overflow: hidden; border-bottom: 1px solid #ddd; }
+
+#auction_list li p { position: relative; width: 0.8999rem; height: 0.6749rem; float: left; margin-right: 0.1124rem; }
+
+#auction_list li img { border: none; display: block; width: 100%; height: auto; }
+
+.auction_list_num { position: absolute; background: rgba(0, 0, 0, 0.7); width: 0.3934rem; height: 0.2812rem; color: #fff; font-size: 0.1799rem; text-align: center; left: 0; top: 0; line-height: 0.2812rem; }
+
+#auction_list h3 { font-size: 0.1799rem; }
+
+#auction_list .curr_auction h3 { color: #8E910D; }
+
+.num { position: absolute; background: rgba(0, 0, 0, 0.7); font-style: normal; text-align: center; width: 0.3374rem; height: 0.1687rem; line-height: 0.1687rem; color: #fff; }
+
+.not_merchant { padding: 0.1125rem 0; font-size: 0.19125rem; text-align: center; line-height: 0.28125rem; }
+.not_merchant a { color: #356FC4; }
+
+.count_down { color: #D80000; font-size: 0.8999rem; left: 0; bottom: 1.0124rem; z-index: 1; width: 100%; position: fixed; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -ms-flex-pack: center; -webkit-box-pack: center; box-pack: center; -webkit-justify-content: center; justify-content: center; -ms-flex-align: center; -webkit-box-align: center; box-align: center; -webkit-align-items: center; align-items: center; }
+
+.loading { display: none; background: url("http://img.autostreetscdn.com/m/src/images/loading.gif"); background-size: 16px 16px; background-repeat: no-repeat; height: 32px; background-position: center center; position: fixed; left: 0; top: 0; right: 0; bottom: 0; margin: auto; }
+
+/*# sourceMappingURL=sync.css.map */

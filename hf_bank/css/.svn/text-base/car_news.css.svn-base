@@ -1,0 +1,63 @@
+#car_news {
+  padding-left: 0.14625rem; }
+#car_news .car_news_list .car_news_desc {
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding: 0.18rem 0;
+  text-decoration: none;
+  position: relative; }
+#car_news .car_news_list .car_news_sm_img {
+  float: left;
+  width: 0.9rem;
+  height: 0.675rem;
+  margin-right: 0.1125rem; }
+#car_news .car_news_list .car_news_title {
+  font-size: 0.1575rem;
+  color: #000;
+  margin-right: 0.1125rem; }
+#car_news .car_news_list .news_date {
+  color: #545454;
+  font-size: 0.12375rem;
+  line-height: 0.15187rem;
+  float: left;
+  position: absolute;
+  left: 1.0125rem;
+  bottom: 0.18rem; }
+
+#car_news_detail {
+  font-size: 0.1575rem;
+  color: #525252;
+  margin: 0 0.16875rem;
+  padding-top: 0.16875rem;
+  padding-bottom: 0.5625rem; }
+#car_news_detail h2 {
+  font-weight: bold;
+  line-height: 0.19125rem;
+  margin-bottom: 0.02812rem; }
+#car_news_detail .createTime {
+  font-size: 0.12375rem;
+  line-height: 0.15187rem;
+  display: block;
+  margin-bottom: 0.1125rem; }
+#car_news_detail img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  border: none; }
+#car_news_detail img ~ span {
+  display: block;
+  margin-top: 0.05625rem; }
+#car_news_detail p {
+  line-height: 0.27rem;
+  margin: 0.18rem 0; }
+
+.loadMoreText {
+  text-align: center;
+  font-size: 0.1574rem;
+  color: #999;
+  height: 0.2812rem;
+  line-height: 0.2812rem;
+  display: none; }
+
+/*# sourceMappingURL=car_news.css.map */

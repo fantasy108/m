@@ -1,0 +1,79 @@
+@charset "utf-8";
+$browser-default-font-size:88.8889;
+
+@function j($px) {
+  @return $px / $browser-default-font-size * 1rem / 2;
+}
+.css3Transition {
+  -webkit-transition:all .35s ease-in; -moz-transition:all .35s ease-in; -ms-transition:all .35s ease-in; -o-transition:all .35s ease-in; transition:all .35s ease-in;
+}
+.lin{
+  background-color:#F47410; padding:2px; margin-right:4px;
+  color:#fff;
+}
+.pro_list li{
+
+  padding:j(20); border-bottom: 1px solid #ddd; overflow: hidden;font-size:0.1462rem; position: relative; color:#666;
+  a{ display:block; overflow:hidden;text-decoration:none; color:#666;}
+  img{
+    float:left; width:j(200); height:j(150); margin-right:j(22);
+    background: url(http://img.autostreetscdn.com/m/build/1.00/images/new_mall/xj_no_pic.jpg) center center no-repeat;
+    background-size: contain;
+  }
+  h3{font-size:j(26); color: #6C6C6C; height: 0.2rem;overflow: hidden; line-height: 0.2rem; margin-bottom: 0.05rem;text-overflow:ellipsis;white-space:nowrap; font-weight:normal; }
+  p{
+    font-size:j(16);color: #666; line-height:0.12rem;
+    ins{
+      text-decoration:none; color: #ccc; width:0.1rem; display: inline-block; text-align: center
+    }
+  }
+  .status{font-size:j(16);}
+  .pai_ing{ color:#ff7f00; }
+  .sub{
+    float:none; width:auto; margin-top:j(10); overflow:hidden;
+    strong{
+      font-size:j(24); color: #FF7F00; float:left;line-height:j(24);
+    }
+    span.right_info{
+      float:left; font-size:j(16); line-height:j(24); float:right;
+    }
+  }
+
+  i{
+   position:absolute;line-height:j(35); right:j(20);top:j(20);color:#fff; width:j(68); height:j(31);
+    background:#FFA64C; font-size:j(20); text-align:center;font-style:normal; -webkit-border-radius:j(4); -moz-border-radius:j(4); border-radius:j(4);
+  }
+
+}
+.pro_list .used_car_li{
+  .sub{ margin-top:j(30);}
+  i{
+    background:#A4B750;
+  }
+}
+.pro_list .new_car_li{
+  .sub{ margin-top:j(30);}
+  i{
+    background:#62B3E4;
+  }
+}
+
+
+
+
+//.pro_list .sub{ width:100%;}
+
+.nodata{ background:#f3f3f3 url('../images/nodata.png') no-repeat center 0.3rem;background-size: 1.4624rem 0.9562rem; padding-top: 1.5rem !important; border-bottom: 0px; text-align: center; color: #7d8592; font-size: 0.2rem !important; height: 3rem}
+
+.loading{background: url('../images/loading.gif');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  height: 32px;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  width: 32px;
+  left: 0;
+  right: 0;}

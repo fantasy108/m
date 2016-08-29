@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>竞拍大厅</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/auction_hall.css">
+    <script src="http://img.autostreetscdn.com/m/src/js/lib/flexible.js"></script>
+</head>
+<body>
+<header>
+    <section>竞拍大厅 </section>
+</header>
+<section id="content">
+    <div class="slider">
+        <ul>
+            <!--<li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/au_1.jpg" alt=""></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/au_1.jpg" alt=""></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/au_1.jpg" alt=""></a></li>-->
+        </ul>
+        <div class="trigger"></div>
+        <div class="text">
+            <ul>
+              <!--  <li>汽车街、天津浩物集团首拍告捷 网络成交30%1</li>
+                <li>汽车街、天津浩物集团首拍告捷 网络成交30%2</li>
+                <li>汽车街、天津浩物集团首拍告捷 网络成交30%3</li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="white_box">
+        <div class="auction_menu">
+            <a href="" class="au_item online_auction">
+                <img src="http://img.autostreetscdn.com/m/src/images/au_online.png" alt="">
+                <div class="r_box">
+                    <h2>在线拍<span>已组织 <b>65</b> 场</span></h2>
+                    <p>每天拍卖，海量车源</p>
+                </div>
+                <i class="arr"></i>
+            </a>
+            <a href="" class="au_item sync_auction">
+                <img src="http://img.autostreetscdn.com/m/src/images/au_sync.png" alt="">
+                <div class="r_box">
+                    <h2>同步拍<span>已组织 <b>65</b> 场</span></h2>
+                    <p>每周 3~5 场，线上线下同步拍卖，视频直播</p>
+                </div>
+                <i class="arr"></i>
+            </a>
+        </div>
+    </div>
+    <div class="white_box">
+        <div class="notice">
+            <div class="hd">
+                <h2>竞拍公告</h2>
+                <a href="auction_notice.html" class="more">更多</a>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=auction">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="white_box">
+        <div class="notice">
+            <div class="hd">
+                <h2>常见问题</h2>
+                <a href="auction_qa.html" class="more">更多</a>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                    <li><a href="car_news_detail.html?id=117&type=qa">【10月31日】  福建厦门建发中心拍卖公告</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="sub_nav">
+    <ul>
+        <li><a href="main.html"><span class="icon"></span><b>首页</b></a></li>
+        <li><a href="service.html"><span class="icon"></span><b>服务</b></a></li>
+        <li class="curr"><a href="auction_hall.html"><span class="icon"></span><b>竞拍大厅</b></a></li>
+        <li><a href="usermain.html"><span class="icon"></span><b>个人中心</b></a></li>
+    </ul>
+</div>
+</body>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/swipeSlide.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/auction_hall.js"></script>
+</html>

@@ -1,0 +1,237 @@
+var _infourl = "http://wap.autostreets.com/webApp/getVehicleBaseInfo?vehicleSid="+GetQueryString('vehicleSid');
+
+var _getCarFrameListurl = "http://wap.autostreets.com/webApp/getCarFrameList?vehicleSid="+GetQueryString('vehicleSid');
+
+var _getCarAppearanceListurl = "http://wap.autostreets.com/webApp/getCarAppearanceList?vehicleSid="+GetQueryString('vehicleSid');
+
+var _getCarCockpitList = "http://wap.autostreets.com/webApp/getCarCockpitList?vehicleSid="+GetQueryString('vehicleSid');
+
+var _getCarAttachment = "http://wap.autostreets.com/webApp/getCarAttachment?vehicleSid="+GetQueryString('vehicleSid');
+
+var imgurl = "http://images.autostreets.com/";
+
+
+
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r!=null) return (r[2]); return null;
+}
+
+var w=window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+var bigW = w/522;
+
+
+
+
+$(function(){
+    $.ajax({type: "GET",url:_infourl,dataType: "jsonp",jsonp: 'jsoncallback',scriptCharset:"GBK",jsonpCallback:"getinfo",cache:false,
+        success:function(data){
+            //认证
+            if(data.data.certified){
+                $('#eqs').show();
+            }
+
+            //车况评级
+            $('#conditionGrade').html(data.data.conditionGrade);
+            //车况评级
+            $('#frameScore').html(data.data.frameScore);
+            //质检信息
+            $('#zhijian').html("质检时间："+(new Date(data.data.assessmentDatetime).Format("yyyy年M月d日")));
+            //车辆信息
+            $.each(data.data.vehicleDetailInfo,function(i,item){
+                /*if(item.key == "出厂日期"){
+                 item.value = (new Date(item.value)).Format("yyyy年M月d日");
+                 }
+                 if(item.key == "上牌日期"){
+                 item.value = (new Date(item.value)).Format("yyyy年M月d日");
+                 }
+                 if(item.key == "年审有效期"){
+                 item.value = (new Date(item.value)).Format("yyyy年M月d日");
+                 }*/
+                if(item.key == "排气量"){
+                    item.value = item.value+"L";
+                }
+
+
+
+                //(new Date(item.registerLicenseDate)).Format("yyyy年M月")
+
+                var _vehicleDetailInfo = "<li><span class='right'>"+item.value+"</span>"+item.key+"</li>"
+                $("#vehicleDetailInfo").append(_vehicleDetailInfo);
+
+            });
+
+            $.each(data.data.featureItem,function(i,item){
+
+                var _featureItem = "<li class='dateon'>"+item+"</li>"
+                $("#featureItem").append(_featureItem);
+
+            });
+            //车辆图片
+            //$('#proimgbig').html("<img src='"+ imgurl + data.data.vehiclePhotoList[0] +"'>");
+            //车辆描述
+            //$('#vehicleDesc').html(data.data.vehicleDesc);
+
+
+        }
+    });
+
+
+    $.ajax({type: "GET",url:_getCarAttachment,dataType: "jsonp",jsonp: 'jsoncallback',scriptCharset:"GBK",jsonpCallback:"getCarAttachment",cache:false,
+        success:function(data){
+            //骨架信息
+            $.each(data.data,function(i,item){
+
+                var _framelist = "<li><span class='right'>"+item.value+"</span>"+item.key+"</li>"
+
+                $("#getCarAttachment").append(_framelist);
+
+            });
+        }
+    });
+
+
+
+    function addbadlist(_url,_box,_jsonpcallback,_icobox){
+
+        //alert($("#framelist"));
+
+        $.ajax({type: "GET",url:_url,dataType: "jsonp",jsonp: 'jsoncallback',scriptCharset:"GBK",jsonpCallback:_jsonpcallback,cache:false,
+            success:function(data){
+                //骨架信息
+                $.each(data.data,function(i,item){
+                    //alert(item.damageStatusSelected);
+                    if(!item.good){
+                        if(item.damageStatusSelected == ""){
+                            item.damageStatusSelected ="有损伤"
+                        }
+                        var _imgurl = item.damagePhoto.split(',',1);
+                        //alert(imgurl);
+                        //_imgurl = _imgurl[0].substring(4)
+                        //alert(imgurl);
+
+                        var _framelist = "<li><a href='"+imgurl+_imgurl+"' class='right openimg'>"+item.damageStatusSelected+"</a>"+item.itemOrder+". "+item.itemName+"</li>"
+                        $("#"+_box).append(_framelist);
+
+                        var _frameico ="<span class='frameico' style='left:"+item.axisy*bigW+"px;top:"+item.axisx*bigW+"px'>"+item.itemOrder+"<span>"
+
+                        $("#"+_icobox).append(_frameico);
+
+                    }
+
+                    //alert($("#"+_box+" li").length);
+
+
+                });
+                if($("#"+_box+" li").length == 0){
+                    $("#"+_box).append("<li style='text-align:center; border:0px;'>该车辆此检测项完好无损伤</li>")
+                    $("#"+_box).parent().css('border','0px')
+                }
+            }
+        });
+
+    }
+
+    addbadlist(_getCarFrameListurl,"getCarFrameListurl","getCarFrameListurl","getCarFrameListbox");
+    addbadlist(_getCarAppearanceListurl,"getCarAppearanceListurl","getCarAppearanceListurl","getCarAppearanceListbox");
+    addbadlist(_getCarCockpitList,"getCarCockpitList","getCarCockpitList","getCarCockpitListbox");
+    $(".right").live("click", function () {
+        var winBg = document.createElement("div");
+        var w_w = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+        var w_h = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight);
+        var imgUrl = $(this).prop("href");
+        var viewImg = new Image();
+        winBg.className = "winBg";
+        document.body.appendChild(winBg);
+
+//        viewImg.src="http://img3.cache.netease.com/photo/0001/2014-12-23/AE51JIDK00AP0001.jpg";
+//        viewImg.src="http://img3.cache.netease.com/photo/0001/2014-12-24/AE7JO31B00AO0001.jpg";
+//        viewImg.src="http://img6.cache.netease.com/cnews/2014/12/23/2014122311232857ac3.jpg";
+        viewImg.src = imgUrl;
+        viewImg.className = "viewImg";
+        document.body.appendChild(viewImg);
+        $('.winBg,.viewImg').click(function(){
+            $('.viewImg').hide().remove();
+            $('.winBg').hide().remove();
+        });
+        if (viewImg.complete) {
+            callBack(viewImg.width, viewImg.height);
+        } else {
+            viewImg.onload = function () {
+                callBack(viewImg.width, viewImg.height);
+            };
+        }
+        function callBack(w, h) {
+            if (w < w_w-20 && h < w_h-$("header").height()-20) {
+                return;
+            } else {
+                var scale = Math.min((w_w-20) / w, (w_h-$("header").height()-20) / h);
+                $(".viewImg").css({"width": scale * w, "height": scale * h, "marginTop": (w_h- scale * h) / 2});
+
+            }
+
+        }
+
+
+        return false;
+    });
+
+
+    $('#tab li').click(function(){
+        $('#tab li').removeClass('on');
+        $("#tab1box,#tab2box,#tab3box,#tab4box,#tab5box").hide();
+        $(this).addClass('on');
+        $("#"+$(this).attr('id')+"box").show();
+    });
+
+
+
+
+
+
+
+});
+
+//事件字符转换
+Date.prototype.Format = function(fmt){
+    var o = {
+        "M+" : this.getMonth()+1,                 //月份
+        "d+" : this.getDate(),                    //日
+        "h+" : this.getHours(),                   //小时
+        "m+" : this.getMinutes(),                 //分
+        "s+" : this.getSeconds(),                 //秒
+        "q+" : Math.floor((this.getMonth()+3)/3), //季度
+        "S"  : this.getMilliseconds()             //毫秒
+    };
+    if(/(y+)/.test(fmt))
+        fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+    for(var k in o)
+        if(new RegExp("("+ k +")").test(fmt))
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+    return fmt;
+}
+
+
+/*title 处理*/
+var _daq = _daq || [];
+function insertTitle(title){
+    var t=document.createElement("title")
+    t.innerHTML=title;
+    var l = document.getElementsByTagName('link')[0];
+    l.parentNode.insertBefore(t, l);
+
+    _daq.push(['_setAccount', 'wap']);
+    (function() {
+        var da = document.createElement('script');
+        da.type = 'text/javascript';
+        da.async = true;
+        da.src = ('https:' == document.location.protocol ? 'https://da' : 'http://da') + '.autostreets.com/da.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(da, s);
+    })();
+
+}
+
+insertTitle(sessionStorage.vehicleTitle);

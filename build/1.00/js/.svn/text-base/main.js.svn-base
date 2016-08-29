@@ -1,0 +1,6 @@
+/*
+ * Build by xuelei.kong@autostreets.com
+ * Date: 2016-04-07 10:30:42
+ * Version: 1.00
+ */
+require(["http://img.autostreetscdn.com/m/build/1.00/js/config.js"],function(){require(["zepto"],function(){$("a[data-page]").is("A")&&require(["define.history"],function(t){var a=$("a[data-page]"),o={url:location.href};a.attr("data-tab")&&(o.type=a.attr("data-tab")),a.attr("data-page")&&(o.id=a.attr("data-page")),t.addHistory(o),"back"==a.attr("data-role")?a.on("click",function(){t.back()}):"home"==a.attr("data-role")&&a.on("click",function(){t.home()})}),$("a.back").length>0&&($("a.back").after('<div class="top_nav"><span></span><span></span><span></span></div><div class="top_pop"><a href="http://wap.autostreets.com/" class="home_icon"><span>首页</span></a><a href="http://wap.autostreets.com/html/user_center/uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a><i></i></div>'),$("a.userCenter_icon").on("click",function(t){var a=this;return require(["http://wap.autostreets.com/js/userUtils.js"],function(){userUtils.login(a.href)}),!1}),$(document).bind("touchstart",function(){$(".top_pop").removeClass("show_pop")}),$(".top_nav").bind("touchstart",function(t){$(".top_pop").toggleClass("show_pop"),t.stopPropagation()}),$(".top_pop").bind("touchstart",function(t){t.stopPropagation()}))}),require(["bi"],function(t){t.init()})});

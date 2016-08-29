@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/index.css">
+    <script src="http://img.autostreetscdn.com/m/src/js/lib/flexible.js"></script>
+</head>
+<body>
+<header>
+    <section>
+        汽车街 <a id="tel" href="tel:12121212"></a>
+    </section>
+</header>
+<section id="content">
+    <div class="slider">
+        <ul>
+         <!--   <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/wap_index/1.png" alt=""></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/wap_index/2.png" alt=""></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/wap_index/3.png" alt=""></a></li>-->
+        </ul>
+        <div class="trigger"></div>
+    </div>
+    <div id="sub_menu">
+        <ul>
+            <li>
+                <p><a href="new_mall/main.html" title="买新车"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/nav_5.jpg" alt=""></a></p>
+                <p><a href="competitive.html" title="买二手车"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/nav_6.jpg" alt=""></a></p>
+            </li>
+            <li>
+                <p><a href="auction_hall.html" title="竞拍中心"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/nav_7.jpg" alt=""></a></p>
+                <p><a href="booking_maintenance/bm_main.html" title="保养预约"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/nav_10.jpg" alt=""></a></p>
+
+        <!--    </li>
+            <li>
+                <p><a href="" title=""><img src="http://img.autostreetscdn.com/m/src/images/wap_index/nav_9.jpg" alt=""></a></p>
+                <p><a href="" title=""><img src="http://img.autostreetscdn.com/m/src/images/wap_index/nav_8.jpg" alt=""></a></p>
+
+            </li>-->
+        </ul>
+    </div>
+    <div id="news">
+        <div class="hd">
+            <h2>最新资讯</h2>
+            <a href="car_news.html" class="more">更多</a>
+        </div>
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="new_img img_wrap" href="car_news_detail.html?id=1184&type=news"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/news.jpg" alt=""></a>
+                    <div class="desc">
+                        <h3><a class="news_title" href="car_news_detail.html?id=1184&type=news">成都车展首发新车汇总合资品牌成都车展首发新车汇总合资品牌</a></h3>
+                        <p><a class="news_content" href="car_news_detail.html?id=1184&type=news">2015年度成都车展9月4日拉开帷幕，在今年的成都车展上，各大厂商都带来了强大的展出阵容...</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a class="new_img img_wrap" href="car_news_detail.html?id=1184&type=news"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/news.jpg" alt=""></a>
+                    <div class="desc">
+                        <h3><a class="news_title" href="car_news_detail.html?id=1184&type=news">成都车展首发新车汇总合资品牌</a></h3>
+                        <p><a class="news_content" href="car_news_detail.html?id=1184&type=news">2015年度成都车展9月4日拉开帷幕，在今年的成都车展上，各大厂商都带来了强大的展出阵容...</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a class="new_img img_wrap" href="car_news_detail.html?id=1184&type=news"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/news.jpg" alt=""></a>
+                    <div class="desc">
+                        <h3><a class="news_title" href="car_news_detail.html?id=1184&type=news">成都车展首发新车汇总合资品牌</a></h3>
+                        <p><a class="news_content" href="car_news_detail.html?id=1184&type=news">2015年度成都车展9月4日拉开帷幕，在今年的成都车展上，各大厂商都带来了强大的展出阵容...</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a class="new_img img_wrap" href="car_news_detail.html?id=1184&type=news"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/news.jpg" alt=""></a>
+                    <div class="desc">
+                        <h3><a class="news_title" href="car_news_detail.html?id=1184&type=news">成都车展首发新车汇总合资品牌</a></h3>
+                        <p><a class="news_content" href="car_news_detail.html?id=1184&type=news">2015年度成都车展9月4日拉开帷幕，在今年的成都车展上，各大厂商都带来了强大的展出阵容...</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a class="new_img img_wrap" href="car_news_detail.html?id=1184&type=news"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/news.jpg" alt=""></a>
+                    <div class="desc">
+                        <h3><a class="news_title" href="car_news_detail.html?id=1184&type=news">成都车展首发新车汇总合资品牌</a></h3>
+                        <p><a class="news_content" href="car_news_detail.html?id=1184&type=news">2015年度成都车展9月4日拉开帷幕，在今年的成都车展上，各大厂商都带来了强大的展出阵容...</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a class="new_img img_wrap" href="car_news_detail.html?id=1184&type=news"><img src="http://img.autostreetscdn.com/m/src/images/wap_index/news.jpg" alt=""></a>
+                    <div class="desc">
+                        <h3><a class="news_title" href="car_news_detail.html?id=1184&type=news">成都车展首发新车汇总合资品牌</a></h3>
+                        <p><a class="news_content" href="car_news_detail.html?id=1184&type=news">2015年度成都车展9月4日拉开帷幕，在今年的成都车展上，各大厂商都带来了强大的展出阵容...</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a class="new_img img_wrap" href=""><img src="http://img.autostreetscdn.com/m/src/images/wap_index/news.jpg" alt=""></a>
+                    <div class="desc">
+                        <h3><a class="news_title" href="car_news_detail.html?id=1184&type=news">成都车展首发新车汇总合资品牌</a></h3>
+                        <p><a class="news_content" href="car_news_detail.html?id=1184&type=news">2015年度成都车展9月4日拉开帷幕，在今年的成都车展上，各大厂商都带来了强大的展出阵容...</a></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <ul class="foot_menu">
+        <li class="user_login">
+            <!--未登陆-->
+             <a href="">登录</a>
+             <a href="">注册</a>
+            <!--已登录-->
+            <!--<a href="" class="user_name">亲爱的12121212</a>-->
+        </li>
+        <li class="site_version">
+            <!--<a href="http://www.autostreets.com">电脑版?</a>-->
+            <a href="">APP下载</a>
+        </li>
+    </ul>
+    <p class="copy_right">&copy; 2004-2015 汽车街Autostreets.com</p>
+</footer>
+<div id="sub_nav">
+    <ul>
+        <li class="curr"><a href="main.html"><span class="icon"></span><b>首页</b></a></li>
+        <li><a href="service.html"><span class="icon"></span><b>服务</b></a></li>
+        <li><a href="auction_hall.html"><span class="icon"></span><b>竞拍大厅</b></a></li>
+        <li><a href="usermain.html"><span class="icon"></span><b>个人中心</b></a></li>
+    </ul>
+</div>
+<div class="app_download">
+    <div class="text">
+        <img src="http://img.autostreetscdn.com/m/src/images/logo_60_60.png" alt="">
+        <p>下载汽车街APP</p>
+        <span>开启更多特权</span>
+    </div>
+    <a id="close_app_download" href="javascript:void(0)" class="close_download"><span><i>+</i></span></a>
+    <a href="" class="download_link">立即下载</a>
+</div>
+</body>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/swipeSlide.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/index.js"></script>
+</html>

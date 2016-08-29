@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>新车团购会-领奖</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/new_car_group_buying.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+<div class="wrap3">
+    <div class="idx_banner">
+        <!-- <img src="http://img.autostreetscdn.com/m/src/images/new_car_group_buying/prize_bg2.png" alt=""/> -->
+        <h2>1000元加油卡!</h2>
+        <div class="prize_img">
+            <span><img src="http://img.autostreetscdn.com/m/src/images/new_car_group_buying/jyk.png" alt=""></span>
+        </div>
+        <div class="info_content">
+            <h3>请完善一下信息，我们将以快递形式为您发送奖品</h3>
+            <h4>收货人手机号码</h4>
+            <p class="mobile">13819934343</p>
+            <h4>收货人姓名</h4><p class="error_name">请输入姓名</p>
+            <input type="text" placeholder="请输入收货人姓名">
+            <h4>收货人城市</h4><p class="error_city">请输入省份</p>
+            <select name="" id="" class="first_sele">
+                <option value="">请选择省份</option>
+            </select>
+            <select name="" id="">
+                <option value="">请选择城市</option>
+            </select>
+            <h4>详细收货地址</h4><p class="error_addr">请输入详细收货地址</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <a href="#" class="form">确定</a>
+        </div>
+
+    </div>
+
+    <div class="mask_bg"></div>
+
+    
+
+</div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fx.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/new_car_group_buying.js"></script>
+</html>

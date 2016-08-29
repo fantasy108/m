@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/activity.css" type="text/css">
+</head>
+<body>
+<div class="activity_rule">
+    <h2>活动对象：</h2>
+    <p>招行信用卡主卡持卡人（商务卡除外）</p>
+    <h2>活动细则：</h2>
+    <p>1 持卡人凭抵用券验证码前往汽车街门店或全国指定合作4S门店，享受专属优惠；</p>
+    <p>2 所有积分换购的购车券、保养券、美容券、漆面维修券，每种抵用券使用请参考优惠细则；</p>
+    <p>3 抵用券到期未使用，可在招行“掌上生活”退券。具体兑换流程请参阅“掌上生活”首页。</p>
+    <h2>招行 “掌上生活”在线操作步骤：</h2>
+    <p>通过招行“掌上生活”APP，参加积分兑换优惠活动，兑换成功后，手机获得相应的兑换码短信，凭验证码到汽车街或者特约合作线下经销商门店购车，获得相应的优惠。</p>
+    <p>注明：每张购车券抵扣1000元车款，使用多张需多次购买，同时用户凭验证码可前往汽车街合作的4S店验证直抵购车款。</p>
+    <h2 class="red_color">汽车街优惠券</h2>
+    <h2>活动时间：</h2>
+    <p>2015年3月20日-2015年6月20日（汽车街吴中路金沪路活动时间）</p>
+    <h2>汽车街优惠券:</h2>
+    <p>100积分=汽车街1000元二手车展厅购车现金抵用券一张，（指定车型最高使用3张券抵扣3000元购车现金，与店内其它公开优惠活动同享。在线拍、现场拍除外。）<br/>
+        100积分=汽车街500元保养抵用券一张（根据车型不同，需提早预约）
+        100积分=汽车街800元深度美容抵用券一张，需提早预约</p>
+    <h2>汽车街门店</h2>
+    <ul>
+            <li>汽车街金沪路</li>
+            <li>地址：上海市浦东新区金沪路1000号</li>
+            <li>电话：021-50701111</li>
+    </ul>
+    <ul>
+        <li>汽车街吴中路</li>
+        <li>地址：上海市闵行区吴中路1219号</li>
+        <li>电话：021-34322222</li>
+    </ul>
+</div>
+<a href="javascript:history.go(-1)" style="display: block;" class="app_back_menu"></a>
+</body>
+<script type="application/javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script>
+    if(sessionStorage.isapp){
+        $('header').hide();
+        $('.app_back_menu').show();
+    }
+</script>
+</html>

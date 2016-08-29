@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*common*/
+* {
+  font-size: 0.135rem; }
+
+html {
+  height: 100%;
+  background: #fff; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+/*首页*/
+.banner {
+  margin: 0 0 0.1125rem 0;
+  float: left; }
+  .banner img {
+    width: 100%; }
+
+section {
+  padding: 0.1125rem;
+  position: relative;
+  float: left; }
+  section h2 {
+    font-size: 0.16875rem;
+    line-height: 0.225rem; }
+  section .link {
+    position: absolute;
+    top: 0.1125rem;
+    right: 0.1125rem;
+    width: 1.29375rem; }
+    section .link .more {
+      font-size: 0.1125rem;
+      line-height: 0.19687rem;
+      float: right;
+      width: 1.29375rem;
+      display: block;
+      text-align: right; }
+      section .link .more i {
+        float: right;
+        width: 0.07rem;
+        height: 0.07rem;
+        border-bottom: 0.025rem solid #999;
+        border-left: 0.025rem solid #999;
+        display: inline-block;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        margin: 0.045rem 0 0 0; }
+  section article {
+    font-size: 0.10125rem;
+    line-height: 0.16875rem;
+    margin: 0.1125rem 0; }
+    section article span {
+      margin: 0.16875rem 0 0 0;
+      color: #808080;
+      float: left; }
+  section ul {
+    width: 100%;
+    float: left; }
+    section ul li {
+      float: left;
+      margin: 0.05625rem;
+      width: 0.73125rem;
+      height: 1.0125rem; }
+      section ul li img {
+        width: 100%; }
+      section ul li p {
+        font-size: 0.0675rem;
+        word-break: break-all;
+        text-align: center; }
+  section .drive_btn {
+    float: left;
+    width: 100%;
+    margin: 0.28125rem 0; }
+    section .drive_btn a {
+      width: 2.025rem;
+      height: 0.45rem;
+      background: #1c69d4;
+      text-align: center;
+      color: #fff;
+      line-height: 0.45rem;
+      font-size: 0.2025rem;
+      margin: 0 auto;
+      display: block; }
+
+/*注册*/
+.test_drive {
+  float: left;
+  padding: 0.50625rem 0.3375rem;
+  position: relative; }
+  .test_drive .bg {
+    background: url("http://img.autostreetscdn.com/m/src/images/bmw_x1/logo.png") no-repeat right 0;
+    background-size: 1.23187rem 0.62437rem;
+    width: 1.23187rem;
+    height: 0.62437rem;
+    position: absolute;
+    top: 0rem;
+    right: 0.28125rem; }
+  .test_drive h2 {
+    font-size: 0.16875rem;
+    line-height: 0.28125rem; }
+  .test_drive h3 {
+    font-size: 0.14062rem;
+    line-height: 0.16875rem; }
+  .test_drive ul {
+    margin: 0.16875rem 0;
+    float: left; }
+    .test_drive ul li {
+      width: 100%;
+      margin: 0 0 0.1125rem 0;
+      float: left; }
+      .test_drive ul li label {
+        font-size: 0.14062rem; }
+      .test_drive ul li input, .test_drive ul li select {
+        width: 100%;
+        border: solid 1px #ccc;
+        border-radius: 0.08437rem;
+        height: 0.28125rem;
+        text-indent: 0.08437rem;
+        color: #999;
+        line-height: auto; }
+      .test_drive ul li select {
+        text-indent: 0; }
+      .test_drive ul li .error {
+        border: solid 1px red; }
+  .test_drive .read_txt {
+    font-size: 0.14625rem;
+    color: red;
+    float: left;
+    display: none; }
+  .test_drive .read {
+    width: 100%;
+    float: left; }
+    .test_drive .read i {
+      background: url("http://img.autostreetscdn.com/m/src/images/bmw_x1/false.png") no-repeat;
+      width: 0.28125rem;
+      height: 0.28125rem;
+      background-size: 0.28125rem 0.28125rem;
+      float: left; }
+    .test_drive .read .selected {
+      background: url("http://img.autostreetscdn.com/m/src/images/bmw_x1/true.png") no-repeat;
+      width: 0.28125rem;
+      height: 0.28125rem;
+      float: left;
+      background-size: 0.28125rem 0.28125rem; }
+    .test_drive .read p {
+      font-size: 0.14625rem;
+      line-height: 0.28125rem; }
+      .test_drive .read p a {
+        font-size: 0.14625rem;
+        color: #0000ff;
+        text-decoration: underline; }
+  .test_drive .form {
+    margin: 0.16875rem 0;
+    float: left;
+    width: 100%; }
+    .test_drive .form .form_btn {
+      width: 100%;
+      height: 0.45rem;
+      text-align: center;
+      color: #fff;
+      font-size: 0.2025rem;
+      line-height: 0.45rem;
+      float: left;
+      margin: 0 0 0.16875rem 0;
+      background: #1c69d4; }
+    .test_drive .form span {
+      color: #808080;
+      font-size: 0.10125rem; }
+
+/*金融计划*/
+h3.first {
+  margin: 0.1125rem 0 0 0; }
+
+a.detail {
+  color: #878787;
+  font-size: 0.12937rem;
+  border-bottom: solid 1px #ccc;
+  width: 100%;
+  display: block;
+  padding: 0.05625rem 0; }
+  a.detail i {
+    float: right;
+    width: 0.07rem;
+    height: 0.07rem;
+    border-bottom: 0.025rem solid #999;
+    border-left: 0.025rem solid #999;
+    display: inline-block;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin: 0.045rem 0 0 0; }
+
+/*法律声明*/
+.declare h1 {
+  font-size: 0.225rem;
+  margin: 0.1125rem 0; }
+.declare h2 {
+  font-size: 0.16875rem;
+  margin: 0.1125rem 0; }
+.declare h3 {
+  font-size: 0.14625rem; }
+
+/*# sourceMappingURL=bmw_x1.css.map */

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>下单支付-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/pay.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        下单支付
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div class="paybox">
+    <div class="orderinfo">
+        <img src="http://images.autostreets.com/group1/M00/99/A3/wKghH1UGTNmAFaErAASrz-hp9PQ260*200*150.jpg" width="100"
+             height="75" alt="">
+
+        <div class="car_info_fl">
+            <h3>2014款 宾利 慕尚 6.8T 四季臻藏版</h3>
+
+            <p><span>经销商：</span><strong id="companyName">宾利大连</strong></p>
+
+            <p><span>报&nbsp;&nbsp;价：</span><strong id="vendorPrice">688万元</strong></p>
+        </div>
+    </div>
+    <form name="saveOrderForm" action="http://wap.autostreets.com//newMallOrder/create" method="post">
+        <input type="hidden" name="userSid" id="userSid" value="2ac5ca5a165348fdb8085b59468c2067">
+        <input type="hidden" name="modelSid" id="modelSid" value="5815">
+        <input type="hidden" name="orgSid" id="organSid" value="3898">
+        <input type="hidden" name="depositAmt" id="depositAmt" value="1000">
+        <div class="mainbox topborder get_car_location">
+            <a id="get_car_location" href="javascript:void(0)">提车城市<i>上海</i></a>
+        </div>
+        <div class="mainbox topborder get_car_range">
+            <a id="get_car_range" href="javascript:void(0)">售卖范围<i>全国</i></a>
+        </div>
+        <ul class="payform">
+            <li><label class="label-1 label-2">姓名</label><input type="text" id="bidderName" name="customerName"
+                                                                placeholder="请输入姓名" class="input-1"></li>
+            <li><label class="label-1 label-2">手机号</label><input type="tel" id="buyerCellphone" name="cellPhone"
+                                                                 placeholder="请输入手机号" class="input-1"></li>
+        </ul>
+    </form>
+    <ul class="payform">
+        <li><label class="label-1 label-2">支付订金</label><span class="money">1000元</span></li>
+    </ul>
+    <div class="submitbox">
+        <a href="#" class="btn-1">立即订购</a>
+    </div>
+</div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script>
+    $(function () {
+        var flag = false;
+        $('.deal_icon,.dealinfo strong').click(function () {
+            if (!flag) {
+                $('.deal_icon').addClass("s_ed");
+                flag = true;
+            } else {
+                $('.deal_icon').removeClass("s_ed");
+                flag = false;
+            }
+        })
+    })
+</script>
+</body>
+</html>

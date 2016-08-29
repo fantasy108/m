@@ -1,0 +1,855 @@
+$browser-default-font-size:88.8889;
+body,input,select,button{font-family:Helvetica,sans-serif;}
+@function j($px) {
+  @return $px / $browser-default-font-size * 1rem / 2;
+}
+
+.css3Transition {
+  -webkit-transition:all .3s ease-in; -moz-transition:all .3s ease-in; -ms-transition:all .3s ease-in; -o-transition:all .3s ease-in; transition:all .3s ease-in;
+}
+
+@media only screen and (max-width:300px) {
+  html {
+    font-size:83.3333px;
+  }
+  .viewport {
+    max-width:300px;
+  }
+}
+
+@media only screen and (max-width:310px) and (min-width:300px) {
+  html {
+    font-size:83.3333px;
+  }
+
+  .viewport {
+    max-width:310px;
+  }
+}
+
+@media only screen and (max-width:320px) and (min-width:310px) {
+  html {
+    font-size:86.1111px;
+  }
+
+  .viewport {
+    max-width:320px;
+  }
+}
+
+@media only screen and (max-width:350px) and (min-width:320px) {
+  html {
+    font-size:88.8889px;
+  }
+
+  .viewport {
+    max-width:350px;
+  }
+}
+
+@media only screen and (max-width:374px) and (min-width:350px) {
+  html {
+    font-size:97.2222px;
+  }
+
+  .viewport {
+    max-width:360px;
+  }
+}
+
+@media only screen and (max-width:413px) and (min-width:375px) {
+  html {
+    font-size:104.1666px;
+  }
+
+  .viewport {
+    max-width:413px;
+  }
+}
+
+@media only screen and (max-width:430px) and (min-width:414px) {
+  html {
+    font-size:115px;
+  }
+
+  .viewport {
+    max-width:430px;
+  }
+}
+
+@media only screen and (max-width:470px) and (min-width:430px) {
+  html {
+    font-size:119.4444px;
+  }
+
+  .viewport {
+    max-width:470px;
+  }
+}
+
+@media only screen and (max-width:480px) and (min-width:470px) {
+  html {
+    font-size:130.5556px;
+  }
+
+  .viewport {
+    max-width:480px;
+  }
+}
+
+@media only screen and (max-width:540px) and (min-width:480px) {
+  html {
+    font-size:133.3333px;
+  }
+
+  .viewport {
+    max-width:540px;
+  }
+}
+
+@media only screen and (max-width:560px) and (min-width:540px) {
+  html {
+    font-size:110px;
+  }
+
+  .viewport {
+    max-width:560px;
+  }
+}
+
+@media only screen and (max-width:570px) and (min-width:560px) {
+  html {
+    font-size:155.5556px;
+  }
+
+  .viewport {
+    max-width:570px;
+  }
+}
+
+@media only screen and (max-width:630px) and (min-width:570px) {
+  html {
+    font-size:158.3333px;
+  }
+
+  .viewport {
+    max-width:630px;
+  }
+}
+
+@media only screen and (max-width:640px) and (min-width:630px) {
+  html {
+    font-size:175px;
+  }
+
+  .viewport {
+    max-width:640px;
+  }
+}
+
+@media only screen and (max-width:710px) and (min-width:640px) {
+  html {
+    font-size:177.7778px;
+  }
+
+  .viewport {
+    max-width:710px;
+  }
+}
+
+@media only screen and (max-width:720px) and (min-width:710px) {
+  html {
+    font-size:197.2222px;
+  }
+
+  .viewport {
+    max-width:720px;
+  }
+}
+
+@media only screen and (min-width:720px) {
+  html {
+    font-size:200px;
+  }
+
+  .viewport {
+    width:720px;
+  }
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding:0;
+  margin:0;
+}
+
+fieldset, img {
+  border:0;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+ol, ul {
+  list-style:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size:100%;
+}
+
+q:before, q:after {
+  content:'';
+}
+
+a {
+  cursor:pointer;
+}
+
+.clearfix {
+  *zoom:1;
+}
+
+.clearfix:after {
+  content:".";
+  display:block;
+  clear:both;
+  visibility:hidden;
+  line-height:0;
+  height:0;
+}
+
+.hide {
+  display:none;
+}
+input,button{
+  background: #fff;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  border:0;
+}
+/*header*/
+.headerSection {
+  background:#fff;
+  height:44px;
+  line-height:44px;
+  //overflow:hidden;
+  font-size:18px;
+  color:#333;
+  text-align:center;
+  z-index:99;
+  border-bottom:1px solid #ddd;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  position:fixed;
+  width:100%;
+  top:0; left:0;
+}
+
+header {
+  height:44px;
+  z-index: 99;
+  position: relative;
+  section {
+    @extend .headerSection;
+  }
+
+}
+
+.hide_main_header {
+  -webkit-transform:translate(100%,0); -moz-transform:translate(100%,0); -ms-transform:translate(100%,0); -o-transform:translate(100%,0); transform:translate(100%,0);
+}
+
+.header_2 {
+  height:44px;
+  section {
+    @extend .headerSection;
+  }
+}
+
+.back {
+  display:block; height:100%;width:38px; position:absolute;
+}
+.back::after{
+  width:12px;
+  height:12px;
+  border-top:1px solid #ddd;
+  border-left:1px solid #ddd;
+
+  display:inline-block;
+  position:absolute;
+  left:13px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  top:14px;
+  content:' ';
+}
+.right_go {
+  width:.1rem;
+  height:.1rem;
+  border-bottom:.035rem solid #ccc;
+  border-right:.035rem solid #ccc;
+  display:inline-block;
+  margin-right:.13rem;
+  margin-top:.18rem;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  top:.155rem;
+  float:right;
+}
+
+.indexbody {
+  background:#ececec;
+}
+
+.indexbody_new { background:#f7f7f7;
+  /*max-width: 640px;
+  min-width: 320px;*/
+  margin:0 auto;
+}
+
+.indexbody .indexbox {
+  width:290px;
+  height:289px;
+  display:inline-block;
+  /*background:url('http://img.autostreetscdn.com/m/src/images/main.jpg') 0 2px;*/
+  background-size:cover;
+  margin:.2rem auto;
+  font-size:.1rem;
+  overflow:hidden;
+  left:50%;
+  position:relative;
+  margin-left:-145px;
+}
+
+.mainbox a { width:100%; height:0.675rem; line-height:0.675rem; display:block; background:#fff; border-top:1px solid #ccc; font-size:0.2rem; color:#565656; text-decoration:none; text-indent:0.57rem; position:relative; margin-top:-1px; }
+
+.mainbox { background:#fff; padding-left:0.1687rem; border-bottom:1px solid #cccccc; margin-bottom:0.0787rem; overflow:hidden }
+
+.mainbox a img { width:0.4049rem; height:0.4049rem; position:absolute; left:0; top:0.15rem }
+
+.mainbox a span { width:0.0674rem; height:0.0674rem; border-bottom:0.025rem solid #ccc; border-right:0.025rem solid #ccc; display:inline-block; position:absolute; right:0.2rem; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); transform:rotate(-45deg); top:0.3rem; }
+
+.logo {
+  height:.2699rem;
+  top:.06rem;
+  position:relative;
+  @extend .css3Transition;
+}
+.hide_logo{
+  opacity:0;
+}
+
+.usermain {
+  background:url('http://img.autostreetscdn.com/m/src/images/usermain.jpg') 0 2px;
+  background-size:cover;
+}
+
+/*tip*/
+.tipbg {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#000;
+  z-index:99;
+  top:0;
+  background:rgba(0, 0, 0, 0.5);
+  display:none;
+}
+.more_panel_mask{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#000;
+  top:0;
+  background:rgba(0, 0, 0, 0.5);
+  opacity:0;
+  /*visibility:hidden;*/
+  z-index:99;
+  -webkit-transition:opacity .3s; -moz-transition:opacity .3s; -ms-transition:opacity .3s; -o-transition:opacity .3s; transition:opacity .3s;
+  pointer-events: none;
+}
+.ui_fix{
+  overflow:hidden;
+}
+.error_layer {
+  display:none;
+  width:j(400);
+  height:auto;
+  background:#fff;
+  position:fixed;
+  top:2.2499rem;
+  //left:0.6749rem;
+  z-index:100;
+  left:50%;
+  margin-left:j(-400/2);
+  border-radius:0.0562rem;
+}
+
+.error_layer .error_txt {
+  padding:0.1749rem;
+  font-size:0.1574rem;
+  color:#333;
+  border-bottom:solid 0.0112rem #ccc;
+  text-align:center
+}
+
+.error_layer .correct {
+  line-height:0.4499rem;
+  text-align:center;
+  font-size:0.1574rem;
+  color:#2181f7;
+  font-weight:bold;
+  display:block;
+  text-decoration:none;
+}
+
+.indexbox a {
+  width:145px;
+  height:101px;
+  display:inline-block;
+  float:left;
+  background-size:145px 101px;
+  background-repeat:no-repeat;
+}
+
+.idx_icon {
+}
+
+.r_1_1 { background-image:url(http://img.autostreetscdn.com/m/src/images/new_mall.jpg); }
+
+.r_1_2 { background-image:url(http://img.autostreetscdn.com/m/src/images/esc.jpg); }
+
+.r_2_1 { background-image:url(http://img.autostreetscdn.com/m/src/images/zxp.jpg); }
+
+.r_2_2 { background-image:url(http://img.autostreetscdn.com/m/src/images/tbp.jpg); }
+
+.r_3_1 { background-image:url(http://img.autostreetscdn.com/m/src/images/wzzq.jpg); }
+
+.r_3_2 { background-image:url(http://img.autostreetscdn.com/m/src/images/fwzc.jpg); }
+.user_r_1_1 { background-image:url(http://img.autostreetscdn.com/m/src/images/user_r_1_1.jpg); }
+
+.user_r_1_2 { background-image:url(http://img.autostreetscdn.com/m/src/images/user_r_1_2.jpg); }
+
+.user_r_2_1 { background-image:url(http://img.autostreetscdn.com/m/src/images/user_r_2_1.jpg); }
+
+.user_r_2_2 { background-image:url(http://img.autostreetscdn.com/m/src/images/user_r_2_2.jpg); }
+
+.user_r_3_1 { background-image:url(http://img.autostreetscdn.com/m/src/images/user_r_3_1.jpg); }
+
+.user_r_3_2 { background-image:url(http://img.autostreetscdn.com/m/src/images/user_r_3_2.jpg); }
+
+.usermain_link { background:url(http://img.autostreetscdn.com/m/src/images/user_head.png) no-repeat center center; position:absolute; background-size:0.2016rem 0.2016rem; width:0.4016rem; height:0.4016rem; right:0.1808rem; bottom:0.0434rem; }
+
+.main_more_btn {
+  cursor:pointer;
+  background:url(http://img.autostreetscdn.com/m/src/images/user_tigger.png) no-repeat center center; position:absolute; background-size:contain; width:j(80); height:j(74); left:j(3); bottom:j(5);background-size:j(50) j(44);
+  @extend .css3Transition;
+}
+.go{
+
+  -webkit-transform:translateX(20%); -moz-transform:translateX(20%); -ms-transform:translateX(20%); -o-transform:translateX(20%); transform:translateX(20%);
+  opacity:0;
+}
+.back_more{
+  width: 0.45rem;
+  height: 0.41625rem;
+  position:absolute;
+  display:none;
+  left:j(2); top:j(5);
+
+b{
+  width: .1349rem;cursor:pointer;
+  height: .1349rem;
+  border-top: .035rem solid #fff;
+  border-left: .035rem solid #fff;
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin:auto;
+  left:-10%; right:0; top:0; bottom:0;
+}
+}
+.show_back_more{
+  -webkit-transform:translateX(10%); -moz-transform:translateX(10%); -ms-transform:translateX(10%); -o-transform:translateX(10%); transform:translateX(10%);
+  opacity:1;
+}
+.more_text{display:none;}
+.show_more_text{
+  opacity:1;
+
+}
+
+.main_container {
+  overflow:hidden; position:relative;
+  .main_panel {
+    @extend .css3Transition;
+  }
+  .hide_main_panel {
+    -webkit-transform:translate(100%,0); -moz-transform:translate(100%,0); -ms-transform:translate(100%,0); -o-transform:translate(100%,0); transform:translate(100%,0);
+  }
+  .more_panel {
+
+  }
+  //.show_more_panel {
+  //  -webkit-transform:translate(100%,0); -moz-transform:translate(100%,0); -ms-transform:translate(100%,0); -o-transform:translate(100%,0); transform:translate(100%,0);
+  //}
+
+  %box{
+    border-top:1px solid #E3E3E3;
+    border-bottom:1px solid #E3E3E3;
+    background:#fff;
+    padding-left:j(29); position:relative;
+    margin:j(20) 0;
+  }
+  .more_main {
+    font-size:j(28); color:#929292;
+    .hd {
+      @extend  %box; padding:j(19) 0 j(19) j(29); font-size:0;
+      a{ display:block;}
+      .user_header{ display:inline-block; vertical-align:middle; margin-right:j(16);}
+      .user_header img{
+        width:j(123); height:j(123); -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;border:2px solid #E1E1E1;
+      }
+      .user_name_wrap{
+        font-weight:normal; font-size:j(32); color:#333;display:inline-block; vertical-align:middle;
+        .user_name{
+          line-height:j(29);
+        }
+        .user_sub_name{
+          font-size:j(28); color:#777777;
+        }
+      }
+    }
+    .bd {
+     @extend  %box;
+      ul li:last-child a{
+        border-bottom:none;
+      }
+      a{
+        display:block; position:relative; color:#333;text-decoration:none;
+        border-bottom:1px solid #E3E3E3; height:j(80); line-height:j(80); padding-left:j(73); font-size:j(32);
+        .icon{
+         top:50%;
+          position:absolute; left:0;
+          background-size:contain;background-repeat:no-repeat;
+
+        }
+        .icon_01{
+          width:j(34); height:j(32); margin-top:j(-32/2);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_01.png);
+        }
+        .icon_02{
+          width:j(32); height:j(30); margin-top:j(-30/2);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_02.png);
+        }
+        .icon_03{
+          width:j(41); height:j(24); margin-top:j(-24/2);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_03.png);
+        }
+        .icon_04{
+          width:j(29); height:j(32); margin-top:j(-32/2);left:j(3);
+
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_04.png);
+        }
+        .icon_05{
+          width:j(43); height:j(27);margin-top:j(-27/2);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_05.png);
+        }
+        .icon_06{
+          width:j(34); height:j(35);margin-top:j(-35/2);left:j(3);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_06.png);
+        }
+        .icon_07{
+          width:j(42); height:j(25);margin-top:j(-28/2);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_07.png);
+        }
+        .icon_08{
+          width:j(33); height:j(33);margin-top:j(-28/2);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/more_icon_08.png);
+        }
+
+        span{
+
+        }
+        >s.msg{
+         text-decoration:none;
+          background:#f00; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; color:#fff; font-size:j(24); width:j(38); height:j(38);
+          position:absolute; line-height:j(38); text-align:center; left:j(211);top:50%; margin-top:j(-19);
+        }
+      }
+    }
+
+    .r_arrow{
+      width: 0.1124rem;
+      height: 0.1124rem;
+      border-top: 0.025rem solid #ddd;
+      border-right: 0.025rem solid #ddd;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      right: 0.1124rem;
+      position:absolute; top:50%;
+      margin-top:-0.1124/2+rem;
+    }
+
+  }
+
+}
+.more_sub {
+  position:fixed; top:100%; left:0;width:100%;
+   z-index:299; font-size:j(28);
+  -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+  ul {
+    li {
+      height:j(96); border-top:1px solid #eee; line-height:j(96); text-align:center; background:#fff;
+      a {
+        color:#fff; text-decoration:none; display:block; color:#a5c16b;
+      }
+    }
+    li:last-child { background:#eee;
+      a {
+        color:#aeaeae;
+      }
+    }
+  }
+}
+.show_more_sub{ -webkit-transform:translateY(-100%); -moz-transform:translateY(-100%); -ms-transform:translateY(-100%); -o-transform:translateY(-100%); transform:translateY(-100%);}
+.down_apps{ /*display:none;*/}
+
+.ind {
+  font-size:0.1rem;
+  overflow:hidden;
+}
+
+.mai a {
+  width:100%;
+  height:0.675rem;
+  line-height:0.675rem;
+  display:block;
+  background:#fff;
+  border-top:1px solid #ccc;
+  font-size:0.2rem;
+  color:#565656;
+  text-decoration:none;
+  text-indent:0.57rem;
+  position:relative;
+  margin-top:-1px;
+}
+
+.mai {
+  background:#fff;
+  padding-left:0.1687rem;
+  border-bottom:1px solid #cccccc;
+  margin-bottom:0.0787rem;
+  overflow:hidden
+}
+
+.mai a img {
+  width:0.4049rem;
+  height:0.4049rem;
+  position:absolute;
+  left:0;
+  top:0.15rem
+}
+
+.mai a span {
+  width:0.0674rem;
+  height:0.0674rem;
+  border-bottom:0.025rem solid #ccc;
+  border-right:0.025rem solid #ccc;
+  display:inline-block;
+  position:absolute;
+  right:0.2rem;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  top:0.3rem;
+}
+
+.index_menu { margin:0.0844rem; }
+
+.index_menu .menu { display:block; }
+
+.index_menu .menu img { width:100%; display:block; border:none; }
+
+.flex_box {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+.flex {
+  flex:1;
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1; }
+
+.r_box{
+  width:50%;
+  p{
+  }
+}
+.newCar_menu, .service_menu { margin-right:0.0788rem; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; width:50%; }
+.sync_menu{
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; width:50%;
+}
+
+.activity_menu, .usedCar_menu{ margin-bottom:0.0844rem }
+
+.mainfooter {
+  font-size:0.1349rem;
+  text-align:center;
+  margin:0 0.0844rem;
+  color:#ccc;
+  position:relative;
+}
+
+.mainfooter .version { position:absolute; right:0; bottom:0; }
+
+
+
+.down_apps { height:0.5624rem; background:rgba(000, 000, 000, .85); width:100%; position:fixed; left:0; bottom:0;font-size:0.1349rem; color:#fff; z-index:9999; }
+
+.close_down_apps { background:url(http://img.autostreetscdn.com/m/src/images/tip_close.png) no-repeat; background-size:contain; width:0.1687rem; height:0.1687rem; position:absolute; left:0; top:0; }
+
+.down_apps .app_icon { background:url(http://img.autostreetscdn.com/m/src/images/app_icon.png) no-repeat; width:0.4164rem; height:0.4164rem; background-size:contain; margin:0.0784rem 0 0 0.1687rem; display:block; float:left; }
+
+.down_apps p { float:left; font-size:0.1349rem; margin:0.2rem 0 0 0.06rem; line-height:100%; }
+
+.down_apps p span { font-size:0.1799rem; margin-left:0.05rem; margin-bottom:0.04rem; display:block; }
+
+.ljty_btn { color:#444; float:right; text-decoration:none; height:0.27rem; line-height:0.27rem; padding:0 0.1124rem; background:#e7e7e7; border-radius:0.0336rem; -webkit-border-radius:0.0336rem; margin:0.1574rem 0.1574rem 0 0; }
+
+.top_nav{
+  position:absolute; right:10px;height:100%; font-size:0; top:0; cursor:pointer; width:40px; text-align:right; display:block;
+  span{
+    width:5px; height:5px; background:#999; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; display:inline-block; margin-left:4px; position:relative; top:3px;
+  }
+}
+.top_pop{
+  background: rgba(000,000,000,.75);
+  width:120px; height:88px;
+  position: absolute;
+  right: 5px;
+  top: 51px;
+  border-radius: 5px;
+  -webkit-transform:scale(0) translateZ(0); -moz-transform:scale(0) translateZ(0); -ms-transform:scale(0) translateZ(0); -o-transform:scale(0) translateZ(0); transform:scale(0) translateZ(0);
+  -webkit-transition:all .3s ease-in; -moz-transition:all .3s ease-in; -ms-transition:all .3s ease-in; -o-transition:all .3s ease-in; transition:all .3s ease-in;
+  transform-origin:90% 0;
+  -webkit-transform-origin:90% 0;
+  a{ color:#ccc; font-size:15px; display:block;text-align:left; padding-left:46px;text-decoration:none;}
+  span{
+    position:relative;top:2px;
+  }
+  .home_icon{
+    background:url(http://img.autostreetscdn.com/m/src/images/home_icon.png) no-repeat 15px center;background-size:18px;
+  }
+  .userCenter_icon{
+    background:url(http://img.autostreetscdn.com/m/src/images/userCenter_icon.png) no-repeat 15px center;
+    background-size:18px;
+  }
+  i{
+    display: block;
+    width:0;
+    height:0;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid rgba(000,000,000,.75);
+    position: absolute;
+    right:10px;
+    top: -8px;
+  }
+
+}
+.show_pop{
+
+  -webkit-transform:scale(1) translateZ(0); -moz-transform:scale(1) translateZ(0); -ms-transform:scale(1) translateZ(0); -o-transform:scale(1) translateZ(0); transform:scale(1) translateZ(0);
+}
+
+
+.favorites {
+  background: url('http://img.autostreetscdn.com/m/src/images/wujiaoxing.png');
+  width: 0.2812rem;
+  height: 0.2643rem;
+  background-size: cover;
+  display: inline-block;
+  float: right;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  position: absolute;
+  right: 54px;margin-right:0 !important;
+}
+.favorites-1 {
+  background: url('http://img.autostreetscdn.com/m/src/images/wujiaoxing-1.png');
+  width: 0.2812rem;
+  height: 0.2643rem;
+  background-size: cover;
+  display: inline-block;
+  float: right;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  position: absolute;
+  right: j(108); margin-right:0 !important;}
+
+.loading {
+  background: url("http://img.autostreetscdn.com/m/src/images/loading.gif");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  height: 32px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: auto;
+  z-index: 999;
+  background-position: center center;
+  display: none;
+  width: 32px;
+}
+
+.w_9_arr{
+  width: j(9);
+  height:j(9);
+  border-bottom:j(4) solid #ccc;
+  border-right: j(4) solid #ccc;
+  display: inline-block;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.ui_mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0;
+  bottom:0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  /*visibility:hidden;*/
+  z-index: 99;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  pointer-events: none;
+}
+
+.ui_show {
+  opacity: 1;
+  /*visibility:visible;*/
+  pointer-events: auto;
+}
+
+

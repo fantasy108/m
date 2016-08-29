@@ -1,0 +1,177 @@
+@import "reset.css";
+@import "scss_common";
+@import "css_common";
+#content{
+  width:j(640);
+  margin:0 auto; 
+}   
+.qa_icon{
+  width:44px; height:44px;
+  position:absolute; right:0; top:0;
+  &:after{
+    @extend %after;
+    background:url($root + "qa_icon.png") no-repeat;
+    @extend %tsfY50;
+    right:g(20);
+    width:g(42);
+    height:g(42);
+    background-size:contain;
+  }
+}
+.coupon_tab{
+  background:#fff;
+  ul{
+    @extend %flex_box;
+    li{
+      @extend %flex; text-align:center;
+      cursor:pointer;
+      height:g(81);
+      -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; border-bottom:1px solid #d0d0d0;
+      line-height:g(79); font-size:g(24);
+     a{ color:#999;}
+      span{
+        margin:0 20%; display:block;
+
+      }
+
+
+    }
+    .curr span{
+      color:#999;
+      border-bottom:2px solid #85880c;
+    }
+  }
+}
+.coupon_bd{
+  .item_list{
+    display:none;
+    .no_data{
+      text-align:center;
+      padding-top:40%;
+      color:#ccc;
+      font-size:g(30);
+      .coupon_icon{
+        background:url($root + "coupon_icon.png") no-repeat;
+        @include wh(84,57);
+        margin:0 auto;
+        -webkit-background-size:cover; background-size:cover;
+        display:block;
+      }
+      p{ margin-top:g(20);}
+
+    }
+
+  }
+  >:first-child{ display:block;}
+  .coupon_item{
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    height:g(150);
+    border:1px solid #d0d0d0;
+    border-left-width:g(10);
+    border-left-color:#ffa64d;
+    background:#fff;
+    margin:g(20) g(22);
+    color:#ffa64d;
+    @extend %flex_box;
+    .l_box{
+      position: relative;
+      @extend %flex;
+      padding:g(15) g(15) 0 g(15);
+      h2{ font-size:g(30); margin-bottom:g(5);overflow:hidden;width:100%;height:g(36);}
+      .date{ font-size:g(18);bottom:g(16);position: absolute}
+      span{ font-size:g(18); color:#999;}
+    }
+    .r_box{
+      position: relative;
+      text-align:right;
+      padding:g(10) g(20) 0 0;
+      width:g(170);
+      border-left:1px dashed #d0d0d0;  
+      p{ margin-bottom:g(38);}
+      span{ font-size:g(28);}
+      strong{ font-size:g(40);}  
+      a{ text-decoration:underline; color:#ffa64d;bottom:g(16);position: absolute;display:block;right:g(20);
+        font-size:g(18);
+      }
+    }
+    position:relative;
+    .circle{
+      position:absolute;
+      width:g(20); height:g(20);
+      -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;;
+      border:1px solid #f3f3f3;
+      background-color:#f3f3f3;
+      right:g(178)
+    }
+    .circle_top{
+      top:g(-15)
+    }
+    .circle_down{
+      bottom:g(-15);
+    }
+  }
+  .coupon_item.end{
+    border-color:#cfcfcf;
+    .l_box,.r_box{
+      color:#cfcfcf;
+      span{
+        color:#cfcfcf;
+      }
+    }
+    a{
+      color:#cfcfcf; text-decoration:none; cursor:default;
+    }
+  }
+}
+.coupon_rule{
+  padding:j(40);
+  background-color:#fff;
+  font-size:j(24); color:#999;
+  line-height:j(44);
+  h2{ font-weight:normal;color:#999;}
+}
+.coupon_detail{
+  padding:j(30);background-color:#fff;
+  .coupon_num{
+    padding:j(30);
+    background:#fcf8e2; text-align:center;
+    color:#333;
+    p{ font-size:j(28); margin-bottom:j(15);}
+    strong{ font-size:j(36); font-weight:normal;}
+    margin-bottom:j(30);
+  }
+  .coupon_info{
+    border-top:1px solid #eeedee;
+    border-bottom:1px solid #eeedee;
+    margin-bottom:j(30);
+    padding:j(30) 0 j(30) 0;
+    li{
+      @extend %flex_box; font-size:j(24);
+      margin-bottom:j(10);
+      height:j(40);
+      line-height:j(40);
+      label{
+        width:j(110); color:#999;
+      }
+      span{
+        @extend %flex; text-align:right;color:#333;
+        display:block;
+      }
+      .fee{
+        color:#fe6000;
+        b{
+          font-weight:100;
+          color:#fe6000;
+          font-size:j(40);
+        }
+      }
+    }
+  }
+  .notic{
+    p{
+      font-size:j(24); margin-bottom:3px;
+      line-height:j(40);
+    }
+    .red_color{ color:#fe6000;}
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>招行积分购车-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/activity.css" type="text/css">
+</head>
+<body class="integral_body">
+<header>
+    <header>
+        <section>
+            <a href="javascript:history.go(-1);" class='back'></a>
+            招行积分购车
+            <div class="top_nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="top_pop">
+                <a href="main.html" class="home_icon"><span>首页</span></a>
+                <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+                <i></i>
+            </div>
+        </section>
+    </header>
+</header>
+<div class="integral">
+    <div class="banner"><img src="http://img.autostreetscdn.com/m/src/images/integral_bg.jpg" alt=""/></div>
+    <div class="coupon_wrap">
+        <h3>汽车街优惠券</h3>
+        <ul>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/autostr_coupon_1.png" alt=""/></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/autostr_coupon_2.png" alt=""/></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/autostr_coupon_3.png" alt=""/></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/autostr_coupon_4.png" alt=""/></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/autostr_coupon_5.png" alt=""/></a></li>
+        </ul>
+        <a class="view_rules" href="http://img.autostreetscdn.com/m/src/html/activity_rule1.html">查看细则</a>
+    </div>
+    <div class="coupon_wrap">
+        <h3>合作门店优惠券</h3>
+        <ul>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/shop_coupon_1.png" alt=""/></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/shop_coupon_2.png" alt=""/></a></li>
+            <li><a href=""><img src="http://img.autostreetscdn.com/m/src/images/shop_coupon_3.png" alt=""/></a></li>
+        </ul>
+        <a class="view_rules" href="http://img.autostreetscdn.com/m/src/html/activity_rule2.html">查看细则</a>
+    </div>
+    <div class="coupon_wrap">
+        <h3>使用方法</h3>
+
+        <div class="apps">
+            <div class="qr_code">
+                <img src="http://img.autostreetscdn.com/m/src/images/down_apps_qr_code.png" alt=""/>
+            </div><div class="down_items">
+                <h4>点击下载 &nbsp;&nbsp;&nbsp;掌上生活</h4>
+                <a class="apps_down_btn ios_btn" href=""><i></i>iOS版下载</a>
+                <a class="apps_down_btn adr_btn" href=""><i></i>Andorid版下载</a>
+            </div>
+        </div>
+        <section class="sub_slider">
+            <ul id="slide_text">
+                <li class="active"><span>1</span>扫二维码码下载登陆“掌上生活”</li>
+                <li><span>2</span>点击”发现”，进入“积分兑换”区</li>
+                <li><span>3</span>点击“积分买车”购车券[立即购买]</li>
+                <li><span>4</span>输查询密码购买成功接收短信验证码</li>
+                <li><span>5</span>进入“我的""票券"查看购车券及验证码</li>
+            </ul>
+            <ul id="nav">
+                <li class="active"></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <div id="scroller_wrap">
+                <ul id="slider">
+                    <li><img src="http://img.autostreetscdn.com/m/src/images/inte_01.jpg" alt=""></li>
+                    <li><img src="http://img.autostreetscdn.com/m/src/images/inte_02.jpg" alt=""></li>
+                    <li><img src="http://img.autostreetscdn.com/m/src/images/inte_03.jpg" alt=""></li>
+                    <li><img src="http://img.autostreetscdn.com/m/src/images/inte_04.jpg" alt=""></li>
+                    <li><img src="http://img.autostreetscdn.com/m/src/images/inte_05.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+<a href="javascript:history.go(-1)" class="app_back_menu"></a>
+<script type="application/javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script type="text/javascript" src="http://img.autostreetscdn.com/m/src/js/activity.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_main.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        我的爱车
+        <a href="###" class="save_my_car">保存</a>
+    </section>
+</header>
+<div id="my_car">
+    <div class="my_car_hd">
+        <div class="img_wrap">
+            <!--<img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/car_logo_80_80.png" class="my_car_logo" alt=""/>-->
+        </div>
+        <p class="my_car_title"><!--2015款 宝马 320i 运动设计套装320i 运动--></p>
+    </div>
+    <div class="my_car_bd">
+        <ul>
+            <li>
+                <span>当前行驶里程</span>
+                <p><input type="text"  class="drive_distance" placeholder=""/><span>公里</span></p>
+            </li>
+            <li>
+                <span>新车上路时间</span>
+                <p><input class="drive_date" type="month" /><span><i class="w_9_arr"></i></span></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="error_layer">
+    <p class="error_txt"></p>
+    <a href="javascript:;" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/validate.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm.js"></script>
+<script src="http://wap.autostreets.com/js/require.js" data-main="http://wap.autostreets.com/js/main.js"></script>
+<script>
+        $('.save_my_car').click(function () {
+            if(validate.price($('.drive_distance'),"请输入当前行驶里程","请输入有效数值")  && validate.input($('.drive_date'),"请选择新车上路时间")){
+
+            }
+        });
+</script>
+</html>

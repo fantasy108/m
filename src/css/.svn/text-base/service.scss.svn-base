@@ -1,0 +1,93 @@
+@import "reset.css";
+@import "scss_common";
+@import "css_common";
+a{ text-decoration:none; color:#fff;}
+#content{
+  width:j(640);
+  margin:0 auto;
+}
+.white_box{
+  background-color:#fff; border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  margin-bottom:j(20);
+}
+.service_list{
+  margin-top:j(20);
+  li{
+    padding-left:g(30);
+    height:44px;
+  }
+  :nth-of-type(2) .icon{
+    //left:g(2);
+  }
+:nth-of-type(6) .icon{
+  //left:g(9);
+}
+  :nth-of-type(3) .icon,:nth-of-type(5) .icon,:nth-of-type(7) .icon{
+    //left:g(7);
+  }
+
+  a{
+    color:#333;
+    font-size:12px;
+    border-bottom:1px solid #ddd;
+    @extend %verAC;
+    height:44px;
+    padding-left:g(60);
+    position:relative;
+
+  }
+  .icon,.arr{
+    position:absolute;
+  }
+  .icon{
+    left:j(5);
+    @extend %tsfY50;
+    background-repeat:no-repeat;
+    background-size:contain;
+  }
+
+  @for $i from 1 through 7 {
+    .icon_#{$i}{
+      background-image:url($root +"ser_icon_#{$i}.png");
+    }
+
+  }
+  .icon_1{
+    width:g(34);
+    height:g(25);
+    //@include wh(34,25);
+  }
+  .icon_2{
+    width:g(40);
+    height:g(33)
+    //@include wh(40,33);
+  }
+  .icon_3{
+    width:g(29);
+    height:g(29)
+    //@include wh(29,29);
+  }
+  .icon_4{
+    width:g(32);
+    height:g(32)
+    //@include wh(32,32);
+  }
+  .icon_5{
+    width:g(31);
+    height:g(35)
+    //@include wh(31,35);
+  }
+  .icon_6{
+    width:g(28);
+    height:g(33)
+    //@include wh(28,33);
+  }
+  .icon_7{
+    width:g(39);
+    height:g(30)
+    //@include wh(39,30);
+  }
+  }
+
+

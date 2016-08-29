@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>新车团购会-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/new_car_group_buying.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+<div class="baoming">
+    <div id="xtBox" class="xtBox">
+        <div class="xt-top">
+            <div class="xt-top-name">活动报名</div>
+        </div>
+        <div class="xt-body">
+            <ul class="xt-body-form clearfix">
+                <li><span class="xt-body-form-lab">选择品牌</span>
+                    <span class="select_wrap">
+                        <select class="xt-body-form-select">
+                            <option>品牌</option>
+                        </select>
+                        <i class="select_arr"></i>
+                    </span>
+                    <span class="xt-body-form-errmsg">请选择品牌</span>
+                </li>
+                <li><span class="xt-body-form-lab">选择城市</span>
+                    <div class="flex_box">
+                        <span class="select_wrap">
+                            <select class="xt-body-form-select">
+                                <option>省份</option>
+                            </select>
+                            <i class="select_arr"></i>
+                        </span>
+                        <span class="select_wrap">
+                            <select class="xt-body-form-select ml10">
+                                <option>城市</option>
+                            </select>
+                            <i class="select_arr"></i>
+                        </span>
+                    </div>
+                    <span class="xt-body-form-errmsg">请选择省份</span>
+                </li>
+                <li><span class="xt-body-form-lab">选择门店</span>
+                    <div class="xt-body-form-select-zdy">
+                        <div class="showdiv" id="showdiv">
+                            <div class="showspan">选择门店</div>
+                            <span class="showbtn"></span>
+                            <input type="hidden" id="shopName">
+                            <i class="select_arr"></i>
+                        </div>
+                        <ul class="zdy-option ui_fast">
+                            <li>
+                                <span class="zdy-option-name">镇江门店</span>
+                                <span class="zdy-option-addr">镇江市丁卯桥路296号镇江市丁卯桥路296镇江市丁卯桥 路296号号</span>
+                            </li>
+                            <li>
+                                <span class="zdy-option-name">镇江门店</span>
+                                <span class="zdy-option-addr">镇江市丁卯桥路296号镇江市丁卯桥路296</span>
+                            </li>
+                            <li>
+                                <span class="zdy-option-name">镇江门店</span>
+                                <span class="zdy-option-addr">镇江市丁卯桥路296号镇江市丁卯桥路296镇江市丁卯桥 路296号号</span>
+                            </li>
+                            <li>
+                                <span class="zdy-option-name">镇江门店</span>
+                                <span class="zdy-option-addr">镇江市丁卯桥路296号镇江市丁卯桥路296镇江市丁卯桥 路296号号</span>
+                            </li>
+                            <li>
+                                <span class="zdy-option-name">镇江门店</span>
+                                <span class="zdy-option-addr">镇江市丁卯桥路296号镇江市丁卯桥路296镇江市丁卯桥 路296号号</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <span class="xt-body-form-errmsg">请选择门店</span>
+
+                </li>
+                <li><span class="xt-body-form-lab">您的姓名</span>
+                    <input type="text" class="xt-body-form-input" placeholder="请输入您的真实姓名">
+                    <span class="xt-body-form-errmsg">请输入您的真实姓名</span>
+                </li>
+                <li><span class="xt-body-form-lab">您的手机</span>
+                    <input type="text" class="xt-body-form-input" placeholder="请输入您的手机号码">
+                    <span class="xt-body-form-errmsg">请输入您的手机号码</span>
+                </li>
+                <li><span class="xt-body-form-lab">&nbsp;</span>
+
+                    <div class="xt-body-form-go" id="goBtn">立即报名</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="success ui_fast">
+        <img src="http://img.autostreetscdn.com/m/src/images/new_car_group_buying/smile_icon.png" alt="" class="smile_icon"/>
+        <p>报名成功</p>
+    </div>
+    <div class="ui_mask"></div>
+</div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fx.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/new_car_group_buying.js"></script>
+</html>

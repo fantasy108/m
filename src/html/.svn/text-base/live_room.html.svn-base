@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>直播室-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/sync.css" type="text/css">
+</head>
+<body>
+<div id="body">
+    <header>
+        <section>
+            <a href="javascript:history.go(-1);" class='back'></a>直播室
+            <div class="top_nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="top_pop">
+                <a href="main.html" class="home_icon"><span>首页</span></a>
+                <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+                <i></i>
+            </div>
+        </section>
+    </header>
+    <div id="wrapper">
+        <div id="scroller">
+            <ul id="thelist"></ul>
+        </div>
+        <div class="auction_top">
+            <span>当前拍品：</span><div class="auction_num">102</div>
+            <div class="auction_top_menu">
+                <a href="" class="fee_info">收费明细</a>
+                <a href="" class="car_detail_btn">车辆检测信息</a>
+            </div>
+        </div>
+        <div class="price_box">
+            <p><label>当前价：</label><span class="curr_price"></span>元</p>
+            <p>
+                <label>我的出价：</label><span class="my_bid"></span>元
+                <span class="highest">当前最高<i></i></span>
+            </p>
+        </div>
+        <div class="video_box">
+            <a class="video stop_video" href="javascript:void(0)"></a>
+            <a class="zoom zoom_b" href="javascript:void(0)"></a>
+        </div>
+    </div>
+    <div class="auction_flow">
+        <ul>
+            <li class="curr_bid">17:02:45  g**5出价212400元</li>
+            <li>17:02:45  线下用户出价212400元</li>
+            <li>17:02:45  021号拍品恢复拍卖...</li>
+            <li>17:02:45  021号拍品暂停拍卖...</li>
+            <li>17:02:45  g**10出价212400元</li>
+            <li>17:02:45  g**10出价212400元</li>
+            <li>17:02:45  g**10出价212400元</li>
+            <li>17:02:45  g**10出价212400元</li>
+            <li>17:02:45  g**10出价212400元</li>
+        </ul>
+        <div class="count_down"></div>
+    </div>
+    <div class="bid_box">
+        <div class="bid">
+            <ul>
+                <li class="minus"><i></i></li>
+                <li class="bid_ipt"><p><span>元</span><strong class="price">1,116,000</strong></p></li>
+                <li class="plus"><i></i><s></s></li>
+                <li class="bid_btn "><a href="javascript:void(0)">出价</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="auction_list_page" id="a">-->
+        <!--<header style="position:relative;">-->
+            <!--拍卖列表-->
+            <!--<a href="javascript:void(0)" class="close_auction_list_page">关闭</a>-->
+        <!--</header>-->
+        <!--<div id="auction_list">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">001</span>-->
+                    <!--</p>-->
+                    <!--<h3>丰田 2.4 手自一体 240G 经典-->
+                        <!--版 </h3>-->
+                <!--</li>-->
+                <!--<li class="curr_auction">-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">002</span>-->
+                    <!--</p>-->
+                    <!--<h3>捷豹 XJL(进口) 3.0T 手自一体-->
+                        <!--SC 两驱尊享商务版捷豹 XJL-->
+                        <!--(进口) 3.0T 手自一到此结束</h3>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">003</span>-->
+                    <!--</p>-->
+                    <!--<h3>丰田 2.4 手自一体 240G 经典-->
+                        <!--版 </h3>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">003</span>-->
+                    <!--</p>-->
+                    <!--<h3>丰田 2.4 手自一体 240G 经典-->
+                        <!--版 </h3>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">003</span>-->
+                    <!--</p>-->
+                    <!--<h3>丰田 2.4 手自一体 240G 经典-->
+                        <!--版 </h3>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">003</span>-->
+                    <!--</p>-->
+                    <!--<h3>丰田 2.4 手自一体 240G 经典-->
+                        <!--版 </h3>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">003</span>-->
+                    <!--</p>-->
+                    <!--<h3>丰田 2.4 手自一体 240G 经典-->
+                        <!--版 </h3>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<p>-->
+                        <!--<img src="http://img.autostreetscdn.com/m/src/images/auction_car.png" alt=""/>-->
+                        <!--<span class="auction_list_num">003</span>-->
+                    <!--</p>-->
+                    <!--<h3>丰田 2.4 手自一体 240G 经典-->
+                        <!--版 </h3>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+<div class="error_layer">
+    <p class="error_txt"></p>
+    <a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/fx.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/iscroll.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/live_room.js"></script>
+</body>
+</html>

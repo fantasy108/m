@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/build/1.00/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/dms.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        编辑车辆
+        <a href="#" class="save">保存</a>
+    </section>
+</header>
+<div id="container">
+	<div class="notice">
+		审核失败的原因：审核失败的原因审核失败
+	</div>
+	<div class="car_info">
+		<h3>2013款 宝马 125i 改款 运动型2013款 宝马 125i 改款 运动型2013款 宝马 125i 改款 运动型</h3>
+		<p>厂商指导价：<span>186万元</span></p>
+	</div>
+	<h2>经销商报价：(报价区间：53万元~176万元)</h2>
+	<div class="dealer_price"><input type="text" value="abc"></div>
+	<h2>车型描述：</h2>
+	<div class="desc">
+		<textarea name="" id="" cols="30" rows="10">车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述车型描述</textarea>
+	</div>
+
+	<ul class="img_list">
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li>
+			<div class="img_pos">
+				<img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/1.jpg" alt="">
+				<span>未保存</span>
+			</div>
+			<p>驾驶位左前45度</p>
+		</li>
+		<li><div class="img_pos"><img src="http://img.autostreetscdn.com/m/build/1.00/images/dms/add.png" alt=""></div></li>
+	</ul>
+</div>
+
+<div class="tipbg"></div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/build/1.00/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/build/1.00/js/lib/touch.js"></script>
+<script>
+$(function(){
+	// $(".img_list li").last().click(function(){
+	// 	$(this).clone(true).appendTo(".img_list")
+	// })
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/pjh_wx.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+	<div class="pjh_wx">
+		<img src="http://img.autostreetscdn.com/m/src/images/pjh/pjh_pic1.png" alt="">
+		<a href="pjh2.html"><img src="http://img.autostreetscdn.com/m/src/images/pjh/pjh_pic2.png" alt="" class="marg"></a>
+		<img src="http://img.autostreetscdn.com/m/src/images/pjh/pjh_pic3.png" alt="">
+		<img src="http://img.autostreetscdn.com/m/src/images/pjh/pjh_pic4.png" alt="">
+		<img src="http://img.autostreetscdn.com/m/src/images/pjh/pjh_pic5.png" alt="">
+		<img src="http://img.autostreetscdn.com/m/src/images/pjh/pjh_pic6.png" alt="">
+		<img src="http://img.autostreetscdn.com/m/src/images/pjh/pjh_pic7.png" alt="">
+		<div class="share">
+			<p>分享到：</p>
+			<img src="http://img.autostreetscdn.com/m/src/images/share_1.png" alt="">
+			<img src="http://img.autostreetscdn.com/m/src/images/share_2.png" alt="">
+			<img src="http://img.autostreetscdn.com/m/src/images/share_3.png" alt="">
+		</div>
+	</div>
+</div>
+<div class="share_to"><img src="http://img.autostreetscdn.com/m/src/images/share_to.png" alt=""></div>
+<div class="tipbg"></div>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script>
+$(function(){
+	$(".share img").click(function(){
+			$(".share_to").show()
+			$(".tipbg").show()
+	})
+	$(".tipbg,.share_to").click(function(){
+			$(".share_to").hide()
+			$(".tipbg").hide()
+	})
+})
+</script>
+
+</body>
+</html>

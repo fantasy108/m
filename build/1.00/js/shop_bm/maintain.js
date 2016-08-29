@@ -1,0 +1,6 @@
+/*
+ * Build by xuelei.kong@autostreets.com
+ * Date: 2016-04-07 10:30:42
+ * Version: 1.00
+ */
+$(function(){var e=JSON.parse(sessionStorage.my_cust_vehicle_info),i=e.currentMiles;$(".distance input").val(i),maintenItems(i),$(".distance input").blur(function(){i=$(this).val(),maintenItems(i)}),$(".maintain_item").on("click","li",function(){var e=$(this).children("i");e.hasClass("unselect")?e.removeClass("unselect").addClass("select"):e.removeClass("select").addClass("unselect");var i=$(".maintain_item>li"),s=i.index(this);if(0!=s){var n=!1;i.each(function(){$(this).children("i").hasClass("select")&&(n=!0)}),n?i.eq(0).children("i").removeClass("select").addClass("unselect"):i.eq(0).children("i").removeClass("unselect").addClass("select")}else i.eq(0).children("i").removeClass("unselect").addClass("select").parent().siblings().children("i").removeClass("select").addClass("unselect")}),$(".want_maintain").find("a").click(function(){var e=[];$("#maintain_item li").each(function(){if($(this).children("i").hasClass("select")){var i={id:$(this).children("p").attr("id"),name:$(this).children("p").text()};e.push(i)}}),localStorage.maintainitem=JSON.stringify(e);var i=JSON.parse(sessionStorage.orgSid);$(this).attr("href","bm_by_order.html?orgSid="+i)}),$(".change").live("click",function(){require(["custVehicle"],function(e){e.changeVehicle()})})});

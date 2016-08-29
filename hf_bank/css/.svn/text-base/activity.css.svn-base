@@ -1,0 +1,72 @@
+/*活动专区*/
+body a{text-decoration:none;}
+.activity_list{margin:0.0844rem;}
+.activity_list li{margin-bottom:0.0844rem;}
+.activity_list img{width:100%;border-radius:0.0448rem;-webkit-border-radius:0.0448rem;display:block;border:none;}
+
+/*招行积分购车*/
+.integral_body{background-color: #d9d9d9;}
+.integral img{
+    display: block;width:100%;height:auto; border: none;}
+.coupon_wrap{margin:0.0844rem;background-color:#fff;padding:0.2016rem 0.27rem 0.2262rem;}
+.coupon_wrap h3{color: #282828;font-size: 0.1799rem;text-align: center;line-height: 100%;margin-bottom: 0.1349rem;}
+.coupon_wrap ul li{ margin-bottom: 0.2476rem;}
+.view_rules{background: #f02525;color: #fff;height: 0.2812rem;line-height: 0.2812rem;font-size: 0.1462rem; display: block;text-decoration:none;width:0.9554rem;border-radius: 0.0562rem;margin: 0 auto;text-align: center;}
+/*apps*/
+.apps{margin: 0 0.1687rem 0;border-bottom: 1px solid #dfdfdf;    overflow: hidden;text-align: center;
+    padding-bottom: 0.1124rem;}
+.apps>div{
+    display: inline-block;text-align: center}
+.apps h4{font-size: 0.1349rem;font-weight: normal;}
+.qr_code{font-size: 12px;
+    top: 0.0562rem;
+    position: relative;
+    left: -0.0897rem;
+}
+.qr_code img{width:0.5624rem;height: 0.6384rem;}
+.down_items h4{text-align: left;}
+.apps_down_btn{font-size:0.1349rem;width: 1.249rem;height:0.2925rem;line-height: 0.2925rem;color: #fff;
+    margin-bottom: 0.0784rem;
+    position: relative;
+    display: block;border-radius: 0.0448rem;-webkit-border-radius: 0.0448rem; }
+.ios_btn{background: #8fcbc3;margin-top: 0.0784rem}
+.adr_btn{background: #cbb58f;text-indent: 0.1799rem;}
+.ios_btn i{display: block;width:0.1799rem;height:0.2249rem;background: url(http://img.autostreetscdn.com/m/src/images/ios_icon.png) no-repeat;background-size: contain;
+    position: absolute;
+    left: 0.0896rem;top:0.0336rem;
+    z-index: 9;}
+.adr_btn i{display: block;width:0.1799rem;height:0.2249rem;background: url(http://img.autostreetscdn.com/m/src/images/andiro_icon.png) no-repeat;background-size: contain;
+    position: absolute;left: 0.0896rem;top:0.0336rem;}
+
+
+/*slider*/
+.sub_slider{ margin: 0.1462rem 0.0113rem 0;}
+#scroller_wrap {
+    /* float: left; */
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+}
+#scroller_wrap li{ float: left; position: relative;}
+
+
+
+
+#nav{text-align: center; width: 100%; font-size: 0;margin-bottom: 0.0784rem;}
+#nav li{width:0.0562rem; height: 0.0562rem; background: url("http://img.autostreetscdn.com/m/src/images/dot_default.png")  no-repeat; display: inline-block; margin-bottom: 0; margin-left: 0.1124rem;background-size: contain;}
+#nav li.active{ background-color: #000;background-image:url("http://img.autostreetscdn.com/m/src/images/dot_active.png")}
+
+#slide_text{ font-size: 0.1349rem;text-align: center;line-height: 0.1799rem; margin-bottom: 0.1124rem;}
+#slide_text span{width:0.1799rem; height: 0.1799rem; background: #acacac;border-radius: 50%;-webkit-border-radius: 50%; display: inline-block; vertical-align: top; margin-right: 0.0448rem; color: #fff;top:-1px; position: relative;}
+#slide_text li{ margin-bottom: 0; display: none;}
+#slide_text li.active{ display: block;}
+/*rule*/
+.activity_rule{ margin: 0 0.1124rem;font-size: 0.1349rem;}
+.activity_rule h2{ font-size: 0.1574rem;color: #000; margin-bottom: 0.1687rem; margin-top: 0.2812rem;}
+.activity_rule p{ line-height: 0.2812rem;}
+.activity_rule .red_color{ color: #e53535; padding-bottom: 0.1124rem; border-bottom: 1px solid #d5cece;}
+.activity_rule ul { margin-bottom: 0.1687rem;}
+.activity_rule ul li{ line-height: 0.2016rem;}
+.app_back_menu{background: url("http://img.autostreetscdn.com/m/src/images/app_back_menu.png") no-repeat; width: 0.4499rem; height: 0.4499rem;background-size: contain; position: fixed;
+    left: 0.0448rem;top:50%; margin-top: -0.2245rem; z-index: 99;display: none;}

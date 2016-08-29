@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>eqs-车辆拍照</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs_k.css" type="text/css">
+</head>
+<body class="bgf8">
+<header>
+    <div>
+        车辆拍照 <a href="javascript:void(0)" class="goBack"><i class="w_20_arr"></i>返回</a>
+        <a href="javascript:void(0)" class="save">保存</a>
+    </div>
+</header>
+<div id="wrapper" class="car_photo">
+   <!-- <div class="hd">左前45度</div>
+   <div class="item">
+       <div class="photo" id="photo_l_f_45">
+           <span class="add_btn"><strong>+点击添加</strong></span>
+           <input type="file" accept="image/*" class="file">
+       </div>
+   </div>
+    <div class="hd">车身侧面</div>
+    <div class="item">
+        <div class="photo" id="photo_side">
+            <span class="add_btn"><strong>+点击添加</strong></span>
+            <input type="file" accept="image/*" class="file">
+        </div>
+    </div>
+
+    <div class="hd">右后45度</div>
+    <div class="item">
+        <div class="photo" id="photo_r_b_45">
+            <span class="add_btn"><strong>+点击添加</strong></span>
+            <input type="file" accept="image/*" class="file">
+        </div>
+    </div>
+    <div class="hd">发动机舱</div>
+    <div class="item">
+        <div class="photo" id="photo_engine">
+            <p class="txt_holder">发动机舱</p>
+        </div>
+    </div>
+    <div class="hd">中控台</div>
+    <div class="item">
+        <div class="photo" id="photo_zkt">
+            <p class="txt_holder">中控台</p>
+        </div>
+    </div>
+
+    <div class="hd">前排座椅</div>
+    <div class="item">
+        <div class="photo" id="photo_qpzy">
+            <p class="txt_holder">前排座椅</p>
+        </div>
+    </div>
+    <div class="hd">后排座椅</div>
+    <div class="item">
+        <div class="photo" id="photo_hpzy">
+            <p class="txt_holder">后排座椅</p>
+        </div>
+    </div>
+    <div class="hd">车辆铭牌</div>
+    <div class="item">
+        <div class="photo" id="photo_clmp">
+            <p class="txt_holder">车辆铭牌</p>
+        </div>
+    </div>
+    <div class="hd">后备箱</div>
+    <div class="item">
+        <div class="photo" id="photo_hbx">
+            <p class="txt_holder">后备箱</p>
+        </div>
+    </div>
+    <div class="hd">仪表盘</div>
+    <div class="item">
+        <div class="photo" id="photo_ybp">
+            <p class="txt_holder">仪表盘</p>
+        </div>
+    </div>-->
+</div>
+<div class="layer" id="take_photo_layer">
+    <div class="layer_hd">
+        <span class="layer_close">关闭</span>
+    </div>
+    <div class="layer_content">
+        <div class="step">
+            <span class="steps step1"><i>1</i>上传图片</span>
+            <span class="steps step2"><i>2</i>截取图片</span>
+            <span class="steps step3"><i>3</i>保存</span>
+        </div>
+        <div id="clipArea">
+            <div class="img_loading"></div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="control">
+            <div class="touch_ex">
+                <span>手势说明：</span>
+                <p>你可以移动、缩放、旋转图片,以保证所要拍摄的内容在虚框内显示</p>
+                <div class="touch_step">
+                    <img src="http://img.autostreetscdn.com/m/src/images/eqs/eqs_step2.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="btn_box">
+            <div class="inner">
+                <div class="btn" id="uploadBtn"><input type="file" id="file"/>重新选择图片</div>
+                <div class="btn" id="clipBtn">截取图片</div>
+                <div class="btn" id="save_photo">保存</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="loading"></div>-->
+</body>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery-2.1.3.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/iscroll-zoom.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/hammer.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery.photoClip.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/eqs_k.js"></script>
+</html>

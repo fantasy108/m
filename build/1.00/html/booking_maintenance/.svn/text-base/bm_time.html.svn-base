@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>选择时间</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_consultant.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/mobiscroll.custom-2.5.0.min.css" type="text/css" />
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        选择时间
+    </section>
+</header>
+<div id="container">
+	
+	<div class="time_top clearfix">
+		<div id="wrapper">
+			<div id="scroller">
+				<ul>
+					<li class="cur">
+						<h4>今天</h4>
+						<p>09-08</p>
+					</li>
+					<li>
+						<h4>明天</h4>
+						<p>09-09</p>
+					</li>
+					<li>
+						<h4>后天</h4>
+						<p>09-10</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+					<li>
+						<h4>今天</h4>
+						<p>09-08</p>
+					</li>
+					<li>
+						<h4>明天</h4>
+						<p>09-09</p>
+					</li>
+					<li>
+						<h4>后天</h4>
+						<p>09-10</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+					<li>
+						<h4>星期一</h4>
+						<p>09-11</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="time_more">
+			<div id="more"></div>
+			<!-- <input id="scroller" name="scroller"/> -->
+		</div>
+	</div>
+	
+	<h3 class="notice">优惠说明：准时到店享受工时折扣</h3>
+
+	<div class="schedules">
+		<!-- <ul class="time_list" id="time_list_1">
+			<li><p>08:00</p><span></span></li>
+			<li><p>09:00</p><span></span></li>
+			<li><p>10:00</p><span></span></li>
+			<li><p>11:00</p><span></span></li>
+			<li><p>12:00</p><span></span></li>
+			<li><p>13:00</p><span></span></li>
+			<li><p>14:00</p><span>7折</span></li>
+			<li class="cur"><p>15:00</p><span>7折</span></li>
+			<li class="none"><p>16:00</p></li>
+			<li><p>17:00</p></li>
+			<li><p>18:00</p></li>
+			<li><p>19:00</p></li>
+			<li><p>20:00</p></li>
+		</ul>
+		<ul class="time_list" id="time_list_2">
+			<li><p>08:00</p></li>
+			<li><p>09:00</p></li>
+			<li><p>10:00</p></li>
+			<li><p>11:00</p></li>
+			<li><p>12:00</p></li>
+			<li><p>13:00</p></li>
+			<li><p>14:00</p><span>7折</span></li>
+			<li class="cur"><p>15:00</p><span>7折</span></li>
+			<li class="none"><p>16:00</p></li>
+			<li><p>17:00</p></li>
+			<li><p>18:00</p></li>
+			<li><p>19:00</p></li>
+			<li><p>20:00</p></li>
+		</ul> -->
+	</div>
+
+	<div class="find_him">
+		<a href="#">确认选择</a>
+	</div>
+</div>
+
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="correct">确定</a>
+</div>
+
+
+<!--时间控件-->
+<div class="active_calendar">
+    <div class="calendar_hd">
+        <span class="prevBtn"></span>
+        <span class="nextBtn"></span>
+        <span class="year"></span>
+        <span class="month"></span>
+    </div>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <thead>
+        <tr>
+            <td>一</td>
+            <td>二</td>
+            <td>三</td>
+            <td>四</td>
+            <td>五</td>
+            <td>六</td>
+            <td>日</td>
+        </tr>
+        </thead>
+    </table>
+    <div class="calendar_date">
+    </div>
+</div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/iscroll2.0.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_2.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/calendar3.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/time.js"></script>
+
+</body>
+</html>

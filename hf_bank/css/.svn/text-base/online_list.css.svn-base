@@ -1,0 +1,242 @@
+html{ height: 100%;}
+body{ height: 100%;}
+.select-type-box{height: 0.4949rem; border-bottom: 1px solid #dddddd; position: relative; z-index: 98; background: #fff}
+.select-type{ font-size: 0.1349rem;height: 0.4949rem;}
+.select-type li{ width: 33%; float: left; text-align: center; padding-top: 0.18rem;height: 0.3149rem;}
+.select-type li.select-type-line{float: left; width:1px;background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.5, #ddd), to(#fff));height: 0.2149rem; margin-top: 0.05rem}
+.select-type li a{ margin-right:0.07rem; color: #666; text-decoration: none}
+.select-type li span{width:0.07rem;height:0.07rem; border-bottom: 0.025rem solid #999;border-left: 0.025rem solid #999; display: inline-block;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg); transform:rotate(-45deg); position: relative; top:-0.02rem}
+
+.competitive_list{ font-family: Arial;}
+.competitive_list li{ padding:0.1124rem; border-bottom: 1px solid #ddd; overflow: hidden;font-size:0.1462rem; position: relative;}
+.prolist_img{ float: left;}
+.prolist_img img{ display: inline-block; float: left; width:1.1249rem; height:0.8437rem; margin-right:0.1124rem}
+.competitive_list div{ float: left;width:1.1249rem;}
+.competitive_list li h3{font-size:0.1462rem; color: #3f3f3f; height: 0.2rem;overflow: hidden; line-height: 0.2rem; margin-bottom: 0.05rem;text-overflow:ellipsis;white-space:nowrap; }
+.competitive_list li p{ font-size:0.1rem; color: #666; line-height:0.12rem;}
+.competitive_list li p ins{ font-style: normal; text-decoration: none; color: #d9d9d9; width:0.1rem; display: inline-block; text-align: center}
+.competitive_list li strong{font-size:0.1462rem; color: #D90000; font-family: Arial; position: absolute; left:1.3497rem; bottom:0.1124rem;}
+
+.endtime{position: absolute; right:0.1rem; bottom:0.1324rem;font-size:0.1rem; color: #666; line-height:0.12rem;}
+
+.select-list-box{ position: absolute; width: 100%; top:0.4949rem; z-index:99; background: #fff;font-size:0.1462rem; margin-top: 1px; max-height: 3.3744rem; overflow-y: auto;}
+.select-list-box h3{margin-left: 0.2249rem;height: 0.5624rem;line-height: 0.5624rem; font-size: 0.1574rem; font-weight: normal; padding-right: 0.2249rem;  }
+.select-list-box h3 a{ color: #000; text-decoration: none;height: 0.5624rem; width: 100%; display: inline-block}
+.select-list-box ul{margin-left: 0.2249rem}
+.select-list-box li{height: 0.5624rem;line-height: 0.5624rem; border-top: 1px solid #ddd;padding-right: 0.2249rem;}
+.select-list-box li a{ font-size: 0.1574rem; text-decoration: none; color: #000;height: 0.5624rem;width: 100%; display: inline-block;}
+.select-list-box li a img{ position: relative;top:0.105rem; width: 0.3599rem; height: 0.3599rem; margin-right: 0.11rem}
+
+.tipbg{ position: fixed; width: 100%; height: 100%; background: #000; z-index: 90; top:0px;background: rgba(0,0,0,0.5);}
+
+.select-list-box h3 a.on,.select-list-box li a.on{ color: #346ec4; background:url('../images/ico-1.png') no-repeat right center; background-size:0.1349rem 0.1406rem}
+
+.loading{
+    display: none;
+    background: url('../images/loading.gif');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    height: 32px;
+    background-position: center center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;}
+
+
+/*详情*/
+.proimgbig{}
+.proimgbig img{ width: 100%; display: block}
+
+.infobody{background: #f3f3f3; padding-top: 0.1687rem; padding-bottom: 0.7512rem;}
+.infodetail{ background: #fff; border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd; padding:0.1687rem 0.1rem; font-size:0.1349rem;}
+.infodetail h3{ font-size: 0.2249rem; padding-bottom:0.1687rem;}
+.infodetail_price{font-size: 0.2rem;margin-top:0.1rem;}
+.infodetail_price strong{color: #d90000; font-size: 0.3249rem; font-family: Arial }
+.infodetail_price strong ins{ text-decoration: none;font-size:0.1349rem;}
+
+.infodetail_price_mine strong{ color: #666}
+.infodetail ul{ overflow: hidden}
+.infodetail ul li{ width: 50%; float: left; margin-bottom:0.08rem}
+
+.modeltitle{font-size:0.1349rem;padding:0.1rem 0.1rem; color: #777}
+.miaoshu{font-size:0.1349rem; line-height: 0.2rem;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd; padding:0.1rem 0.1rem;background: #fff;}
+
+.detaillink{ height: 0.5062rem; line-height: 0.5062rem;  font-size: 0.1799rem; display: block; text-indent:0.1687rem; color: #000; text-decoration: none; background: #fff; border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;}
+
+.linkbox{background: #fff; border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;overflow: hidden; padding-left: 0.08rem}
+.linkbox li{ height: 0.5062rem; line-height: 0.5062rem;border-top: 1px solid #dddddd; position: relative; top:-1px; font-size: 0.1799rem;color: #000; text-decoration: none; }
+.linkbox li a{font-size: 0.1799rem;color: #000; text-decoration: none;}
+.linkbox li span.fr{ float:right; color: #999; margin-right: 0.1rem}
+
+.tel_400_body{position: fixed; bottom:0; width: 100%; background: #f3f3f3;height: 0.5512rem; padding:0.08rem 0 }
+.tel_400{font-size: 0.199rem; color: #fff; text-decoration: none; height: 0.5512rem; line-height: 0.5512rem; background: #f47410; display: block; font-family: Arial; margin: 0 0.08rem; border-radius: 0.05rem; text-indent:0.8rem; background-image:url('../images/tel.png'); background-repeat: no-repeat ;background-size: 0.2474rem 0.2474rem;  background-position: 0.4rem center; overflow: hidden}
+
+.modeltitle{font-size:0.1349rem;padding:0.1rem 0.1rem; color: #777}
+.miaoshu{font-size:0.1349rem; line-height: 0.2rem;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd; padding:0.1rem 0.1rem;background: #fff;}
+
+
+.pricebox{ overflow: hidden; padding:0.15rem 0.08rem;}
+.addprice{font-size: 0.199rem; color: #fff; text-decoration: none; height: 0.5512rem; line-height: 0.5512rem; background: #f47410; display: block; font-family: Arial; border-radius: 0.05rem; overflow: hidden; text-align: center; margin-top: 0.15rem}
+
+.addprice-dis{font-size: 0.199rem; color: #fff; text-decoration: none; height: 0.5512rem; line-height: 0.5512rem; background: #aaaaaa; display: block; font-family: Arial; border-radius: 0.05rem; overflow: hidden; text-align: center; margin-top: 0.15rem}
+.addprice-over{font-size: 0.199rem; color: #fff; text-decoration: none; height: 0.5512rem; line-height: 0.5512rem; background: #aaaaaa url('../images/chuizi.jpg') no-repeat; background-size: 0.3318rem 0.3318rem; background-position:0.8rem center; display: block; font-family: Arial; border-radius: 0.05rem; overflow: hidden; text-align: center; margin-top: 0.15rem}
+
+.addbtn{ height: 0.5rem; width: 0.5rem; display: inline-block; background: #ffffff; border: 1px solid #cbcbcb; text-align: center; line-height: 0.5rem; font-size: 0.5rem; text-decoration: none; font-weight: normal; font-family:Arial; float: left; color: #666;}
+.addbtn-dis{color: #cbcbcb;}
+
+.addpriceinfo{ height: 0.5rem; width: 2rem; display: inline-block; background: #ffffff; border: 1px solid #cbcbcb; text-align: right; line-height: 0.5rem; font-size: 0.2rem; text-decoration: none; font-weight: normal; font-family: Arial; float: left; margin: 0 0.07rem; padding-right:0.1rem; padding-left: 0.1rem; color: #666}
+.addpriceinfo strong{ float:left}
+
+.chujialabel{ width: 1.1rem; display: inline-block}
+.chujianum{ text-decoration: none;font-size:0.1349rem; color: #999999; margin-left: 0.1rem}
+
+.infomenu{ height: 0.4949rem; border-bottom: 1px solid #dddddd;font-size: 0.1349rem; background: #fff}
+.infomenu ul{height: 0.4949rem; overflow: hidden; padding-bottom: 1px}
+.infomenu ul li{ float:left; width: 20%; text-align: center; line-height: 0.4949rem; color: #666}
+.infomenu ul li ins{ width: 1px;  display: inline-block;float: right;background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.5, #ddd), to(#fff));height: 0.2149rem; margin-top: 0.12rem}
+.infomenu ul li.on{ color: #85880c; border-bottom: 3px solid #85880c; position: relative; margin-top: -1px;}
+.infomenu ul li.on span{top: 1px; position: relative}
+.infomenu ul li.on ins{ position: relative; top:1px}
+
+.infodetailbody{ background: #f3f3f3}
+
+.m-title{font-size:0.1799rem;padding:0.1rem 0.1rem; color: #777; font-weight: normal; padding-top: 0.2rem; margin-top: 0.02rem}
+.m-title span{ float: right;font-size:0.1349rem; margin-top: 0.05rem}
+
+.m-box{ background: #fff; border-bottom: 1px solid #dddddd; border-top: 1px solid #dddddd; font-size: 0.1799rem}
+.m-box ul{ margin-left: 0.1124rem; position: relative; top:-1px;}
+.m-box ul li{ border-top: 1px solid #dddddd; padding: 0.15rem 0; line-height:120%; font-size: 0.15rem}
+.m-box ul li .right{ color: #999; float: right; margin-right: 0.15rem}
+.m-box ul li .openimg{ color: #f47510; background:url('../images/zoomin.png') right center; background-repeat: no-repeat; background-size:0.2474rem 0.2474rem; padding-right:0.3rem; text-decoration: none}
+
+
+.frameimgbox{position: relative}
+.frameimgbox img{ width: 100%; display: block}
+.frameico{ position: absolute; background: #ea5504; width: 0.15rem;height: 0.15rem; line-height: 0.15rem; font-size: 0.1rem; text-align: center;color:#fff; font-family: Arial; border-radius:0.075rem; margin-left:-0.075rem; margin-top: -0.075rem}
+
+body {
+	font-size:12px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	font-family:helvetica;
+}
+
+#wrapper {
+    font-size: 1.5rem;
+    height:2.6999rem;
+	float:left;
+	position:relative;	/* On older OS versions "position" and "z-index" must be defined, */
+	z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+	overflow:hidden;
+	background:#e3e3e3;
+}
+
+#scroller {
+	height:100%;
+	float:left;
+	padding:0;
+}
+
+#scroller ul {
+	list-style:none;
+	display:block;
+	float:left;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	text-align:left;
+}
+
+#scroller li {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	display:block; float:left;
+	text-align:center;
+	font-family:georgia;
+	font-size:18px;
+	line-height:140%;
+}
+#scroller li img{ width: 100%}
+
+#nav {
+	width:300px;
+	float:left;
+	display:none
+}
+
+
+
+
+
+#indicator, #indicator > li {
+	display:block; float:left;
+	list-style:none;
+	padding:0; margin:0;
+}
+
+#indicator {
+	width:110px;
+	padding:12px 0 0 30px;
+}
+
+#indicator > li {
+	text-indent:-9999em;
+	width:8px; height:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	background:#ddd;
+	overflow:hidden;
+	margin-right:4px;
+}
+
+#indicator > li.active {
+	background:#888;
+}
+
+#indicator > li:last-child {
+	margin:0;
+}
+
+#thelist li img{ width: 100%}
+
+
+.eqs{background:url('../images/eqs.png') no-repeat left center; background-size: 0.8887rem 0.8887rem; height: 0.6rem; padding-left: 0.92rem !important; padding-top: 0.3rem !important; padding-right:0.2rem !important; line-height:0.24rem !important; color: #0f6da0; font-size: 0.16rem !important; display: none}
+
+.nodata{ background:#f3f3f3 url('../images/nodata.png') no-repeat center 0.3rem;background-size: 1.4624rem 0.9562rem; padding-top: 1.5rem !important; border-bottom: 0px; text-align: center; color: #7d8592; font-size: 0.2rem !important; height: 3rem}
+
+
+.pinfo{ font-size:0.15rem; color: #666; line-height:0.12rem;}
+.pinfo ins{ font-style: normal; text-decoration: none; color: #d9d9d9; width:0.2rem; display: inline-block; text-align: center}
+
+.price-status-1{ color: #666 !important}
+.price-status-2{ color: #d90000 !important}
+
+.price-dis{ font-size: 0.2rem; color: #999 !important}
+.chujiaget{text-decoration: none;font-size:0.1349rem; color: #d90000; margin-left: 0.1rem}
+
+.timebox{ font-size: 0.2rem; position:absolute; z-index: 999; bottom: 0px; width: 100%; background:rgba(0,0,0,0.5); color: #fff}
+.timebox p{ float: left; height: 0.5rem; font-size: 0.1rem;height: 0.34rem; margin-top: 0.08rem; line-height: 0.34rem}
+.timebox p ins{ font-size: 0.2rem; text-decoration: none; padding: 0 0.05rem}
+
+.sale-status{background:rgba(0,0,0,0.5); height: 0.34rem; display: inline-block; line-height: 0.34rem; width: 0.9rem; text-align: center; border-radius:0.08rem; margin: 0.08rem 0.1rem; float: left; color: #ffff00}
+
+
+.renzhengtip{ font-size: 0.17rem; text-align: center; padding:0.3rem; line-height: 150%}
+.renzhengtip a{ color: #356FC4}
+
+.favorites{background:url('../images/wujiaoxing.png'); width: 0.2812rem; height: 0.2643rem; background-size:cover; display: inline-block; float: right; margin-right:0.1rem; margin-top: 0.1rem }
+
+.favorites-1{background:url('../images/wujiaoxing-1.png'); width: 0.2812rem; height: 0.2643rem; background-size:cover; display: inline-block; float: right; margin-right:0.1rem; margin-top: 0.1rem }
+
+.totalprice{ color: #D90000}
+
+.list-status{ padding-top: 0.05rem;}
+.list-status span{ color: #D90000}

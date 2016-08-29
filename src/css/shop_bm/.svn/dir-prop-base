@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 2
+*
+
+K 15
+tsvn:logminsize
+V 2
+30
+K 16
+tsvn:logtemplate
+V 28
+NEW:
+DEV:
+FIXBUG:
+Merged:
+END

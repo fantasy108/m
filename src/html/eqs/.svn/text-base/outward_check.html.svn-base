@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>外观检测</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs2.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:;" class='goback'>返回</a>
+        外观检测
+        <!-- <a href="javascript:;" class="form green">保存</a> -->
+    </section>
+</header>
+<div id="container" class="outward_check">
+	<div class="harm">
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/car-img2.png" alt="">
+		<ul id="checked_point" class="checked_point">
+			<!-- <li><i></i></li>
+			<li><i class="cur"></i></li> -->
+		</ul>
+		<div class="circle">
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/circle.png" alt="">
+			<p>实线圈表示为检测点</p>
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/circle2.png" alt="">
+			<p>实线圈表示为瑕疵点</p>
+		</div>
+		<div class="hidden">隐藏</div>
+	</div>
+	<div class="spread">展开图片</div>
+	<div class="car_content">
+		
+		<ul class="harm_list">
+			<!-- <li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<span>是</span>
+				<i></i>
+			</li>
+			<li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<span class="non">否</span>
+				<i></i>
+			</li>
+			<li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<span>是</span>
+				<i></i>
+			</li>
+			<li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<span>是</span>
+				<i></i>
+			</li>
+			<li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<span class="non">否</span>
+				<i></i>
+			</li>
+			<li>
+				<div class="desribe">
+					<p>1.左后门玻璃是否完好，正常工作</p>
+					<p class="txt">一般-凹陷 变形</p>
+				</div>
+				<span>是</span>
+				<i></i>
+			</li> -->
+		</ul>
+	</div>
+</div>
+
+<p class="harm_notice">轻微:面积 <= 100MM*100MM<br />一般:100MM*100MM < 面积 <= 200MM*300MM<br />严重:面积 > 200MM*300MM</p>
+<div class="harm_detail">
+	<div class="detail_head">
+		<a href="javascript:;" class="close">关闭</a>
+		<a href="javascript:;" class="save">保存</a>
+	</div>
+	<div class="harm_class">
+		<h3><span>损伤级别</span><img src="http://img.autostreetscdn.com/m/src/images/eqs/harm_class.png" alt=""></h3>
+	</div>
+	<div class="driver_card">
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/driver_card.png" alt="" class="damagePhoto">
+		<input type="radio" name="driver_card" id="small">
+		<label for="">轻微</label>
+		<input type="radio" name="driver_card" id="normal">
+		<label for="">一般</label>
+		<input type="radio" name="driver_card" id="big">
+		<label for="">严重</label>
+	</div>
+	<div class="clear_data">
+		<div id="input_icon"></div>
+		<label for="clear_data">此项完好（清空数据）</label>
+	</div>
+	<div class="detail_title">
+		<h3>损伤状况（可多选）</h3>
+	</div>
+	<ul class="detail_list">
+		<!-- <li class="cur"><p>划痕</p><i></i></li>
+		<li><p>划痕</p><i></i></li>
+		<li><p>划痕</p><i></i></li>
+		<li><p>划痕</p><i></i></li>
+		<li><p>划痕</p><i></i></li>
+		<li><p>划痕</p><i></i></li>
+		<li><p>划痕</p><i></i></li> -->
+	</ul>
+	
+</div>
+
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="correct">确定</a>
+</div>
+
+<div class="error_layer2">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="cancel">否</a>
+	<a href="javascript:;" class="correct">是</a>
+</div>
+
+<div class="loading" id="loading"></div>
+<div class="tipbg" id="tipbg"></div>
+
+<div class="canvas_pop">
+	<div class="detail_head">
+		<a href="javascript:;" class="canvas_close">关闭</a>
+		<!-- <a href="javascript:;" class="canvas_save gley">保存</a> -->
+	</div>
+	<ul class="process">
+		<li><span class="cur">1</span>上传图片</li>
+		<li><span class="cur">2</span>截取图片</li>
+		<li><span>3</span>标注损伤</li>
+		<li><span>4</span>保存</li>
+	</ul>
+	<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+	<div id="clipArea"></div>
+	
+	<div class="gesture">
+		<p>手势说明：</p>
+		<div class="process_notice">你可以移动、缩放、旋转图片，以保证所要拍摄的内容在虚框内显示</div>
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/gesture2.png" alt="">
+	</div>
+	<div class="canvas_btn">
+		<div class="upload">
+			<div id="fileBtn">重新选择照片</div>
+			<input type="file" id="file">
+		</div>
+		<div id="clipBtn">截取图片</div>
+		<div id="clear">还原</div>
+		<div class="canvas_save">保存</div>
+	</div>
+
+	<div id="view"></div>
+</div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery-2.1.3.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/iscroll-zoom.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/hammer.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery.photoClip.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/eqs2.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/check.js"></script>
+</body>
+</html>

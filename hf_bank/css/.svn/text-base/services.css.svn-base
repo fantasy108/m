@@ -1,0 +1,224 @@
+body{font-size:0.1574rem; }
+a{text-decoration: none}
+.tipbg{ position: fixed; width: 100%; height: 100%; background: #000; z-index: 90; top:0;background: rgba(0,0,0,0.5);display:none;}
+
+#wrapper {
+	position:relative; 
+	/*z-index:1;*/
+	bottom:0; 
+	left:0;
+	width:100%;
+	background:#fff;
+	overflow:auto;
+}
+#scroller {
+	height:0.4499rem;
+	/*float:left;*/
+	padding:0;
+}
+#scroller ul {
+	list-style:none;
+	display:block;
+	/*float:left;*/
+	width:100%;
+	height:0.4499rem;
+	padding:0;
+	margin:0;
+	text-align:left;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+#scroller li {
+	text-align: center;
+	display:block;
+	vertical-align:middle;
+	float:left;
+	padding:0 0.0624rem;
+	/*width:0.5749rem;*/
+	height:100%;
+	background-color:#fff;
+	font-size:0.1374rem;
+	line-height: 0.4499rem;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    width: 20%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+#scroller li a{
+	text-decoration: none;
+	color:#333;
+}
+#scroller li.cur a{
+	color:#a7ab0f;
+	font-size:0.1374rem;
+}
+.gradient{height:0.4499rem;width:0.4499rem;position:absolute;top:0;right:0;background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 48%,rgba(255, 255, 255, 1) 98%, #FFFFFF 100%);background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 48%,rgba(255, 255, 255, 1) 98%, #FFFFFF 100%); display: none}
+
+/*金融服务*/
+/*.finance_bn{float:left;}*/
+.finance_bn img{width:100%;}
+.finance_list{width:100%;float:left;}
+.finance_list li{height:0.5624rem;width:100%;border-bottom:solid 0.0112rem #eee;padding:0.1124rem 0;position:relative;}
+.finance_list li a{display:block;text-decoration: none}
+.finance_list li a img{height:0.5624rem;width:0.5624rem;float:left;margin:0 0.1124rem;}
+.finance_list li a h3{font-size:0.1799rem;font-weight: bold;float:left;width:2.2499rem;color:#333;margin:0.0562rem 0 0 0;}
+.finance_list li a p{font-size: 0.1574rem;float:left;width:2.4749rem;color:#666;line-height: 0.2249rem}
+.finance_list li a .arrow{width:0.1124rem;height:0.1124rem;border-top: 0.025rem solid #ddd;border-right: 0.025rem solid #ddd;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);position:absolute;right:0.1124rem;top:0.3374rem;}
+
+#wrapper .service_title{height:0.5624rem;background: #f3f3f3;width:100%;}
+#wrapper .service_title img{width:0.3937rem;height:0.3937rem;float:left;margin:0.0674rem 0 0 0.5624rem;}
+#wrapper .service_title h2{font-size: 0.1799rem;text-align: center;padding:0 0 0 0.0562rem;float:left;line-height: 0.5624rem;}
+#wrapper .service_title h3{font-size: 0.1799rem;text-align: center;padding:0 0 0 0.0562rem;line-height: 0.5624rem;color:#999;font-weight: normal}
+#wrapper .service_title h2 a{color:#0066cc;}
+.personal_list{width:100%;float:left;}
+.personal_list li{height:0.4499rem;width:100%;border-bottom:solid 0.0112rem #eee;padding:0.1124rem 0;position:relative;}
+.personal_list li label{line-height:0.4499rem;color:#333;text-align: left;font-size: 0.1574rem;float:left;width:1.1249rem;padding:0 0 0 0.1124rem;}
+.personal_list li input{float:left;border:none;line-height:normal;height:0.4499rem;color:#999;font-size: 0.1574rem;width:2.2499rem;}
+.personal_list li .province{float:left;margin:0.1124rem 0 0 0;position:relative;}
+.personal_list li select{float:left;border:none;color:#b2afaf;font-size: 0.1574rem;width:2.2499rem;height:0.2249rem;-webkit-appearance:none}
+.personal_list li p{font-size: 0.1574rem;float:left;width:2.4749rem;color:#666;line-height: 0.2249rem}
+.personal_list li .arrow{width:0.1124rem;height:0.1124rem;border-top: 0.025rem solid #ddd;border-right: 0.025rem solid #ddd;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);position:absolute;right:0.1124rem;top:0.3374rem;}
+.personal_list li span{font-size: 0.1574rem;color:#999;float:left;line-height:0.4499rem;}
+.personal_list li .province .arrow{width:0.1124rem;height:0.1124rem;border-top: 0.025rem solid #ddd;border-right: 0.025rem solid #ddd;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);position:absolute;right:0.1124rem;top:0.0562rem;z-index: 0}
+.input-150{width:1.6874rem!important}
+.form_btn{width:95%;height:0.4499rem;;background: #f47410;color:#fff;text-align: center;font-size: 0.1574rem;border-radius:0.0562rem;border:none;line-height: 0.4499rem;;margin:0.2249rem auto;-webkit-appearance:none;display:block;text-decoration: none;font-size: 0.1799rem}
+
+.error_layer{display:none;width:2.2499rem;height:auto;background: #fff;position:absolute;top:2.2499rem;left:0.6749rem;z-index: 100;border-radius:0.0562rem;}
+.error_layer .correct{line-height: 0.4499rem;text-align: center;font-size: 0.1574rem;color:#2181f7;font-weight: bold;display:block;}
+
+.apply_content{padding:0.2249rem;color:#666;line-height: 0.3374rem}
+
+.home{width: 0.2812rem;height: 0.2812rem;display: inline-block;position: absolute;right: 0.15rem;top:0.0562rem;}
+.home img{width:0.2812rem;height:0.2812rem;}
+
+.apply_suc{text-align: center;}
+.apply_suc img{width:0.7874rem;height:0.7874rem;margin:0.5624rem 0 0.2249rem 0;}
+.apply_suc h3{line-height: 0.3374rem;margin:0 0 0.2249rem 0;}
+.apply_suc p{color:#666;}
+
+.calculator{height:0.5624rem;line-height: 0.5624rem}
+.calculator li{width:50%;float:left;text-align: center;color:#666;}
+.calculator li.cur{background: #fff;color:#333;position:relative;}
+.calculator li.cur span{position:absolute;top:0.5062rem;left:0.8999rem;width:0.1124rem;height:0.1124rem;background: #fff;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);}
+.calculator_pool{background: #4D79AA;height:0.8999rem;padding:0.2249rem}
+.calculator_pool .calc_name{font-size: 0.1574rem;color:#84A2C4;font-weight: bold;margin:0.0562rem 0 0 0;}
+.calculator_pool .calc_price{font-size: 0.1574rem;color:#84A2C4;font-weight: bold;margin:0.1124rem 0;}
+.calculator_pool .calc_price span{font-size: 0.4499rem;color:#fff;font-family: Arial}
+
+#calc_1{display:none;}
+
+/*维修保养*/
+.package{padding:0.1124rem 0.2249rem;float:left;width:3.1499rem;}
+.package h2{line-height: 0.2249rem;padding:0 0 0.0562rem 0;color:#999;border-bottom:solid 0.0112rem #eee;width:100%;}
+.package .baoyang{float:left;width:1.2374rem;height:1.3499rem;padding:0.0562rem 0.1124rem;border:solid 0.0112rem #ccc;border-radius:0.0562rem;margin:0.1124rem 0;}
+.package .odd{margin:0.1124rem 0.1687rem 0.1124rem 0;}
+.package h3{font-size: 0.1574rem;line-height: 0.3374rem;color:#999;}
+.package .cur{border:solid 0.0112rem #4680D1;}
+.package .cur h3{color:#4680D1;}
+.package ul li{line-height: 0.2249rem;color:#999;font-size: 0.1574rem;}
+
+.project{padding:0.1124rem 0.2249rem;float:left;width:3.1499rem;}
+.project h2{line-height: 0.2249rem;padding:0 0 0.0562rem 0;color:#999;border-bottom:solid 0.0112rem #eee;width:100%;}
+.project ul li{padding:0 0.1124rem;line-height: 0.3374rem;float:left;border:solid 0.0112rem #ccc;border-radius:0.0562rem;margin:0.1124rem 0.0562rem 0 0;color:#999;}
+.project ul li.cur{border:solid 0.0112rem #4680D1;color:#4680D1;}
+
+.repair_shop{width:100%;float:left;width:100%;border-top:solid 0.0112rem #eee;border-bottom:solid 0.0112rem #eee;padding:0.1124rem 0;position:relative;margin:0.1124rem 0;}
+.repair_shop label{line-height:0.4499rem;color:#333;text-align: left;font-size: 0.1574rem;float:left;width:1.1249rem;padding:0 0 0 0.1124rem;}
+.repair_shop .province{float:left;position:relative;width:2.1374rem;margin:0.1124rem 0 0 0;}
+.repair_shop select{float:left;border:none;color:#666;font-size: 0.1574rem;width:1.9687rem;height:0.2249rem;-webkit-appearance:none;overflow:hidden;}
+.repair_shop p{font-size: 0.1574rem;float:left;width:2.0249rem;color:#999;line-height: 0.2249rem;margin:0.1124rem 0 0 0;}
+.repair_shop .arrow{width:0.1124rem;height:0.1124rem;border-top: 0.025rem solid #ddd;border-right: 0.025rem solid #ddd;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);position:absolute;right:0.1124rem;top:0.3374rem;}
+.repair_shop span{font-size: 0.1574rem;color:#999;float:left;line-height:0.4499rem;}
+.repair_shop .province .arrow{width:0.1124rem;height:0.1124rem;border-top: 0.025rem solid #ddd;border-right: 0.025rem solid #ddd;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);position:absolute;right:0;top:0.0562rem;z-index: 0}
+
+/*质保服务*/
+.warranty{margin:0 0 0.8999rem 0;float:left;}
+.warranty li{border-bottom:dotted 0.0112rem #ccc;padding:0.2249rem;float:left;}
+.warranty li img{width:1.0124rem;height:1.0124rem;float:left;margin:0 0.1124rem 0 0;}
+.warranty li img.fr{float:right;}
+.warranty li h3{float:left;font-size: 0.1799rem;font-weight:bold;color:#666;line-height: 0.3374rem}
+.warranty li p{float:left;font-size: 0.1574rem;color:#999;line-height: 0.2249rem;width:2.0249rem;}
+.avilible{position:fixed;bottom:0;left:0;width:100%;background: #fff;box-shadow:0 0 0.0562rem #999;}
+
+/*美容服务*/
+.cosmetology{float:left;}
+.cosmetology li{border-bottom:dotted 0.0112rem #ccc;padding:0.1124rem;float:left;}
+.cosmetology li img{width:1.2374rem;height:0.8999rem;float:left;margin:0.1124rem 0.1124rem 0 0;}
+.cosmetology li img.fr{float:right;}
+.cosmetology li h3{float:left;font-size: 0.1799rem;font-weight:bold;color:#666;line-height: 0.3374rem}
+.cosmetology li p{float:left;font-size: 0.1574rem;color:#999;line-height: 0.2249rem;width:2.0249rem;}
+.cosmetology li h4{float:left;font-size: 0.1799rem;font-weight:bold;color:#cc0000;line-height: 0.3374rem}
+.cosmetology li h4 span{border:solid 0.0112rem red;padding:0.0224rem 0.0562rem;border-radius:0.0562rem;font-size: 0.1349rem;margin:0 0 0 0.0562rem;}
+
+.cosm_package{float:left;padding:0.1124rem;}
+.cosm_package h3{color:#999;float:left;width:100%;font-weight: normal;margin:0.1124rem 0 0.1124rem 0;}
+.cosm_package .cosm_package_list{float:left;line-height:0.2249rem;width:100%;border-bottom:solid 0.0112rem #ccc;}
+.cosm_package .cosm_package_list li{float:left;width:100%;line-height: 0.2249rem;margin:0.0562rem 0;}
+.cosm_package .cosm_package_list li h4{width:60%;float:left;color:#333;font-weight: normal}
+.cosm_package .cosm_package_list li span{float:left;width:20%;text-align: center}
+.cosm_package_list li h4.fr{float:right;text-align: right;margin:0 0.1124rem 0 0;}
+.cosm_package_list li h4.fr1{text-decoration: line-through }
+.cosm_package_list li h4 strong{color:red;}
+.cosm_package .cosm_package_list li img{float:left;margin:0.1124rem 0.1124rem 0 0;}
+.cosm_package .cosm_package_list li .gift{line-height: 0.5624rem}
+.cosm_package .intro{color:#333;line-height: 0.2249rem}
+.cosm_package .blank{height:0.8999rem;}
+
+.avilible .price{float:left;width:2.0249rem;margin:0.1124rem 0 0 0.0562rem;}
+.avilible .price .new_price{color:#cc0000;float:left;font-family: "Arial"}
+.avilible .price .new_price span{font-size: 0.4499rem;font-weight: bold;}
+.avilible .price .old_price{float:left;margin: 0 0 0 0.1124rem;text-decoration: line-through;color:#999;} 
+.avilible .price .off{float:left;margin: 0 0 0 0.1124rem;border:solid 0.0112rem red;padding:0.0224rem 0.0562rem;border-radius:0.0562rem;font-size: 0.1349rem;color:#cc0000;} 
+#qianggou{float:right;margin:0.1124rem 0.2249rem 0.1124rem 0;width:35%;}
+
+/*定损中心*/
+.assess_title{float:left;padding:0.2249rem;line-height: 0.2249rem;border-bottom:solid 0.0112rem #eee;}
+.assess_li{float:left;}
+.assess_li li{float:left;line-height: 0.5624rem;border-bottom:solid 0.0112rem #eee;width:100%;position:relative;}
+.assess_li li.hide{display:none;}
+.assess_li li img.icon{float:left;width:0.3374rem;margin:0.1124rem 0.1124rem 0 0.2249rem;}
+.assess_li li img.fl{float:left;width:100%;}
+.assess_li li p{float:left;line-height:0.5624rem;overflow: hidden;width:2.6999rem;height:0.5624rem;}
+.assess_li li .arrow{width:0.1124rem;height:0.1124rem;border-top: 0.025rem solid #ddd;border-right: 0.025rem solid #ddd;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); transform:rotate(45deg);position:absolute;right:0.1124rem;top:0.2249rem;}
+.assess_li li a{color:#333;}
+.other{float:left;width:100%;background: #f3f3f3}
+.other .info{float:left;background: #fff;border-top:solid 0.0112rem #ccc;border-bottom:solid 0.0112rem #ccc;width:100%;margin:0.2249rem 0;height:0.4499rem;padding:0.2249rem 0;}
+.other .info .title{float:left;border-right:solid 0.0112rem #ccc;height:0.4499rem;width:0.4499rem;color:#999;margin:0 0.2249rem;padding:0.0562rem 0 0 0.0562rem;}
+.other .info p{line-height: 0.2249rem}
+.other .intro{float:left;width:100%;}
+.other .intro .title{margin:0 0 0.1124rem 0.2249rem;}
+.other .intro .content{padding:0.2249rem;float:left;background: #fff;border-top:solid 0.0112rem #ccc;border-bottom:solid 0.0112rem #ccc;line-height: 0.2812rem}
+
+.bt_tip { color: #999;
+    text-align: center;
+    font-size: .1462rem;
+}
+
+/*
+1px=0.0112rem
+12px=0.1349rem
+14px=0.1574rem
+16px=0.1799rem
+
+5px=0.0562rem
+10px=0.1124rem
+15px=0.1687rem
+20px=0.2249rem
+25px=0.2812rem
+30px=0.3374rem
+40px=0.4499rem
+45px=0.5062rem
+50px=0.5624rem
+60px=0.6749rem
+70px=0.7874rem
+80px=0.8999rem
+90px=1.0124rem
+100px=1.1249rem
+180px=2.0249rem
+200px=2.2499rem
+*/

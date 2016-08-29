@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_main.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        维修保养
+        <a href="tel:8888888" class="bm_sdg"></a>
+    </section>
+</header>
+<div id="bm_main">
+    <div class="top_tip flex_box">
+        <div class="top_tip_l"><img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_fxp_icon.png" alt="" class="top_tip_l_icon"/>填写车辆信息有助于推荐保养项目</div>
+        <a href="bm_complete_car.html" class="edit_car flex">立即新增<i class="w_9_arr"></i></a>
+    </div>
+<div class="top_menu">
+        <ul class="flex_box">
+            <li class="flex"><a class="top_menu_item" href="bm_package_list.html"><img class="top_menu_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_set_meal_icon.png" alt=""/><span>优惠套餐</span></a></li>
+            <li class="flex"><a class="top_menu_item" href="bm_shop_list.html"><img class="top_menu_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_shop_icon.png" alt=""/><span>认证商家</span></a></li>
+            <li class="flex"><a class="top_menu_item" href="bm_consultant.html"><img class="top_menu_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_adviser_icon.png" alt=""/><span>金牌顾问</span></a></li>
+            <li class="flex"><a class="top_menu_item" href="bm_maintain.html"><img class="top_menu_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_maintenance_icon.png" alt=""/><span>做保养</span></a></li>
+        </ul>
+    </div>
+    <div class="great_set_meal">
+        <h2 class="bm_hd">精选套餐</h2>
+        <div class="bm_bd">
+            <ul id="package">
+                <!--<li>
+                    <a  class="flex_box" href="">
+                        <div class="img_wrap">
+                            <img class="bm_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_small.png" alt=""/>
+                        </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a  class="flex_box" href="">
+                        <div class="img_wrap">
+                            <img class="bm_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_middle.png" alt=""/>
+                        </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a  class="flex_box" href="">
+                        <div class="img_wrap">
+                            <img class="bm_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_big.png" alt=""/>
+                        </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a  class="flex_box" href="">
+                        <div class="img_wrap">
+                            <img class="bm_img" src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_all.png" alt=""/>
+                        </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<div class="loading" id="loading" ></div>
+<div class="ui_mask"></div>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm.js"></script>
+<script src="http://wap.autostreets.com/js/require.js" data-main="http://wap.autostreets.com/js/main.js"></script>
+</html>

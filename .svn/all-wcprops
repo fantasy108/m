@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 25
+/svn/static_src/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/static_src/!svn/ver/7034/img.autostreetscdn.com/trunk/m
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/static_src/!svn/ver/3509/img.autostreetscdn.com/trunk/m/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/static_src/!svn/ver/3559/img.autostreetscdn.com/trunk/m/build.xml
+END

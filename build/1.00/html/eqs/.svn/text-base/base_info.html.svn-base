@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>eqs-基本信息</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs_k.css" type="text/css">
+</head>
+<body class="bgf8">
+<header>
+    <div>
+        基本信息 <a href="javascript:void(0)" class="goBack"><i class="w_20_arr"></i>返回</a>
+        <a href="javascript:void(0)" class="save" id="save">保存</a>
+    </div>
+</header>
+<div id="wrapper" class="base_info">
+    <form action="" method="post" id="base_form">
+        <div class="driving_lic">
+            <div class="get_photo" id="get_photo">
+                <p>行驶证拍照</p>
+                <span class="add_btn"><strong>+点击添加</strong></span>
+                <input type="hidden" id="vehicleLicenseUrl" name="vehicleLicenseUrl"/>
+                <input type="file" accept="image/*" id="outfile">
+            </div>
+            <label class="is_lic" for="is_lic"><input value="" name="vehicleLicense" class="checkbox" id="is_lic" type="checkbox"/><span>未见行驶证（<span>上传行驶证或勾选未见</span>）</span></label>
+        </div>
+        <div class="panel_box">
+            <ul>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>VIN码</span></label>
+
+                        <div class="content verAC">
+                            <input type="text" class="vin_code req_item" id="vinCode" name="vinCode"/>
+                            <a href="javascript:void(0)" id="query">查询</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>VIN码是否清晰</span></label>
+                        <div class="content">
+                            <p class="radio_box">
+                                <label for="yes"><input id="yes" type="radio"  name="clearVin" value="true"/><span>是</span></label>
+                                <label for="no"><input id="no" type="radio"  name="clearVin" value="false"/><span>否</span></label>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="panel_box">
+            <ul>
+                <li>
+                    <div class="item arr">
+                        <label class="field req"><span>品牌</span></label>
+
+                        <div class="content" id="get_brand">
+                            <span id="brand_val req_item"></span>
+                            <input type="hidden" name="brand"/>
+                            <input type="hidden" name="manufacturer"/>
+                            <input type="hidden" name="brandSeries"/>
+                            <input type="hidden" name="vehicleModel"/>
+                            <input type="hidden" name="levelId"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>车辆型号</span></label>
+
+                        <div class="content">
+                            <input type="text" name="selledName" id="selledName" class="carType req_item"/>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="panel_box">
+            <ul>
+                <li>
+                    <div class="item arr">
+                        <label class="field req"><span>出厂年月</span></label>
+
+                        <div class="content">
+                            <input type="month" name="producedYears" id="producedYears" class="leave_date req_item"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item arr">
+                        <label class="field req"><span>上牌年月</span></label>
+
+                        <div class="content">
+                            <input type="month" name="registerLicenseYears" id="registerLicenseYears"  class="get_num_date req_item"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>上牌省份</span></label>
+                        <div class="content arr">
+                            <select name="registerProvince"  id="registerProvince" class="province req_item">
+                                <option value="0">请选择省份</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>上牌城市</span></label>
+                        <div class="content arr">
+                            <select name="registerCity" disabled="disabled" id="registerCity" class="city req_item">
+                                <option value="">请选择城市</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>车牌号</span></label>
+
+                        <div class="content">
+                            <input type="text" name="licenseCode" id="licenseCode" class="car_num req_item"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>车辆所在省份</span></label>
+                        <div class="content arr">
+                            <select name="currentProvince" id="currentProvince" class="province req_item">
+                                <option value="">请选择省份</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>车辆所在城市</span></label>
+                        <div class="content arr">
+                            <select name="currentCity" disabled="disabled" id="currentCity" class="city req_item">
+                                <option value="">请选择城市</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="panel_box">
+            <ul>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>发动机号</span></label>
+
+                        <div class="content">
+                            <input type="text" name="engineCode" id="engineCode" class="engine_num req_item"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>最大功率</span></label>
+
+                        <div class="content">
+                            <input type="text" name="power" id="power" class="max_power req_item"/>
+                            <span class="unit">KW</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>车身颜色</span></label>
+
+                        <div class="content arr">
+                            <select name="bodyColor" class="req_item" id="bodyColor">
+                                <option value="">请选择车身颜色</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>内饰颜色</span></label>
+
+                        <div class="content arr">
+                            <select name="interiorColor" class="req_item" id="interiorColor">
+                                <option value="">请选择内饰颜色</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>变速箱类型</span></label>
+
+                        <div class="content arr">
+                            <select name="transmissionType" class="req_item" id="transmissionType">
+                                <option value="">请选择变速箱类型</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>燃油类型</span></label>
+
+                        <div class="content arr">
+                            <select name="oilType" class="req_item" id="oilType">
+                                <option value="0">请选择燃油类型</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field req"><span>排气量</span></label>
+                        <div class="content ">
+                            <input type="text" name="sweptVolume" id="sweptVolume"/>
+                            <p class="radio_box" id="sweptVolumeType">
+                                <!--<label for="v_T"><input id="v_T" type="radio" name="sweptVolumeType" value="T"><span>T</span></label>-->
+                                <!--<label for="v_L"><input id="v_L" type="radio" name="sweptVolumeType" value="L"><span>L</span></label>-->
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label for="no_mile" class="field verAC no_mile"><input type="checkbox" id="no_mile"/><span>表显里程无法显示</span></label>
+
+                        <div class="content">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <label class="field"><span>表显里程</span></label>
+                        <div class="content">
+                            <input type="number" name="displayMileage" id="displayMileage" class="miles"/>
+                            <span class="unit">公里</span>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <p class="info_hd">
+            <span><span>基本配置</span></span>
+            <a href="javascript:void(0)" class="add_new_info">+新增基本配置</a>
+        </p>
+        <div class="configuration outConfig base_config" data-type="base">
+            <ul></ul>
+            <input type="hidden" name="featureItems" id="base_hidden"/>
+            <div class="no_config">暂无基本配置</div>
+        </div>
+        <p class="info_hd">
+            <span>个性配置</span>
+            <a href="javascript:void(0)" class="add_new_info">+新增个性配置</a>
+        </p>
+
+        <div class="configuration outConfig private_config" data-type="private">
+            <ul></ul>
+            <input type="hidden" name="personalFeatureItems" id="private_hidden"/>
+            <div class="no_config">暂无个性配置</div>
+        </div>
+    </form>
+</div>
+<div class="layer" id="config_layer">
+    <div class="layer_hd">
+        <span class="layer_close">关闭</span>
+        <a href="javascript:void(0)" class="layer_save" id="save_config">保存</a>
+    </div>
+    <div class="layer_content">
+        <div class="config_tab_wrap">
+            <div class="config_tab curr">基本配置</div>
+            <div class="config_tab">个性配置</div>
+        </div>
+        <div class="configuration config" data-type="base" id="base_config">
+            <ul>
+                <!--<li data-val="全景天窗" data-type="base" data-id="1" class="item"><a data-val="全景天窗" data-id="1" data-type="base" class="config_item base_1" href="javascript:void(0)"><span>全景天窗</span></a></li><li data-val="电动天窗" data-type="base" data-id="2" class="item"><a data-val="电动天窗" data-id="2" data-type="base" class="config_item base_2" href="javascript:void(0)"><span>电动天窗</span></a></li><li data-val="LED大灯" data-type="base" data-id="3" class="item"><a data-val="LED大灯" data-id="3" data-type="base" class="config_item base_3" href="javascript:void(0)"><span>LED大灯</span></a></li><li data-val="氙气大灯" data-type="base" data-id="4" class="item"><a data-val="氙气大灯" data-id="4" data-type="base" class="config_item base_4" href="javascript:void(0)"><span>氙气大灯</span></a></li><li data-val="轮毂材料" data-type="base" data-id="5" class="item"><a data-val="轮毂材料" data-id="5" data-type="base" class="config_item base_5" href="javascript:void(0)"><span>轮毂材料</span></a></li><li data-val="电动吸合门" data-type="base" data-id="6" class="item"><a data-val="电动吸合门" data-id="6" data-type="base" class="config_item base_6" href="javascript:void(0)"><span>电动吸合门</span></a></li><li data-val="车身稳定控制(ESP/DSC/VSC等)" data-type="base" data-id="7" class="item"><a data-val="车身稳定控制(ESP/DSC/VSC等)" data-id="7" data-type="base" class="config_item base_7" href="javascript:void(0)"><span>车身稳定控制(ESP/DSC/VSC等)</span></a></li><li data-val="空气悬挂" data-type="base" data-id="8" class="item"><a data-val="空气悬挂" data-id="8" data-type="base" class="config_item base_8" href="javascript:void(0)"><span>空气悬挂</span></a></li><li data-val="可变悬挂" data-type="base" data-id="9" class="item"><a data-val="可变悬挂" data-id="9" data-type="base" class="config_item base_9" href="javascript:void(0)"><span>可变悬挂</span></a></li><li data-val="陡坡缓降" data-type="base" data-id="10" class="item"><a data-val="陡坡缓降" data-id="10" data-type="base" class="config_item base_10" href="javascript:void(0)"><span>陡坡缓降</span></a></li><li data-val="自动驻车/上坡辅助" data-type="base" data-id="11" class="item"><a data-val="自动驻车/上坡辅助" data-id="11" data-type="base" class="config_item base_11" href="javascript:void(0)"><span>自动驻车/上坡辅助</span></a></li><li data-val="自动空调" data-type="base" data-id="12" class="item"><a data-val="自动空调" data-id="12" data-type="base" class="config_item base_12" href="javascript:void(0)"><span>自动空调</span></a></li><li data-val="后排独立空调" data-type="base" data-id="13" class="item"><a data-val="后排独立空调" data-id="13" data-type="base" class="config_item base_13" href="javascript:void(0)"><span>后排独立空调</span></a></li><li data-val="空调" data-type="base" data-id="14" class="item"><a data-val="空调" data-id="14" data-type="base" class="config_item base_14" href="javascript:void(0)"><span>空调</span></a></li><li data-val="自适应巡航" data-type="base" data-id="15" class="item"><a data-val="自适应巡航" data-id="15" data-type="base" class="config_item base_15" href="javascript:void(0)"><span>自适应巡航</span></a></li><li data-val="自动泊车入位" data-type="base" data-id="16" class="item"><a data-val="自动泊车入位" data-id="16" data-type="base" class="config_item base_16" href="javascript:void(0)"><span>自动泊车入位</span></a></li><li data-val="车载冰箱" data-type="base" data-id="17" class="item"><a data-val="车载冰箱" data-id="17" data-type="base" class="config_item base_17" href="javascript:void(0)"><span>车载冰箱</span></a></li><li data-val="夜视系统" data-type="base" data-id="18" class="item"><a data-val="夜视系统" data-id="18" data-type="base" class="config_item base_18" href="javascript:void(0)"><span>夜视系统</span></a></li><li data-val="全景摄像头" data-type="base" data-id="19" class="item"><a data-val="全景摄像头" data-id="19" data-type="base" class="config_item base_19" href="javascript:void(0)"><span>全景摄像头</span></a></li><li data-val="前排侧气囊" data-type="base" data-id="20" class="item"><a data-val="前排侧气囊" data-id="20" data-type="base" class="config_item base_20" href="javascript:void(0)"><span>前排侧气囊</span></a></li><li data-val="后排侧气囊" data-type="base" data-id="21" class="item"><a data-val="后排侧气囊" data-id="21" data-type="base" class="config_item base_21" href="javascript:void(0)"><span>后排侧气囊</span></a></li><li data-val="前排头部气囊(气帘)" data-type="base" data-id="22" class="item"><a data-val="前排头部气囊(气帘)" data-id="22" data-type="base" class="config_item base_22" href="javascript:void(0)"><span>前排头部气囊(气帘)</span></a></li><li data-val="后排头部气囊(气帘)" data-type="base" data-id="23" class="item"><a data-val="后排头部气囊(气帘)" data-id="23" data-type="base" class="config_item base_23" href="javascript:void(0)"><span>后排头部气囊(气帘)</span></a></li><li data-val="膝部气囊" data-type="base" data-id="24" class="item"><a data-val="膝部气囊" data-id="24" data-type="base" class="config_item base_24" href="javascript:void(0)"><span>膝部气囊</span></a></li><li data-val="电动后备箱" data-type="base" data-id="25" class="item"><a data-val="电动后备箱" data-id="25" data-type="base" class="config_item base_25" href="javascript:void(0)"><span>电动后备箱</span></a></li><li data-val="定位互动服务" data-type="base" data-id="26" class="item"><a data-val="定位互动服务" data-id="26" data-type="base" class="config_item base_26" href="javascript:void(0)"><span>定位互动服务</span></a></li><li data-val="无钥匙启动系统" data-type="base" data-id="27" class="item"><a data-val="无钥匙启动系统" data-id="27" data-type="base" class="config_item base_27" href="javascript:void(0)"><span>无钥匙启动系统</span></a></li><li data-val="后排座椅电动调节" data-type="base" data-id="28" class="item"><a data-val="后排座椅电动调节" data-id="28" data-type="base" class="config_item base_28" href="javascript:void(0)"><span>后排座椅电动调节</span></a></li><li data-val="座椅按摩" data-type="base" data-id="29" class="item"><a data-val="座椅按摩" data-id="29" data-type="base" class="config_item base_29" href="javascript:void(0)"><span>座椅按摩</span></a></li><li data-val="座椅通风" data-type="base" data-id="30" class="item"><a data-val="座椅通风" data-id="30" data-type="base" class="config_item base_30" href="javascript:void(0)"><span>座椅通风</span></a></li><li data-val="后排座椅加热" data-type="base" data-id="31" class="item"><a data-val="后排座椅加热" data-id="31" data-type="base" class="config_item base_31" href="javascript:void(0)"><span>后排座椅加热</span></a></li><li data-val="电动座椅记忆" data-type="base" data-id="32" class="item"><a data-val="电动座椅记忆" data-id="32" data-type="base" class="config_item base_32" href="javascript:void(0)"><span>电动座椅记忆</span></a></li><li data-val="副驾驶座座椅电动调节" data-type="base" data-id="33" class="item"><a data-val="副驾驶座座椅电动调节" data-id="33" data-type="base" class="config_item base_33" href="javascript:void(0)"><span>副驾驶座座椅电动调节</span></a></li><li data-val="前排座椅加热" data-type="base" data-id="34" class="item"><a data-val="前排座椅加热" data-id="34" data-type="base" class="config_item base_34" href="javascript:void(0)"><span>前排座椅加热</span></a></li><li data-val="驾驶座座椅电动调节" data-type="base" data-id="35" class="item"><a data-val="驾驶座座椅电动调节" data-id="35" data-type="base" class="config_item base_35" href="javascript:void(0)"><span>驾驶座座椅电动调节</span></a></li><li data-val="HUD抬头数字显示" data-type="base" data-id="36" class="item"><a data-val="HUD抬头数字显示" data-id="36" data-type="base" class="config_item base_36" href="javascript:void(0)"><span>HUD抬头数字显示</span></a></li><li data-val="定速巡航" data-type="base" data-id="37" class="item"><a data-val="定速巡航" data-id="37" data-type="base" class="config_item base_37" href="javascript:void(0)"><span>定速巡航</span></a></li><li data-val="人机交互系统" data-type="base" data-id="38" class="item"><a data-val="人机交互系统" data-id="38" data-type="base" class="config_item base_38" href="javascript:void(0)"><span>人机交互系统</span></a></li><li data-val="自动头灯" data-type="base" data-id="39" class="item"><a data-val="自动头灯" data-id="39" data-type="base" class="config_item base_39" href="javascript:void(0)"><span>自动头灯</span></a></li><li data-val="感应雨刷" data-type="base" data-id="40" class="item"><a data-val="感应雨刷" data-id="40" data-type="base" class="config_item base_40" href="javascript:void(0)"><span>感应雨刷</span></a></li><li data-val="胎压监测装置" data-type="base" data-id="41" class="item"><a data-val="胎压监测装置" data-id="41" data-type="base" class="config_item base_41" href="javascript:void(0)"><span>胎压监测装置</span></a></li><li data-val="蓝牙/车载电话" data-type="base" data-id="42" class="item"><a data-val="蓝牙/车载电话" data-id="42" data-type="base" class="config_item base_42" href="javascript:void(0)"><span>蓝牙/车载电话</span></a></li><li data-val="驾驶座安全气囊" data-type="base" data-id="43" class="item"><a data-val="驾驶座安全气囊" data-id="43" data-type="base" class="config_item base_43" href="javascript:void(0)"><span>驾驶座安全气囊</span></a></li><li data-val="副驾驶安全气囊" data-type="base" data-id="44" class="item"><a data-val="副驾驶安全气囊" data-id="44" data-type="base" class="config_item base_44" href="javascript:void(0)"><span>副驾驶安全气囊</span></a></li><li data-val="并线辅助" data-type="base" data-id="45" class="item"><a data-val="并线辅助" data-id="45" data-type="base" class="config_item base_45" href="javascript:void(0)"><span>并线辅助</span></a></li><li data-val="方向盘电动调节" data-type="base" data-id="46" class="item"><a data-val="方向盘电动调节" data-id="46" data-type="base" class="config_item base_46" href="javascript:void(0)"><span>方向盘电动调节</span></a></li><li data-val="方向盘换挡" data-type="base" data-id="47" class="item"><a data-val="方向盘换挡" data-id="47" data-type="base" class="config_item base_47" href="javascript:void(0)"><span>方向盘换挡</span></a></li><li data-val="前雾灯" data-type="base" data-id="48" class="item"><a data-val="前雾灯" data-id="48" data-type="base" class="config_item base_48" href="javascript:void(0)"><span>前雾灯</span></a></li><li data-val="大灯清洗装置" data-type="base" data-id="49" class="item"><a data-val="大灯清洗装置" data-id="49" data-type="base" class="config_item base_49" href="javascript:void(0)"><span>大灯清洗装置</span></a></li><li data-val="后雨刷" data-type="base" data-id="50" class="item"><a data-val="后雨刷" data-id="50" data-type="base" class="config_item base_50" href="javascript:void(0)"><span>后雨刷</span></a></li><li data-val="泊车辅助" data-type="base" data-id="51" class="item"><a data-val="泊车辅助" data-id="51" data-type="base" class="config_item base_51" href="javascript:void(0)"><span>泊车辅助</span></a></li><li data-val="倒车视频影像" data-type="base" data-id="52" class="item"><a data-val="倒车视频影像" data-id="52" data-type="base" class="config_item base_52" href="javascript:void(0)"><span>倒车视频影像</span></a></li><li data-val="行车电脑显示屏" data-type="base" data-id="53" class="item"><a data-val="行车电脑显示屏" data-id="53" data-type="base" class="config_item base_53" href="javascript:void(0)"><span>行车电脑显示屏</span></a></li><li data-val="GPS导航" data-type="base" data-id="54" class="item"><a data-val="GPS导航" data-id="54" data-type="base" class="config_item base_54" href="javascript:void(0)"><span>GPS导航</span></a></li><li data-val="中控台彩色大屏" data-type="base" data-id="55" class="item"><a data-val="中控台彩色大屏" data-id="55" data-type="base" class="config_item base_55" href="javascript:void(0)"><span>中控台彩色大屏</span></a></li><li data-val="车载电视" data-type="base" data-id="56" class="item"><a data-val="车载电视" data-id="56" data-type="base" class="config_item base_56" href="javascript:void(0)"><span>车载电视</span></a></li><li data-val="后排液晶屏" data-type="base" data-id="57" class="item"><a data-val="后排液晶屏" data-id="57" data-type="base" class="config_item base_57" href="javascript:void(0)"><span>后排液晶屏</span></a></li><li data-val="多功能方向盘" data-type="base" data-id="58" class="item"><a data-val="多功能方向盘" data-id="58" data-type="base" class="config_item base_58" href="javascript:void(0)"><span>多功能方向盘</span></a></li><li data-val="后风挡遮阳帘" data-type="base" data-id="59" class="item"><a data-val="后风挡遮阳帘" data-id="59" data-type="base" class="config_item base_59" href="javascript:void(0)"><span>后风挡遮阳帘</span></a></li><li data-val="后座出风口" data-type="base" data-id="60" class="item"><a data-val="后座出风口" data-id="60" data-type="base" class="config_item base_60" href="javascript:void(0)"><span>后座出风口</span></a></li><li data-val="后视镜电动调节" data-type="base" data-id="61" class="item"><a data-val="后视镜电动调节" data-id="61" data-type="base" class="config_item base_61" href="javascript:void(0)"><span>后视镜电动调节</span></a></li><li data-val="后视镜电动折叠" data-type="base" data-id="62" class="item"><a data-val="后视镜电动折叠" data-id="62" data-type="base" class="config_item base_62" href="javascript:void(0)"><span>后视镜电动折叠</span></a></li><li data-val="后视镜记忆" data-type="base" data-id="63" class="item"><a data-val="后视镜记忆" data-id="63" data-type="base" class="config_item base_63" href="javascript:void(0)"><span>后视镜记忆</span></a></li><li data-val="后视镜加热" data-type="base" data-id="64" class="item"><a data-val="后视镜加热" data-id="64" data-type="base" class="config_item base_64" href="javascript:void(0)"><span>后视镜加热</span></a></li><li data-val="ABS防抱死" data-type="base" data-id="65" class="item"><a data-val="ABS防抱死" data-id="65" data-type="base" class="config_item base_65" href="javascript:void(0)"><span>ABS防抱死</span></a></li><li data-val="牵引力控制(ASR/TCS/TRC等)" data-type="base" data-id="66" class="item"><a data-val="牵引力控制(ASR/TCS/TRC等)" data-id="66" data-type="base" class="config_item base_66" href="javascript:void(0)"><span>牵引力控制(ASR/TCS/TRC等)</span></a></li><li data-val="遥控钥匙" data-type="base" data-id="67" class="item"><a data-val="遥控钥匙" data-id="67" data-type="base" class="config_item base_67" href="javascript:void(0)"><span>遥控钥匙</span></a></li><li data-val="中控锁" data-type="base" data-id="68" class="item"><a data-val="中控锁" data-id="68" data-type="base" class="config_item base_68" href="javascript:void(0)"><span>中控锁</span></a></li><li data-val="真皮座椅" data-type="base" data-id="69" class="item"><a data-val="真皮座椅" data-id="69" data-type="base" class="config_item base_69" href="javascript:void(0)"><span>真皮座椅</span></a></li><li data-val="运动座椅" data-type="base" data-id="70" class="item"><a data-val="运动座椅" data-id="70" data-type="base" class="config_item base_70" href="javascript:void(0)"><span>运动座椅</span></a></li><li data-val="腰部支撑调节" data-type="base" data-id="71" class="item"><a data-val="腰部支撑调节" data-id="71" data-type="base" class="config_item base_71" href="javascript:void(0)"><span>腰部支撑调节</span></a></li><li data-val="多碟CD" data-type="base" data-id="72" class="item"><a data-val="多碟CD" data-id="72" data-type="base" class="config_item base_72" href="javascript:void(0)"><span>多碟CD</span></a></li><li data-val="多碟DVD" data-type="base" data-id="73" class="item"><a data-val="多碟DVD" data-id="73" data-type="base" class="config_item base_73" href="javascript:void(0)"><span>多碟DVD</span></a></li><li data-val="倒车雷达" data-type="base" data-id="74" class="item"><a data-val="倒车雷达" data-id="74" data-type="base" class="config_item base_74" href="javascript:void(0)"><span>倒车雷达</span></a></li><li data-val="后排座椅比例放倒" data-type="base" data-id="75" class="item"><a data-val="后排座椅比例放倒" data-id="75" data-type="base" class="config_item base_75" href="javascript:void(0)"><span>后排座椅比例放倒</span></a></li><li data-val="后排座椅整体放倒" data-type="base" data-id="76" class="item"><a data-val="后排座椅整体放倒" data-id="76" data-type="base" class="config_item base_76" href="javascript:void(0)"><span>后排座椅整体放倒</span></a></li><li data-val="后座中央扶手" data-type="base" data-id="77" class="item"><a data-val="后座中央扶手" data-id="77" data-type="base" class="config_item base_77" href="javascript:void(0)"><span>后座中央扶手</span></a></li><li data-val="车内氛围灯" data-type="base" data-id="78" class="item"><a data-val="车内氛围灯" data-id="78" data-type="base" class="config_item base_78" href="javascript:void(0)"><span>车内氛围灯</span></a></li><li data-val="前轮胎规格" data-type="base" data-id="79" class="item"><a data-val="前轮胎规格" data-id="79" data-type="base" class="config_item base_79" href="javascript:void(0)"><span>前轮胎规格</span></a></li><li data-val="后轮胎规格" data-type="base" data-id="80" class="item"><a data-val="后轮胎规格" data-id="80" data-type="base" class="config_item base_80" href="javascript:void(0)"><span>后轮胎规格</span></a></li><li data-val="前轮毂规格" data-type="base" data-id="81" class="item"><a data-val="前轮毂规格" data-id="81" data-type="base" class="config_item base_81" href="javascript:void(0)"><span>前轮毂规格</span></a></li><li data-val="后轮毂规格" data-type="base" data-id="82" class="item"><a data-val="后轮毂规格" data-id="82" data-type="base" class="config_item base_82" href="javascript:void(0)"><span>后轮毂规格</span></a></li><li data-val="备胎规格" data-type="base" data-id="83" class="item"><a data-val="备胎规格" data-id="83" data-type="base" class="config_item base_83" href="javascript:void(0)"><span>备胎规格</span></a></li><li data-val="运动外观套件" data-type="base" data-id="84" class="item"><a data-val="运动外观套件" data-id="84" data-type="base" class="config_item base_84" href="javascript:void(0)"><span>运动外观套件</span></a></li><li data-val="日间行车灯" data-type="base" data-id="85" class="item"><a data-val="日间行车灯" data-id="85" data-type="base" class="config_item base_85" href="javascript:void(0)"><span>日间行车灯</span></a></li><li data-val="真皮方向盘" data-type="base" data-id="86" class="item"><a data-val="真皮方向盘" data-id="86" data-type="base" class="config_item base_86" href="javascript:void(0)"><span>真皮方向盘</span></a></li><li data-val="方向盘上下调节" data-type="base" data-id="87" class="item"><a data-val="方向盘上下调节" data-id="87" data-type="base" class="config_item base_87" href="javascript:void(0)"><span>方向盘上下调节</span></a></li><li data-val="方向盘前后调节" data-type="base" data-id="88" class="item"><a data-val="方向盘前后调节" data-id="88" data-type="base" class="config_item base_88" href="javascript:void(0)"><span>方向盘前后调节</span></a></li><li data-val="座椅高低调节" data-type="base" data-id="89" class="item"><a data-val="座椅高低调节" data-id="89" data-type="base" class="config_item base_89" href="javascript:void(0)"><span>座椅高低调节</span></a></li><li data-val="前电动车窗" data-type="base" data-id="90" class="item"><a data-val="前电动车窗" data-id="90" data-type="base" class="config_item base_90" href="javascript:void(0)"><span>前电动车窗</span></a></li><li data-val="后电动车窗" data-type="base" data-id="91" class="item"><a data-val="后电动车窗" data-id="91" data-type="base" class="config_item base_91" href="javascript:void(0)"><span>后电动车窗</span></a></li><li data-val="后视镜自动防眩目" data-type="base" data-id="92" class="item"><a data-val="后视镜自动防眩目" data-id="92" data-type="base" class="config_item base_92" href="javascript:void(0)"><span>后视镜自动防眩目</span></a></li><li data-val="中控液晶屏分屏显示" data-type="base" data-id="93" class="item"><a data-val="中控液晶屏分屏显示" data-id="93" data-type="base" class="config_item base_93" href="javascript:void(0)"><span>中控液晶屏分屏显示</span></a></li><li data-val="车载信息服务" data-type="base" data-id="94" class="item"><a data-val="车载信息服务" data-id="94" data-type="base" class="config_item base_94" href="javascript:void(0)"><span>车载信息服务</span></a></li><li data-val="安全带未系提示" data-type="base" data-id="95" class="item"><a data-val="安全带未系提示" data-id="95" data-type="base" class="config_item base_95" href="javascript:void(0)"><span>安全带未系提示</span></a></li><li data-val="ISO FIX儿童座椅接口" data-type="base" data-id="96" class="item"><a data-val="ISO FIX儿童座椅接口" data-id="96" data-type="base" class="config_item base_96" href="javascript:void(0)"><span>ISO FIX儿童座椅接口</span></a></li><li data-val="LATCH座椅接口" data-type="base" data-id="97" class="item"><a data-val="LATCH座椅接口" data-id="97" data-type="base" class="config_item base_97" href="javascript:void(0)"><span>LATCH座椅接口</span></a></li><li data-val="主动转向系统" data-type="base" data-id="98" class="item"><a data-val="主动转向系统" data-id="98" data-type="base" class="config_item base_98" href="javascript:void(0)"><span>主动转向系统</span></a></li><li data-val="主动刹车" data-type="base" data-id="99" class="item"><a data-val="主动刹车" data-id="99" data-type="base" class="config_item base_99" href="javascript:void(0)"><span>主动刹车</span></a></li><li data-val="可变转向比" data-type="base" data-id="100" class="item"><a data-val="可变转向比" data-id="100" data-type="base" class="config_item base_100" href="javascript:void(0)"><span>可变转向比</span></a></li><li data-val="遮阳板化妆镜" data-type="base" data-id="101" class="item"><a data-val="遮阳板化妆镜" data-id="101" data-type="base" class="config_item base_101" href="javascript:void(0)"><span>遮阳板化妆镜</span></a></li><li data-val="后排侧遮阳帘" data-type="base" data-id="102" class="item"><a data-val="后排侧遮阳帘" data-id="102" data-type="base" class="config_item base_102" href="javascript:void(0)"><span>后排侧遮阳帘</span></a></li><li data-val="大灯高度可调" data-type="base" data-id="103" class="item"><a data-val="大灯高度可调" data-id="103" data-type="base" class="config_item base_103" href="javascript:void(0)"><span>大灯高度可调</span></a></li><li data-val="第三排座椅" data-type="base" data-id="104" class="item"><a data-val="第三排座椅" data-id="104" data-type="base" class="config_item base_104" href="javascript:void(0)"><span>第三排座椅</span></a></li><li data-val="前座中央扶手" data-type="base" data-id="105" class="item"><a data-val="前座中央扶手" data-id="105" data-type="base" class="config_item base_105" href="javascript:void(0)"><span>前座中央扶手</span></a></li><li data-val="后排杯架" data-type="base" data-id="106" class="item"><a data-val="后排杯架" data-id="106" data-type="base" class="config_item base_106" href="javascript:void(0)"><span>后排杯架</span></a></li><li data-val="肩部支撑调节" data-type="base" data-id="107" class="item"><a data-val="肩部支撑调节" data-id="107" data-type="base" class="config_item base_107" href="javascript:void(0)"><span>肩部支撑调节</span></a></li><li data-val="第二排座椅移动" data-type="base" data-id="108" class="item"><a data-val="第二排座椅移动" data-id="108" data-type="base" class="config_item base_108" href="javascript:void(0)"><span>第二排座椅移动</span></a></li><li data-val="第二排靠背角度调节" data-type="base" data-id="109" class="item"><a data-val="第二排靠背角度调节" data-id="109" data-type="base" class="config_item base_109" href="javascript:void(0)"><span>第二排靠背角度调节</span></a></li><li data-val="转向头灯" data-type="base" data-id="110" class="item"><a data-val="转向头灯" data-id="110" data-type="base" class="config_item base_110" href="javascript:void(0)"><span>转向头灯</span></a></li><li data-val="内置硬盘" data-type="base" data-id="111" class="item"><a data-val="内置硬盘" data-id="111" data-type="base" class="config_item base_111" href="javascript:void(0)"><span>内置硬盘</span></a></li><li data-val="零胎压继续行驶" data-type="base" data-id="112" class="item"><a data-val="零胎压继续行驶" data-id="112" data-type="base" class="config_item base_112" href="javascript:void(0)"><span>零胎压继续行驶</span></a></li><li data-val="发动机电子防盗" data-type="base" data-id="113" class="item"><a data-val="发动机电子防盗" data-id="113" data-type="base" class="config_item base_113" href="javascript:void(0)"><span>发动机电子防盗</span></a></li><li data-val="制动力分配(EBD/CBC等)" data-type="base" data-id="114" class="item"><a data-val="制动力分配(EBD/CBC等)" data-id="114" data-type="base" class="config_item base_114" href="javascript:void(0)"><span>制动力分配(EBD/CBC等)</span></a></li><li data-val="刹车辅助(EBA/BAS/BA等)" data-type="base" data-id="115" class="item"><a data-val="刹车辅助(EBA/BAS/BA等)" data-id="115" data-type="base" class="config_item base_115" href="javascript:void(0)"><span>刹车辅助(EBA/BAS/BA等)</span></a></li><li data-val="车窗防夹手功能" data-type="base" data-id="116" class="item"><a data-val="车窗防夹手功能" data-id="116" data-type="base" class="config_item base_116" href="javascript:void(0)"><span>车窗防夹手功能</span></a></li><li data-val="隔热玻璃" data-type="base" data-id="117" class="item"><a data-val="隔热玻璃" data-id="117" data-type="base" class="config_item base_117" href="javascript:void(0)"><span>隔热玻璃</span></a></li><li data-val="外接音源接口(AUX/USB/iPod等)" data-type="base" data-id="118" class="item"><a data-val="外接音源接口(AUX/USB/iPod等)" data-id="118" data-type="base" class="config_item base_118" href="javascript:void(0)"><span>外接音源接口(AUX/USB/iPod等)</span></a></li><li data-val="音频支持MP3" data-type="base" data-id="119" class="item"><a data-val="音频支持MP3" data-id="119" data-type="base" class="config_item base_119" href="javascript:void(0)"><span>音频支持MP3</span></a></li><li data-val="单碟CD" data-type="base" data-id="120" class="item"><a data-val="单碟CD" data-id="120" data-type="base" class="config_item base_120" href="javascript:void(0)"><span>单碟CD</span></a></li><li data-val="虚拟多碟CD" data-type="base" data-id="121" class="item"><a data-val="虚拟多碟CD" data-id="121" data-type="base" class="config_item base_121" href="javascript:void(0)"><span>虚拟多碟CD</span></a></li><li data-val="单碟DVD" data-type="base" data-id="122" class="item"><a data-val="单碟DVD" data-id="122" data-type="base" class="config_item base_122" href="javascript:void(0)"><span>单碟DVD</span></a></li><li data-val="扬声器数量" data-type="base" data-id="123" class="item"><a data-val="扬声器数量" data-id="123" data-type="base" class="config_item base_123" href="javascript:void(0)"><span>扬声器数量</span></a></li><li data-val="温度分区控制" data-type="base" data-id="124" class="item"><a data-val="温度分区控制" data-id="124" data-type="base" class="config_item base_124" href="javascript:void(0)"><span>温度分区控制</span></a></li><li data-val="空气调节/花粉过滤" data-type="base" data-id="125" class="item"><a data-val="空气调节/花粉过滤" data-id="125" data-type="base" class="config_item base_125" href="javascript:void(0)"><span>空气调节/花粉过滤</span></a></li>--></ul>
+        </div>
+        <div class="configuration config" data-type="private" id="private_config">
+            <ul>
+                <!--<li data-val="全景天窗" data-type="private" data-id="1" class="item"><a data-val="全景天窗" data-id="1" data-type="private" class="config_item private_1" href="javascript:void(0)"><span>全景天窗</span></a></li><li data-val="电动天窗" data-type="private" data-id="2" class="item"><a data-val="电动天窗" data-id="2" data-type="private" class="config_item private_2" href="javascript:void(0)"><span>电动天窗</span></a></li><li data-val="LED大灯" data-type="private" data-id="3" class="item"><a data-val="LED大灯" data-id="3" data-type="private" class="config_item private_3" href="javascript:void(0)"><span>LED大灯</span></a></li><li data-val="氙气大灯" data-type="private" data-id="4" class="item"><a data-val="氙气大灯" data-id="4" data-type="private" class="config_item private_4" href="javascript:void(0)"><span>氙气大灯</span></a></li><li data-val="轮毂材料" data-type="private" data-id="5" class="item"><a data-val="轮毂材料" data-id="5" data-type="private" class="config_item private_5" href="javascript:void(0)"><span>轮毂材料</span></a></li><li data-val="电动吸合门" data-type="private" data-id="6" class="item"><a data-val="电动吸合门" data-id="6" data-type="private" class="config_item private_6" href="javascript:void(0)"><span>电动吸合门</span></a></li><li data-val="车身稳定控制(ESP/DSC/VSC等)" data-type="private" data-id="7" class="item"><a data-val="车身稳定控制(ESP/DSC/VSC等)" data-id="7" data-type="private" class="config_item private_7" href="javascript:void(0)"><span>车身稳定控制(ESP/DSC/VSC等)</span></a></li><li data-val="空气悬挂" data-type="private" data-id="8" class="item"><a data-val="空气悬挂" data-id="8" data-type="private" class="config_item private_8" href="javascript:void(0)"><span>空气悬挂</span></a></li><li data-val="可变悬挂" data-type="private" data-id="9" class="item"><a data-val="可变悬挂" data-id="9" data-type="private" class="config_item private_9" href="javascript:void(0)"><span>可变悬挂</span></a></li><li data-val="陡坡缓降" data-type="private" data-id="10" class="item"><a data-val="陡坡缓降" data-id="10" data-type="private" class="config_item private_10" href="javascript:void(0)"><span>陡坡缓降</span></a></li><li data-val="自动驻车/上坡辅助" data-type="private" data-id="11" class="item"><a data-val="自动驻车/上坡辅助" data-id="11" data-type="private" class="config_item private_11" href="javascript:void(0)"><span>自动驻车/上坡辅助</span></a></li><li data-val="自动空调" data-type="private" data-id="12" class="item"><a data-val="自动空调" data-id="12" data-type="private" class="config_item private_12" href="javascript:void(0)"><span>自动空调</span></a></li><li data-val="后排独立空调" data-type="private" data-id="13" class="item"><a data-val="后排独立空调" data-id="13" data-type="private" class="config_item private_13" href="javascript:void(0)"><span>后排独立空调</span></a></li><li data-val="空调" data-type="private" data-id="14" class="item"><a data-val="空调" data-id="14" data-type="private" class="config_item private_14" href="javascript:void(0)"><span>空调</span></a></li><li data-val="自适应巡航" data-type="private" data-id="15" class="item"><a data-val="自适应巡航" data-id="15" data-type="private" class="config_item private_15" href="javascript:void(0)"><span>自适应巡航</span></a></li><li data-val="自动泊车入位" data-type="private" data-id="16" class="item"><a data-val="自动泊车入位" data-id="16" data-type="private" class="config_item private_16" href="javascript:void(0)"><span>自动泊车入位</span></a></li><li data-val="车载冰箱" data-type="private" data-id="17" class="item"><a data-val="车载冰箱" data-id="17" data-type="private" class="config_item private_17" href="javascript:void(0)"><span>车载冰箱</span></a></li><li data-val="夜视系统" data-type="private" data-id="18" class="item"><a data-val="夜视系统" data-id="18" data-type="private" class="config_item private_18" href="javascript:void(0)"><span>夜视系统</span></a></li><li data-val="全景摄像头" data-type="private" data-id="19" class="item"><a data-val="全景摄像头" data-id="19" data-type="private" class="config_item private_19" href="javascript:void(0)"><span>全景摄像头</span></a></li><li data-val="前排侧气囊" data-type="private" data-id="20" class="item"><a data-val="前排侧气囊" data-id="20" data-type="private" class="config_item private_20" href="javascript:void(0)"><span>前排侧气囊</span></a></li><li data-val="后排侧气囊" data-type="private" data-id="21" class="item"><a data-val="后排侧气囊" data-id="21" data-type="private" class="config_item private_21" href="javascript:void(0)"><span>后排侧气囊</span></a></li><li data-val="前排头部气囊(气帘)" data-type="private" data-id="22" class="item"><a data-val="前排头部气囊(气帘)" data-id="22" data-type="private" class="config_item private_22" href="javascript:void(0)"><span>前排头部气囊(气帘)</span></a></li><li data-val="后排头部气囊(气帘)" data-type="private" data-id="23" class="item"><a data-val="后排头部气囊(气帘)" data-id="23" data-type="private" class="config_item private_23" href="javascript:void(0)"><span>后排头部气囊(气帘)</span></a></li><li data-val="膝部气囊" data-type="private" data-id="24" class="item"><a data-val="膝部气囊" data-id="24" data-type="private" class="config_item private_24" href="javascript:void(0)"><span>膝部气囊</span></a></li><li data-val="电动后备箱" data-type="private" data-id="25" class="item"><a data-val="电动后备箱" data-id="25" data-type="private" class="config_item private_25" href="javascript:void(0)"><span>电动后备箱</span></a></li><li data-val="定位互动服务" data-type="private" data-id="26" class="item"><a data-val="定位互动服务" data-id="26" data-type="private" class="config_item private_26" href="javascript:void(0)"><span>定位互动服务</span></a></li><li data-val="无钥匙启动系统" data-type="private" data-id="27" class="item"><a data-val="无钥匙启动系统" data-id="27" data-type="private" class="config_item private_27" href="javascript:void(0)"><span>无钥匙启动系统</span></a></li><li data-val="后排座椅电动调节" data-type="private" data-id="28" class="item"><a data-val="后排座椅电动调节" data-id="28" data-type="private" class="config_item private_28" href="javascript:void(0)"><span>后排座椅电动调节</span></a></li><li data-val="座椅按摩" data-type="private" data-id="29" class="item"><a data-val="座椅按摩" data-id="29" data-type="private" class="config_item private_29" href="javascript:void(0)"><span>座椅按摩</span></a></li><li data-val="座椅通风" data-type="private" data-id="30" class="item"><a data-val="座椅通风" data-id="30" data-type="private" class="config_item private_30" href="javascript:void(0)"><span>座椅通风</span></a></li><li data-val="后排座椅加热" data-type="private" data-id="31" class="item"><a data-val="后排座椅加热" data-id="31" data-type="private" class="config_item private_31" href="javascript:void(0)"><span>后排座椅加热</span></a></li><li data-val="电动座椅记忆" data-type="private" data-id="32" class="item"><a data-val="电动座椅记忆" data-id="32" data-type="private" class="config_item private_32" href="javascript:void(0)"><span>电动座椅记忆</span></a></li><li data-val="副驾驶座座椅电动调节" data-type="private" data-id="33" class="item"><a data-val="副驾驶座座椅电动调节" data-id="33" data-type="private" class="config_item private_33" href="javascript:void(0)"><span>副驾驶座座椅电动调节</span></a></li><li data-val="前排座椅加热" data-type="private" data-id="34" class="item"><a data-val="前排座椅加热" data-id="34" data-type="private" class="config_item private_34" href="javascript:void(0)"><span>前排座椅加热</span></a></li><li data-val="驾驶座座椅电动调节" data-type="private" data-id="35" class="item"><a data-val="驾驶座座椅电动调节" data-id="35" data-type="private" class="config_item private_35" href="javascript:void(0)"><span>驾驶座座椅电动调节</span></a></li><li data-val="HUD抬头数字显示" data-type="private" data-id="36" class="item"><a data-val="HUD抬头数字显示" data-id="36" data-type="private" class="config_item private_36" href="javascript:void(0)"><span>HUD抬头数字显示</span></a></li><li data-val="定速巡航" data-type="private" data-id="37" class="item"><a data-val="定速巡航" data-id="37" data-type="private" class="config_item private_37" href="javascript:void(0)"><span>定速巡航</span></a></li><li data-val="人机交互系统" data-type="private" data-id="38" class="item"><a data-val="人机交互系统" data-id="38" data-type="private" class="config_item private_38" href="javascript:void(0)"><span>人机交互系统</span></a></li><li data-val="自动头灯" data-type="private" data-id="39" class="item"><a data-val="自动头灯" data-id="39" data-type="private" class="config_item private_39" href="javascript:void(0)"><span>自动头灯</span></a></li><li data-val="感应雨刷" data-type="private" data-id="40" class="item"><a data-val="感应雨刷" data-id="40" data-type="private" class="config_item private_40" href="javascript:void(0)"><span>感应雨刷</span></a></li><li data-val="胎压监测装置" data-type="private" data-id="41" class="item"><a data-val="胎压监测装置" data-id="41" data-type="private" class="config_item private_41" href="javascript:void(0)"><span>胎压监测装置</span></a></li><li data-val="蓝牙/车载电话" data-type="private" data-id="42" class="item"><a data-val="蓝牙/车载电话" data-id="42" data-type="private" class="config_item private_42" href="javascript:void(0)"><span>蓝牙/车载电话</span></a></li><li data-val="驾驶座安全气囊" data-type="private" data-id="43" class="item"><a data-val="驾驶座安全气囊" data-id="43" data-type="private" class="config_item private_43" href="javascript:void(0)"><span>驾驶座安全气囊</span></a></li><li data-val="副驾驶安全气囊" data-type="private" data-id="44" class="item"><a data-val="副驾驶安全气囊" data-id="44" data-type="private" class="config_item private_44" href="javascript:void(0)"><span>副驾驶安全气囊</span></a></li><li data-val="并线辅助" data-type="private" data-id="45" class="item"><a data-val="并线辅助" data-id="45" data-type="private" class="config_item private_45" href="javascript:void(0)"><span>并线辅助</span></a></li><li data-val="方向盘电动调节" data-type="private" data-id="46" class="item"><a data-val="方向盘电动调节" data-id="46" data-type="private" class="config_item private_46" href="javascript:void(0)"><span>方向盘电动调节</span></a></li><li data-val="方向盘换挡" data-type="private" data-id="47" class="item"><a data-val="方向盘换挡" data-id="47" data-type="private" class="config_item private_47" href="javascript:void(0)"><span>方向盘换挡</span></a></li><li data-val="前雾灯" data-type="private" data-id="48" class="item"><a data-val="前雾灯" data-id="48" data-type="private" class="config_item private_48" href="javascript:void(0)"><span>前雾灯</span></a></li><li data-val="大灯清洗装置" data-type="private" data-id="49" class="item"><a data-val="大灯清洗装置" data-id="49" data-type="private" class="config_item private_49" href="javascript:void(0)"><span>大灯清洗装置</span></a></li><li data-val="后雨刷" data-type="private" data-id="50" class="item"><a data-val="后雨刷" data-id="50" data-type="private" class="config_item private_50" href="javascript:void(0)"><span>后雨刷</span></a></li><li data-val="泊车辅助" data-type="private" data-id="51" class="item"><a data-val="泊车辅助" data-id="51" data-type="private" class="config_item private_51" href="javascript:void(0)"><span>泊车辅助</span></a></li><li data-val="倒车视频影像" data-type="private" data-id="52" class="item"><a data-val="倒车视频影像" data-id="52" data-type="private" class="config_item private_52" href="javascript:void(0)"><span>倒车视频影像</span></a></li><li data-val="行车电脑显示屏" data-type="private" data-id="53" class="item"><a data-val="行车电脑显示屏" data-id="53" data-type="private" class="config_item private_53" href="javascript:void(0)"><span>行车电脑显示屏</span></a></li><li data-val="GPS导航" data-type="private" data-id="54" class="item"><a data-val="GPS导航" data-id="54" data-type="private" class="config_item private_54" href="javascript:void(0)"><span>GPS导航</span></a></li><li data-val="中控台彩色大屏" data-type="private" data-id="55" class="item"><a data-val="中控台彩色大屏" data-id="55" data-type="private" class="config_item private_55" href="javascript:void(0)"><span>中控台彩色大屏</span></a></li><li data-val="车载电视" data-type="private" data-id="56" class="item"><a data-val="车载电视" data-id="56" data-type="private" class="config_item private_56" href="javascript:void(0)"><span>车载电视</span></a></li><li data-val="后排液晶屏" data-type="private" data-id="57" class="item"><a data-val="后排液晶屏" data-id="57" data-type="private" class="config_item private_57" href="javascript:void(0)"><span>后排液晶屏</span></a></li><li data-val="多功能方向盘" data-type="private" data-id="58" class="item"><a data-val="多功能方向盘" data-id="58" data-type="private" class="config_item private_58" href="javascript:void(0)"><span>多功能方向盘</span></a></li><li data-val="后风挡遮阳帘" data-type="private" data-id="59" class="item"><a data-val="后风挡遮阳帘" data-id="59" data-type="private" class="config_item private_59" href="javascript:void(0)"><span>后风挡遮阳帘</span></a></li><li data-val="后座出风口" data-type="private" data-id="60" class="item"><a data-val="后座出风口" data-id="60" data-type="private" class="config_item private_60" href="javascript:void(0)"><span>后座出风口</span></a></li><li data-val="后视镜电动调节" data-type="private" data-id="61" class="item"><a data-val="后视镜电动调节" data-id="61" data-type="private" class="config_item private_61" href="javascript:void(0)"><span>后视镜电动调节</span></a></li><li data-val="后视镜电动折叠" data-type="private" data-id="62" class="item"><a data-val="后视镜电动折叠" data-id="62" data-type="private" class="config_item private_62" href="javascript:void(0)"><span>后视镜电动折叠</span></a></li><li data-val="后视镜记忆" data-type="private" data-id="63" class="item"><a data-val="后视镜记忆" data-id="63" data-type="private" class="config_item private_63" href="javascript:void(0)"><span>后视镜记忆</span></a></li><li data-val="后视镜加热" data-type="private" data-id="64" class="item"><a data-val="后视镜加热" data-id="64" data-type="private" class="config_item private_64" href="javascript:void(0)"><span>后视镜加热</span></a></li><li data-val="ABS防抱死" data-type="private" data-id="65" class="item"><a data-val="ABS防抱死" data-id="65" data-type="private" class="config_item private_65" href="javascript:void(0)"><span>ABS防抱死</span></a></li><li data-val="牵引力控制(ASR/TCS/TRC等)" data-type="private" data-id="66" class="item"><a data-val="牵引力控制(ASR/TCS/TRC等)" data-id="66" data-type="private" class="config_item private_66" href="javascript:void(0)"><span>牵引力控制(ASR/TCS/TRC等)</span></a></li><li data-val="遥控钥匙" data-type="private" data-id="67" class="item"><a data-val="遥控钥匙" data-id="67" data-type="private" class="config_item private_67" href="javascript:void(0)"><span>遥控钥匙</span></a></li><li data-val="中控锁" data-type="private" data-id="68" class="item"><a data-val="中控锁" data-id="68" data-type="private" class="config_item private_68" href="javascript:void(0)"><span>中控锁</span></a></li><li data-val="真皮座椅" data-type="private" data-id="69" class="item"><a data-val="真皮座椅" data-id="69" data-type="private" class="config_item private_69" href="javascript:void(0)"><span>真皮座椅</span></a></li><li data-val="运动座椅" data-type="private" data-id="70" class="item"><a data-val="运动座椅" data-id="70" data-type="private" class="config_item private_70" href="javascript:void(0)"><span>运动座椅</span></a></li><li data-val="腰部支撑调节" data-type="private" data-id="71" class="item"><a data-val="腰部支撑调节" data-id="71" data-type="private" class="config_item private_71" href="javascript:void(0)"><span>腰部支撑调节</span></a></li><li data-val="多碟CD" data-type="private" data-id="72" class="item"><a data-val="多碟CD" data-id="72" data-type="private" class="config_item private_72" href="javascript:void(0)"><span>多碟CD</span></a></li><li data-val="多碟DVD" data-type="private" data-id="73" class="item"><a data-val="多碟DVD" data-id="73" data-type="private" class="config_item private_73" href="javascript:void(0)"><span>多碟DVD</span></a></li><li data-val="倒车雷达" data-type="private" data-id="74" class="item"><a data-val="倒车雷达" data-id="74" data-type="private" class="config_item private_74" href="javascript:void(0)"><span>倒车雷达</span></a></li><li data-val="后排座椅比例放倒" data-type="private" data-id="75" class="item"><a data-val="后排座椅比例放倒" data-id="75" data-type="private" class="config_item private_75" href="javascript:void(0)"><span>后排座椅比例放倒</span></a></li><li data-val="后排座椅整体放倒" data-type="private" data-id="76" class="item"><a data-val="后排座椅整体放倒" data-id="76" data-type="private" class="config_item private_76" href="javascript:void(0)"><span>后排座椅整体放倒</span></a></li><li data-val="后座中央扶手" data-type="private" data-id="77" class="item"><a data-val="后座中央扶手" data-id="77" data-type="private" class="config_item private_77" href="javascript:void(0)"><span>后座中央扶手</span></a></li><li data-val="车内氛围灯" data-type="private" data-id="78" class="item"><a data-val="车内氛围灯" data-id="78" data-type="private" class="config_item private_78" href="javascript:void(0)"><span>车内氛围灯</span></a></li><li data-val="前轮胎规格" data-type="private" data-id="79" class="item"><a data-val="前轮胎规格" data-id="79" data-type="private" class="config_item private_79" href="javascript:void(0)"><span>前轮胎规格</span></a></li><li data-val="后轮胎规格" data-type="private" data-id="80" class="item"><a data-val="后轮胎规格" data-id="80" data-type="private" class="config_item private_80" href="javascript:void(0)"><span>后轮胎规格</span></a></li><li data-val="前轮毂规格" data-type="private" data-id="81" class="item"><a data-val="前轮毂规格" data-id="81" data-type="private" class="config_item private_81" href="javascript:void(0)"><span>前轮毂规格</span></a></li><li data-val="后轮毂规格" data-type="private" data-id="82" class="item"><a data-val="后轮毂规格" data-id="82" data-type="private" class="config_item private_82" href="javascript:void(0)"><span>后轮毂规格</span></a></li><li data-val="备胎规格" data-type="private" data-id="83" class="item"><a data-val="备胎规格" data-id="83" data-type="private" class="config_item private_83" href="javascript:void(0)"><span>备胎规格</span></a></li><li data-val="运动外观套件" data-type="private" data-id="84" class="item"><a data-val="运动外观套件" data-id="84" data-type="private" class="config_item private_84" href="javascript:void(0)"><span>运动外观套件</span></a></li><li data-val="日间行车灯" data-type="private" data-id="85" class="item"><a data-val="日间行车灯" data-id="85" data-type="private" class="config_item private_85" href="javascript:void(0)"><span>日间行车灯</span></a></li><li data-val="真皮方向盘" data-type="private" data-id="86" class="item"><a data-val="真皮方向盘" data-id="86" data-type="private" class="config_item private_86" href="javascript:void(0)"><span>真皮方向盘</span></a></li><li data-val="方向盘上下调节" data-type="private" data-id="87" class="item"><a data-val="方向盘上下调节" data-id="87" data-type="private" class="config_item private_87" href="javascript:void(0)"><span>方向盘上下调节</span></a></li><li data-val="方向盘前后调节" data-type="private" data-id="88" class="item"><a data-val="方向盘前后调节" data-id="88" data-type="private" class="config_item private_88" href="javascript:void(0)"><span>方向盘前后调节</span></a></li><li data-val="座椅高低调节" data-type="private" data-id="89" class="item"><a data-val="座椅高低调节" data-id="89" data-type="private" class="config_item private_89" href="javascript:void(0)"><span>座椅高低调节</span></a></li><li data-val="前电动车窗" data-type="private" data-id="90" class="item"><a data-val="前电动车窗" data-id="90" data-type="private" class="config_item private_90" href="javascript:void(0)"><span>前电动车窗</span></a></li><li data-val="后电动车窗" data-type="private" data-id="91" class="item"><a data-val="后电动车窗" data-id="91" data-type="private" class="config_item private_91" href="javascript:void(0)"><span>后电动车窗</span></a></li><li data-val="后视镜自动防眩目" data-type="private" data-id="92" class="item"><a data-val="后视镜自动防眩目" data-id="92" data-type="private" class="config_item private_92" href="javascript:void(0)"><span>后视镜自动防眩目</span></a></li><li data-val="中控液晶屏分屏显示" data-type="private" data-id="93" class="item"><a data-val="中控液晶屏分屏显示" data-id="93" data-type="private" class="config_item private_93" href="javascript:void(0)"><span>中控液晶屏分屏显示</span></a></li><li data-val="车载信息服务" data-type="private" data-id="94" class="item"><a data-val="车载信息服务" data-id="94" data-type="private" class="config_item private_94" href="javascript:void(0)"><span>车载信息服务</span></a></li><li data-val="安全带未系提示" data-type="private" data-id="95" class="item"><a data-val="安全带未系提示" data-id="95" data-type="private" class="config_item private_95" href="javascript:void(0)"><span>安全带未系提示</span></a></li><li data-val="ISO FIX儿童座椅接口" data-type="private" data-id="96" class="item"><a data-val="ISO FIX儿童座椅接口" data-id="96" data-type="private" class="config_item private_96" href="javascript:void(0)"><span>ISO FIX儿童座椅接口</span></a></li><li data-val="LATCH座椅接口" data-type="private" data-id="97" class="item"><a data-val="LATCH座椅接口" data-id="97" data-type="private" class="config_item private_97" href="javascript:void(0)"><span>LATCH座椅接口</span></a></li><li data-val="主动转向系统" data-type="private" data-id="98" class="item"><a data-val="主动转向系统" data-id="98" data-type="private" class="config_item private_98" href="javascript:void(0)"><span>主动转向系统</span></a></li><li data-val="主动刹车" data-type="private" data-id="99" class="item"><a data-val="主动刹车" data-id="99" data-type="private" class="config_item private_99" href="javascript:void(0)"><span>主动刹车</span></a></li><li data-val="可变转向比" data-type="private" data-id="100" class="item"><a data-val="可变转向比" data-id="100" data-type="private" class="config_item private_100" href="javascript:void(0)"><span>可变转向比</span></a></li><li data-val="遮阳板化妆镜" data-type="private" data-id="101" class="item"><a data-val="遮阳板化妆镜" data-id="101" data-type="private" class="config_item private_101" href="javascript:void(0)"><span>遮阳板化妆镜</span></a></li><li data-val="后排侧遮阳帘" data-type="private" data-id="102" class="item"><a data-val="后排侧遮阳帘" data-id="102" data-type="private" class="config_item private_102" href="javascript:void(0)"><span>后排侧遮阳帘</span></a></li><li data-val="大灯高度可调" data-type="private" data-id="103" class="item"><a data-val="大灯高度可调" data-id="103" data-type="private" class="config_item private_103" href="javascript:void(0)"><span>大灯高度可调</span></a></li><li data-val="第三排座椅" data-type="private" data-id="104" class="item"><a data-val="第三排座椅" data-id="104" data-type="private" class="config_item private_104" href="javascript:void(0)"><span>第三排座椅</span></a></li><li data-val="前座中央扶手" data-type="private" data-id="105" class="item"><a data-val="前座中央扶手" data-id="105" data-type="private" class="config_item private_105" href="javascript:void(0)"><span>前座中央扶手</span></a></li><li data-val="后排杯架" data-type="private" data-id="106" class="item"><a data-val="后排杯架" data-id="106" data-type="private" class="config_item private_106" href="javascript:void(0)"><span>后排杯架</span></a></li><li data-val="肩部支撑调节" data-type="private" data-id="107" class="item"><a data-val="肩部支撑调节" data-id="107" data-type="private" class="config_item private_107" href="javascript:void(0)"><span>肩部支撑调节</span></a></li><li data-val="第二排座椅移动" data-type="private" data-id="108" class="item"><a data-val="第二排座椅移动" data-id="108" data-type="private" class="config_item private_108" href="javascript:void(0)"><span>第二排座椅移动</span></a></li><li data-val="第二排靠背角度调节" data-type="private" data-id="109" class="item"><a data-val="第二排靠背角度调节" data-id="109" data-type="private" class="config_item private_109" href="javascript:void(0)"><span>第二排靠背角度调节</span></a></li><li data-val="转向头灯" data-type="private" data-id="110" class="item"><a data-val="转向头灯" data-id="110" data-type="private" class="config_item private_110" href="javascript:void(0)"><span>转向头灯</span></a></li><li data-val="内置硬盘" data-type="private" data-id="111" class="item"><a data-val="内置硬盘" data-id="111" data-type="private" class="config_item private_111" href="javascript:void(0)"><span>内置硬盘</span></a></li><li data-val="零胎压继续行驶" data-type="private" data-id="112" class="item"><a data-val="零胎压继续行驶" data-id="112" data-type="private" class="config_item private_112" href="javascript:void(0)"><span>零胎压继续行驶</span></a></li><li data-val="发动机电子防盗" data-type="private" data-id="113" class="item"><a data-val="发动机电子防盗" data-id="113" data-type="private" class="config_item private_113" href="javascript:void(0)"><span>发动机电子防盗</span></a></li><li data-val="制动力分配(EBD/CBC等)" data-type="private" data-id="114" class="item"><a data-val="制动力分配(EBD/CBC等)" data-id="114" data-type="private" class="config_item private_114" href="javascript:void(0)"><span>制动力分配(EBD/CBC等)</span></a></li><li data-val="刹车辅助(EBA/BAS/BA等)" data-type="private" data-id="115" class="item"><a data-val="刹车辅助(EBA/BAS/BA等)" data-id="115" data-type="private" class="config_item private_115" href="javascript:void(0)"><span>刹车辅助(EBA/BAS/BA等)</span></a></li><li data-val="车窗防夹手功能" data-type="private" data-id="116" class="item"><a data-val="车窗防夹手功能" data-id="116" data-type="private" class="config_item private_116" href="javascript:void(0)"><span>车窗防夹手功能</span></a></li><li data-val="隔热玻璃" data-type="private" data-id="117" class="item"><a data-val="隔热玻璃" data-id="117" data-type="private" class="config_item private_117" href="javascript:void(0)"><span>隔热玻璃</span></a></li><li data-val="外接音源接口(AUX/USB/iPod等)" data-type="private" data-id="118" class="item"><a data-val="外接音源接口(AUX/USB/iPod等)" data-id="118" data-type="private" class="config_item private_118" href="javascript:void(0)"><span>外接音源接口(AUX/USB/iPod等)</span></a></li><li data-val="音频支持MP3" data-type="private" data-id="119" class="item"><a data-val="音频支持MP3" data-id="119" data-type="private" class="config_item private_119" href="javascript:void(0)"><span>音频支持MP3</span></a></li><li data-val="单碟CD" data-type="private" data-id="120" class="item"><a data-val="单碟CD" data-id="120" data-type="private" class="config_item private_120" href="javascript:void(0)"><span>单碟CD</span></a></li><li data-val="虚拟多碟CD" data-type="private" data-id="121" class="item"><a data-val="虚拟多碟CD" data-id="121" data-type="private" class="config_item private_121" href="javascript:void(0)"><span>虚拟多碟CD</span></a></li><li data-val="单碟DVD" data-type="private" data-id="122" class="item"><a data-val="单碟DVD" data-id="122" data-type="private" class="config_item private_122" href="javascript:void(0)"><span>单碟DVD</span></a></li><li data-val="扬声器数量" data-type="private" data-id="123" class="item"><a data-val="扬声器数量" data-id="123" data-type="private" class="config_item private_123" href="javascript:void(0)"><span>扬声器数量</span></a></li><li data-val="温度分区控制" data-type="private" data-id="124" class="item"><a data-val="温度分区控制" data-id="124" data-type="private" class="config_item private_124" href="javascript:void(0)"><span>温度分区控制</span></a></li><li data-val="空气调节/花粉过滤" data-type="private" data-id="125" class="item"><a data-val="空气调节/花粉过滤" data-id="125" data-type="private" class="config_item private_125" href="javascript:void(0)"><span>空气调节/花粉过滤</span></a></li>--></ul>
+        </div>
+    </div>
+</div>
+<!--品牌-->
+<div class="layer" id="brand_layer">
+    <div class="layer_hd">
+        <span class="layer_close">关闭</span>
+    </div>
+    <div class="layer_content">
+        <div class="brand" id="brand">
+            <ul></ul>
+        </div>
+        <div class="series" id="series">
+            <div id="series_item">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layer" id="vin_layer">
+    <div class="layer_hd">
+        <span class="layer_close">关闭</span>
+    </div>
+    <div class="layer_content">
+        <div id="brand_series">
+            <div class="hd"><span>品牌车系类型</span></div>
+            <div class="slider" id="car_list">
+                <ul>
+                </ul>
+            </div>
+        </div>
+       <!-- <div class="base_param">
+            <span>基本参数</span>
+
+            <p>
+                <span class="standard">标配</span>
+                <span class="choice">选配</span>
+                <span>-&nbsp;无</span>
+            </p>
+        </div>-->
+        <div id="car_param">
+            <div class="inner">
+                <div class="hd">
+                    <ul class="param_field">
+                        <!-- <li><span>厂家</span></li>
+                         <li><span>新车指导价</span></li>
+                         <li><span>燃料类型</span></li>
+                         <li><span>最大功率(KW)</span></li>
+                         <li><span>生产年份</span></li>
+                         <li><span>国产合资进口</span></li>
+                         <li><span>销售名称</span></li>
+                         <li><span>排量</span></li>
+                         <li><span>排放标准</span></li>
+                         <li><span>车身款式</span></li>
+                         <li><span>变速器类型</span></li>
+                         <li><span>车型</span></li>
+                         <li><span>车辆类型</span></li>-->
+                    </ul>
+                </div>
+                <div class="slider" id="param_list">
+                    <ul>
+                        <!-- <li>
+                             <ol>
+                                 <li><span>高级四驱涡轮增压桑塔纳</span></li>
+                                 <li><span>8.49</span></li>
+                                 <li><span class="none">-</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                             </ol>
+                         </li>
+                         <li>
+                             <ol>
+                                 <li><span>高级四驱涡轮增压桑塔纳</span></li>
+                                 <li><span>8.49</span></li>
+                                 <li><span class="none">-</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                             </ol>
+                         </li>
+                         <li>
+                             <ol>
+                                 <li><span>高级四驱涡轮增压桑塔纳</span></li>
+                                 <li><span>8.49</span></li>
+                                 <li><span class="none">-</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                                 <li><span>上海大众</span></li>
+                             </ol>
+                         </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layer " id="take_photo_layer">
+    <div class="layer_hd">
+        <span class="layer_close">关闭</span>
+    </div>
+    <div class="layer_content">
+        <div class="step lic_photo_step">
+            <span class="steps step1"><i>1</i>上传图片</span>
+            <span class="steps step2"><i>2</i>截取图片</span>
+            <span class="steps step3"><i>3</i>编辑图片</span>
+            <span class="steps step4"><i>4</i>保存</span>
+        </div>
+        <div id="clipArea">
+            <div class="img_loading"></div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="control">
+            <!--<p class="control_txt">保证所要拍摄的内容在虚框内显示</p>-->
+            <div class="touch_ex">
+                <span>手势说明：</span>
+                <p class="text1">你可以移动、缩放、旋转图片,以保证所要拍摄的内容在虚框内显示</p>
+                <p class="text2">涂抹掉不需要显示的内容</p>
+                <div class="touch_step">
+                    <img src="http://img.autostreetscdn.com/m/src/images/eqs/eqs_step.png" alt="" class="img_step1">
+                    <img src="http://img.autostreetscdn.com/m/src/images/eqs/eqs_lic_2.png" alt="" class="img_step2">
+                </div>
+            </div>
+        </div>
+        <div class="btn_box">
+            <div class="inner">
+                <div class="btn" id="uploadBtn"><input type="file" id="file"/>重新选择图片</div>
+                <div class="btn" id="clipBtn">截取图片</div>
+                <div class="btn" id="restore">还原</div>
+                <div class="btn" id="save_photo">保存</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="loading"></div>-->
+</body>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery-2.1.3.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/iscroll-zoom.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/hammer.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery.photoClip.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/eqs_k.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/iscroll2.0.js"></script>
+</html>

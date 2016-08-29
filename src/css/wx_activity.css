@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*背景占位*/
+.pr {
+  position: relative; }
+
+#wx_activity {
+  position: relative;
+  max-width: 4.05rem;
+  margin: 0 auto; }
+  #wx_activity img {
+    width: 100%;
+    display: block;
+    border: none; }
+  #wx_activity .link {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    right: 0.69187rem;
+    left: 0.69187rem;
+    background-color: #b7bd41;
+    color: #fff;
+    font-size: 0.16875rem;
+    height: 0.50625rem;
+    line-height: 0.53437rem;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 0.05625rem; }
+
+/*# sourceMappingURL=wx_activity.css.map */

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_main.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        申请退款
+    </section>
+</header>
+<div id="bm_refund">
+    <h2 class="cancel_title">[宝马] 上海宝信行 小保养服务保养服务小保养</h2>
+    <div class="brd_box">
+        <div><p>退回金额</p></div>
+        <span class="refund_sum"><!--&yen;998--></span>
+    </div>
+    <h2>退款方式</h2>
+    <div class="brd_box">
+        <div class="selected">
+            <p>原路退回</p>
+            <span>3个工作日内完成</span>
+        </div>
+    </div>
+    <h2>退款原因</h2>
+    <div class="brd_box">
+        <ul class="cancel_reason">
+            <li class="selected">不想买了</li>
+            <li>预约不到</li>
+            <li>其他原因</li>
+        </ul>
+    </div>
+    <a href="javascript:void(0)" id="cancel_btn" class="orange_order_long_btn">确认退款</a>
+</div>
+<div class="loading" id="loading" ></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm.js"></script>
+<script src="http://wap.autostreets.com/js/require.js" data-main="http://wap.autostreets.com/js/main.js"></script>
+</html>

@@ -1,0 +1,811 @@
+body{font-family:Helvetica,sans-serif;}
+$browser-default-font-size:88.8889;
+
+@function j($px) {
+  @return $px / $browser-default-font-size * 1rem / 2 ;
+}
+.css3Transition {
+  -webkit-transition:all .3s ease-in; -moz-transition:all .3s ease-in; -ms-transition:all .3s ease-in; -o-transition:all .3s ease-in; transition:all .3s ease-in;
+}
+
+body { font-size:0.1574rem; background:#f3f3f3; }
+
+a { text-decoration:none }
+
+.tipbg { position:fixed; width:100%; height:100%; background:#000; z-index:90; top:0; background:rgba(0, 0, 0, 0.5); display:none;
+  -webkit-transition:bottom .3s ease-in; -moz-transition:bottom .3s ease-in; -ms-transition:bottom .3s ease-in; -o-transition:bottom .3s ease-in; transition:bottom .3s ease-in;
+}
+
+.bgfff { background:#fff !important }
+
+#wrapper {
+  position:relative;
+  z-index:1;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#f3f3f3;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+#brand_list dt { height:30px; width:100%; background:#f3f3f3; border-bottom:solid 1px #ddd; color:#999; font:bold 16px/30px "Arial"; text-indent:15px; }
+
+#brand_list dd { padding:0 0 0 1px; border-bottom:solid 1px #ddd; width:100%; background:#fff; }
+
+#brand_list dd ul li {
+  width:100%; height:50px; border-bottom:solid 1px #ddd; margin-bottom:-1px; cursor:pointer;
+}
+
+#brand_list dd a { display:block; }
+
+#brand_list dd img { float:left; width:28px; height:28px; margin:10px 19px 0 11px; }
+
+#brand_list dd p { float:left; font:16px/50px "Microsoft Yahei"; color:#000; }
+
+/*.series_list{position:absolute;top:0;right:-2.8687rem;width:2.8687rem;background: #fff;box-shadow: 0 0 0.1124rem #ccc}*/
+.series_list { position:fixed; top:44px; right:-255px; width:255px; background:#fff; box-shadow:0 0 10px #ccc; bottom:0; overflow-y:auto; overflow-x:hidden; z-index:9; -webkit-transition:all .3s ease-out; -moz-transition:all .3s ease-out; -ms-transition:all .3s ease-out; -o-transition:all .3s ease-out; transition:all .3s ease-out;}
+.series_list.show{right:0;}
+
+.series_list li { border-bottom:solid 1px #ddd; height:90px; float:left; width:100%; }
+
+.series_list li a { display:block; width:100%; margin:0 0 0 10px; float:left; padding:10px 0 0 0; }
+
+.series_list li img { float:left; margin:0 10px 0 0; }
+
+.series_list li h3 { float:left; width:130px; line-height:15px; color:#333; max-height:35px; font-size: 14px;overflow: hidden;margin:10px 0 0 0}
+
+.series_list li p { float:left; width:135px; color:#d80000; font-weight:bold; font-size:12px; }
+ 
+.model_year { border-bottom:solid 0.0112rem #ddd; height:0.4499rem; background:#fff; }
+
+.model_year li { line-height:0.4499rem; height:0.4499rem; color:#666; text-align:center; float:left; width:33%; background:url('http://img.autostreetscdn.com/m/src/images/new_mall/model_line2.png') no-repeat right;}
+
+.model_year li:last-child { background:none }
+
+.model_year li.cur { border-bottom:solid 0.0224rem #0074e1; color:#0074e1; font-weight:bold }
+
+.model_list li { line-height:0.5624rem; float:left; width:100%; border-bottom:dotted 0.0112rem #ddd; }
+
+.model_list li a { display:block; min-height:0.5624rem; }
+
+.model_list li h3 { float:left; width:70%; color:#333; font:bold 0.1799rem/0.5624rem "Microsoft Yahei"; margin:0 0 0 0.1124rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+.model_list li p { float:left; width:25%; color:#d80000; font-weight:bold; text-align:right }
+/*title*/
+
+.title_wrap{
+   margin:15px 0 10px 0;border-bottom: solid 1px #ddd;border-top:solid 1px #ddd;
+  .title_inner{
+    width:100%;  background-color:#fff;
+    .title {
+      background:#fff; padding:10px 10px 10px 15px;
+    }
+  }
+  >.title_fixed{
+    position:fixed; left:0;top:44px; z-index:99;border-bottom: solid 1px #ddd;border-top:solid 1px #ddd;
+  }
+}
+
+
+.title h3 { font:bold 16px/25px "Microsoft Yahei"; color:#525252; }
+
+.title p { line-height:30px;font-size: 14px}
+
+.title p span { font:bold 22px/20px "Arial"; color:#ff8e1f; }
+/*dealer_tab*/
+.dealer_tab{
+  height:60px;
+  border-bottom:1px solid #ddd;
+  border-top:1px solid #ddd;
+  background:#fff; width:100%;;
+  .tab_inner{
+    text-align:center; font-size:0;
+    width:100%; position:relative; z-index:99;background:#fff;
+    height:60px;
+
+    p{
+      padding:15px 0;
+      a{
+        display:inline-block; width:100px; height:28px;border:1px solid #A5A59A; line-height:28px; font-size:16px; color:#79796a;;
+        -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; display:none;
+      }
+      a:nth-child(1){
+        border-right:none;border-top-right-radius:0;-webkit-border-top-right-radius:0;
+        border-bottom-right-radius:0;-webkit-border-bottom-right-radius:0;
+      }
+      a:nth-child(2){
+        border-left:none;border-top-left-radius:0;border-top-left-radius:0;
+        border-bottom-left-radius:0;-webkit-border-bottom-left-radius:0;
+      }
+      >.active{
+        background:#A5A59A; color:#fff;
+      }
+      a.single_renzheng_tab{
+        border-right:1px solid #A5A59A;; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;
+      }
+      a.single_jiameng_tab{
+        border-left:1px solid #A5A59A;; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;
+      }
+    }
+  }
+  .tab_fixed{
+    position:fixed; left:0;top:44px;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+  }
+
+}
+/*shops_list*/
+.shops_list{}
+.jiameng_dealer{ display:none;}
+.shops_list li { border-top:solid 1px #ddd; border-bottom:solid 1px #ddd; background:#fff; padding:10px; position:relative; margin:0 0 10px 0; }
+.shops_list li:nth-child(1){ border-top:none;}
+
+.shops_list li h4 { font:bold 16px/30px "Microsoft Yahei"; color:#545454;}
+
+.shops_list li .gift img { float:left; margin:0 10px 0 0; width:21px; height:20px;}
+
+.shops_list li .gift h5 { color:#ff8d1f; line-height:26px;font-size: 14px;}
+
+.shops_list li p { color:#8f8f8f; line-height:25px;font-size: 14px;}
+
+.shops_list li .tel { color:#999; font-size:15px; }
+
+.shops_list li p.price { color:#545454; font-size:12px; }
+
+.shops_list li p span { font:bold 22px/20px "Arial"; color:#ff8d1f; }
+
+.shops_list li .arrow { width:10px; height:10px; border-top:2px solid #ddd; border-right:2px solid #ddd; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg); position:absolute; right:10px; top:50%; margin-top:-5px; display:none }
+
+.shops_list li.renzheng h4 { background:url('http://img.autostreetscdn.com/m/src/images/newshop-ico.png') no-repeat; background-size:16px 17px; background-position:left 6px; text-indent:22px;  }
+
+.shops_list li.renzheng .arrow { display:inline-block }
+
+.tip { display:none; width:2.6999rem; background:#ededed; position:fixed; top:1.1249rem; left:0.4499rem; z-index:100; }
+
+.tip h3 { font:bold 0.1799rem/0.5062rem "Microsoft Yahei"; background:#fff; padding:0 0.2249rem; }
+
+.tipclose { position:absolute; top:-0.087rem; right:-0.25rem; background:url('http://img.autostreetscdn.com/m/src/images/new_mall/close.png') no-repeat; width:0.3374rem; height:0.3374rem; }
+
+.operation_list { padding:0 0.2249rem; }
+
+.operation_list li { line-height:0.5062rem; height:0.5062rem; background:url('http://img.autostreetscdn.com/m/src/images/new_mall/bottom_line.png') repeat-x bottom; position:relative; }
+
+.operation_list li:last-child { background:none }
+
+.operation_list li img { float:left; margin:0.1124rem 0.1124rem 0 0; }
+
+.operation_list li a { float:left; font:bold 0.1574rem/0.5062rem "Microsoft Yahei"; color:#666; display:block; width:1.7999rem; }
+
+.operation_list li .arrow { width:0.1124rem; height:0.1124rem; border-top:0.025rem solid #ddd; border-right:0.025rem solid #ddd; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg); position:absolute; right:0; top:0.1687rem; }
+
+.gift_detail { padding:0 j(70); background:#fff; text-align:center; }
+.gift_detail h3 { font: 0.1574rem/0.4032rem "Microsoft Yahei" ; color:#000;
+text-align:center; line-height:j(36); padding:j(30) 0; }
+
+.gift_detail p { color:#999; font-size:j(24); text-align:left; }
+
+.gift_list { padding:j(20) 0 0 0; }
+
+.gift_list li { padding:0 0 j(30) 0;}
+
+.gift_list li h4 { color:#666; font:bold 0.1687rem/0.2249rem "Microsoft Yahei"; text-align:left; margin-left:j(-15); margin-bottom:j(10);}
+
+.gift_list li p { line-height:0.2249rem; color:#8F8F8F ;text-align:left; }
+
+.personal_list { width:100%; float:left; background:#fff }
+
+.personal_list li { height:0.4499rem; width:100%; border-bottom:solid 0.0112rem #eee; padding:0.1124rem 0; position:relative; line-height:0.4499rem; }
+
+.personal_list li label { line-height:0.4499rem; color:#333; text-align:left; font-size:0.1574rem; float:left; width:1.1249rem; padding:0 0 0 0.1124rem; }
+
+.personal_list li input { float:left; border:none; line-height:normal; height:0.4499rem; color:#999; font-size:0.1574rem; width:2.2499rem; }
+
+.personal_list .distance { width:1.5568rem; }
+
+.personal_list li .province { float:left; margin:0.1124rem 0 0 0; position:relative; }
+
+.personal_list li select { float:left; border:none; color:#b2afaf; font-size:0.1574rem; width:2.2499rem; height:0.2249rem; -webkit-appearance:none; background:none }
+
+.personal_list li p { font-size:0.1574rem; float:left; width:2.4749rem; color:#666; line-height:0.2249rem }
+
+.personal_list li .arrow { width:0.1124rem; height:0.1124rem; border-top:0.025rem solid #ddd; border-right:0.025rem solid #ddd; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg); position:absolute; right:0.1124rem; top:0.3374rem; }
+
+.personal_list li span { font-size:0.1574rem; color:#999; float:left; line-height:0.4499rem; }
+
+.personal_list li .province .arrow { width:0.1124rem; height:0.1124rem; border-top:0.025rem solid #ddd; border-right:0.025rem solid #ddd; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg); position:absolute; right:0.1124rem; top:0.0562rem; z-index:0 }
+
+.input-150 { width:1.6874rem !important }
+
+.form_btn { width:95%; height:0.4499rem;; background:#f5770f; color:#fff; text-align:center; font-size:0.1574rem; border-radius:0.0562rem; border:none; line-height:0.4499rem;; margin:0.2249rem auto; -webkit-appearance:none; display:block; text-decoration:none; font-size:0.1799rem }
+
+.month { -webkit-appearance:none; border:1px solid #ccc; border-radius:0; }
+
+
+
+
+
+.car_info { /*height:0.7312rem;*/ background:#fff; margin:0.2249rem 0; padding:0.1124rem; overflow:hidden; }
+
+.car_info_fl { overflow:hidden; }
+
+.car_info img { float:left; margin-right:0.1124rem; }
+
+.car_info h3 { font:bold 0.1574rem/0.2374rem "Microsoft Yahei"; color:#333; float:left; width:2.2499rem; overflow:hidden; }
+
+.car_info p { font:normal 0.1574rem/0.2374rem "Microsoft Yahei"; color:#999; float:left; width:2.2499rem; overflow:hidden; /*text-overflow:ellipsis;*/ line-height:0.2249rem; /*white-space:nowrap;*/ font-size:0.1349rem; }
+
+.personal_list .li_space { padding:0.1687rem 0 0 0; border-bottom:solid 0.0112rem #ddd; background:#f3f3f3; height:0; }
+
+.home { width:0.2812rem; height:0.2812rem; display:inline-block; position:absolute; right:0.15rem; top:0.0562rem; }
+
+.home img { width:0.2812rem; height:0.2812rem; }
+
+.apply_suc { text-align:center; }
+
+.apply_suc img { width:0.7874rem; height:0.7874rem; margin:0.5624rem 0 0.2249rem 0; }
+
+.apply_suc h3 { line-height:0.3374rem; margin:0 0 0.2249rem 0; font-size:0.1799rem; color:#585858 }
+
+.apply_suc p { color:#999; font-size:0.1462rem; }
+
+.area_show { margin:0 auto; width:120px; height:44px; position:relative; }
+
+.area_show span { font:normal 16px/44px "Microsoft Yahei"; }
+
+.area_show img { margin:0 0 3px 0; }
+
+.area { -webkit-appearance:none; border:none; font:normal 18px/44px "Microsoft Yahei"; text-align:center; background:none; position:absolute; left:0; top:0; opacity:0; width:120px; z-index:9999; }
+
+#scroller_wrap { position:relative; }
+.prod_pic{
+  background:url(http://img.autostreetscdn.com/m/src/images/new_mall/xj_no_pic.jpg) no-repeat;background-size:contain;  background-position:center center; height:j(480);
+  img {
+    width:100%; height:auto; display:block; border:none;
+
+  }
+  .prod_big_pic{
+    opacity:0; -webkit-transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; transition:all .3s;
+  }
+}
+
+#scroller {
+  height:100%;
+  /*float:left;*/
+  padding:0;
+  overflow:hidden;
+  position:relative;
+}
+
+#scroller #thelist {
+  list-style:none;
+  display:block;
+  float:left;
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+}
+
+#scroller #thelist li {
+  display:block; float:left;
+  background:url(http://img.autostreetscdn.com/m/src/images/new_mall/loadingImg.gif) no-repeat left top;
+  background-size:contain;
+  height:100%;
+}
+
+#scroller li img { display:block; border:none; }
+
+.no_pic { position:relative; }
+
+.no_pic p { position:absolute; left:0.1124rem; bottom:0.2249rem; font-size:0.1574rem; color:#fff;}
+
+.no_pic img { display:block; border:none; }
+
+.no_pic span { position:absolute; right:0.1124rem; bottom:0.2249rem; font-size:0.1574rem; color:#fff;}
+
+.back { z-index:9; }
+
+#nav {
+  /*float:left;*/
+  position:absolute;
+  left:0;
+  /*top:2.3624rem;*/
+  bottom:0.1687rem;
+  z-index:99
+}
+
+#next {
+  float:right;
+  text-align:right;
+}
+
+#indicator, #indicator > li {
+  display:block;
+  list-style:none;
+  padding:0; margin:0;
+}
+
+#indicator {
+  width:100%;
+  margin:0 auto;
+  height:0.1124rem;
+  text-align:center;
+}
+
+#indicator > li {
+  width:8px;
+  height:8px;
+  border-radius:4px;
+  background:#999;
+  overflow:hidden;
+  margin-right:4px;
+  display:inline-block;
+}
+
+#indicator > li.active {
+  background:#fff;
+}
+
+#indicator > li:last-child {
+  margin:0;
+}
+
+.detailinfotitle { color:#000; padding:12px; line-height:20px }
+
+.detailinfotitle h3 { font-size:16px; margin-bottom:8px }
+
+.detailinfotitle p { font-size:15px }
+
+.detailinfotitle p span { color:#666 }
+
+.detailinfolist { }
+
+.detailinfolist h4 { height:40px; line-height:40px; background:#f1f1f1; font-size:15px; padding:0 12px; font-weight:normal }
+
+.detailinfolist h4 span { float:right; color:#666; margin-left:10px; padding-left:16px !important; }
+
+.pz-1 { background:url('http://img.autostreetscdn.com/m/src/images/new_mall/detail-ico-1.png') no-repeat; background-size:10px 10px; background-position:left center; padding-left:10px; }
+
+.pz-2 { background:url('http://img.autostreetscdn.com/m/src/images/new_mall/detail-ico-2.png') no-repeat; background-size:10px 10px; background-position:left center; padding-left:10px; }
+
+.detailinfolist ul li { height:42px; line-height:42px; padding:0 12px; font-size:14px; border-bottom:1px solid #e5e5e5; color:#989898 }
+
+.detailinfolist ul li p { float:right; color:#000;max-width: 200px;overflow: hidden;height:42px;text-overflow:clip;}
+.detailinfolist ul li p span{overflow: hidden;height:42px;text-overflow:clip;}
+.topborder { border-top:1px solid #ddd; margin-bottom:10px; }
+
+.topborder a { text-indent:0rem;height:50px;line-height: 50px;font-size: 14px}
+.topborder a span{top:20px}
+#shops .mainbox{ border-bottom-color:#ddd;}
+
+.loading {
+  background:url('http://img.autostreetscdn.com/m/src/images/loading.gif');
+  background-size:16px 16px;
+  background-repeat:no-repeat;
+  height:32px; top:0; left:0; bottom:0; right:0; position:fixed; margin:auto; z-index:999;
+  background-position:center center;
+  display:none;
+  width:32px;
+}
+
+.loadingImg { background:url('http://img.autostreetscdn.com/m/src/images/loading.gif'); width:32px; height:32px;
+  background-size:16px 16px; top:0; left:0; bottom:0; right:0;
+  background-repeat:no-repeat; position:absolute; margin:auto; }
+
+/*search type*/
+#search_type { position:relative; top:-1px;width:204px; margin:0 auto; }
+
+#search_type li { display:inline-block; color:#fff; font-size:0; }
+
+#search_type li a { color:#adb33f; font-size:16px; display:block; width:100px; border:2px solid #adb33f; height:28px; line-height:28px; border-radius:4px; -webkit-border-radius:4px; }
+
+
+
+#search_type .search_brand a { border-right:none; border-top-right-radius:0; border-bottom-right-radius:0; }
+
+#search_type .search_condition a { border-left:none; border-top-left-radius:0; border-bottom-left-radius:0; }
+
+#search_type li.curr a { background:#adb33f; color:#fff; }
+
+/*sub_bar*/
+/*.sub_bar { height:0.5512rem;; width:100%; z-index:99; background:#fff; position:fixed; bottom:0; left:0; border-top:.0112rem solid #bebebe;
+}
+
+.flex { display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex; }
+
+.sub_bar ul {
+  height:100%;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex; }
+
+.sub_bar li {
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1; text-align:center; height:100%; vertical-align:middle; padding-top:0.0562rem;
+}
+
+.sub_bar li a { color:#6b6b6b; font-size:0.1349rem; display:block; height:100%; }
+
+.sub_bar li a span { display:block; }
+
+.sub_bar .sub_recommend img { width:0.2306rem; height:0.2250rem; }
+
+.sub_bar .sub_newcar img { width:.3262rem; height:.2419rem; }
+
+.sub_bar .sub_usedcar img { width:.3262rem; height:.2419rem; }
+
+.sub_bar .sub_sever img { width:0.2250rem; height:0.2250rem; }*/
+
+/*letter_index*/
+.letter_index {
+  position:fixed;
+  right:0;
+  top:44px;
+  bottom:0;
+}
+
+.letter_index a {
+  display:block;
+  color:#999;
+  font-size:12px;
+  height:3.8%;
+  width:46px;
+  text-align:center;
+}
+
+/*search condition*/
+#search_condition .hd { height:40px; background:#f3f3f3; padding-left:14px; color:#9e998d; font-size:14px; line-height:40px; }
+
+#search_condition .hd span { font-size:10px; margin-left:5px;}
+
+#search_condition .bd { background:#fff; }
+
+#car_type_list li {
+  height:.72rem; border-bottom:1px solid #ddd;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex; }
+
+#car_type_list div {
+  font-size:0.1349rem; color:#545454; cursor:pointer; position:relative;
+  text-align:center;
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+}
+
+#car_type_list div span {
+  width:.5625rem; height:.3544rem; margin-top:.1125rem;
+  background-image:url("http://img.autostreetscdn.com/m/src/images/new_mall/car_sprite.png");
+  display:inline-block;
+  /*background-size: .5625rem ,.3544rem;*/
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:0 0;
+}
+
+#car_type_list div p { position:absolute; bottom:0.0896rem; text-align:center; width:100%; line-height:100%; }
+
+
+
+/*2-126, 3-126*2*/
+@for $i from 2 to 13{
+  #car_type_list div .car_img_#{$i}{ background-position: 0 j(-($i*1-1)*126); }
+}
+/*1-63 , 2-63*3 ,3-63*5*/
+@for $i from 1 to 13{
+  #car_type_list .selected .car_img_#{$i} { background-position: 0 j(-($i*2-1)*63); }
+}
+
+
+
+
+/*car value*/
+.cfx { display:block; zoom:1; }
+
+.cfx:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
+
+#car_value {
+  margin:0 j(30); padding:j(30) 0 0;
+  ul{
+
+    li{
+
+      a{
+
+      }
+    }
+  }
+}
+
+.drag_btn { background:url("http://img.autostreetscdn.com/m/src/images/new_mall/small_drop.png") no-repeat; width:.1744rem; height:.2081rem; background-size:contain; display:block; position:absolute; left:0; top:.45rem; margin-left:-0.0872rem; }
+
+/*capacity*/
+#capacity { margin:0 j(30); padding:j(30) 0 j(143) 0; }
+
+#capacity ul li,#car_value ul li  {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex; }
+
+
+#capacity ul li a,#car_value ul li a {
+  color:#9e998c; border:0.0112rem solid #b9c779; height:0.3150rem; line-height:0.3150rem;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  background:#fff; font-size:0.1349rem;
+  margin:0 0 0.1687rem;
+  display:block; width:j(167);
+  text-align:center;
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+}
+
+#capacity ul li a:nth-child(2),#car_value ul li a:nth-child(2) {
+  margin:0 0.1687rem 0.1687rem;
+}
+
+#capacity ul li .selected,#car_value ul li .selected { background:#b9c778; color:#fff; }
+
+#capacity ul li:nth-child(3) a:nth-child(3) { visibility:hidden; }
+
+/*sub btn*/
+.sub_btn { width:100%; background:rgba(173, 180, 139, 0.25); position:fixed; bottom:0; left:0; z-index:9; }
+
+.sub_btn .inner { margin:0 15px; padding:13px 0 15px; height:35px; }
+
+.sub_btn .btn { display:block; float:left; text-align:center; font-size:16px; box-sizing:border-box; -webkit-box-sizing:border-box; border:1px solid #ff8103; border-radius:5px; -webkit-border-radius:5px; height:100%; line-height:32px; color:#fff; background:#fff; }
+
+.sub_btn .reset_btn { color:#ff7f00; width:0.8381rem; }
+
+.sub_btn .search_btn { float:right; background:#ff8103; width:2.2950rem; }
+
+/*search result*/
+.white_bg { background:#fff; }
+
+.loadMoreText { text-align:center; font-size:0.1574rem; color:#999; height:0.2812rem; line-height:0.2812rem; display:none; }
+
+#search_result { background:#fff; }
+
+#search_result .hd { color:#999; font-size:16px; padding-left:8px; height:32px; line-height:32px; background:#f3f3f3; }
+
+#search_result ul { border-bottom:1px solid #ddd; }
+
+#search_result ul li { padding:8px 14px; border-top:1px solid #ddd; background:#fff; overflow:hidden; position:relative; }
+
+#search_result ul li img { width:1.0350rem; height:.6862rem; float:left; margin-right:.1687rem; }
+
+#search_result ul li .desc { float:left; width:60%; }
+
+#search_result ul li .desc p { color:#6c6c6c; font-size:14px; }
+
+#search_result ul li .desc span { color:#ff8000; font-size:12px; }
+
+#search_result ul li .merchat { color:#999; font-size:12px;float:right;margin:-18px 0 0 0 }
+
+#search_result .no_data { text-align:center; color:#999; padding-top:30%; }
+
+#search_result .no_data img { width:.9281rem; height:.6806rem; }
+
+#search_result .no_data p { font-size:0.1574rem; margin:0.1124rem 0 0.0562rem; }
+
+#search_result .no_data span { font-size:0.1124rem; }
+
+/*pic thumb*/
+.pic_thumbs { padding:12px; background:#fff; margin-bottom:15px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
+
+.pic_thumbs ul li { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  width:33.33%; float:left; position:relative; }
+
+.pic_thumbs ul li p {position:absolute;top:j(7);right:j(7);left:j(7); bottom:j(7);}
+
+.pic_thumbs ul li img { width:100%; height:100%; display:block; border:none;}
+
+#preview, #preview header section { background:#000; }
+
+#preview #wrapper {
+  position:fixed;
+  height:100%;
+  /*top:0;
+  bottom:0; left:0;
+  right:0;  */background-color:#000}
+.loadMorePic{
+  cursor:pointer;text-align:center; margin:j(23)  j(7) -0.1294rem;border-top:1px solid #eee;background:#fff; height:j(84); line-height:j(84); font-size:14px; color:#999;
+  i{
+    width: 0.0674rem;
+    height: 0.0674rem;
+    border-bottom: 0.025rem solid #bcbcbc;
+    border-right: 0.025rem solid #bcbcbc;
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position:relative; vertical-align:middle;
+    top:j(-7); margin-left:j(15);
+  }
+}
+
+#preview .prod_pic {
+  background:none;
+  position:fixed; margin:auto; top:0; left:0; right:0; bottom:0;
+}
+#preview .prod_pic ul{
+  height:100%;
+  li{
+    height:100%;display: -webkit-box;-webkit-box-align: center;
+  }
+}
+#preview .prod_pic ul img{
+  //position:fixed; margin:auto;top:0; left:0; right:0; bottom:0;
+}
+
+.sub_index{ position:fixed; bottom:0; width:100%; background:rgba(255,255,255,.8); height:j(88);text-align:center; line-height:j(88); font-size:j(32); color:#666;}
+
+#sub_pic_list_wrap { position:fixed; bottom:0; width:100%; max-width: 640px;}
+
+#sub_pic_list_wrap .inner { position:absolute; top:j(30); bottom:j(30); left:j(23); right:j(23); overflow-y:scroll; }
+
+#sub_pic_list_wrap .pic_thumbs { background:#000; border:none; margin:0; padding:0; /*position:relative;top:-.0787rem;*/ }
+#sub_pic_list_wrap .pic_thumbs ul{
+  //margin-top:j(-7);
+}
+
+
+#sub_pic_list_wrap .pic_thumbs p i { position:absolute; border:j(2) solid #ff7a4d; left:0; top:0; right:0; bottom:0; display:none; }
+
+#sub_pic_list_wrap .pic_thumbs .hover p i { display:block; }
+
+#slider{
+  li{
+    float:left; position:relative;
+  }
+}
+
+
+
+
+/*shop info*/
+.shop_info {
+  padding-top:j(70);
+  position:fixed; font-size:j(28); z-index:99;
+  width:100%; top:100%;
+  .shop_info_wrap{
+    background:#fff;
+  }
+  .inner {
+    margin:0 j(20);  position:relative; padding:j(10) j(13);
+    .car_img {
+      position:absolute; width:j(173); height:j(130);
+      left:0; margin-top:j(-140/2); border:j(10) solid #fff;
+      top:0;
+    }
+    .shop_info_close {
+      width:j(52);height:j(52);
+      position:absolute;
+      right:0; top:j(10);
+      background:url(http://img.autostreetscdn.com/m/src/images/new_mall/close_icon.png) no-repeat;
+      background-size:contain;
+      
+    }
+    .hd {
+      padding:0 0 j(36) j(203); border-bottom:1px solid #ebebeb;width:1.85rem;
+      p {
+      }
+      span {
+        color:#6c6c6c; font-size:j(22);
+      }
+    }
+    ul {
+      padding-top:j(33); border-bottom:1px solid #ebebeb; margin-bottom:j(29);
+      li {
+        display:-webkit-box;
+        display:-moz-box;
+        display:-ms-flexbox;
+        display:-webkit-flex;
+        display:flex;
+        margin-bottom:j(29);
+
+        a {
+          -webkit-box-flex:1;
+          -moz-box-flex:1;
+          width:20%;
+          -webkit-flex:1;
+          -ms-flex:1;
+          flex:1;
+          border:1px solid #b9c778;
+          height:j(66); line-height:j(66); color:#aebe65; position:relative; display:block; font-size:j(28);
+          span {
+            padding-left:j(120);
+          }
+          i {
+            background-repeat:no-repeat;
+            background-size:contain;
+            position:absolute; left:j(30);
+          }
+
+        }
+
+        a:last-child {
+          margin-left:j(31);
+        }
+        .lower_price i {
+          width:j(40); height:j(34); top:j(18);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/new_mall/info_icon_01.png);
+        }
+        .drive i {
+          width:j(42); height:j(42); top:j(12);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/new_mall/info_icon_02.png);
+
+        }
+        .exchange i {
+          width:j(42); height:j(42); top:j(13);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/new_mall/info_icon_03.png);
+        }
+        .order i {
+          width:j(40); height:j(37); top:j(14);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/new_mall/info_icon_04.png);
+        }
+        .tel i {
+          width:j(38); height:j(38); top:j(15);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/new_mall/info_icon_05.png);
+        }
+        .consult{ visibility:hidden;}
+        .consult i {
+          width:j(44); height:j(32); top:j(20);
+          background-image:url(http://img.autostreetscdn.com/m/src/images/new_mall/info_icon_06.png);
+        }
+
+      }
+    }
+    .shop_desc {
+      h3 {
+        line-height:j(36); margin-bottom:j(3);
+      }
+      p {
+        font-size:j(20); color:#8d8d8d; line-height:j(27);
+      }
+      .tel { font-weight:bold; margin-top:j(3); }
+    }
+    .gift_info {
+
+      color:#ff7f00; border:1px solid #FF7F00; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; height:j(88); width:100%; line-height:j(88); margin:j(30) 0;text-indent:j(218);
+      position:relative;display:none;
+      i{
+        background:url(http://img.autostreetscdn.com/m/src/images/new_mall/gift_icon.png) no-repeat;
+        background-size:contain;
+        position:absolute;
+        height:j(30); width:j(30);
+       left:j(166); top:j(25);
+      }
+    }
+  }
+  @extend .css3Transition;
+}
+.show_shop_info{
+  -webkit-transform:translateY(-100%); -moz-transform:translateY(-100%); -ms-transform:translateY(-100%); -o-transform:translateY(-100%); transform:translateY(-100%);
+
+}
+.favorites{background:url('../images/wujiaoxing.png'); width: 25px; height: 23px; background-size:cover; display: inline-block; float: right; margin-right:8px; margin-top: 8px }
+
+.favorites-1 {
+  background: url('../images/wujiaoxing-1.png');
+  width: .2812rem;
+  height: .2643rem;
+  background-size: cover;
+  display: inline-block;
+  float: right;
+  margin-right: .1rem;
+  margin-top: .1rem;
+}

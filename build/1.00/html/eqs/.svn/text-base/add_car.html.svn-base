@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>eqs-新增车辆</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs_k.css" type="text/css">
+</head>
+<body>
+<header>
+    <div>
+        车辆信息 <a href="javascript:history.go(-1)" class="goBack"><i class="w_20_arr"></i>返回</a>
+    </div>
+</header>
+<div id="wrapper">
+    <ul class="car_info">
+        <li>
+            <a class="info_item" href="base_info.html">
+                <label>基本信息</label>
+                <!--<div class="status"><span class="status_icon"></span></div>-->
+                <div class="baseInfo status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+        <li>
+            <a class="info_item" href="accessory.html">
+                <label>附件检测</label>
+                <!--<div class="status"><span class="status_icon warn">未完善必填项</span></div>-->
+                <div class="vehicleAccessory status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+        <li>
+            <a class="info_item" href="car_photo.html">
+                <label>车辆拍照</label>
+                <div class="vehiclePhoto status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+        <li>
+            <a class="info_item" href="">
+                <label>外观检测</label>
+                <div class="appearance status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+        <li>
+            <a class="info_item" href="">
+                <label>骨架检测</label>
+                <div class="frame status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+        <li>
+            <a class="info_item" href="">
+                <label>内饰检测</label>
+                <div class="interior status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+        <li>
+            <a class="info_item" href="">
+                <label>车况检测</label>
+                <div class="condition status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+        <li>
+            <a class="info_item" href="">
+                <label>客户需求</label>
+                <div class="customerNeeds status"></div>
+                <i class="w_20_arr"></i>
+            </a>
+        </li>
+    </ul>
+   <div class="carInfo_btn">
+       <a href="javascript:void(0)" class="view_report"><i class="view_icon"></i>预览报告</a>
+       <a href="javascript:void(0)" class="delete"><i class="delete_icon"></i>删除</a>
+       <a href="javascript:void(0)" class="upload"><i class="upload_icon"></i>上传</a>
+   </div>
+</div>
+<div class="loading"></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/eqs/eqs_k.js"></script>
+</html>

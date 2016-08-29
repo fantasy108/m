@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>车辆详情-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/competitive_list.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        车辆详情
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div class="infodetailbody">
+    <div class="infomenu">
+        <ul id="tab">
+            <li class="on" id="tab1"><ins></ins><span>基本信息</span></li>
+            <li id="tab2"><ins></ins><span>骨架</span></li>
+            <li id="tab3"><ins></ins><span>外观</span></li>
+            <li id="tab4"><ins></ins><span>内饰</span></li>
+            <li id="tab5"><ins></ins><span>附件</span></li>
+        </ul>
+    </div>
+    <div class="" id="tab1box">
+        <h2 class="m-title"><span id="zhijian"></span>检测报告</h2>
+        <div class="m-box">
+            <ul>
+                <li class="eqs" id="eqs">该车辆经过200项严酷检测已成功通过EQS认证！</li>
+                <li><span class="right" id="conditionGrade"></span>车况评级</li>
+                <li><span class="right" id="frameScore"></span>骨架评级</li>
+            </ul>
+        </div>
+        <h2 class="m-title">详细信息</h2>
+        <div class="m-box">
+            <ul id='vehicleDetailInfo'>
+
+            </ul>
+        </div>
+        <h2 class="m-title">车辆配置</h2>
+        <div class="m-box">
+            <ul id="featureItem">
+            </ul>
+        </div>
+    </div>
+    <div class="hide" id="tab2box">
+        <div class="frameimgbox" id="getCarFrameListbox"><img src="http://img.autostreetscdn.com/m/src/images/skeleton.png"></div>
+        <div class="m-box">
+            <ul id="getCarFrameListurl">
+            </ul>
+        </div>
+    </div>
+    <div class="hide" id="tab3box">
+        <div class="frameimgbox" id="getCarAppearanceListbox"><img src="http://img.autostreetscdn.com/m/src/images/appearance.png"></div>
+        <div class="m-box">
+            <ul id="getCarAppearanceListurl">
+            </ul>
+        </div>
+    </div>
+    <div class="hide" id="tab4box">
+        <div class="frameimgbox" id="getCarCockpitListbox"><img src="http://img.autostreetscdn.com/m/src/images/car-img3.png"></div>
+        <div class="m-box">
+            <ul id="getCarCockpitList">
+            </ul>
+        </div>
+    </div>
+    <div class="hide" id="tab5box">
+        <div class="m-box">
+            <ul id="getCarAttachment">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/iscroll.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/competitive_detail_info.js"></script>
+</body>
+</html>

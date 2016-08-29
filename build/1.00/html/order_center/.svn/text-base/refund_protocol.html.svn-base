@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>退款被拒原因-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/order_center.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        退款被拒原因
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="../main.html" class="home_icon"><span>首页</span></a>
+			<a href="../uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+
+<div id="wrapper">
+	<div class="refund_protocol">
+		<h2>退款说明</h2>
+		<p>1、订金支付后3天内未到店签订《二手车销售合同》并支付车辆余款，您可以拨打汽车街客服电话400-821-8889要求退订金。</p>
+		<p>2、订金支付后3天内有线下客户直接以全款购买的方式在门店购买此车，汽车街将主动联系您确认退款事宜。</p>
+		<p>3、汽车街将在与您确认退款信息后的10个工作日内完成退款，通过您支付订金的路径原路退回到您的银行账户。</p>
+		<p>4、你的退款申请操作暂时仅支持拨打400电话申请，门店申请退款恕无法受理。</p>
+		<p class="last">汽车街400客服工作时间：周一到周日，8：30-17：00</p>
+		<a href="tel://4008123123" class="call"><img src="http://img.autostreetscdn.com/m/src/images/phone-1.png" width="20" alt="">拨打电话申请退款</a>
+	</div>
+	
+	
+
+</div>
+
+
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<!-- <script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script> -->
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>
+
+</body>
+</html>

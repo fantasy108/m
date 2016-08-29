@@ -1,0 +1,89 @@
+#about {
+  font-size: 0.07875rem; }
+#about #about_slide_wrap {
+  position: relative; }
+#about #about_slide ul li {
+  float: left;
+  display: block; }
+#about #about_slide ul li img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none; }
+#about #indicator ul {
+  position: absolute;
+  bottom: 0.1125rem;
+  text-align: center;
+  width: 100%; }
+#about #indicator ul li {
+  width: 0.08437rem;
+  height: 0.08437rem;
+  background: #fff;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0.0225rem; }
+#about #indicator ul > .active {
+  background: #000; }
+#about p {
+  clear: both;
+  text-indent: 2em;
+  line-height: 0.225rem;
+  margin: 0.16875rem;
+  font-size: 0.135rem; }
+
+#offline ul li {
+  overflow: hidden;
+  position: relative;
+  padding: 0.1125rem;
+  border-bottom: 1px solid #ddd; }
+#offline ul li a {
+  font-size: 0.16875rem;
+  display: block;
+  text-decoration: none;
+  color: #666; }
+#offline ul li img {
+  float: left;
+  width: 1.125rem;
+  height: 0.5625rem;
+  display: block;
+  border: none;
+  margin-right: 0.1125rem; }
+#offline ul li .title {
+  line-height: 0.21937rem;
+  margin-bottom: 0.05625rem; }
+#offline ul li .addr {
+  font-size: 0.135rem;
+  line-height: 0.12937rem; }
+
+.tel {
+  display: block;
+  border: 1px solid #DDDDDD;
+  font-size: 0.18rem;
+  color: #f27210;
+  margin: 0.225rem 0.1125rem;
+  height: 0.46125rem;
+  -webkit-border-radius: 0.02812rem;
+  -moz-border-radius: 0.02812rem;
+  border-radius: 0.02812rem;
+  text-decoration: none;
+  line-height: 0.46125rem;
+  text-indent: 0.93375rem;
+  background: url(http://img.autostreetscdn.com/m/src/images/phone-1.png) no-repeat 0.54rem 0.11812rem;
+  background-size: 0.225rem; }
+
+.arrow {
+  width: .1125rem;
+  height: .1125rem;
+  border-top: .025rem solid #ddd;
+  border-right: .025rem solid #ddd;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  right: .1125rem;
+  top: 50%;
+  margin-top: -0.05625rem; }
+
+/*# sourceMappingURL=about.css.map */

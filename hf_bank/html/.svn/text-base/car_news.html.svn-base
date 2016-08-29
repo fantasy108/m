@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>汽车资讯-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/car_news.css" type="text/css">
+</head>
+<body class="halfbody">
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        汽车资讯
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div id="car_news">
+    <ul>
+       <!-- <li class="car_news_list">
+            <a href="" class="car_news_desc">
+                <img class="car_news_sm_img" src="http://img.autostreetscdn.com/m/src/images/car_news_160_120.png" alt=""/>
+                <p class="car_news_title">2015年底见分晓 保时捷考虑推混动版911</p>
+                <span class="news_date">2015-05-14</span>
+            </a>
+        </li>-->
+    </ul>
+</div>
+<p class="loadMoreText">加载更多...</p>
+<div class="loading" id="loading"></div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/car_news.js"></script>
+</body>
+</html>

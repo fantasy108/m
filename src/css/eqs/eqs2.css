@@ -1,0 +1,1501 @@
+@charset "UTF-8";
+.car_content .harm_list > li, .outward_check .harm_list > li, #popupTipsLocation .popup_wrap .btn_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#popupTipsLocation .popup_wrap .btn_public {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+#popupTipsLocation, #popupTipsLocation .popup_wrap .text, #popupTipsLocation .popup_wrap .btn_public {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+#popupTipsLocation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%; }
+
+/*背景占位*/
+.car_content .harm_list > li, .outward_check .harm_list > li {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+/*common*/
+* {
+  font-size: 12px; }
+
+html {
+  height: 100%;
+  background: #f3f3f3; }
+
+.androidFix {
+  overflow: hidden !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important; }
+
+header {
+  height: 45px; }
+
+header section {
+  background: #fff;
+  height: 44px;
+  line-height: 44px;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  z-index: 99;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  header section .form {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    right: 10px; }
+  header section .detele {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    right: 0.5625rem; }
+  header section .green {
+    color: #1abc9c; }
+
+.padd_0 {
+  padding: 0 !important; }
+
+.padd20 {
+  padding: 0 0.1125rem !important; }
+
+.back, .goback {
+  width: 70px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  position: absolute; }
+
+.back::after, .goback::after {
+  border-top: 1px solid #1BC8A6;
+  border-left: 1px solid #1BC8A6;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  content: '';
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+.show {
+  display: block; }
+
+.error_layer, .error_layer2, .error_layer3 {
+  display: none;
+  width: 3.0375rem;
+  height: 1.45687rem;
+  background: #fff;
+  position: fixed;
+  top: 2.2499rem;
+  left: 0.28125rem;
+  z-index: 100;
+  border-radius: 0.1125rem;
+  margin-left: 0; }
+
+.error_layer .error_txt, .error_layer2 .error_txt, .error_layer3 .error_txt3 {
+  padding: 0.1749rem;
+  font-size: 0.1574rem;
+  color: #333;
+  border-bottom: solid 0.0112rem #ccc;
+  text-align: center;
+  height: 45%; }
+
+.error_layer .correct {
+  line-height: 0.4499rem;
+  text-align: center;
+  font-size: 0.1574rem;
+  color: #1f80f7;
+  font-weight: bold;
+  display: block;
+  text-decoration: none; }
+
+.error_layer2 .notice {
+  padding: 0.1749rem;
+  font-size: 0.1574rem;
+  color: #333;
+  text-align: center; }
+
+.error_layer2 .verify {
+  border: solid 1px #e5e5e5;
+  width: 2.025rem;
+  height: 0.3375rem;
+  margin: 0 0 0.1125rem 0.1125rem; }
+
+.error_layer2 .verify input {
+  border: none;
+  width: 1.125rem;
+  height: 0.3375rem;
+  float: left; }
+
+.error_layer2 .verify a {
+  float: right;
+  color: #7373cf;
+  font-size: 0.16875rem;
+  text-decoration: none;
+  line-height: 0.3375rem;
+  margin: 0 0.1125rem 0 0; }
+
+.error_layer2 .verify .again {
+  color: #999;
+  font-size: 0.16875rem;
+  float: right;
+  line-height: 0.3375rem; }
+
+.error_layer2 .code_error {
+  font-size: 0.14625rem;
+  color: red;
+  text-align: center;
+  height: 0.28125rem;
+  display: none; }
+
+.error_layer2 .error_btn {
+  border-top: solid 0.0112rem #e5e5e5; }
+
+.error_layer2 .cancel, .error_layer3 .cancel3 {
+  width: 49%;
+  line-height: 0.4499rem;
+  text-align: center;
+  font-size: 0.1574rem;
+  color: #1f80f7;
+  display: block;
+  text-decoration: none;
+  float: left;
+  border-right: solid 1px #e5e5e5; }
+
+.error_layer2 .correct, .error_layer3 .correct3 {
+  width: 49%;
+  line-height: 0.4499rem;
+  text-align: center;
+  font-size: 0.1574rem;
+  color: #1f80f7;
+  display: block;
+  text-decoration: none;
+  float: left; }
+
+/*个人中心*/
+.pc_top {
+  width: 100%;
+  height: 1.6875rem;
+  background: #39d9b7; }
+  .pc_top .head {
+    width: 0.9rem;
+    margin: 0 auto;
+    padding: 0.1125rem 0 0 0; }
+  .pc_top img {
+    width: 0.9rem;
+    height: 0.9rem; }
+  .pc_top h3, .pc_top p {
+    color: #fff;
+    font-size: 0.16875rem;
+    text-align: center;
+    line-height: 0.28125rem; }
+
+.pc_info {
+  background: #fff;
+  margin: 0.28125rem 0;
+  border-top: solid 1px #ddd; }
+  .pc_info li {
+    line-height: 0.5625rem;
+    padding: 0 0.1125rem;
+    border-bottom: solid 1px #ddd; }
+    .pc_info li label {
+      font-size: 0.16875rem;
+      color: #666; }
+    .pc_info li p {
+      float: right;
+      font-size: 0.16875rem; }
+      .pc_info li p span {
+        color: #ff7f00;
+        margin: 0 0.1125rem 0 0;
+        font-size: 0.16875rem; }
+
+.pc_btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0.1125rem 0; }
+  .pc_btn a {
+    display: block;
+    float: left;
+    text-align: center;
+    color: #666;
+    width: 1.62rem;
+    height: 0.48375rem;
+    border-radius: 0.05625rem;
+    line-height: 0.48375rem;
+    text-decoration: none;
+    text-indent: 0.135rem;
+    border: solid 1px #ddd; }
+  .pc_btn .modify_pwd {
+    background: #fff url("http://img.autostreetscdn.com/m/src/images/eqs/pwd.png") no-repeat 0.28125rem;
+    background-size: 0.16875rem 0.21375rem;
+    margin: 0 0 0 0.1125rem; }
+  .pc_btn .exit {
+    background: #fff url("http://img.autostreetscdn.com/m/src/images/eqs/power.png") no-repeat 0.28125rem;
+    background-size: 0.18rem 0.19125rem;
+    margin: 0 0.1125rem 0 0;
+    float: right; }
+
+/*修改密码*/
+.pwd_error {
+  color: red;
+  margin: 0.1125rem 0 0 0;
+  font-size: 0.135rem;
+  text-indent: 0.1125rem;
+  line-height: 0.28125rem;
+  height: 0.28125rem; }
+
+.modify_pwd {
+  width: 100%;
+  background: #fff;
+  line-height: 0.5625rem;
+  border-top: solid 1px #ddd; }
+  .modify_pwd li {
+    padding: 0 0.1125rem;
+    border-bottom: solid 1px #ddd; }
+    .modify_pwd li label {
+      color: #666;
+      float: left;
+      width: 0.61875rem;
+      font-size: 0.135rem; }
+    .modify_pwd li input[type='password'] {
+      color: #ccc;
+      line-height: 0.5625rem;
+      font-size: 0.135rem;
+      width: 2.5875rem; }
+
+.modify_pop {
+  display: none;
+  width: 1.4625rem;
+  height: 0.9rem;
+  position: absolute;
+  top: 1.40625rem;
+  border-radius: 0.05625rem;
+  color: #fff;
+  opacity: 0.8;
+  margin: 0 1.06875rem;
+  background: #000;
+  text-align: center; }
+  .modify_pop img {
+    margin: 0.1125rem 0 0.05625rem 0; }
+
+/*二手车检测报告*/
+.wrap_bg {
+  background: #fff;
+  width: 100%;
+  height: 0.46125rem; }
+
+#wrapper {
+  width: 100%;
+  height: 0.45rem;
+  background: #fff; }
+  #wrapper #scroller {
+    height: 0.45rem;
+    width: 8.35312rem;
+    top: 40px;
+    position: fixed;
+    z-index: 98;
+    background: #fff; }
+
+.nav ul {
+  background: #fff;
+  border-top: solid 1px #ddd;
+  height: 0.45rem;
+  width: 100%;
+  border-bottom: solid 1px #ddd; }
+  .nav ul li {
+    float: left;
+    line-height: 0.45rem;
+    text-align: center;
+    font-size: 0.135rem;
+    width: 0.92812rem; }
+    .nav ul li a {
+      color: #666;
+      text-decoration: none;
+      border-right: solid 1px #ddd;
+      padding: 0 0.16875rem;
+      margin: 0.1125rem 0; }
+    .nav ul li .cur {
+      color: #37bfa4; }
+  .nav ul li:last-child a {
+    border: none; }
+
+.state, .state2, .state3, .state4 {
+  display: none;
+  min-height: 0.5625rem;
+  background: #92bae6; }
+  .state img, .state2 img, .state3 img, .state4 img {
+    margin: 0.14062rem 0.1125rem 0 0.1125rem;
+    float: left;
+    width: 0.28125rem;
+    min-height: 0.28125rem; }
+  .state h2, .state2 h2, .state3 h2, .state4 h2 {
+    color: #fff;
+    font-size: 0.1575rem;
+    float: left;
+    line-height: 0.5625rem; }
+
+.state2 {
+  background: #6cce29; }
+
+.state3, .state4 {
+  background: #ff9326; }
+  .state3 p, .state4 p {
+    float: left;
+    margin: 0 0 0.1125rem 0.50625rem;
+    line-height: 0.28125rem;
+    color: #fff;
+    width: 80%; }
+
+.car_title, .car_title2 {
+  background: #f3f3f3;
+  height: 40px;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  width: 100%; }
+  .car_title h3, .car_title2 h3 {
+    color: #666;
+    text-indent: 0.135rem;
+    line-height: 40px;
+    width: 60%;
+    float: left; }
+  .car_title h4, .car_title2 h4 {
+    color: #666;
+    text-indent: 0.135rem;
+    line-height: 40px;
+    width: 100%;
+    float: left; }
+  .car_title .edit, .car_title2 .edit {
+    background: url("http://img.autostreetscdn.com/m/src/images/eqs/edit.png") no-repeat left;
+    width: 0.5625rem;
+    color: #19bb9b;
+    line-height: 0.45rem;
+    float: right;
+    text-indent: 0.2025rem;
+    background-size: 0.135rem 0.135rem;
+    text-decoration: none; }
+  .car_title .describe, .car_title2 .describe {
+    background: url("http://img.autostreetscdn.com/m/src/images/eqs/edit.png") no-repeat left;
+    width: 1.125rem;
+    color: #19bb9b;
+    line-height: 0.45rem;
+    float: right;
+    text-indent: 0.2025rem;
+    background-size: 0.135rem 0.135rem;
+    text-decoration: none; }
+  .car_title span, .car_title2 span {
+    color: #ccc;
+    font-weight: normal;
+    margin: 0 0 0 0.05625rem; }
+
+.car_title2 {
+  display: none; }
+
+.car_title_fix {
+  background: #f3f3f3;
+  height: 0.45rem;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd; }
+  .car_title_fix h3 {
+    color: #666;
+    text-indent: 0.135rem;
+    line-height: 0.45rem;
+    width: 50%;
+    float: left; }
+
+.car_content {
+  background: #fff;
+  padding: 0.1125rem;
+  min-height: 0.28125rem; }
+  .car_content h4 {
+    color: #333;
+    font-size: 0.1575rem;
+    line-height: 0.225rem;
+    font-weight: normal;
+    word-break: break-word; }
+  .car_content .rank {
+    float: left;
+    width: 0.7875rem;
+    height: 0.7875rem;
+    border-radius: 0.39375rem;
+    border: solid 2px #97c43c;
+    color: #97c43c;
+    font-size: 0.225rem;
+    text-align: center;
+    line-height: 0.73125rem;
+    margin: 0.05625rem 0.1125rem 0 0; }
+  .car_content .outline {
+    margin: 0.05625rem 0;
+    width: 2.25rem;
+    float: left; }
+    .car_content .outline li {
+      line-height: 0.16875rem;
+      margin: 0.05625rem 0;
+      float: left; }
+      .car_content .outline li label {
+        color: #666;
+        float: left; }
+      .car_content .outline li p {
+        color: #333;
+        float: left;
+        width: 1.125rem; }
+  .car_content .cpic_list li, .car_content .need_pic li {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 0.08437rem; }
+    .car_content .cpic_list li img, .car_content .need_pic li img {
+      width: 100%; }
+  .car_content .cpic_list li:nth-child(even), .car_content .need_pic li:nth-child(even) {
+    margin-right: 0; }
+  .car_content .base_info {
+    width: 100%;
+    margin: 0 0 0.1125rem 0; }
+  .car_content .info_list > li {
+    border-top: dotted 1px #ddd;
+    line-height: 0.45rem;
+    width: 100%;
+    float: left; }
+    .car_content .info_list > li label {
+      width: 50%;
+      color: #666;
+      line-height: 0.225rem;
+      padding: 0.1125rem 0; }
+    .car_content .info_list > li p {
+      text-align: right;
+      float: right;
+      width: 50%;
+      line-height: 0.225rem;
+      padding: 0.1125rem 0;
+      color: #333;
+      word-break: break-word; }
+    .car_content .info_list > li p.bz {
+      width: 100%;
+      text-align: left; }
+    .car_content .info_list > li .undefined {
+      color: #ddd; }
+    .car_content .info_list > li .base_config, .car_content .info_list > li .personal_config {
+      width: 100%; }
+      .car_content .info_list > li .base_config li, .car_content .info_list > li .personal_config li {
+        width: 50%;
+        float: left;
+        line-height: 0.225rem;
+        padding: 0.1125rem 0; }
+  .car_content .info_list > li:first-child {
+    border: none; }
+  .car_content .score {
+    border-top: solid 1px #ddd;
+    line-height: 0.45rem;
+    margin: 0 0 0.1125rem 0;
+    height: 0.45rem; }
+    .car_content .score p {
+      color: #666;
+      float: right;
+      width: 30%;
+      font-size: 0.135rem;
+      text-align: right; }
+      .car_content .score p span {
+        color: #97c43c;
+        font-size: 0.135rem; }
+    .car_content .score label {
+      text-align: left;
+      color: #666; }
+  .car_content .harm_list > li {
+    border-top: solid 1px #ddd;
+    position: relative;
+    min-height: 0.5625rem; }
+    .car_content .harm_list > li .desribe {
+      width: 88%; }
+      .car_content .harm_list > li .desribe p {
+        color: #666;
+        line-height: 20px; }
+      .car_content .harm_list > li .desribe .txt {
+        color: #f47410; }
+    .car_content .harm_list > li span {
+      color: #333;
+      padding: 0.1125rem 0;
+      line-height: 0.3375rem;
+      float: right;
+      display: block;
+      margin: 0 0.1125rem 0 0; }
+    .car_content .harm_list > li .non {
+      color: #f47410; }
+    .car_content .harm_list > li i {
+      position: absolute;
+      width: 0.1125rem;
+      height: 0.1125rem;
+      border-bottom: 0.025rem solid #ccc;
+      border-left: 0.025rem solid #ccc;
+      display: inline-block;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      position: absolute;
+      right: 0;
+      top: 0.225rem; }
+  .car_content .state_list > li {
+    border-top: dotted 1px #ddd;
+    line-height: 0.45rem;
+    width: 100%;
+    float: left; }
+    .car_content .state_list > li p {
+      color: #666;
+      line-height: 0.45rem;
+      width: 80%;
+      float: left; }
+    .car_content .state_list > li span {
+      color: #333;
+      width: 20%;
+      text-align: right;
+      float: right; }
+  .car_content .state_list > li:first-child {
+    border: none; }
+  .car_content .need_list > li {
+    border-top: dotted 1px #ddd;
+    line-height: 0.45rem;
+    width: 100%;
+    float: left; }
+    .car_content .need_list > li label {
+      width: 70%;
+      color: #666;
+      line-height: 0.225rem;
+      padding: 0.1125rem 0; }
+    .car_content .need_list > li span {
+      text-align: right;
+      float: right;
+      width: 30%;
+      line-height: 0.225rem;
+      padding: 0.1125rem 0;
+      color: #333; }
+    .car_content .need_list > li p {
+      text-align: left;
+      float: right;
+      width: 100%;
+      line-height: 0.225rem;
+      padding: 0.1125rem 0;
+      color: #333;
+      word-wrap: break-word; }
+
+.car_content:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.state:after, .state2:after, .state3:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/*客户需求*/
+.customer_need .car_from {
+  min-height: 50px;
+  margin: 10px 0 0 0;
+  background: #fff;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd; }
+  .customer_need .car_from p {
+    color: #333;
+    line-height: 50px;
+    width: 40%;
+    float: left;
+    text-indent: 10px;
+    padding: 0 0 0 10px; }
+  .customer_need .car_from .from_select {
+    width: 50%;
+    float: left; }
+    .customer_need .car_from .from_select input {
+      width: 20px;
+      height: 20px;
+      margin: 15px 5px 15px 15px;
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/blank.png") no-repeat;
+      background-size: 20px 20px;
+      float: left;
+      outline: none; }
+    .customer_need .car_from .from_select input:checked {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/fill.png") no-repeat;
+      background-size: 20px 20px; }
+    .customer_need .car_from .from_select label {
+      color: #333;
+      float: left;
+      margin: 0 5px;
+      line-height: 50px; }
+.customer_need .group, .customer_need .group2, .customer_need .personal {
+  margin: 10px 0; }
+  .customer_need .group i, .customer_need .group2 i, .customer_need .personal i {
+    color: red;
+    float: left; }
+  .customer_need .group li, .customer_need .group2 li, .customer_need .personal li {
+    line-height: 50px;
+    padding: 0 10px;
+    background: #fff;
+    border-top: dotted 1px #ddd; }
+    .customer_need .group li label, .customer_need .group2 li label, .customer_need .personal li label {
+      line-height: 30px;
+      color: #333;
+      width: 30%;
+      padding: 0 0 0 5px; }
+    .customer_need .group li select, .customer_need .group2 li select, .customer_need .personal li select {
+      width: 55%;
+      border: none;
+      height: 30px;
+      color: #333;
+      float: right;
+      margin: 10px 0;
+      -webkit-appearance: none;
+      background: #fff; }
+    .customer_need .group li input, .customer_need .group2 li input, .customer_need .personal li input {
+      width: 60%;
+      border: none;
+      height: 30px;
+      color: #333;
+      float: right;
+      margin: 10px 0; }
+.customer_need .personal {
+  display: none; }
+.customer_need .need {
+  margin: 0 0 10px 0; }
+  .customer_need .need #sale_need i {
+    color: red;
+    float: left;
+    display: inline-block; }
+  .customer_need .need li {
+    line-height: 50px;
+    padding: 0 10px;
+    background: #fff;
+    border-top: dotted 1px #ddd;
+    display: none; }
+    .customer_need .need li label {
+      line-height: 30px;
+      color: #333;
+      width: 30%;
+      padding: 0 0 0 5px; }
+    .customer_need .need li select {
+      width: 55%;
+      border: none;
+      height: 30px;
+      color: #333;
+      float: right;
+      margin: 10px 0;
+      -webkit-appearance: none;
+      background: #fff; }
+    .customer_need .need li input {
+      width: 50%;
+      border: none;
+      height: 30px;
+      color: #333;
+      float: right;
+      margin: 10px 0; }
+    .customer_need .need li span {
+      width: 10%;
+      color: #ddd;
+      line-height: 30px;
+      color: #333;
+      float: right;
+      margin: 10px 0;
+      text-align: center; }
+    .customer_need .need li i {
+      color: red;
+      display: none; }
+  .customer_need .need li:first-child {
+    display: block; }
+.customer_need .other {
+  margin: 0 0 10px 0; }
+  .customer_need .other li {
+    line-height: 50px;
+    padding: 0 10px;
+    background: #fff;
+    border-top: dotted 1px #ddd; }
+    .customer_need .other li span {
+      line-height: 30px;
+      color: #333;
+      width: 45%; }
+    .customer_need .other li .other_radio {
+      width: 55%;
+      float: right; }
+      .customer_need .other li .other_radio label {
+        line-height: 30px;
+        color: #333;
+        float: left;
+        margin: 10px 0; }
+      .customer_need .other li .other_radio input {
+        width: 16px;
+        height: 16px;
+        background: url("http://img.autostreetscdn.com/m/src/images/eqs/blank.png") no-repeat;
+        background-size: 16px 16px;
+        margin: 15px 3px 0 7px;
+        float: left;
+        outline: none; }
+      .customer_need .other li .other_radio input.cur {
+        background: url("http://img.autostreetscdn.com/m/src/images/eqs/fill.png") no-repeat;
+        background-size: 16px 16px; }
+.customer_need textarea {
+  width: 100%;
+  background: #fff;
+  border: none;
+  min-height: 0.5625rem;
+  line-height: 0.225rem;
+  overflow-y: visible;
+  word-wrap: break-word; }
+.customer_need .add {
+  width: 100%;
+  position: relative;
+  margin: 0.16875rem 0;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  height: 2.75625rem;
+  overflow: hidden; }
+  .customer_need .add img {
+    width: 100%; }
+.customer_need .textarea {
+  width: 100%;
+  background: #fff;
+  border: none;
+  min-height: 0.5625rem;
+  line-height: 0.225rem;
+  overflow-y: visible;
+  word-wrap: break-word;
+  padding: 10px 0; }
+  .customer_need .textarea p {
+    margin: 0 10px; }
+.customer_need .txt-area {
+  padding: 10px;
+  background: #fff; }
+
+/*车况检测*/
+.state_check .driver li, .state_check .start li {
+  min-height: 45px;
+  padding: 0 0 0 10px;
+  background: #fff;
+  border-bottom: dotted 1px #ddd; }
+  .state_check .driver li span, .state_check .start li span {
+    line-height: 28px;
+    color: #333;
+    width: 68%;
+    float: left;
+    padding: 10px 0;
+    display: -webkit-box;
+    vertical-align: middle; }
+    .state_check .driver li span i, .state_check .start li span i {
+      color: red;
+      font-style: normal; }
+  .state_check .driver li .other_radio, .state_check .start li .other_radio {
+    float: right;
+    margin: 0 10px 0 0; }
+    .state_check .driver li .other_radio label, .state_check .start li .other_radio label {
+      line-height: 25px;
+      color: #333;
+      float: left;
+      margin: 10px 0; }
+    .state_check .driver li .other_radio input, .state_check .start li .other_radio input {
+      width: 16px;
+      height: 16px;
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/blank.png") no-repeat;
+      background-size: 16px 16px;
+      margin: 15px 5px 0 5px;
+      float: left;
+      outline: none; }
+    .state_check .driver li .other_radio input:checked, .state_check .start li .other_radio input:checked {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/fill.png") no-repeat;
+      background-size: 16px 16px; }
+  .state_check .driver li .leak, .state_check .start li .leak {
+    width: 2.2499rem;
+    background: #fff;
+    position: fixed;
+    top: 1.2499rem;
+    left: 0.6749rem;
+    z-index: 100;
+    border-radius: 0.0562rem;
+    margin-left: 0;
+    display: none; }
+    .state_check .driver li .leak li, .state_check .start li .leak li {
+      line-height: 0.45rem;
+      height: 0.45rem; }
+.state_check .driver li.cur, .state_check .start li.cur {
+  background: #ff9326; }
+.state_check .driver li:after, .state_check .start li:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+.state_check .other {
+  margin: 0 0 0.1125rem 0; }
+  .state_check .other li {
+    line-height: 45px;
+    padding: 0 0 0 10px;
+    background: #fff;
+    border-bottom: dotted 1px #ddd; }
+    .state_check .other li span {
+      line-height: 25px;
+      color: #333;
+      width: 1.9125rem;
+      float: left;
+      padding: 10px 0;
+      display: -webkit-box;
+      vertical-align: middle; }
+    .state_check .other li .other_radio {
+      float: right;
+      margin: 0 10px 0 0; }
+      .state_check .other li .other_radio label {
+        line-height: 28px;
+        color: #333;
+        float: left;
+        margin: 10px 0; }
+      .state_check .other li .other_radio input {
+        width: 16px;
+        height: 16px;
+        background: url("http://img.autostreetscdn.com/m/src/images/eqs/blank.png") no-repeat;
+        background-size: 16px 16px;
+        margin: 15px 5px 0 5px;
+        float: left;
+        outline: none; }
+      .state_check .other li .other_radio input:checked {
+        background: url("http://img.autostreetscdn.com/m/src/images/eqs/fill.png") no-repeat;
+        background-size: 16px 16px; }
+  .state_check .other li:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+
+/*检测*/
+.harm {
+  width: 100%;
+  position: relative;
+  background: #fff; }
+  .harm img {
+    width: 100%; }
+  .harm .checked_point {
+    width: 3.6rem;
+    height: 3.1275rem;
+    position: absolute;
+    top: 0; }
+    .harm .checked_point li {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/circle.png") no-repeat;
+      width: 12px;
+      height: 12px;
+      background-size: 12px 12px;
+      position: absolute;
+      font-size: 0.09rem;
+      line-height: 12px;
+      text-align: center;
+      zoom: 1;
+      letter-spacing: -1px; }
+    .harm .checked_point li.cur {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/circle2.png") no-repeat;
+      width: 11px;
+      height: 11px;
+      background-size: 11px 11px;
+      position: absolute; }
+
+.outward_check .harm {
+  margin: 0 0 0.05625rem 0;
+  position: fixed;
+  z-index: 97; }
+  .outward_check .harm .circle {
+    width: 100%;
+    min-height: 15px; }
+    .outward_check .harm .circle img {
+      width: 10px;
+      height: 10px;
+      float: left;
+      margin: 2px 5px 0 5px; }
+    .outward_check .harm .circle p {
+      color: #999;
+      float: left; }
+  .outward_check .harm .hidden {
+    background-color: #333;
+    width: 0.5625rem;
+    height: 0.3375rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.3375rem;
+    border-radius: 0.045rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.28125rem; }
+.outward_check .spread {
+  z-index: 99;
+  position: fixed;
+  display: none;
+  height: 0.45rem;
+  width: 100%;
+  background: #19bb9b url("http://img.autostreetscdn.com/m/src/images/eqs/spread.png") no-repeat 1.35rem 0.16875rem;
+  background-size: 0.135rem 0.12937rem;
+  line-height: 0.45rem;
+  color: #fff;
+  text-align: center;
+  text-indent: 0.225rem; }
+.outward_check .harm_list > li {
+  border-top: solid 1px #ddd;
+  position: relative;
+  min-height: 50px; }
+  .outward_check .harm_list > li .desribe {
+    width: 88%; }
+    .outward_check .harm_list > li .desribe p {
+      color: #666; }
+    .outward_check .harm_list > li .desribe .txt {
+      color: #f47410; }
+  .outward_check .harm_list > li span {
+    color: #333;
+    padding: 10px 0;
+    line-height: 30px;
+    float: right;
+    display: block;
+    margin: 0 10px 0 0; }
+  .outward_check .harm_list > li .non {
+    color: #f47410; }
+  .outward_check .harm_list > li i {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 0.025rem solid #ccc;
+    border-left: 0.025rem solid #ccc;
+    display: inline-block;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    position: absolute;
+    right: 0;
+    top: 20px; }
+.outward_check .car_content {
+  padding: 3.375rem 0.1125rem 0.1125rem 0.1125rem; }
+
+p.harm_notice {
+  opacity: 0;
+  width: 275px;
+  height: 115px;
+  background: url("http://img.autostreetscdn.com/m/src/images/eqs/harm_class_bg.png") no-repeat;
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  background-size: 294px 140px;
+  padding: 25px 0 0 20px;
+  line-height: 30px;
+  z-index: 101;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s; }
+
+.notice_show {
+  opacity: 1 !important; }
+
+.layer_show {
+  left: 0 !important; }
+
+.harm_detail {
+  margin: 0;
+  position: fixed;
+  top: 0rem;
+  background: #f3f3f3;
+  z-index: 99;
+  bottom: 0;
+  left: 100%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s; }
+  .harm_detail .harm_class {
+    height: 32px;
+    background: #f3f3f3; }
+    .harm_detail .harm_class h3 {
+      color: #666;
+      font-size: 12px;
+      line-height: 32px;
+      text-indent: 12px;
+      width: 100%;
+      height: 32px; }
+      .harm_detail .harm_class h3 span {
+        float: left; }
+      .harm_detail .harm_class h3 img {
+        width: 17px;
+        height: 17px;
+        margin: 8px 0 0 10px;
+        float: left; }
+  .harm_detail .detail_head {
+    line-height: 40px;
+    padding: 0 10px;
+    height: 40px;
+    background: #fff; }
+    .harm_detail .detail_head a {
+      display: block;
+      text-decoration: none; }
+    .harm_detail .detail_head .close {
+      font-size: 12px;
+      color: #999;
+      float: left; }
+    .harm_detail .detail_head .save {
+      color: #19bb9b;
+      float: right; }
+  .harm_detail .driver_card {
+    float: left;
+    background: #fff;
+    width: 100%; }
+    .harm_detail .driver_card img {
+      width: 100%;
+      height: 2.7rem; }
+    .harm_detail .driver_card label {
+      line-height: 30px;
+      color: #333;
+      float: left;
+      margin: 0px 25px 0px 0; }
+    .harm_detail .driver_card input[name='driver_card'] {
+      width: 16px;
+      height: 16px;
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/blank.png") no-repeat;
+      background-size: 16px 16px;
+      margin: 6px 5px 0 5px;
+      float: left;
+      outline: none; }
+    .harm_detail .driver_card input:checked {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/fill.png") no-repeat;
+      background-size: 16px 16px; }
+  .harm_detail .detail_title {
+    line-height: 0.36562rem;
+    background: #f3f3f3;
+    padding: 0 0.1125rem;
+    float: left; }
+    .harm_detail .detail_title h3 {
+      font-weight: normal;
+      color: #333;
+      line-height: 0.36562rem; }
+  .harm_detail .detail_list {
+    text-indent: 0.0675rem;
+    background: #fff;
+    width: 100%;
+    overflow-y: auto;
+    height: 100px;
+    -webkit-overflow-scrolling: touch; }
+    .harm_detail .detail_list li {
+      border-right: solid 1px #f3f3f3;
+      border-bottom: solid 1px #f3f3f3;
+      width: 49%;
+      line-height: 48px;
+      float: left;
+      position: relative; }
+      .harm_detail .detail_list li p {
+        line-height: 48px;
+        color: #333;
+        width: 80%;
+        float: left; }
+      .harm_detail .detail_list li i {
+        background: url("http://img.autostreetscdn.com/m/src/images/eqs/blank2.png") no-repeat;
+        background-size: 16px 16px;
+        float: right;
+        width: 16px;
+        height: 16px;
+        margin: 15px 5px 0 0; }
+    .harm_detail .detail_list li:nth-child(even) {
+      border-right: none;
+      text-indent: 0.1125rem; }
+    .harm_detail .detail_list li.cur i {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/fill2.png") no-repeat;
+      background-size: 16px 16px; }
+  .harm_detail .clear_data {
+    float: left;
+    margin: 10px 0 0 0;
+    line-height: 40px;
+    width: 100%;
+    background: #fff;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd; }
+    .harm_detail .clear_data #input_icon {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/square.png") no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+      margin: 10px 10px 0 10px;
+      float: left; }
+    .harm_detail .clear_data #input_icon.cur {
+      background: url("http://img.autostreetscdn.com/m/src/images/eqs/square_fill.png") no-repeat;
+      background-size: 20px 20px; }
+
+.pic_show {
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  top: 1.40625rem;
+  display: none;
+  z-index: 101; }
+  .pic_show img {
+    width: 100%; }
+
+/*照片截取*/
+#clipArea1, #clipArea2, #clipArea3 {
+  height: 2.75625rem;
+  width: 100%;
+  display: none; }
+
+#view1, #view2, #view3 {
+  width: 100%;
+  height: 2.75625rem;
+  display: none; }
+
+#need_photo2, #need_photo3 {
+  display: none; }
+
+.clip_pop1, .clip_pop2, .clip_pop3 {
+  height: 8.4375rem;
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  z-index: 101;
+  background: #fff;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  bottom: 0; }
+  .clip_pop1 .detail_head, .clip_pop2 .detail_head, .clip_pop3 .detail_head {
+    line-height: 0.45rem;
+    padding: 0 0.1125rem;
+    height: 0.45rem;
+    border-bottom: solid 1px #ddd; }
+    .clip_pop1 .detail_head a, .clip_pop2 .detail_head a, .clip_pop3 .detail_head a {
+      display: block;
+      text-decoration: none; }
+    .clip_pop1 .detail_head .canvas_close, .clip_pop2 .detail_head .canvas_close, .clip_pop3 .detail_head .canvas_close {
+      font-size: 14px;
+      color: #333;
+      float: left; }
+    .clip_pop1 .detail_head .canvas_save, .clip_pop2 .detail_head .canvas_save, .clip_pop3 .detail_head .canvas_save {
+      color: #19bb9b;
+      float: right;
+      font-size: 14px; }
+  .clip_pop1 .canvas_btn, .clip_pop2 .canvas_btn, .clip_pop3 .canvas_btn {
+    width: 100%;
+    margin: 0.05625rem 0;
+    text-align: center;
+    top: 5.5rem;
+    position: absolute; }
+    .clip_pop1 .canvas_btn .upload, .clip_pop2 .canvas_btn .upload, .clip_pop3 .canvas_btn .upload {
+      width: 1.63125rem;
+      height: 0.3375rem;
+      position: relative;
+      display: inline-block;
+      margin: 0 10px 0 0; }
+      .clip_pop1 .canvas_btn .upload #fileBtn, .clip_pop2 .canvas_btn .upload #fileBtn, .clip_pop3 .canvas_btn .upload #fileBtn {
+        background: #fff;
+        background-size: 0.18rem 0.19125rem;
+        text-align: center;
+        color: #1ABC9C;
+        width: 1.63125rem;
+        border-radius: 0.05625rem;
+        line-height: 0.3375rem;
+        text-decoration: none;
+        border: solid 1px #1ABC9C; }
+      .clip_pop1 .canvas_btn .upload #file1, .clip_pop1 .canvas_btn .upload #file2, .clip_pop1 .canvas_btn .upload #file3, .clip_pop2 .canvas_btn .upload #file1, .clip_pop2 .canvas_btn .upload #file2, .clip_pop2 .canvas_btn .upload #file3, .clip_pop3 .canvas_btn .upload #file1, .clip_pop3 .canvas_btn .upload #file2, .clip_pop3 .canvas_btn .upload #file3 {
+        width: 1.63125rem;
+        height: 0.3375rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; }
+    .clip_pop1 .canvas_btn #clipBtn1, .clip_pop1 .canvas_btn #clipBtn2, .clip_pop1 .canvas_btn #clipBtn3, .clip_pop1 .canvas_btn .canvas_save, .clip_pop2 .canvas_btn #clipBtn1, .clip_pop2 .canvas_btn #clipBtn2, .clip_pop2 .canvas_btn #clipBtn3, .clip_pop2 .canvas_btn .canvas_save, .clip_pop3 .canvas_btn #clipBtn1, .clip_pop3 .canvas_btn #clipBtn2, .clip_pop3 .canvas_btn #clipBtn3, .clip_pop3 .canvas_btn .canvas_save {
+      background: #1ABC9C;
+      background-size: 0.18rem 0.19125rem;
+      text-align: center;
+      color: #fff;
+      width: 0.9rem;
+      border-radius: 0.05625rem;
+      line-height: 0.3375rem;
+      text-decoration: none;
+      border: solid 1px #1ABC9C;
+      display: inline-block; }
+    .clip_pop1 .canvas_btn #save1, .clip_pop1 .canvas_btn #save2, .clip_pop1 .canvas_btn #save3, .clip_pop2 .canvas_btn #save1, .clip_pop2 .canvas_btn #save2, .clip_pop2 .canvas_btn #save3, .clip_pop3 .canvas_btn #save1, .clip_pop3 .canvas_btn #save2, .clip_pop3 .canvas_btn #save3 {
+      display: none; }
+  .clip_pop1 #myCanvas1, .clip_pop1 #myCanvas2, .clip_pop1 #myCanvas3, .clip_pop2 #myCanvas1, .clip_pop2 #myCanvas2, .clip_pop2 #myCanvas3, .clip_pop3 #myCanvas1, .clip_pop3 #myCanvas2, .clip_pop3 #myCanvas3 {
+    display: none; }
+
+.layer_show2 {
+  top: 0 !important; }
+
+.canvas_pop {
+  background: #fff;
+  top: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 102;
+  height: 100%;
+  bottom: 0;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s; }
+  .canvas_pop .detail_head {
+    line-height: 0.45rem;
+    padding: 0 0.1125rem;
+    height: 0.45rem;
+    border-bottom: solid 1px #ddd; }
+    .canvas_pop .detail_head a {
+      display: block;
+      text-decoration: none; }
+    .canvas_pop .detail_head .canvas_close {
+      font-size: 14px;
+      color: #333;
+      float: left; }
+    .canvas_pop .detail_head .canvas_save {
+      color: #19bb9b;
+      float: right;
+      font-size: 14px; }
+  .canvas_pop #clipArea {
+    height: 2.75625rem;
+    width: 3.6rem;
+    display: none;
+    margin: 0 auto; }
+  .canvas_pop #myCanvas {
+    display: none;
+    background: #fff; }
+  .canvas_pop #view {
+    display: none;
+    height: 2.75625rem;
+    width: 3.6rem; }
+  .canvas_pop #imgbox {
+    display: none;
+    width: 100px;
+    height: 100px; }
+  .canvas_pop .canvas_btn {
+    width: 100%;
+    margin: 0.05625rem 0;
+    text-align: center; }
+    .canvas_pop .canvas_btn #clipBtn {
+      background: #1ABC9C;
+      background-size: 0.18rem 0.19125rem;
+      text-align: center;
+      color: #fff;
+      width: 1.63125rem;
+      border-radius: 0.05625rem;
+      line-height: 0.3375rem;
+      text-decoration: none;
+      border: solid 1px #1ABC9C;
+      display: inline-block; }
+    .canvas_pop .canvas_btn #clear {
+      background: #fff;
+      border: solid 1px #1ABC9C;
+      background-size: 0.18rem 0.19125rem;
+      text-align: center;
+      color: #1ABC9C;
+      width: 0.9rem;
+      border-radius: 0.05625rem;
+      line-height: 0.3375rem;
+      text-decoration: none;
+      border: solid 1px #1ABC9C;
+      display: inline-block;
+      display: none;
+      margin: 0 10px 0 0; }
+    .canvas_pop .canvas_btn .canvas_save {
+      background: #1ABC9C;
+      background-size: 0.18rem 0.19125rem;
+      text-align: center;
+      color: #fff;
+      width: 0.9rem;
+      border-radius: 0.05625rem;
+      line-height: 0.3375rem;
+      text-decoration: none;
+      border: solid 1px #1ABC9C;
+      display: none; }
+    .canvas_pop .canvas_btn .upload {
+      width: 1.63125rem;
+      height: 0.3375rem;
+      position: relative;
+      display: inline-block;
+      margin: 0 10px 0 0; }
+      .canvas_pop .canvas_btn .upload #fileBtn {
+        background: #fff;
+        border: solid 1px #1ABC9C;
+        background-size: 0.18rem 0.19125rem;
+        text-align: center;
+        color: #1ABC9C;
+        width: 1.63125rem;
+        border-radius: 0.05625rem;
+        line-height: 0.3375rem;
+        text-decoration: none;
+        border: solid 1px #1ABC9C; }
+      .canvas_pop .canvas_btn .upload #file {
+        width: 1.63125rem;
+        height: 0.3375rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; }
+
+.gley {
+  color: #ccc !important; }
+
+.posi_fixed {
+  position: fixed; }
+
+/*common_popupWindow*/
+#popupTipsLocation {
+  background-color: rgba(0, 0, 0, 0.4); }
+  #popupTipsLocation .popup_wrap {
+    background-color: #fff;
+    -webkit-border-radius: 0.1125rem;
+    -moz-border-radius: 0.1125rem;
+    border-radius: 0.1125rem;
+    width: 3.0375rem;
+    height: 1.45687rem; }
+    #popupTipsLocation .popup_wrap .text {
+      height: 70%;
+      text-align: center; }
+    #popupTipsLocation .popup_wrap .btn_box {
+      height: 30%;
+      border-top: 1px solid #ddd; }
+      #popupTipsLocation .popup_wrap .btn_box :first-child {
+        border-left: none; }
+      #popupTipsLocation .popup_wrap .btn_box a {
+        text-decoration: none; }
+    #popupTipsLocation .popup_wrap .btn_public {
+      color: #0066CC; }
+    #popupTipsLocation .popup_wrap .btnYes {
+      border-left: 1px solid #ddd; }
+
+.process {
+  width: 100%;
+  margin: 0.1125rem 0;
+  height: 0.225rem; }
+  .process li {
+    width: 25%;
+    line-height: 0.225rem;
+    font-size: 0.1125rem;
+    float: left;
+    text-align: center; }
+    .process li span {
+      border: solid 1px #1BC8A6;
+      color: #1BC8A6;
+      border-radius: 0.19125rem;
+      width: 0.19125rem;
+      height: 0.19125rem;
+      display: block;
+      font-size: 0.1125rem;
+      line-height: 0.19125rem;
+      text-align: center;
+      float: left;
+      margin: 0 0.05625rem; }
+    .process li span.cur {
+      color: #fff;
+      background: #1BC8A6; }
+  .process li.bold {
+    font-weight: bold; }
+
+.process2 {
+  width: 100%;
+  margin: 0.1125rem 0;
+  height: 0.225rem; }
+  .process2 li {
+    width: 33%;
+    line-height: 0.225rem;
+    font-size: 0.1125rem;
+    float: left;
+    text-align: center; }
+    .process2 li span {
+      border: solid 1px #1BC8A6;
+      color: #1BC8A6;
+      border-radius: 0.19125rem;
+      width: 0.19125rem;
+      height: 0.19125rem;
+      display: block;
+      font-size: 0.1125rem;
+      line-height: 0.19125rem;
+      text-align: center;
+      float: left;
+      margin: 0 0 0 0.28125rem; }
+    .process2 li span.cur {
+      background: #1BC8A6;
+      color: #fff; }
+  .process2 li.bold {
+    font-weight: bold; }
+
+.process_notice {
+  width: 100%;
+  line-height: 0.225rem;
+  color: #333;
+  font-size: 0.1125rem;
+  margin: 0.05625rem 0; }
+  .process_notice span {
+    color: red;
+    margin: 0 0 0 0.05625rem; }
+
+.gesture {
+  margin: 0.1125rem; }
+  .gesture p {
+    font-size: 0.12375rem;
+    font-weight: bold;
+    color: #333; }
+  .gesture img {
+    width: 100%;
+    margin: 0.1125rem 0; }
+
+.rank.high {
+  border: 2px solid #97C43C;
+  color: #97C43C; }
+
+.rank.top {
+  border: 2px solid #569AB7;
+  color: #569AB7; }
+
+.rank.middle {
+  border: 2px solid #CBAA74;
+  color: #CBAA74; }
+
+.rank.low {
+  border: 2px solid #B3A679;
+  color: #B3A679; }
+
+.remark_amount, .other_remark_amount {
+  float: right;
+  color: #ccc;
+  line-height: 0.45rem;
+  margin: 0 0.1125rem 0 0; }
+
+/*# sourceMappingURL=eqs2.css.map */

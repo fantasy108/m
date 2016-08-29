@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>订单详情-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/order_center.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        订单详情
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="../main.html" class="home_icon"><span>首页</span></a>
+			<a href="../uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+
+<div id="wrapper">
+
+	<div class="order_state">
+		<h2>交易成功</h2>
+		<p>交易完成，祝您用车愉快！</p>
+	</div>
+
+	<div class="order_list">
+		<!--新车预订-->
+		<ul class="booking">
+			<li>
+				<h3>二手车预订</h3>
+				
+				<div class="oc_detail">
+					<img src="http://img.autostreetscdn.com/m/src/images/new_mall/car.png" alt="">
+					<h4>2014款2.4GLS 6AT4 7P V1 PIO（选幢氙灯+LED尾灯）+副驾驶电选装氙灯选装氙灯选装氙灯</h4>
+					<div class="old_car_info">
+						<p>首次上牌：2011-08</p>
+						<p>表显里程：0.8万公里</p>
+						<p>一口价：38.52万元</p>
+					</div>
+				</div>
+				<div class="price">
+					<p>订金金额：<span class="black">￥1000</span></p>
+					<p>车辆余款：<span class="black">￥167000</span></p>
+					<p>实付车辆总价：<span>￥168000</span></p>
+				</div>
+			</li>
+		</ul>
+
+		<!--所在门店信息-->
+		<div class="dealer_info">
+			<h2>所在门店信息</h2>
+			<ul>
+				<li>
+					<label>所在门店：</label>
+					<p>扬州信宝行(MINI城市展厅)</p>
+				</li>
+				<li>
+					<label>门店地址：</label>
+					<p>云南省昆明市西山区滇池路（云南边防武警总队十字路口右转前行200米左转到底）浩丰停车场周日不接受车辆！</p>
+				</li>
+				<li>
+					<label>服务时间：</label>
+					<p>9:00-18:00</p>
+				</li>
+			</ul>
+		</div>
+
+		<!--申请人信息-->
+		<div class="dealer_info">
+			<h2>申请人信息</h2>
+			<ul>
+				<li>
+					<label>姓名：</label>
+					<p>德华哥哥</p>
+				</li>
+				<li>
+					<label>手机：</label>
+					<p>13613513413</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="order_time">
+			<p>订单号：1323545677</p>
+			<p>下单时间：2014-11-05 14:20:31</p>
+		</div>
+
+	</div>
+	
+	<!-- <div class="bottom">
+		<a href="javascript:;" class="confirmation">确认抵用订金</a>
+		<a href="refund_apply.html" class="black">申请退款</a>
+		<a href="refuse_reason.html" class="black">退款被拒原因</a>
+	</div> -->
+
+	
+	
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt low_high">您确认抵用订金吗？<br />确认后订金将全额支付给商家</p>
+	<a href="javascript:;" class="correct">确定</a>
+	<a href="javascript:;" class="cancel">取消</a>
+</div>
+<div class="tipbg"></div>
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".confirmation").click(function(){
+		validate.show()
+	})
+	$(".cancel").click(function(){
+		$(".error_layer").hide()
+		$(".tipbg").hide()
+	})
+})
+</script>
+
+</body>
+</html>

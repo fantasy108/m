@@ -1,0 +1,42 @@
+@import "b";
+
+body{
+  font-size: 0;
+  font-family: "Microsoft Yahei", Arial, "宋体";
+}
+.container{
+  padding: j(20);
+  h1{
+    margin: j(10) 0 j(20);
+    font-size: j(28);
+    color: #000;
+    font-weight: 600;
+  }
+  >p{
+    .container-time{
+      font-size: j(20);
+      color: #ddd;
+      margin-right: j(40);
+    }
+    .container-store{
+      font-size: j(20);
+      color: #000;
+      margin-right: j(10);
+    }
+  }
+  .container-img{
+    margin: j(20) 0;
+    img{
+      width: 100%;
+    }
+  }
+  .container-center{
+    margin-bottom: j(20);
+    p{
+      line-height: j(50);
+      text-indent: 2em;
+      color: #000;
+      font-size: j(24);
+    }
+  }
+}

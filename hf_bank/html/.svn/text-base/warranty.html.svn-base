@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>质保服务-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/services.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        服务支持
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="main.html" class="home_icon"><span>首页</span></a>
+			<a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+			<li><a href="finance.html">金融服务</a></li>
+			<li class="cur"><a href="#">质保服务</a></li>
+			<li><a href="cosmetology.html">美容服务</a></li>
+			<li><a href="repair.html">维修保养</a></li>
+			<li><a href="assess.html">定损中心</a></li>
+		</ul>
+	</div>
+	<div class="gradient"></div>
+	<div class="finance_bn">
+		<img src="http://img.autostreetscdn.com/m/src/images/warranty_bn.png" alt="">
+	</div>
+	
+	<ul class="warranty">
+		<li>
+			<img src="http://img.autostreetscdn.com/m/src/images/dmk.png" alt="">
+			<h3>低门槛</h3>
+			<p>符合5年且行驶里程8万公里，通过汽车街二手车认证的车辆均可参加质保计划，并提供6个月至1年不等的服务期限</p>
+		</li>
+		<li>
+			<img src="http://img.autostreetscdn.com/m/src/images/dxz.png" alt="" class="fr">
+			<h3>多选择</h3>
+			<p>重要部件（动力传输轴、转向系统、制动系统、燃油系统、电子系统、冷却系统、尾气系统、安全系统、空调系统）保修计划，更有更多个性化组合套餐</p>
+		</li>
+		<li>
+			<img src="http://img.autostreetscdn.com/m/src/images/gbz.png" alt="">
+			<h3>更保值</h3>
+			<p>质保可随二手车交易一同转让，据统计附带质保的二手车交易价均高于不含质保车辆交易价</p>
+		</li>
+		<li>
+			<img src="http://img.autostreetscdn.com/m/src/images/gsx.png" alt="" class="fr">
+			<h3>更省心</h3>
+			<p>使用计算器帮您估算成本，用最优的方案分期购买爱车</p>
+		</li>
+	</ul>
+
+	
+	<div class="avilible"><a href="warranty_price.html" class="form_btn" id="baojia">获取报价</a></div>
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+
+<script type="application/javascript" src="http://img.autostreetscdn.com/m/src/js/iscroll.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script type="text/javascript">
+	var myScroll;
+	function loaded() {
+		myscroll = new iScroll("wrapper",{hScrollbar:false,vScrollbar:false});
+	}
+	document.addEventListener('touchmove');
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+</body>
+</html>

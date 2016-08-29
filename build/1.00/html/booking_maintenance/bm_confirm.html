@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>订单确认</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_consultant.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        订单确认
+    </section>
+</header>
+<div id="container">
+	 <h3 class="maintain_tit">保养项目<ins class="arrow-down"></ins></h3>
+	 <ul class="maintain_item" id="maintain_item">
+		 <!--<li>
+			<i class="select"></i>
+			<p>空调滤清器</p>
+		</li>
+		<li>
+			<i class="select"></i>
+			<p>PM2.5滤芯</p>
+		</li>
+		<li>
+			<i class="select"></i>
+			<p>空调制冷剂</p>
+		</li>
+		<li>
+			<i class="select"></i>
+			<p>刹车油</p>
+		</li> -->
+	 </ul>
+	<h3 class="maintain_tit dc_package">优惠套餐<ins class="arrow-down"></ins></h3>
+	<ul class="discount">
+		<!--<li><p>小保养服务</p><i>¥<span>300</span></i></li>
+		<li><p>小保养服务</p><i>¥<span>300</span></i></li>-->
+	</ul>
+	<h3 class="maintain_tit">保养车辆</h3>
+	<ul class="maintain_car">
+		<li><p>2015款宝马</p></li>
+	</ul>
+	<div class="shop_info">
+		<div class="wrap">
+			<img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/car_logo.png" alt="" />
+			<h3>上海宝信行</h3>
+			<p>吴中路3000号</p>
+		</div>
+	</div>
+	<div class="confirm_con clearfix">
+		<h3>是否有熟悉的顾问</h3>
+		<div class="close_icon has_con"></div>
+		
+	</div>
+	<div class="confirm_con clearfix booking_time">
+		<a href="">
+			<h3>预约时间</h3>
+			<p class="detail"><span class="txt"></span></p>
+			<h3>为您服务的顾问</h3>
+			<p class="con_name"></p>
+			<i></i>
+		</a>
+	</div>
+	<ul class="order_info">
+		<li>
+			<label for="" class="">您的姓名：</label>
+			<input type="text" placeholder="请输入姓名" id="name"/>
+		</li>
+		<li>
+			<label for="" class="">联系电话：</label>
+			<input type="text" placeholder="请输入手机号" id="mobile"/>
+		</li>
+	</ul>
+	<div class="confirm_con clearfix payment">
+		<h3>支付方式：</h3>
+		<i class="arrow-down"></i>
+		<p>
+			<select name="" id="">
+				<option value="" id="1">在线支付</option>
+				<option value="" id="2">到店支付</option>
+			</select>
+		</p>
+	</div>
+	<!--<div class="confirm_con clearfix ticket">
+		<a href="#">
+			<h3>抵用券<span class="gley">无可用</span><span class="orange">2张可用</span></h3>
+			<i></i>
+			<p>未使用</p>
+		</a>
+	</div>-->
+	
+	<div class="confirm_pay">
+		<div class="wrap clearfix">
+			<p>实付款：<span class="new">￥0</span></p>
+			<a>确认支付</a>
+		</div>
+	</div> 
+</div>
+
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="correct">确定</a>
+</div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_2.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/confirm.js"></script>
+<script>
+</script>
+</body>
+</html>
+

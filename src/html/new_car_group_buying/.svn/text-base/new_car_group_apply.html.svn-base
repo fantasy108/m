@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>新车团购会-领奖</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/new_car_group_buying.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+<div class="wrap4">
+    <div class="apply_suc">
+        <div class="suc"><img src="http://img.autostreetscdn.com/m/src/images/new_car_group_buying/suc.png" alt=""></div>
+        <h2>您已成功提交领奖申请</h2>
+        <p>我们将尽快为您发送奖品，敬请留意</p>
+    </div>
+    <div class="prize_content">
+        <div class="prize_title">
+            <p>奖项</p><p class="prize_name">1000元油卡</p>
+        </div>
+        <ul>
+            <li><label for="">申领时间</label><span>2015.09.23 13:00:44</span><span></span></li>
+            <li><label for="">收货人</label><span>王小姐</span></li>
+            <li><label for="">联系电话</label><span>136214523655</span></li>
+            <li><label for="">收货地址</label><span>江苏省苏州市东坡北路</span></li>
+        </ul>
+    </div>
+    <div class="phone">
+        <a href="tel:400-821-8889">如有疑问可致电：400-821-8889</a>
+        <i></i>
+    </div>
+
+    <a href="#" class="form">确定</a>
+
+    
+
+</div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fx.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/new_car_group_buying.js"></script>
+</html>

@@ -1,0 +1,532 @@
+
+var starDom = '<ul class="comment"><li class="one"><span class="star_fill"></span><span class="star_blank"></span></li><li class="two"><span class="star_fill"></span><span class="star_blank"></span></li><li class="three"><span class="star_fill"></span><span class="star_blank"></span></li><li class="four"><span class="star_fill"></span><span class="star_blank"></span></li><li class="five"><span class="star_fill"></span><span class="star_blank"></span></li></ul>';
+
+maintenancePort.consultantList = sitUrl + "consultant/list";
+maintenancePort.consultantDetail = sitUrl + "consultant/detail";
+maintenancePort.maintenItems = sitUrl + "mainten/items";
+maintenancePort.organList = sitUrl + "maintainOrganization/list";
+maintenancePort.orderConfirm = sitUrl + "maintainOrder/orderConfirm";
+maintenancePort.couponList = sitUrl + "coupon/list";
+maintenancePort.schedules = sitUrl + "maintainOrganization/findWorkSchedules";
+maintenancePort.packageList = sitUrl + "maintenPackage/list";
+maintenancePort.packageDetail = sitUrl + "maintenPackage/detail";
+maintenancePort.isMatchOrgan = sitUrl + "maintainOrganization/isMatchOrgan";
+
+/*爱车门店是否匹配*/
+function isMatchOrgan(orgSid){
+    bm_api.call(
+        maintenancePort.isMatchOrgan,
+        getIsMatchOrgan,
+        {"scviSid": scviSid, "orgSid":orgSid}
+    )
+}
+
+/*保养套餐*/
+function packageList(orgSid){
+	bm_api.call(
+        maintenancePort.packageList,
+        getpackageList,
+        {"scviSid": scviSid, "orgSid":orgSid, "current": current, "lat":1, "lng":2}
+    )
+}
+
+/*顾问列表*/
+function consultantList() {
+    bm_api.call(
+        maintenancePort.consultantList,
+        getConsultantList,
+        {"scviSid": scviSid, "sortType": currentSortTypeVal, "lat": lat, "lng": lng, "province": currentProvince, "city": currentCity,"memberSid": memberSid, "current": current}
+    )
+}
+if($('#consultant_list').length){
+    scrollLoading(consultantList);
+}
+
+/*搜索顾问*/
+function searchConsultant(name) {
+    bm_api.call(
+        maintenancePort.consultantList,
+        getConsultantList,
+        {"name": name}
+    )
+}
+
+/*选择顾问*/
+function sele_consultant(orgSid){
+    bm_api.call(
+        maintenancePort.consultantList,
+        seleConsultant,
+        {'orgSid': orgSid, "current": current,'scviSid':scviSid}
+    )
+}
+if($('#consultant_list2').length){
+    scrollLoading(consultantList);
+}
+
+/*自动选择顾问*/
+function autoSeleCon(orgSid,bookingTime){
+	bm_api.call(
+      maintenancePort.consultantList,
+      autoSele,
+      {'orgSid': orgSid, "bookingTime": bookingTime}
+  )
+}
+var autoSele = function(data){
+	var result = data.data;
+	var firstCon,firstId;
+	$.each(result,function(i,item){
+		firstCon = item.name
+		firstId = item.id
+		return false;
+	})
+	$('.con_name').text(firstCon)
+	$('.con_name').attr('id',firstId)
+}
+
+var seleConsultant = function(data){
+	var conListWrap = $('#consultant_list2');
+    var result = data.data;
+    var html = '';
+    if(result.length || isNotEmptyObj(data.data)){
+        $.each(result, function (i, item) {
+            // console.log(item);
+            var img = item.isServiced ? '<img class="hot" src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/heart.png" alt=""><i class="select"></i>' : '<i class="unselect"></i>';
+            html = '<li>' + img + '<img src="' + imgUrl + item.photoUrl + '" class="conlist_img"/>'
+                +'<h3 id="'+item.id+'">'+ item.name +'</h3>'
+                + starDom + '<p class="title">' + item.jobTitle + '</p>'
+                + '<p class="year">工作年限：' + item.workAge + '年</p>'
+                + '<p class="shop">所属门店：' + item.orgNameAbbr + '</p></li>';
+            conListWrap.append(html);
+            if(item.score) starShow(item.score,conListWrap,i)
+        })
+        $('#consultant_list2 li').each(function(){
+            var index = $('#consultant_list2 li').index(this)
+            if(index != 0){
+                $(this).children('i').removeClass('select').addClass('unselect')
+            }
+        })
+    }else{
+        html = '<li class="nodata">抱歉，没有符合条件的顾问</li>'
+        conListWrap.append(html);
+    }
+}
+
+/*顾问详情*/
+function consultantDetail(consultSid) {
+    bm_api.call(
+        maintenancePort.consultantDetail,
+        getConsultantDetail,
+        { "consultSid":consultSid,"scviSid": scviSid }
+    )
+}
+
+/*获取对应顾问*/
+function consultantDetail2(consultSid) {
+    bm_api.call(
+        maintenancePort.consultantDetail,
+        getConsultantDetail2,
+        { "consultSid":consultSid,"scviSid": scviSid }
+    )
+}
+
+var getConsultantDetail2 = function(data){
+	var result = data.data;
+	$('.con_name').text(result.name)
+	$('.con_name').attr("id",result.id)
+}
+
+/*做保养*/
+function maintenItems() {
+    bm_api.call(
+        maintenancePort.maintenItems,
+        getMaintenItem,
+        {"scviSid": scviSid}
+    )
+}
+
+/*套餐详情*/
+function packageDetail(packageId) {
+    bm_api.call(
+        maintenancePort.packageDetail,
+        getPackageDetail,
+        {
+            id: packageId
+        }
+    );
+    function getPackageDetail(data) {
+        var result = data.data;
+		var html = ''
+	    	html += '<li><p id="'+result.id+'">'+result.name+'</p><i>¥<span data-oldPrice="'+result.originalPrice+'">'+result.packagePrice+'</span></i></li>'
+	    $('.discount').append(html)
+	    priceAmount()
+        $('.booking_time a').attr('href','bm_time.html?orgSid='+ result.store.orgSid)
+    }
+}
+
+/*选择门店*/
+function organList() {
+    bm_api.call(
+        maintenancePort.organList,
+        getOrganList,
+        {"scviSid": scviSid, "sortType": currentSortTypeVal, "lat": lat, "lng": lng, "province": currentProvince, "city": currentCity,"current": current}
+    )
+}
+if($('#shop_list').length){
+    scrollLoading(organList);
+}
+
+/*订单确认*/
+function orderConfirm(type,maintainSid,consultantSid,customerName,customerCellphone,appointmentTime,memberSid) {
+    bm_api.call(
+        maintenancePort.orderConfirm,
+        getOrderConfirm,
+        { "type":type,"maintainSid":maintainSid,"consultantSid":consultantSid,"customerName":customerName,"customerCellphone":customerCellphone,"appointmentTime":appointmentTime,"memberSid":memberSid }
+    )
+}
+
+/*优惠券列表*/
+function couponList(memberSid,status) {
+    bm_api.call(
+        maintenancePort.couponList,
+        getCouponList,
+        { "memberSid":memberSid,"status":status,"current":current}
+    )
+}
+
+/*门店排期*/
+function schedules(orgSid,consultantSid){
+    bm_api.call(
+        maintenancePort.schedules,
+        getSchedules,
+        {"orgSid":orgSid,"consultantSid":consultantSid}
+    )
+}
+
+/*车店匹配*/
+var getIsMatchOrgan = function(data){
+    var result = data.data;
+    if(!result && msg == ''){
+        popup('您的爱车品牌不在该顾问服务范围内，请选择其他顾问');
+    }else{
+        var obj = request()
+        var _orgSid = $('.go_shop').attr('id')
+        window.location.href = 'bm_maintain.html?consultSid='+obj.consultSid+'&orgSid='+_orgSid
+    }
+}
+
+/*获取排期数据*/
+var getSchedules = function(data){
+    var result = data.data;
+    var html = '',html2 = '',html3 = '';
+    var scroller = $('#scroller ul');
+    var schedules = $('.schedules')
+    $.each(result,function(i,item){
+        // console.log(item)
+        html = '<li><h4>' + item.dateDesc + '</h4><p id="'+dateChange(item.date).substr(0,10)+'">' +dateChange(item.date).substr(5,5)+ '</p></li>';
+        scroller.append(html)
+
+        html2 = '<ul class="time_list" id="time_list_' +i+ '"></ul>';
+        schedules.append(html2)
+
+        $.each(item.workScheduleList,function(i,item2){
+            var _discount = item2.discount ? '<span>'+item2.discount+ '折</span>' : '';
+            var status = item2.status == 1 ? ' class="none"' : ''; 
+            html3 += '<li' + status + '><p>'+ item2.serviceTime+ '</p>'+_discount+'</li>';
+        })
+        $('#time_list_'+i+'').append(html3)
+        html3 = '';
+    })
+    $('#scroller>ul>li').eq(0).addClass('cur')
+    $('ul.time_list').eq(0).show()
+
+    var obj = request();
+    var myScroll;
+    myScroll = new IScroll('#wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+    var scrollerObj = $('#scroller>ul>li')
+    if(obj.date || obj.time){
+        scrollerObj.each(function(){
+            if($(this).children('p').attr('id') == obj.date){
+                var _index = scrollerObj.index(this)
+                myScroll.scrollToElement(scrollerObj.eq(_index)[0], 1000)
+                scrollerObj.eq(_index).click()
+                $('#time_list_'+_index+'>li').each(function(){
+                    if($(this).children('p').text() == obj.time){
+                        $(this).addClass('cur')
+                    }
+                })
+            }
+        })
+    }
+}
+
+/*获取优惠券数据*/
+var getCouponList = function(data){
+	var result = data.data;
+	var html = '',html2 = '';
+	var discount = $('.discount_list')
+	var history = $('.history_list')
+	$.each(result,function(i,item){
+		// console.log(item)
+		if(item.status == 0 || item.status == 1){
+			html += '<li><i></i><blockquote><h3>¥<span>'+ item.couponValue + '</span>元</h3><p>优惠券类型:现金抵用券</p><div class="period">有效期至:' +dateChange(item.endTime,true)+ '</div></blockquote></li>'
+		}else if(item.status == 2 || item.status == 8){
+			$('.no_ticket').show();
+            var _Time = item.status == 2 ? item.usedTime : item.endTime;
+            var _tips = item.status == 2 ? "使用时间：" : "有效期至:";
+			html2 += '<li><div class="expire">'+item.status+'</div><blockquote><h3>¥<span>'+ item.couponValue + '</span>元</h3><p>优惠券类型:现金抵用券</p><div class="period">' + _tips +dateChange(_Time,true)+ '</div></blockquote></li>'
+		}
+	})
+	discount.append(html)
+	history.append(html2)
+}
+
+/*获取订单确认数据*/
+var getOrderConfirm = function(data){
+	var result = data.data;
+	var html = '';
+	var img = result.photoUrl ? '<img src="' +imgUrl+ item.photoUrl + '" class="prolist_img">' : '<img class="prolist_img" src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/bm_package.png" alt="">'
+	var ticket = result.availCouponCount ? '<span class="orange">'+result.availCouponCount+'张可用</span>' : '<span class="gley">无可用</span>';
+	var discountRate = result.discountRate ? '<span class="orange">'+ result.discountRate+ '折</span>' : '';
+	var discountLaborFees = result.discountLaborFees ? '<p><span class="old_price">¥'+result.laborFees+ '</span>¥'+result.discountLaborFees+ '</p>' : '<p>¥' +result.laborFees+ '</p>';
+    var packagePrice = result.packagePrice ? '<p><span class="old_price">¥'+ result.materialPrice + '</span>¥'+result.packagePrice+ '</p>' : '<p>¥'+ result.materialPrice + '</p>';
+	html = '<div class="con_main"><div class="confirm">' + img + '<h3>'+result.name+'</h3></div></div>'
+	+ '<div class="confirm_con clearfix"><h3>预计保养时间：</h3><p><span class="time">'+result.laborHours+ '</span>小时（不含洗车）</p></div>'
+	+ '<div class="confirm_con clearfix"><h4><img class="name" src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/name.png" alt="">'+result.customerName+ '</h4>'
+	+ '<p><img class="mobile" src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/mobile.png" alt="">'+result.customerCellphone+ '</p></div>'
+	+ '<div class="confirm_info clearfix"><h3>'+result.orgNameAbbr+ '</h3>'
+	+ '<p>门店地址:'+result.address+'</p>'
+	+ '<p>预约时间:'+result.appointmentTime+'</p></div>'
+	+ '<div class="confirm_con clearfix"><h3>为您服务的顾问:</h3><p>'+result.consultantName+ '</p></div>'
+	+ '<div class="confirm_con clearfix payment"><a href="bm_payment.html'+location.search+'"><h3>支付方式:</h3><i></i><p>在线支付</p></a></div>'
+	+ '<div class="confirm_con clearfix ticket"><a href="bm_discount.html'+location.search+'"><h3>抵用券'+ticket+ '</h3><i></i><p>未使用<p></a></div>'
+	+ '<div class="confirm_con clearfix"><h3>耗材价</h3>' + packagePrice + '<h3>工时价'+discountRate+ '</h3>'+discountLaborFees+ '<h3>抵用券</h3><p></p></div>'
+	+ '<div class="confirm_pay"><div class="wrap clearfix"><p>：¥'+result.originalPrice+ '&nbsp;&nbsp;&nbsp;&nbsp;实付款：<span>¥'+result.lastPrice+ '</span></p><a href="#">确认支付</a></div></div>'
+	$('#container').append(html)
+    var obj = request();
+    obj.payment ? $('.payment').find('p').text(obj.payment) : false;
+    if(obj.discount){
+        $('.ticket>a>p').text('已选择¥'+obj.discount+'元');
+        var newPrice = result.lastPrice - obj.discount;
+        $('.confirm_pay').find('span').text('¥'+newPrice)
+    }
+
+}
+
+/*获取门店数据*/
+var getOrganList = function(data){
+	var result = data.data;
+	var shopListWrap = $("#shop_list");
+	var html = ''
+	$.each(result,function(i,item){
+		// console.log(item)
+		var img = item.photoUrl ? '<img src="' +imgUrl+ item.photoUrl + '" class="prolist_img">' : '<img class="prolist_img" src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/bm_shop.png" alt="">'
+//		var feature = item.isFeature ? '<img class="special_img" src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/special.png" alt="">' : '';
+        var _distance = item.distance ? '<img src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/location.png" alt=""><span>' + (item.distance/1000).toFixed(2)+'km' : '';
+
+		html = '<li><a href="bm_by_order.html?brandLogo=' + item.brandLogo +'&orgNameAbbr=' + item.orgNameAbbr+ '&address=' +item.address + '&orgSid='+ item.orgSid + '">' + img + '<img src="' + imgUrl+ item.brandLogo + '" class="brandlogo">'
+		+ '<h3>'+ item.orgNameAbbr + '</h3><div class="location"> ' +_distance+ '</span></div>'
+		+ starDom + '<p class="shop">' + item.address + '</p></a></li>';
+		shopListWrap.append(html);
+        if(item.score) starShow(item.score,shopListWrap,i)
+	})
+}
+
+/*获取保养套餐数据*/
+var getpackageList = function(data){
+	var result = data.data;
+	var packageList = $('#packageList ul');
+	var html = '';
+	$.each(result,function(i,item){
+		// console.log(item)
+        var content = item.content ? item.content : '';
+        var description = item.description ? item.description : '';
+		html += '<li><blockquote><i class="unselect"></i><h4 id="'+item.id+'">'+item.name+'</h4>'
+		+ '<div class="price"><span class="old">￥'+item.originalPrice+'</span>'
+		+ '<span class="new">￥'+item.packagePrice
+		+ '</span><ins class="arrow-down"></ins></div><p>适用车型：'+item.applicableModels+'</p></blockquote>'
+		+ '<section class="content"><h5>套餐内容</h5><p>'+content+'</p></section>'
+		+ '<section class="time"><h5>注意事项</h5><p>'+description+'</p></section></li>'
+	})
+	packageList.append(html)
+}
+
+/*获取做保养数据*/
+var getMaintenItem = function(data){
+	var result = data.data;
+    var maintenWrap = $('#maintain_item');
+    var html = '<li class="unknown"><i class="unselect"></i><p id="-1">我啥也不知道</p></li>';
+    $.each(result, function (i, item) {
+        // console.log(item);
+        var _select = item.enabled ? '<i class="select"></i>' : '<i class="unselect"></i>'
+        // console.log(_select)
+        html += '<li>'+ _select + '<p id="'+item.id+'">' + item.name + '</p></li>' ;
+    })
+    maintenWrap.append(html);
+    var flag = false;
+    $('.maintain_item li').each(function(){
+        if($(this).children('i').hasClass('select')){
+            flag = true;
+            return false;
+        }
+    })
+    if(!flag)$('.unknown').children('i').removeClass('unselect').addClass('select')
+}
+
+
+
+/*获取顾问详情数据*/
+var getConsultantDetail = function(data){
+    var result = data.data;
+    var organ = data.data.organ;
+    var obj = $('.con_head');
+    var html = '<div class="con_main"><div class="person"><img src="' + imgUrl + result.photoUrl + '" class="conlist_img"/>'
+    + '<h3>' + result.name + '</h3>'
+    + starDom + '<p class="year">工作年限：'+ result.workAge + '年</p>'
+    + '<p class="amount">接单数：'+ result.orders + '</p></div>'
+    + '<a href="tel:'+ result.cellphone + '" class="phone"></a></div>'
+    + '<div class="addr"><div class="wrap"><img src="'+imgUrl+organ.brandLogo+'" class="brandLogo"/><h3>'+ organ.orgNameAbbr +'</h3>'
+    + '<p>'+ organ.address + '</p></div>'
+    + '<div class="con_btn"><a href="tel:'+organ.telephone+'" class="telphone">拨打电话</a>'
+    + '<a href="bm_shop_detail.html?orgSid='+organ.orgSid+'" class="go_shop" id="'+organ.orgSid+'">进入店铺</a>'
+	+ '<a href="http://wap.autostreets.com/html/map.html?lat='+organ.latitude+'&lng='+organ.longitude+'&name='+organ.orgNameAbbr+'&addr='+organ.address+'" class="go_map">查看地图</a></div></div>';
+    $('.con_title').text(result.name);
+    obj.append(html)
+    starShow(result.score,obj);
+
+    var conDetailWrap = $('#packageList');
+    var organPackage = data.data.organPackage;
+
+    if(organPackage.length > 0){
+        var html2 = '';
+        $.each(organPackage, function (i, item) {
+            // console.log(item);
+            var suit = item.applicableModels ? item.applicableModels : '全部车型';
+            html2 += '<li><a href="bm_package_detail.html?id='+item.id+'"><blockquote><h4>'+item.name+'</h4><div class="price">'
+            + '<span class="old">￥'+item.originalPrice+'</span><span class="new">￥'+item.packagePrice+'</span></div><p>适用车型：'+suit+'</p></blockquote></a></li> ';
+        })
+        conDetailWrap.append('<h3>保养套餐</h3><ul>'+ html2 + '</ul><div class="checkmore">点击查看更多</div>');
+        for(var i=0;i<3;i++){
+            $("#packageList ul li").eq(i).show()
+        }
+    }else{
+        $('.checkmore').hide()
+    }
+    
+}
+
+/*获取顾问数据*/
+var getConsultantList = function(data){
+    var conListWrap = $('#consultant_list');
+    var result = data.data;
+    var html = '';
+    if(result.length || isNotEmptyObj(data.data)){
+        $.each(result, function (i, item) {
+            // console.log(item);
+            var img = item.isServiced ? '<img class="hot" src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/heart.png" alt="">' : '';
+            html = '<li><a href="bm_con_detail.html?consultSid='+item.id+'">' + img + '<img src="' + imgUrl + item.photoUrl + '" class="conlist_img"/>' 
+                +'<h3>'+ item.name +'</h3>'
+                + starDom + '<p class="title">' + item.jobTitle + '</p>'
+                + '<p class="year">工作年限：' + item.workAge + '年</p>'
+                + '<p class="shop">所属门店：' + item.orgNameAbbr + '</p></a></li>';
+            conListWrap.append(html);
+            if(item.score) starShow(item.score,conListWrap,i)
+        })
+    }else{
+        html = '<li class="nodata">抱歉，没有符合条件的顾问</li>'
+        conListWrap.append(html);
+    }
+}
+
+/*星级评价*/
+function starShow(score,obj,i){
+	var s = (score*100),len = Math.floor(score),ss = s.toString(),remainder = ss.substr(1,2),_obj;
+	i ? _obj = obj.children('li').eq(i).find('.comment').children('li') : _obj = obj.find('.comment').children('li')
+    for(var k=0;k<len;k++){
+        _obj.eq(k).find('.star_fill').css("width","100%")
+    }
+    _obj.eq(len).find('.star_fill').css("width",remainder+"%")
+}
+
+/*验证*/
+function popup(txt){
+	$('.error_txt').text(txt);
+	$('.error_layer').show();
+	$('#tipbg').show()
+}
+
+function popdown(){
+	$('.error_layer').hide();
+	$('#tipbg').hide()
+}
+
+/*手机号验证*/
+function mobile(s){
+	var regex = /^0?(13[0-9]|15[0-9]|18[0-9]|14[0-9]|17[0-9])[0-9]{8}$/;
+    if (regex.exec(s)) return false;
+    return true
+}
+
+/*时间转换*/
+var dateChange = function(date){
+	var now = new Date(date);
+	var yy = now.getFullYear();      //年
+	var mm = now.getMonth() + 1;     //月
+	var dd = now.getDate();          //日
+	var hh = now.getHours();         //时
+	var ii = now.getMinutes();       //分
+	var ss = now.getSeconds();       //秒
+	var clock = yy + "-";
+	if(mm < 10) clock += "0";
+	clock += mm + "-";
+	if(dd < 10) clock += "0";
+	clock += dd + " ";
+	if(hh < 10) clock += "0";
+	clock += hh + ":";
+	if (ii < 10) clock += '0'; 
+	clock += ii + ":";
+	if (ss < 10) clock += '0'; 
+	clock += ss;
+	return clock;
+}
+
+/*日期补零*/
+function dateTrans(date){
+    var month,date;
+    if(date.substr(9,2).indexOf('_') > 0){
+        month = '0' + date.substr(9,1)
+        if(date.substr(11,2).length > 1){
+            date = date.substr(11,2)
+        }else{
+            date = '0' + date.substr(11,2)
+        }
+    }else{
+        month = date.substr(9,2)
+        if(date.substr(12,2).length > 1){
+            date = date.substr(12,2)
+        }else{
+            date = '0' + date.substr(12,2)
+        }
+    }
+    return month+'-'+date; 
+}
+
+/*订单价格汇总*/
+function priceAmount(){
+		var oldAmount = 0,newAmount = 0;
+		var len = $('.discount>li').length
+		if($('.discount li').length == 1){
+			oldAmount = $('.discount li').eq(0).children('i').children('span').attr('data-oldprice');
+			newAmount = $('.discount li').eq(0).children('i').children('span').text()
+		}else{
+			$('.discount li').each(function(){
+				oldAmount += parseInt($(this).children('i').children('span').attr('data-oldprice'))
+				newAmount += parseInt($(this).children('i').children('span').text())
+			})
+		}
+		$('.confirm_pay .old').text(oldAmount)
+		$('.confirm_pay .new').text('¥'+newAmount)
+	}
+
+
+
+

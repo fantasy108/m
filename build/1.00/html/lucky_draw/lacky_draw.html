@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>抽奖-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/lucky_draw.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+<div id="draw">
+    <div class="banner">
+        <div class="img_wrap">
+            <img src="http://img.autostreetscdn.com/m/src/images/lucky_draw/banner.jpg" alt=""/>
+            <a href="#rule" class="view_rule"><img src="http://img.autostreetscdn.com/m/src/images/lucky_draw/view_rule.png" alt=""/></a>
+            <span class="open_gift">立即打开礼包</span>
+            <!--<span class="game_over">活动已结束</span>-->
+        </div>
+    </div>
+    <div class="inner">
+        <h2>活动奖品：</h2>
+        <ul>
+            <li>
+                <p>
+                    <img src="http://img.autostreetscdn.com/m/src/images/lucky_draw/gift_01.jpg" alt=""/>
+                    <span>免费豪车+专车司机<br/>一日陪</span>
+                </p>
+                <p>
+                    <img src="http://img.autostreetscdn.com/m/src/images/lucky_draw/gift_02.jpg" alt=""/>
+                    <span>汽车街家庭车阳伞</span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <img src="http://img.autostreetscdn.com/m/src/images/lucky_draw/gift_03.jpg" alt=""/>
+                    <span>家庭车载便携保温箱</span>
+                </p>
+                <p>
+                    <img src="http://img.autostreetscdn.com/m/src/images/lucky_draw/gift_04.jpg" alt=""/>
+                    <span> 汽车街家庭防潮垫</span>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="rule" id="rule">活动须知：</a></h2>
+        <div class="draw_notice">
+            <p><span class="num">1、</span><span class="txt">凡活动期间，通过下载汽车街app并注册为会员的，均能参与抽奖！</span></p>
+            <p><span class="num">2、</span><span class="txt">所有参与“ 带全家 慢旅行”专题活动的用户需实名信息，不符合参与资格的用户，中奖将视为无效。</span></p>
+            <p><span class="num">3、</span><span class="txt">用户中奖信息汽车街将在官方网站，微信公众账号及时公布，特等奖用车由汽车街指定4S店提供。</span></p>
+            <p><span class="num">4、</span><span class="txt">抽中奖品后，客服中心会发送验证短信至用户注册手机；如抽中大奖，汽车街客服中心400-821-8889将联系您确认领取事宜。</span></p>
+            <p><span class="num">5、</span><span class="txt">汽车街线下门店地址：（领取时间为周一至周六 9:00~17:00）<br/>
+                <span>金沪路店：上海市浦东新区金沪路1000号</span><br/>
+                <span>吴中路店：上海市闵行区吴中路1219号</span>
+            </span></p>
+            <p><span class="num">5、</span><span class="txt">活动最终解释权归汽车街所有。</span></p>
+        </div>
+    </div>
+    <!--<div class="gift_pop_wrap">-->
+    <!--</div>-->
+    <div class="gift_pop UI_animated UI_speed_fast ">
+        <ul>
+            <li>
+                <label for="name">用户名：</label>
+                <input type="text" id="name" />
+
+            </li>
+            <li>
+                <label for="psw">密码：</label>
+                <input type="text" id="psw" />
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="open_btn">打开抽奖</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="close">X</a>
+    </div>
+</div>
+<div class="ui_mask"></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lucky_draw.js"></script>
+<script>
+    $(function () {
+        $('.open_btn').on('click', function () {
+            var userName= $.trim($('#name').val());
+            var psw= $.trim($('#psw').val());
+            if(userName==''){
+                $('#name').addClass('warn');
+            }
+
+            if(psw==''){
+                $('#psw').addClass('warn');
+            }
+        })
+        $('input').focus(function () {
+            $(this).removeClass('warn');
+        })
+    })
+</script>
+</html>

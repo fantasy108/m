@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>eqs-附件检测</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs_k.css" type="text/css">
+</head>
+<body class="bgf8">
+<header>
+    <div>
+        附件检测 <a href="javascript:void(0)" class="goBack"><i class="w_20_arr"></i>返回</a>
+        <a href="javascript:void(0)" class="save">保存</a>
+    </div>
+</header>
+<div id="wrapper" class="accessory">
+    <div class="panel_box">
+        <ul>
+            <li>
+               <div class="item">
+                   <label class="field req"><span>使用性质</span></label>
+                   <div class="content">
+                       <p class="radio_box">
+                           <label for="n_tran"><input id="n_tran" type="radio" value="非营运" name="usingModel"/><span>非营运</span></label>
+                           <label for="y_tran"><input id="y_tran" type="radio" value="营运" name="usingModel"/><span>营运</span></label>
+                       </p>
+                   </div>
+               </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field req"><span>购置税完税证明</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_tax"><input id="y_tax" type="radio" value="true" name="purchaseTaxProof"/><span>有</span></label>
+                            <label for="n_tax"><input id="n_tax" type="radio" value="false" name="purchaseTaxProof"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item arr">
+                    <label class="field req"><span>产证</span></label>
+                    <div class="content arr">
+                        <p class="radio_box">
+                            <label for="y_cz"><input id="y_cz" type="radio" value="true" name="propertyCertificate"/><span>有</span></label>
+                            <label for="n_cz"><input id="n_cz" type="radio" value="false" name="propertyCertificate"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="panel_box">
+        <ul>
+            <li>
+                <div class="item arr">
+                    <label class="field req"><span>年审有效期</span></label>
+                    <div class="content arr">
+                        <input type="date" id="nextAnnualExamination"/>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field req"><span>交强险有效期</span></label>
+                    <div class="content arr">
+                        <input type="date" id="nextCompulsoryInsurance"/>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="panel_box">
+        <ul>
+
+            <li>
+                <div class="item arr">
+                    <label class="field req"><span>过户次数(次)</span></label>
+                    <div class="content arr">
+                        <select name="" id="transferNumber">
+                            <option value="0">0次</option>
+                            <option value="1">1次</option>
+                            <option value="2">2次</option>
+                            <option value="3">3次</option>
+                            <option value="4">4次以上</option>
+                            <option value="">未知</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field req"><span>钥匙</span></label>
+                    <div class="content arr">
+                        <select name="" id="annexKey">
+                            <option value="0">0把</option>
+                            <option value="1">1把</option>
+                            <option value="2">2把</option>
+                            <option value="3">3把</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <p class="info_hd">
+        <span>个性配置</span>
+    </p>
+    <div class="panel_box">
+        <ul id="accessoryConfig">
+
+            <!--<li>
+                <div class="item">
+                    <label class="field"><span>三角警示牌</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_sanjiao"><input id="y_sanjiao" type="radio" name="sanjiao"/><span>有</span></label>
+                            <label for="n_sanjiao"><input id="n_sanjiao" type="radio" name="sanjiao"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field"><span>保养手册</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_shouce"><input id="y_shouce" type="radio" name="shouce"/><span>有</span></label>
+                            <label for="n_shouce"><input id="n_shouce" type="radio" name="shouce"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field"><span>使用说明书</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_shuomingshu"><input id="y_shuomingshu" type="radio" name="shuomingshu"/><span>有</span></label>
+                            <label for="n_shuomingshu"><input id="n_shuomingshu" type="radio" name="shuomingshu"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field"><span>点烟器</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_dianyanqi"><input id="y_dianyanqi" type="radio" name="dianyanqi"/><span>有</span></label>
+                            <label for="n_dianyanqi"><input id="n_dianyanqi" type="radio" name="dianyanqi"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field"><span>备胎</span></label>
+                    <div class="content">
+                        <p class="radio_box" id="threeRadio">
+                            <label for="ss_beitai"><input id="ss_beitai" type="radio" name="beitai"/><span>损伤</span></label>
+                            <label for="y_beitai"><input id="y_beitai" type="radio" name="beitai"/><span>有</span></label>
+                            <label for="n_beitai"><input id="n_beitai" type="radio" name="beitai"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field"><span>千斤顶</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_qianjinding"><input id="y_qianjinding" type="radio" name="qianjinding"/><span>有</span></label>
+                            <label for="n_qianjinding"><input id="n_qianjinding" type="radio" name="qianjinding"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field"><span>灭火器</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_miehuoqi"><input id="y_miehuoqi" type="radio" name="miehuoqi"/><span>有</span></label>
+                            <label for="n_miehuoqi"><input id="n_miehuoqi" type="radio" name="miehuoqi"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <label class="field"><span>急救包</span></label>
+                    <div class="content">
+                        <p class="radio_box">
+                            <label for="y_jijiubao"><input id="y_jijiubao" type="radio" name="jijiubao"/><span>有</span></label>
+                            <label for="n_jijiubao"><input id="n_jijiubao" type="radio" name="jijiubao"/><span>未见</span></label>
+                        </p>
+                    </div>
+                </div>
+            </li>-->
+        </ul>
+    </div>
+    <p class="info_hd">
+        <span>备注</span>
+    </p>
+    <div class="panel_box">
+       <div class="notice_wrap">
+           <textarea name="notice" id="accessoryRemark" maxlength="100"></textarea>
+           <p class="str_count"><span>0</span>/100</p>
+       </div>
+    </div>
+</div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/eqs/eqs_k.js"></script>
+</html>

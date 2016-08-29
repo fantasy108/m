@@ -1,0 +1,70 @@
+$browser-default-font-size:88.8889;
+@function j($px) {
+  @return $px / $browser-default-font-size * 1rem / 2;
+}
+#about{
+  font-size:j(14);
+  #about_slide_wrap{ position:relative;}
+  #about_slide{
+    ul{
+      li{float:left; display:block;
+        img{
+          width:100%; height:auto; display:block; border:none;
+        }
+      }
+    }
+  }
+  #indicator{
+    ul{
+      position:absolute; bottom:j(20);text-align:center; width:100%;
+      li{
+        width:j(15); height:j(15); background:#fff; display:inline-block;
+        -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+        margin:j(4);
+      }
+      >.active{ background:#000;}
+    }
+  }
+  p{
+    clear:both;text-indent:2em; line-height:j(40); margin:j(30); font-size:j(24);
+  }
+}
+
+#offline{
+  ul{
+    li{ overflow:hidden;position:relative; padding:j(20); border-bottom:1px solid #ddd;
+      a{
+        font-size:j(30); display:block; text-decoration:none;color:#666;
+      }
+      img{
+        float:left;width:j(200); height:j(100); display:block; border:none; margin-right:j(20);
+      }
+      .title{
+        line-height:j(39); margin-bottom:j(10);
+      }
+      .addr{
+        font-size:j(24); line-height:j(23);
+      }
+    }
+  }
+}
+.tel{
+  display:block; border:1px solid #DDDDDD; font-size:j(32); color:#f27210; margin:j(40) j(20); height:j(82);
+  -webkit-border-radius:j(5); -moz-border-radius:j(5); border-radius:j(5);text-decoration:none; line-height:j(82);
+  text-indent:j(166);background:url(http://img.autostreetscdn.com/m/src/images/phone-1.png) no-repeat j(96) j(21);
+  background-size:j(40);
+  
+}
+.arrow {
+  width: .1125rem;
+  height: .1125rem;
+  border-top: .025rem solid #ddd;
+  border-right: .025rem solid #ddd;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  right: .1125rem;
+  top: 50%;
+  margin-top: -0.05625rem;
+}

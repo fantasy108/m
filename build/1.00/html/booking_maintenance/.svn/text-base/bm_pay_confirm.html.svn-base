@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>支付订单确认-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_main.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        订单确认
+    </section>
+</header>
+<div id="bm_pay_confirm">
+    <div class="hd">
+        <h2 class="fee">&yen;3000</h2>
+        <div class="pay_info">
+            <ul>
+                <li>
+                    <span>商品</span>
+                    <p>小保养服务保养服务</p>
+                </li>
+                <li>
+                    <span>用户名</span>
+                    <p>15900000000</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="brd_box ">
+        <div class="pay_by">
+            <span>支付方式</span>
+            <p class="bank_img_wrap"><img class="bank_img" src="http://img.autostreetscdn.com/m/src/images/bank-1.png" alt=""/></p>
+        </div>
+    </div>
+    <a href="javascript:void(0)" id="pay_btn" class="orange_order_long_btn">立即支付</a>
+</div>
+</body>
+<div class="ui_mask z90"></div>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm.js"></script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>微信活动-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/wx_activity.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="wx_activity">
+        <img src="http://img.autostreetscdn.com/m/src/images/wx_activity/wx_ac_01.jpg" alt=""/>
+        <div class="pr">
+            <img src="http://img.autostreetscdn.com/m/src/images/wx_activity/wx_ac_02.jpg" alt=""/>
+            <a href="" class="link">点击下载APP</a>
+        </div>
+        <img src="http://img.autostreetscdn.com/m/src/images/wx_activity/wx_ac_03.jpg" alt=""/>
+        <img src="http://img.autostreetscdn.com/m/src/images/wx_activity/wx_ac_04.jpg" alt=""/>
+    </div>
+</body>
+</html>

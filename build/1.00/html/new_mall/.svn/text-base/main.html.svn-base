@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>新车商城，品牌选车-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/new_mall.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back(-1);" class='back'></a>
+       	<ul id="search_type">
+			<li class="search_brand curr"><a href="main.html" data-searchType="1" >品牌选车</a></li><li class="search_condition"><a href="search_condition.html" data-searchType="2" >条件选车</a></li>
+		</ul>
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="../main.html" class="home_icon"><span>首页</span></a>
+			<a href="../uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+<div id="wrapper">
+	<div id="brand_list">
+		<!--<dl>
+			<dt id="a">A</dt>
+			<dd>
+				<ul>
+					<li><img src="http://img.autostreetscdn.com/m/src/images/new_mall/bieke.1png" width="64" alt=""><p>奥迪</p></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt id="b">B</dt>
+			<dd>
+				<ul>
+					<li><img src="http://img.autostreetscdn.com/m/src/images/new_mall/bieke.png" width="64" alt=""><p>宝马</p></li>
+					<li><img src="http://img.autostreetscdn.com/m/src/images/new_mall/bieke.png" width="64" alt=""><p>奔驰</p></li>
+					<li><img src="http://img.autostreetscdn.com/m/src/images/new_mall/bieke.png" width="64" alt=""><p>别克</p></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt id="c">C</dt>
+			<dd>
+				<ul>
+					<li><img src="http://img.autostreetscdn.com/m/src/images/new_mall/bieke.png" width="64" alt=""><p>宝马</p></li>
+					<li><img src="http://img.autostreetscdn.com/m/src/images/new_mall/bieke.png" width="64" alt=""><p>奔驰</p></li>
+					<li><img src="http://img.autostreetscdn.com/m/src/images/new_mall/bieke.png" width="64" alt=""><p>别克</p></li>
+				</ul>
+			</dd>
+		</dl>-->
+	</div>
+
+	<div class="series_list" id="series_list">
+		<ul>
+			<!--<li>
+				<a href="javascript:void(0)">
+					<img onerror="javascript:this.src='http://img.autostreetscdn.com/m/src/images/new_mall/no_data.png'" src="" width="105" height="70" alt="">
+					<h3>宝马三系</h3>
+					<p>280.30-600.80万元</p>
+				</a>
+			</li>
+			<li>
+				<a href="main_model.html">
+					<img src="http://img.autostreetscdn.com/m/src/images/new_mall/car.png" width="105" height="70" alt="">
+					<h3>宝马三系</h3>
+					<p>20-60万元</p>
+				</a>
+			</li>
+			<li>
+				<a href="main_model.html">
+					<img src="http://img.autostreetscdn.com/m/src/images/new_mall/car.png" width="105" height="70" alt="">
+					<h3>宝马三系</h3>
+					<p>20-60万元</p>
+				</a>
+			</li>
+			<li>
+				<a href="main_model.html">
+					<img src="http://img.autostreetscdn.com/m/src/images/new_mall/car.png" width="105" height="70" alt="">
+					<h3>宝马三系</h3>
+					<p>20-60万元</p>
+				</a>
+			</li>
+			<li>
+				<a href="main_model.html">
+					<img src="http://img.autostreetscdn.com/m/src/images/new_mall/car.png" width="105" height="70" alt="">
+					<h3>宝马三系</h3>
+					<p>20-60万元</p>
+				</a>
+			</li>
+			<li>
+				<a href="main_model.html">
+					<img src="http://img.autostreetscdn.com/m/src/images/new_mall/car.png" width="105" height="70" alt="">
+					<h3>宝马三系</h3>
+					<p>20-60万元</p>
+				</a>
+			</li>
+			<li>
+				<a href="main_model.html">
+					<img src="http://img.autostreetscdn.com/m/src/images/new_mall/car.png" width="105" height="70" alt="">
+					<h3>宝马三系</h3>
+					<p>20-60万元</p>
+				</a>
+			</li>-->
+		</ul>
+	</div>
+	<div class="letter_index">
+		<a href="#a">A</a>
+		<a href="#b">B</a>
+		<a href="#c">C</a>
+		<a href="#d">D</a>
+		<a href="#e">E</a>
+		<a href="#f">F</a>
+		<a href="#g">G</a>
+		<a href="#h">H</a>
+		<a href="#i">I</a>
+		<a href="#j">J</a>
+		<a href="#k">K</a>
+		<a href="#l">L</a>
+		<a href="#m">M</a>
+		<a href="#n">N</a>
+		<a href="#o">O</a>
+		<a href="#p">P</a>
+		<a href="#q">Q</a>
+		<a href="#r">R</a>
+		<a href="#s">S</a>
+		<a href="#t">T</a>
+		<a href="#u">U</a>
+		<a href="#v">V</a>
+		<a href="#w">W</a>
+		<a href="#x">X</a>
+		<a href="#y">Y</a>
+		<a href="#z">Z</a>
+	</div>
+</div>
+ <div class="tipbg"></div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/new_mall.js"></script>
+</body>
+</html>

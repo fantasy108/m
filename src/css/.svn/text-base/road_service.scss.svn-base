@@ -1,0 +1,35 @@
+$browser-default-font-size:88.8889;
+
+@function j($px) {
+  @return $px / $browser-default-font-size * 1rem / 2 ;
+}
+.road_service{
+  font-size:j(20); padding-top:j(48);
+  .hd{
+    text-align:center;
+    .free_tel{
+      text-align:left;
+      width:j(389); height:j(90); font-size:j(34); line-height:j(90);text-indent:j(95); display:inline-block;
+      -webkit-border-radius:j(8); -moz-border-radius:j(8); border-radius:j(8); color:#fff;text-decoration:none;
+      background:url(http://img.autostreetscdn.com/m/src/images/phone_44_44.png) #F47410 no-repeat j(40) j(23);background-size:j(44) j(44);
+    }
+    p{
+      font-size:j(23);text-align:left; margin-left:j(20); margin-top:j(15);
+      span{
+        color:#ff4000;
+      }
+      strong{
+        font-size:j(32);
+      }
+    }
+  }
+  .bd{
+    margin:j(20); padding-top:j(20);
+    h2{
+      color:#000; margin-bottom:j(15);
+    }
+    p{
+      line-height:j(44); color:#666666;text-indent:j(-30); margin-left:j(30);
+    }
+  }
+}

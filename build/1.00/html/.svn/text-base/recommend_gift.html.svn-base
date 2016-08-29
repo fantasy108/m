@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>汽车街注册有礼-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/recommend_gift.css" type="text/css">
+    <script src="http://img.autostreetscdn.com/m/src/js/lib/flexible.js"></script>
+</head>
+<body>
+<header>
+    <section>
+      <!--  <a href="javascript:history.go(-1);" class="back"></a>-->
+        <!--汽车街注册有礼/推荐有礼-->
+    </section>
+</header>
+<div id="content">
+    <!--未-->
+   <section class="un_login">
+        <p class="banner"><img src="http://img.autostreetscdn.com/m/src/images/rec_banner.jpg" alt=""></p>
+        <div class="sub">
+            <h2>您的好友138****1122给您推荐</h2>
+            <h3>TA心目中最棒的汽车电商平台</h3>
+            <a class="btn" href="https://imgssl.autostreetscdn.com/m/src/html/user_center/register_1.html">立即注册</a>
+            <ul class="ys_list">
+                <li>
+                    <div class="item icon icon_01">
+                        <h4>业内认可</h4>
+                        <p>中国汽车流通行业<br>协会副会长单位</p>
+                    </div>
+                    <div class="item icon icon_02">
+                        <h4>电商平台</h4>
+                        <p>线上线下同步服务<br>全国</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item icon icon_03">
+                        <h4>经销商渠道</h4>
+                        <p>经销商联盟共建全<br>国车源落地保障</p>
+                    </div>
+                    <div class="item icon icon_04">
+                        <h4>一站式体验</h4>
+                        <p>新车、二手车、物流<br>一站式服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="has_login">
+        <p class="user_name"><!--138*****334--></p>
+        <p>亲爱的用户您好</p>
+        <h3>邀请朋友扫一扫下方二维码，完成注册<br>或交易您将获得优惠券奖励</h3>
+        <img title="推荐二维码" src="" alt="" class="qrcode">
+
+        <a href="javascript:void(0)" id="share_btn" class="btn">分享给好友</a>
+        <span> 更多奖励方式即将上线，敬请期待</span>
+    </section>
+</div>
+<div class="ui_pop_wrap">
+    <div class="ui_pop animated">
+        <div class="text">点击浏览器分享功能分享到 <br>微信好友或朋友圈</div>
+        <div class="btn_box">
+            <img src="http://img.autostreetscdn.com/m/src/images/share_desc.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="ui_mask "></div>
+<img src="http://img.autostreetscdn.com/m/src/images/share_to.png" alt="" class="share_to_img">
+</body>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/recommend_gift.js"></script>
+</html>

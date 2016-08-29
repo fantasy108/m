@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "common";
+.pr{ position:relative;}
+#wx_activity{
+  position:relative;
+  max-width:j(720);
+  margin:0 auto;
+  img{
+    width:100%;
+    display:block;border:none;
+  }
+  .link{
+    display:block;
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    right:j(123);
+    left:j(123);
+    background-color:#b7bd41;
+    color:#fff;;
+    font-size:j(30); height:j(90);
+    line-height:j(95);
+    position:absolute;
+    text-align:center;
+    text-decoration:none;
+    top:j(10);
+
+  }
+}

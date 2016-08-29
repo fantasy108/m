@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>下单支付-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/pay.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        下单支付
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div class="paybox">
+    <div class="ordermoney">&yen; 1000</div>
+    <ul class="payorderinfo">
+        <li><label>商品</label><span>XC60 15款 智雅版XC60 智雅版XC60 15款 智雅版XC60 15款 智雅版XC60 15款 智雅版</span></li>
+        <li><label>用户名</label><span>15900000000</span></li>
+    </ul>
+    <ul class="payform">
+        <li><label class="label-1 label-2">支付方式</label><span class="banklogo"><img src="http://img.autostreetscdn.com/m/src/images/bank-1.png"></span></li>
+    </ul>
+    <div class="submitbox">
+        <a class="btn-1">立即订购</a>
+    </div>
+</div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+</body>
+</html>

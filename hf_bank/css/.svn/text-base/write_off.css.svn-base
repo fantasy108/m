@@ -1,0 +1,533 @@
+@charset "UTF-8";
+#half_off_list .banner {
+  display: block;
+  border: none; }
+
+.form_module li, .form_module {
+  border-bottom: 1px solid #ccc; }
+
+.form_module li, .write_off_sub .upload_pic ul, #half_off_list .half_item, .price, .liucheng_box li, .ho_sub .inner, #write_off_login .login_wrap li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form_module input, .write_off_sub .upload_pic ul li, #half_off_list .half_item .r_box, .price .origin_price, .liucheng_box li > span:nth-child(2), .ho_sub .yellow_btn, #write_off_login .login_wrap li input, #write_off_login .login_wrap .login_btn {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.write_off_sub .upload_pic ul li .upload_btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+/*背景占位*/
+#half_off_list .half_item .img_wrap:after, .car_banner:after {
+  content: '';
+  display: block;
+  width: 100%; }
+
+#half_off_list .half_item .img_wrap:after, .car_banner:after {
+  background-image: url("http://img.autostreetscdn.com/m/src/images/xj_no_pic.jpg");
+  background-repeat: no-repeat; }
+
+body {
+  background: #f3f3f3;
+  font-size: 0.135rem; }
+
+/*数据查询*/
+#data_query {
+  padding: 0.16875rem; }
+#data_query h2 {
+  font-weight: normal;
+  font-size: 0.18rem;
+  line-height: 0.225rem;
+  margin-bottom: 0.1125rem; }
+#data_query .query_hd {
+  text-align: center;
+  margin: 0rem 0.315rem; }
+#data_query .query_hd .merchant_code {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.01125rem solid #E9E9E9;
+  height: 0.41625rem;
+  font-size: 0.18rem;
+  text-align: center; }
+
+.query_btn {
+  border: 0.01125rem solid #F57E22;
+  width: 100%;
+  -webkit-border-radius: 0.05625rem;
+  -moz-border-radius: 0.05625rem;
+  border-radius: 0.05625rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.02812rem;
+  -moz-border-radius: 0.02812rem;
+  height: 0.4725rem;
+  font-size: 0.2025rem;
+  margin-top: 0.16875rem;
+  cursor: pointer;
+  color: #F27211; }
+
+.query_bd {
+  margin-top: 0.225rem; }
+
+.query_table {
+  background-color: #fff; }
+.query_table th, .query_table td {
+  text-align: center;
+  border: 0.01125rem solid #F0F0F0;
+  font-weight: normal;
+  padding: 0.1125rem 0; }
+.query_table thead th {
+  background: #646473;
+  color: #fff;
+  border-color: #9999A1; }
+.query_table tbody tr th {
+  text-align: left;
+  padding-left: 0.16875rem; }
+.query_table tbody tr th a {
+  text-decoration: underline;
+  color: #F27211; }
+
+.form_module {
+  font-size: 0.18rem;
+  background-color: #fff; }
+.form_module li {
+  margin-left: 0.1125rem;
+  height: 0.45rem;
+  padding: 0.05625rem 0;
+  line-height: 0.45rem; }
+.form_module li:last-child {
+  border-bottom: none; }
+.form_module label {
+  width: 40%;
+  display: block; }
+.form_module input {
+  font-size: 0.18rem;
+  display: block;
+  height: 0.45rem;
+  margin-right: 0.16875rem; }
+
+#write_off {
+  padding-bottom: 0.225rem; }
+
+.write_off_sub {
+  margin: 0 0.1125rem; }
+.write_off_sub .upload_pic h3 {
+  font-size: 0.18rem;
+  color: #B8B8B8;
+  font-weight: normal;
+  margin: 0.16875rem 0 0.28125rem; }
+.write_off_sub .upload_pic ul {
+  margin: 0 0.28125rem; }
+.write_off_sub .upload_pic ul li {
+  text-align: center; }
+.write_off_sub .upload_pic ul li .upload_btn {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 0.05625rem;
+  -moz-border-radius: 0.05625rem;
+  border-radius: 0.05625rem;
+  width: 0.7875rem;
+  height: 0.7875rem;
+  text-align: center; }
+.write_off_sub .upload_pic ul li .image_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%; }
+.write_off_sub .upload_pic ul li .image_wrap img {
+  height: 100%;
+  width: auto; }
+.write_off_sub .upload_pic ul li input[type=file] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10; }
+.write_off_sub .upload_pic ul li p {
+  width: 0.7875rem;
+  margin: 0.1125rem 0; }
+.write_off_sub .upload_pic ul li .icon {
+  font-style: normal; }
+.write_off_sub .upload_pic ul > :nth-child(2) {
+  margin: 0 0.225rem; }
+
+#query_result {
+  padding: 0 0.1125rem;
+  color: #999; }
+#query_result .query_table tr span {
+  margin-right: 0.1125rem; }
+#query_result strong {
+  color: #000;
+  font-weight: normal; }
+#query_result .verify_code_td {
+  text-align: left;
+  padding-left: 0.16875rem; }
+
+/*pc 五折买豪车*/
+#half_off_list .banner {
+  width: 100%;
+  height: auto; }
+#half_off_list .half_off_bd {
+  padding: 0.1125rem; }
+#half_off_list .half_item_wrap {
+  background: #fff;
+  margin-bottom: 0.14062rem; }
+#half_off_list .half_item {
+  padding: 0.07875rem 0.14625rem; }
+#half_off_list .half_item .img_wrap {
+  position: relative;
+  width: 1.125rem;
+  height: 0.84375rem;
+  float: left;
+  margin-top: 0.1125rem;
+  margin-right: 0.1125rem; }
+#half_off_list .half_item .img_wrap img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+#half_off_list .half_item .img_wrap:after {
+  padding-top: 75%; }
+#half_off_list .half_item .r_box {
+  position: relative;
+  border-left: 1px solid #eee;
+  padding-left: 0.1125rem; }
+#half_off_list .half_item .r_box .discount {
+  background: #F27210;
+  width: 0.36rem;
+  height: 0.19125rem;
+  line-height: 0.19125rem;
+  color: #fff;
+  font-size: 0.1125rem;
+  text-align: center;
+  display: block;
+  font-weight: normal; }
+#half_off_list .half_item .r_box .title {
+  line-height: 0.225rem;
+  margin-top: 0.05625rem;
+  padding-bottom: 0.05625rem;
+  border-bottom: 1px dashed #eee;
+  word-break: break-all;
+  white-space: normal;
+  margin-bottom: 0.02812rem; }
+.price .curr_price {
+  width: 48%;
+  color: #E93E37; }
+.price .curr_price .curr_price_num {
+  font-size: 0.21375rem; }
+.price .origin_price {
+  color: #999;
+  font-size: 0.10125rem;
+  margin-left: 0.01687rem;
+  text-align: right;
+  line-height: 0.30375rem; }
+.location {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.14625rem; }
+
+.load_others {
+  display: block;
+  height: 0.48375rem;
+  text-align: center;
+  border: 1px solid #E6E6E6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 0.48375rem;
+  background-color: #fff;
+  font-size: 0.18rem;
+  color: #F27210;
+  -webkit-border-radius: 0.02812rem;
+  -moz-border-radius: 0.02812rem;
+  border-radius: 0.02812rem; }
+
+#half_off_detail {
+  padding-bottom: 0.675rem; }
+
+.car_banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.16875rem; }
+.car_banner .car_banner_img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%; }
+.car_banner:after {
+  padding-top: 75%; }
+
+.car_banner_sub {
+  color: #fff;
+  font-size: 0.18rem;
+  line-height: 0.495rem;
+  text-align: center;
+  width: 100%;
+  height: 0.495rem;
+  background: url(http://img.autostreetscdn.com/m/src/images/car_banner_sub.png) no-repeat;
+  background-size: 100% 0.495rem;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+.car_banner_sub > span:nth-child(2) {
+  margin: 0 0.225rem; }
+
+.price_box {
+  color: #999;
+  font-size: 0.135rem;
+  margin-top: 0.05625rem; }
+.price_box p {
+  margin-bottom: 0.02812rem; }
+.price_box .discount_price {
+  font-size: 0.14625rem;
+  color: #D80000; }
+.price_box .discount_price span {
+  font-size: 0.28125rem;
+  color: #D80000;
+  margin-right: 0.05625rem; }
+.price_box .origin_price {
+  font-size: 0.14625rem;
+  color: #A6A77A; }
+.price_box .origin_price span {
+  font-size: 0.28125rem;
+  color: #A6A77A;
+  margin-right: 0.05625rem; }
+
+#get_car_location i, #get_car_range i {
+  font-style: normal;
+  float: right;
+  font-size: 0.18rem;
+  margin-right: 0.1125rem;
+  color: #ccc; }
+
+.ho_box {
+  background-color: #fff;
+  padding: 0 0.1125rem 0 0.14062rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.135rem 0.28125rem 0.28125rem 0.135rem;
+  color: #999;
+  font-size: 0.135rem;
+  margin-bottom: 0.1125rem; }
+.ho_box h3 {
+  font-weight: normal; }
+
+.liucheng_box {
+  border-left: 1px solid #f9ab6c;
+  margin-top: 0.3375rem;
+  margin-left: 0.16875rem; }
+.liucheng_box li {
+  margin-bottom: 0.28125rem;
+  padding-left: 0.225rem;
+  position: relative; }
+.liucheng_box li > span:nth-child(1) {
+  color: #000;
+  width: 0.9rem; }
+.liucheng_box li i {
+  position: absolute;
+  background-color: #f9ab6c;
+  width: 0.27562rem;
+  height: 0.27562rem;
+  color: #fff;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  line-height: 0.27562rem;
+  left: -0.13781rem;
+  top: -0.05625rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.protocol_box {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #999;
+  font-size: 0.1575rem;
+  margin-bottom: 0.1125rem;
+  height: 0.50625rem;
+  line-height: 0.50625rem;
+  padding: 0 0.28125rem 0 0.61875rem;
+  background: url(http://img.autostreetscdn.com/m/src/images/s_bf.png) no-repeat #fff 0.225rem center;
+  background-size: 0.2475rem 0.2475rem; }
+
+.protocol_box.agree {
+  background-image: url(http://img.autostreetscdn.com/m/src/images/success.png); }
+
+.agree_protocol {
+  color: #1F7FF7; }
+
+/*活动协议*/
+#activity_protocol {
+  color: #aaa;
+  padding: 0.1125rem 0.1125rem 0.16875rem 0.16875rem; }
+#activity_protocol h3 {
+  font-weight: normal;
+  font-size: 0.16875rem;
+  margin-bottom: 0.16875rem; }
+#activity_protocol p {
+  margin-bottom: 0.1125rem;
+  line-height: 0.25312rem; }
+
+/*ho_sub*/
+.ho_sub {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #F3F3F3;
+  width: 100%; }
+.ho_sub .inner {
+  padding: 0.1125rem 0.1125rem 0.1125rem 0.16875rem; }
+.ho_sub p {
+  width: 2.2725rem;
+  color: #999;
+  font-size: 0.135rem;
+  margin-top: 0.05625rem; }
+.ho_sub .yellow_btn {
+  color: #fff;
+  width: 1.125rem;
+  height: 0.48375rem;
+  background-color: #F47410;
+  line-height: 0.48375rem;
+  text-align: center;
+  -webkit-border-radius: 0.05625rem;
+  -moz-border-radius: 0.05625rem;
+  border-radius: 0.05625rem;
+  display: block; }
+
+.title_wrap {
+  margin: 0.16875rem 0;
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ddd; }
+.title_wrap .title_inner {
+  width: 100%;
+  background-color: #fff; }
+.title_wrap .title_inner .title {
+  background: #fff;
+  padding: 0.1125rem 0.1125rem 0.1125rem 0.16875rem; }
+.title_wrap > .title_fixed {
+  position: fixed;
+  left: 0;
+  top: .4949rem;
+  z-index: 99;
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ddd; }
+
+.title h3 {
+  font: bold 0.1687rem/0.3374rem "Microsoft Yahei";
+  color: #525252; }
+
+.title p {
+  line-height: 0.2249rem; }
+
+.title p span {
+  font: bold 0.2474rem/0.2249rem "Arial";
+  color: #ff8e1f; }
+
+.topborder {
+  border-top: 1px solid #ddd;
+  margin-bottom: 0.1687rem; }
+
+.topborder a {
+  text-indent: 0rem; }
+
+.get_car_location {
+  margin-bottom: 0;
+  border-bottom: none; }
+
+.write_off_link {
+  text-align: center;
+  color: #00228c;
+  font-size: 0.135rem;
+  display: block;
+  position: fixed;
+  bottom: 0.41062rem;
+  line-height: 0.16875rem;
+  width: 100%;
+  text-decoration: underline; }
+
+#write_off_login {
+  max-width: 3.6rem;
+  margin: 0 auto; }
+#write_off_login .login_img {
+  width: 2.01375rem;
+  margin: 0.3375rem auto;
+  display: block; }
+#write_off_login .login_wrap {
+  margin: 0.28125rem 0.14062rem; }
+#write_off_login .login_wrap li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  height: 0.4275rem;
+  margin-bottom: 0.1125rem;
+  -webkit-border-radius: 0.05625rem;
+  -moz-border-radius: 0.05625rem;
+  border-radius: 0.05625rem;
+  line-height: 0.4275rem; }
+#write_off_login .login_wrap li label {
+  display: block;
+  width: 10%;
+  text-align: center; }
+#write_off_login .login_wrap li input {
+  margin-right: 0.05625rem;
+  font-size: 0.1575rem; }
+#write_off_login .login_wrap .user_name label img {
+  width: 0.135rem;
+  height: 0.1575rem; }
+#write_off_login .login_wrap .psw label img {
+  width: 0.11812rem;
+  height: 0.1575rem; }
+#write_off_login .login_wrap .login {
+  border: none; }
+#write_off_login .login_wrap .login_btn {
+  border: 0;
+  display: block;
+  background-color: #5B6D86;
+  color: #fff;
+  -webkit-border-radius: 0.05625rem;
+  -moz-border-radius: 0.05625rem;
+  border-radius: 0.05625rem;
+  font-size: 0.18rem;
+  font-weight: normal;
+  padding: 0;
+  text-align: center; }
+#write_off_login .login_wrap .disable {
+  background-color: #E2E2E2;
+  color: #ccc; }
+
+/*# sourceMappingURL=write_off.css.map */

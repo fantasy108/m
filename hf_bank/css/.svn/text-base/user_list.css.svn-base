@@ -1,0 +1,114 @@
+.css3Transition {
+  -webkit-transition: all .35s ease-in;
+  -moz-transition: all .35s ease-in;
+  -ms-transition: all .35s ease-in;
+  -o-transition: all .35s ease-in;
+  transition: all .35s ease-in; }
+
+.pro_list li {
+  padding: 0.1125rem;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  font-size: 0.1462rem;
+  position: relative;
+  color: #666; }
+.pro_list li a {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  color: #666; }
+.pro_list li img {
+  float: left;
+  width: 1.125rem;
+  height: 0.84375rem;
+  margin-right: 0.12375rem; }
+.pro_list li h3 {
+  font-size: 0.14625rem;
+  color: #6C6C6C;
+  height: 0.2rem;
+  overflow: hidden;
+  line-height: 0.2rem;
+  margin-bottom: 0.05rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: normal; }
+.pro_list li p {
+  font-size: 0.09rem;
+  color: #666;
+  line-height: 0.12rem; }
+.pro_list li p ins {
+  text-decoration: none;
+  color: #ccc;
+  width: 0.1rem;
+  display: inline-block;
+  text-align: center; }
+.pro_list li .status {
+  font-size: 0.09rem; }
+.pro_list li .pai_ing {
+  color: #ff7f00; }
+.pro_list li .sub {
+  float: none;
+  width: auto;
+  margin-top: 0.05625rem;
+  overflow: hidden; }
+.pro_list li .sub strong {
+  font-size: 0.135rem;
+  color: #FF7F00;
+  float: left;
+  line-height: 0.135rem; }
+.pro_list li .sub span.right_info {
+  float: left;
+  font-size: 0.09rem;
+  line-height: 0.135rem;
+  float: right; }
+.pro_list li i {
+  position: absolute;
+  line-height: 0.19687rem;
+  right: 0.1125rem;
+  top: 0.1125rem;
+  color: #fff;
+  width: 0.3825rem;
+  height: 0.17437rem;
+  background: #FFA64C;
+  font-size: 0.1125rem;
+  text-align: center;
+  font-style: normal;
+  -webkit-border-radius: 0.0225rem;
+  -moz-border-radius: 0.0225rem;
+  border-radius: 0.0225rem; }
+
+.pro_list .used_car_li .sub {
+  margin-top: 0.16875rem; }
+.pro_list .used_car_li i {
+  background: #A4B750; }
+
+.pro_list .new_car_li .sub {
+  margin-top: 0.16875rem; }
+.pro_list .new_car_li i {
+  background: #62B3E4; }
+
+.nodata {
+  background: #f3f3f3 url("../images/nodata.png") no-repeat center 0.3rem;
+  background-size: 1.4624rem 0.9562rem;
+  padding-top: 1.5rem !important;
+  border-bottom: 0px;
+  text-align: center;
+  color: #7d8592;
+  font-size: 0.2rem !important;
+  height: 3rem; }
+
+.loading {
+  background: url("../images/loading.gif");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  height: 32px;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  width: 32px;
+  left: 0;
+  right: 0; }
+
+/*# sourceMappingURL=user_list.css.map */

@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_main.css" type="text/css">
+</head>
+<body class="bgWhite">
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        优惠套餐
+    </section>
+</header>
+<div id="bm_package">
+    <div class="top_tip flex_box">
+        <div class="top_tip_l"><img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_fxp_icon.png"
+                                    alt="" class="top_tip_l_icon"/>填写车辆信息有助于推荐保养项目
+        </div>
+        <a href="bm_complete_car.html" class="edit_car flex">立即新增<i class="w_9_arr"></i></a>
+    </div>
+    <div class="select_module" data-type="package">
+        <div class="sm_hd">
+            <a href="javascript:void(0)" class="sm_hd_item"><span id="location">筛选中...</span><i class="w_9_arr"></i></a>
+            <a href="javascript:void(0)" class="sm_hd_item"><span id="sort_by">筛选中...</span><i class="w_9_arr"></i></a>
+            <i class="gradient_line"></i>
+        </div>
+        <div class="sm_bd">
+            <div class="sm_bd_item">
+                <div class="area area_l">
+                    <ul class="province_list">
+                        <!--<li class="province curr">浙江省</li>
+                        <li class="province">上海市</li>
+                        <li class="province">安徽省</li>
+                        <li class="province">江西省</li>
+                        <li class="province">江苏省</li>
+                        <li class="province">河北省</li>
+                        <li class="province">山西省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>
+                        <li class="province">湖南省</li>-->
+                    </ul>
+                </div>
+                <div class="area area_r">
+                    <ul class="city_list">
+                       <!-- <li class="city">浙江省全部地区</li>
+                        <li class="city">上海市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>
+                        <li class="city">合肥市</li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="sm_bd_item">
+                <div class="sort">
+                    <ul class="sort_list">
+                        <!--<li class="sort_by">智能排序</li>
+                        <li class="sort_by">离我最近</li>
+                        <li class="sort_by">人气最高</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="great_set_meal">
+        <div class="bm_bd">
+            <ul id="package"  class="data_wrap">
+                <!--<li>
+                    <a class="flex_box" href="">
+                       <div class="img_wrap">
+                           <img class="bm_img"
+                                src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_small.png" alt=""/>
+                       </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex_box" href="">
+                       <div class="img_wrap">
+                           <img class="bm_img"
+                                src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_middle.png" alt=""/>
+                       </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex_box" href="">
+                        <div class="img_wrap">
+                            <img class="bm_img"
+                                 src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_big.png" alt=""/>
+                        </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex_box" href="">
+                        <div class="img_wrap">
+                            <img class="bm_img"
+                                 src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/bm_all.png" alt=""/>
+                        </div>
+                        <div class="great_set_meal_r">
+                            <p class="title">小保养服务小保养服务保养服务</p>
+                            <span class="address">[宝马]上海宝信行</span>
+
+                            <p class="price">
+                                <span class="curr_price">￥300</span>
+                                <span class="origin_price">￥700</span>
+                            </p>
+
+                            <div class="distance"><span>1.1km</span></div>
+                        </div>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="loading" id="loading" ></div>
+<div class="ui_mask z90"></div>
+</body>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/iscroll2.0.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/bm.js"></script>
+</html>

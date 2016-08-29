@@ -1,0 +1,6 @@
+/**
+ * binqing.liu
+ * @version v1.00
+ * Modify-Date:2016-4-13 11:6:54
+ */
+.road_service{font-size:.1125rem;padding-top:.27rem}.road_service .hd{text-align:center}.road_service .hd .free_tel{text-align:left;width:2.18812rem;height:.50625rem;font-size:.19125rem;line-height:.50625rem;text-indent:.53437rem;display:inline-block;-webkit-border-radius:.045rem;-moz-border-radius:.045rem;border-radius:.045rem;color:#fff;text-decoration:none;background:url(http://img.autostreetscdn.com/m/build/1.00/images/phone_44_44.png) .225rem .12937rem no-repeat #F47410;background-size:.2475rem .2475rem}.road_service .hd p{font-size:.12937rem;text-align:left;margin-left:.1125rem;margin-top:.08437rem}.road_service .hd p span{color:#ff4000}.road_service .hd p strong{font-size:.18rem}.road_service .bd{margin:.1125rem;padding-top:.1125rem}.road_service .bd h2{color:#000;margin-bottom:.08437rem}.road_service .bd p{line-height:.2475rem;color:#666;text-indent:-.16875rem;margin-left:.16875rem}

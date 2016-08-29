@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>车辆详情-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/competitive_list.css" type="text/css"><style type="text/css" media="all">
+</style>
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        车辆详情
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div id="wrapper">
+    <div id="scroller_wrap">
+        <div id="scroller">
+            <ul id="thelist">
+            </ul>
+        </div>
+        <div id="nav">
+            <ul id="indicator"></ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="infobody">
+        <div class="infodetail">
+            <h3 id="id_title"></h3>
+            <!--<p class="infodetail_price">汽车街一口价：<strong id='infodetail_price'></strong></p>-->
+            <div class="infodetail_price">
+                <div class="l_box">
+                    <strong id="infodetail_price"></strong>
+                    <p>汽车街一口价</p>
+                </div>
+                <div class="r_box">
+                    <del id="newCar_price">26.56 </del><ins>万元</ins>
+                    <p>新车价+购置税</p>
+                </div>
+            </div>
+        </div>
+        <div class="infodetail">
+            <ul id="vehicleAttribute">
+            </ul>
+        </div>
+        <div class="infodetail">
+            <h2 class="modeltitle">车辆描述</h2>
+            <p class="miaoshu" id='vehicleDesc'></p>
+        </div>
+        <a  class="storeInfo" id="storeInfo" href="store_info.html">所在门店 <span class="right_go"></span><span class="storeName"></span></a>
+        <a class="detaillink" id="detaillink" href="#"><span class="right_go"></span> 车辆检测信息</a>
+    </div>
+    <div class="tel_400_body">
+        <a class="tel_400" href="tel:400-821-8889">看车/试驾 400-821-8889</a>
+        <a class="tel_400-1" href="tel:400-821-8889">预约看车</a>
+    </div>
+</div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/iscroll.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/competitive_detail.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

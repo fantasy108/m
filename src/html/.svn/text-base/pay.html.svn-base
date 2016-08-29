@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>下单支付-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/pay.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        下单支付
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div class="paybox">
+    <div class="dealinfo">
+        <p><i class="deal_icon"></i><span><strong>我已详细阅读并同意</strong><a href="http://wap.autostreets.com/html/user_center/agreement.html">《订金支付协议》</a></span></p>
+    </div>
+    <div class="orderinfo">
+        <img src="http://dummyimage.com/115x85/ccc/fff">
+        <div class="info_fr">
+            <h3>宝马3系 2014款 328Li 时尚型</h3>
+            <p><label>首次上牌：</label><span class="time">2011-08</span></p>
+            <p><label>表显里程：</label><span class="dis">0.8万公里</span></p>
+            <p><label>一口价：</label><span class="fee">38.52 万元</span></p>
+        </div>
+    </div>
+    <ul class="payform">
+        <li><label class="label-1 label-2">所在地区</label><div class="province">
+				<select name="" id="" class="select-1">
+					<option value="请选择省市">请选择省市</option>
+					<option value="">上海市</option>
+					<option value="">北京市</option>
+				</select>
+				<div class="arrow"></div>
+			</div></li>
+			<li><label class="label-1 label-2">所在城市</label><div class="province">
+				<select name="" id="" class="select-1">
+					<option value="请选择省市">请选择省市</option>
+					<option value="">上海市</option>
+					<option value="">北京市</option>
+				</select>
+				<div class="arrow"></div>
+			</div></li>
+    </ul>
+    <ul class="payform">
+        <li><label class="label-1 label-2">姓名</label><input type="tel" placeholder="请输入姓名" class="input-1"></li>
+        <li><label class="label-1 label-2">手机号</label><input type="password" placeholder="请输入手机号" class="input-1"></li>
+    </ul>
+    <ul class="payform">
+        <li><label class="label-1 label-2">支付订金</label><span class="money">1000.00元</span></li>
+    </ul>
+    <div class="submitbox">
+        <a class="btn-1">立即订购</a>
+    </div>
+</div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script>
+    $(function(){
+        var flag=false;
+        $('.deal_icon,.dealinfo strong').click(function(){
+            if(!flag){
+                $('.deal_icon').addClass("s_ed");
+                flag=true;
+            }else{
+                $('.deal_icon').removeClass("s_ed");
+                flag=false;
+            }
+        })
+    })
+</script>
+</body>
+</html>

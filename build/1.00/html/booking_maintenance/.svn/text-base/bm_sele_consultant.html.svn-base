@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>顾问列表</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_consultant.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        选择顾问
+    </section>
+</header>
+
+<div>
+    <ul class="consultant_list2 data_wrap" id="consultant_list2">
+    	<!-- <li class='nodata'>抱歉，没有符合条件的顾问</li> -->
+        <!-- <li>
+        	<img src="http://img.autostreetscdn.com/m/build/1.00/images/booking_maintenance/heart.png" alt="" class="hot">
+            <img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/head.png" class="conlist_img"/>
+            <h3>张三</h3>
+            <ul class="comment">
+        		<li class="one"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="two"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="three"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="four"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="five"><span class="star_fill"></span><span class="star_blank"></span></li>
+            </ul>
+            <p class="title">高级顾问</p>
+            <p class="year">工作年限：7年</p>
+            <p class="shop">所属门店：上海宝信行</p>
+        </li>
+        <li>
+        	<img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/heart.png" alt="" class="hot">
+            <img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/head.png" class="conlist_img"/>
+            <h3>张三</h3>
+            <ul class="comment">
+        		<li class="one"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="two"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="three"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="four"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="five"><span class="star_fill"></span><span class="star_blank"></span></li>
+            </ul>
+            <p class="title">高级顾问</p>
+            <p class="year">工作年限：7年</p>
+            <p class="shop">所属门店：上海宝信行</p>
+        </li>
+        <li>
+            <img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/head.png" class="conlist_img"/>
+            <h3>张三</h3>
+            <ul class="comment">
+        		<li class="one"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="two"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="three"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="four"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="five"><span class="star_fill"></span><span class="star_blank"></span></li>
+            </ul>
+            <p class="title">高级顾问</p>
+            <p class="year">工作年限：7年</p>
+            <p class="shop">所属门店：上海宝信行</p>
+        </li>
+        <li>
+            <img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/head.png" class="conlist_img"/>
+            <h3>张三</h3>
+            <ul class="comment">
+        		<li class="one"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="two"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="three"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="four"><span class="star_fill"></span><span class="star_blank"></span></li>
+        		<li class="five"><span class="star_fill"></span><span class="star_blank"></span></li>
+            </ul>
+            <p class="title">高级顾问</p>
+            <p class="year">工作年限：7年</p>
+            <p class="shop">所属门店：上海宝信行</p>
+        </li> -->
+    </ul>
+    
+    <div class="find_him">
+		<a href="#">确认选择</a>
+	</div>
+</div>
+
+<div class="ui_mask z90"></div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/iscroll2.0.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_2.js"></script>
+<script>
+$(function(){
+	var obj = request()
+	sele_consultant(obj.orgSid)
+	
+	$('.consultant_list2>li').live('click',function(){
+		var obj = $(this).children('i')
+		if(obj.hasClass('unselect')){
+			obj.removeClass('unselect').addClass('select').parent().siblings().children('i').removeClass('select').addClass('unselect')
+		}
+	})
+	
+	var selectCon = {}
+	$('.find_him a').live('click',function(){
+		$('.consultant_list2>li').each(function(){
+			if($(this).children('i').hasClass('select')){
+				selectCon.name = $(this).children('h3').text()
+				selectCon.id = $(this).children('h3').attr('id')
+				return false;
+			}
+		})
+		$(this).attr('href','bm_time.html'+ location.search + '&consultSid='+selectCon.id +'&conName='+selectCon.name)
+	})
+})
+</script>
+</body>
+</html>

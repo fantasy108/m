@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>在线拍-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/online_list.css" type="text/css">
+</head>
+<body>
+<div id="body">
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>在线拍
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div class="select-type-box">
+    <ul class="select-type">
+    <li id="type-1"><a href="javascript:;">全部城市</a><span></span></li>
+    <li class="select-type-line"></li>
+    <li id="type-2"><a href="javascript:;">全部时间</a><span></span></li>
+    <li class="select-type-line"></li>
+    <li id="type-3"><a href="javascript:;">竞价状态</a><span></span></li>
+    </ul>
+    <div class="select-list-box hide" id="typebox-1">
+        <h3><a href="javascript:;" class="on" id="typebox-1-all">全部城市</a></h3>
+        <ul class="select-list">
+            
+        </ul>
+    </div>
+    <div class="select-list-box hide" id="typebox-2">
+        <h3><a href="javascript:;" class="on" id="typebox-2-all">全部时间</a></h3>
+        <ul class="select-list">
+                    </ul>
+    </div>
+    <div class="select-list-box hide" id="typebox-3">
+        <h3><a href="javascript:;" class="on" id="typebox-3-all">全部状态</a></h3>
+        <ul class="select-list">
+            
+        </ul>
+    </div>
+</div>
+<div>
+    <ul class="competitive_list" id="competitive_list">
+            </ul>
+</div>
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+</div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/online.js"></script>
+</body>
+</html>

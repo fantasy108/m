@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>申请退款-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/order_center.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        申请退款
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="../main.html" class="home_icon"><span>首页</span></a>
+            <a href="../uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+
+<div id="wrapper">
+	<div class="refund_apply">
+		<textarea name="" id="" cols="30" rows="10">请输入退款理由...</textarea>
+		<p class="rest"> <span class="limit"></span> 还可输入<span class="code">200</span>个字符</p>
+	</div>
+	<input type="button" value="提交申请" class="form_btn">
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="correct" style="width:100%">确定</a>
+</div>
+<div class="tipbg"></div>
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	$(".form_btn").click(function(){
+        if($(".rest .limit").text()=="字数超过限制"){
+        	$(".error_layer .error_txt").text("字数超过限制")
+            validate.show();
+            return false;
+        }
+        if($(".refund_apply textarea").val() == "" || $(".refund_apply textarea").val() =="请输入退款理由..." ){
+            $(".error_layer .error_txt").text("请输入退款理由")
+            validate.show()
+            return false;
+        }else{
+            alert("ok")
+        }
+    })
+
+	$(".refund_apply textarea").focus(function(){
+		if($(".refund_apply textarea").val() =="请输入退款理由..."){
+			$(this).val("")
+		}
+	})
+
+	/*判断字数*/
+    $(".refund_apply textarea").bind('input',function(){
+        var str = $(".refund_apply textarea").val()
+        $(".rest .code").text(200-getLength(str))
+        if( (200-getLength(str)) <= 0 ){
+            $(".rest .code").text("0")
+            $(".rest .limit").text("字数超过限制")
+        }else{
+            $(".rest .limit").text("")
+        }
+    })
+})
+
+/*获取内容长度*/
+var getLength = function(str) {
+    var realLength = 0, len = str.length, charCode = -1;
+    for (var i = 0; i < len; i++) {
+        charCode = str.charCodeAt(i);
+        if (charCode >= 0 && charCode <= 128) realLength += 1;
+        else realLength += 2;
+    }
+    return realLength;
+};
+
+</script>
+
+</body>
+</html>

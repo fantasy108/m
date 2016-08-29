@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/online_list.css" type="text/css"><style type="text/css" media="all">
+</style>
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        车辆详情
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="main.html" class="home_icon"><span>首页</span></a>
+            <a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+		</ul>
+	</div>
+	<div class="timebox">
+    	<span class="sale-status">距开始</span>
+    	<p><ins>1</ins>天<ins>02</ins>时<ins>35</ins>分<ins>12</ins>秒</p>
+	</div>
+</div>
+<div id="nav">
+	<ul id="indicator">
+		<li class="active">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+	</ul>
+</div>
+<div class="clearfix"></div>
+<div class="infobody">
+    <div class="infodetail">
+        <h3 id="id_title"></h3>
+        <p class="pinfo">上海<ins>|</ins>11年01月<ins>|</ins>2.8万公里<ins>|</ins>鲁b10339</p>
+        <p class="infodetail_price"><span class="chujialabel">当前价：</span><strong>20000 <ins>元</ins></strong><span class="chujianum">(已经出价5次)</span></p>
+        <p class="infodetail_price"><span class="chujialabel">我的出价：</span><strong class="price-status-2">20000 <ins>元</ins></strong><span class="chujiaget">(竞得)</span><span class="price-dis">尚未开始</span></p>
+    </div>
+    <div class="pricebox">
+        <p class="clearfix"><a href="javascript:;" class="addbtn">－</a><span class="addpriceinfo"><strong>1173737</strong>元</span><a href="javascript:;" class="addbtn">+</a></p>
+        <a href="javascript:;" class="addprice">出价</a>
+        <a href="javascript:;" class="addprice-dis">流拍</a>
+        <a href="javascript:;" class="addprice-over">拍卖已成交</a>
+    </div>
+    <ul class="linkbox">
+        <li><a href="javascript:;"><span class="right_go"></span><span class="fr">收费明细</span>当前总价：17777元</a></li>
+        <li><a id="detaillink" href="#"><span class="right_go"></span>拍品描述</a></li>
+    </ul>
+</div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/iscroll.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/online_detail.js"></script>
+<script type="text/javascript">
+
+
+
+</script>
+</body>
+</html>

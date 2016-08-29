@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <title>新车商城,条件选车-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/new_mall.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back(-1);" class='back'></a>
+       	<ul id="search_type">
+			<li class="search_brand"><a href="main.html" data-searchType="1" >品牌选车</a></li><li class="search_condition curr"><a href="search_condition.html" data-searchType="2" >条件选车</a></li>
+		</ul>
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="../main.html" class="home_icon"><span>首页</span></a>
+            <a href="../uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+<div id="wrapper">
+	<div id="search_condition">
+        <div class="hd">车型</div>
+        <div class="bd">
+            <ul id="car_type_list">
+                <li>
+                    <div data-cate="微型车">
+                        <span class="car_img_1"></span>
+                        <p>微型车</p>
+                    </div>
+                    <div data-cate="小型车">
+                        <span class="car_img_2"></span>
+                        <p>小型车</p>
+                    </div>
+                    <div data-cate="紧凑型车">
+                        <span class="car_img_3"></span>
+                        <p>紧凑型车</p>
+
+                    </div>
+                    <div data-cate="豪华车">
+                        <span class="car_img_4"></span>
+                        <p>豪华车</p>
+                    </div>
+                </li>
+                <li>
+                    <div data-cate="紧凑型车">
+                        <span class="car_img_5"></span>
+                        <p>中型车</p>
+                    </div>
+                    <div data-cate="中大型车">
+                        <span class="car_img_6"></span>
+                        <p>中大型车</p>
+                    </div>
+                    <div data-cate="SUV">
+                        <span class="car_img_7"></span>
+                        <p>SUV</p>
+                    </div>
+                    <div data-cate="MPV">
+                        <span class="car_img_8"></span>
+                        <p>MPV</p>
+                    </div>
+                </li>
+                <li>
+                    <div data-cate="皮卡车">
+                        <span class="car_img_9"></span>
+                        <p>皮卡车</p>
+                    </div>
+                    <div  data-cate="微卡">
+                        <span class="car_img_10"></span>
+                        <p>微卡</p>
+                    </div>
+                    <div data-cate="轻客">
+                        <span class="car_img_11"></span>
+                        <p>轻客</p>
+                    </div>
+                    <div data-cate="跑车">
+                        <span class="car_img_12"></span>
+                        <p>跑车</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hd">车价<span>单位万元</span></div>
+        <div class="bd">
+            <div id="car_value">
+                <!--<div class="inner">
+                    <ul class="cfx">
+                        <li><i><span>0</span></i></li>
+                        <li><i><span>10</span></i></li>
+                        <li><i><span>20</span></i></li>
+                        <li><i><span>30</span></i></li>
+                        <li><i><span>40</span></i></li>
+                        <li><i><span>50</span></i></li>
+                        <li><i><span>60</span></i></li>
+                        <li><i><span>70</span></i></li>
+                        <li><i><span>80</span></i></li>
+                        <li><i><span>90</span></i><i><span>不限</span></i></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="drag_btn"></a>
+                </div>-->
+                <ul>
+                    <li>
+                        <a data-carvalue="0,20" href="javascript:void(0)">20万以下</a>
+                        <a data-carvalue="20,30" href="javascript:void(0)">20-30万</a>
+                        <a data-carvalue="30,40" href="javascript:void(0)">30-40万</a>
+                    </li>
+                    <li>
+                        <a data-carvalue="40,50" href="javascript:void(0)">40-50万</a>
+                        <a data-carvalue="50,80" href="javascript:void(0)">50-80万</a>
+                        <a data-carvalue="80," href="javascript:void(0)">80万以上</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hd">排量<span>单位L</span></div>
+        <div class="bd">
+            <div id="capacity">
+                <ul>
+                    <li>
+                        <a data-capacity="1" href="javascript:void(0)">1.0L及以下</a>
+                        <a data-capacity="2" href="javascript:void(0)">1.1 - 1.6L</a>
+                        <a data-capacity="3" href="javascript:void(0)">1.7 - 2.0L</a>
+                    </li>
+                    <li>
+                        <a data-capacity="4" href="javascript:void(0)">2.1 - 2.5L</a>
+                        <a data-capacity="5" href="javascript:void(0)">2.5 - 3.0L</a>
+                        <a data-capacity="6" href="javascript:void(0)">3.0 - 4.0L</a>
+                    </li>
+                    <li>
+                        <a data-capacity="7" href="javascript:void(0)">4.1 - 5.0L</a>
+                        <a data-capacity="8" href="javascript:void(0)">5.0L以上</a>
+                        <a href="javascript:void(0)"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sub_btn">
+	<div class="inner">
+		<a href="javascript:void(0)" class="btn reset_btn">重置</a>
+		<a href="javascript:void(0)" class="btn search_btn">查看搜索车辆</a>
+	</div>
+</div>
+ <div class="tipbg"></div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/new_mall.js"></script>
+</body>
+</html>

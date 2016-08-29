@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>顾问详情</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/bm_consultant.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.go(-1);" class='back'></a>
+        <span class="con_title"></span>
+    </section>
+</header>
+<div id="container">
+	<div class="con_head">
+		 <!--<div class="con_main">
+			<div class="person"> 
+				 <img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/head.png" class="conlist_img"/>
+	            <h3>张三</h3>
+	            <ul class="comment">
+	        		<li class="one"><span class="star_fill"></span><span class="star_blank"></span></li>
+	        		<li class="two"><span class="star_fill"></span><span class="star_blank"></span></li>
+	        		<li class="three"><span class="star_fill"></span><span class="star_blank"></span></li>
+	        		<li class="four"><span class="star_fill"></span><span class="star_blank"></span></li>
+	        		<li class="five"><span class="star_fill"></span><span class="star_blank"></span></li>
+	            </ul>
+	            <p class="year">工作年限：3年</p>
+	            <p class="amount">接单数：1023</p> 
+			 </div>
+			<a href="tel:13713713713" class="phone"></a>
+		</div>
+		<div class="addr">
+			<div class="wrap">
+				<img src="http://img.autostreetscdn.com/m/src/images/booking_maintenance/car_logo.png" alt="" />
+				<h3>上海宝信行</h3>
+				<p>吴中路3000号</p>
+			</div>
+			<div class="con_btn">
+				<a href="tel:13713713713" class="telphone">拨打电话</a>
+				<a href="#" class="go_shop">进入店铺</a>
+				<a href="#" class="go_map">查看地图</a>
+			</div>
+		</div> -->
+	</div>
+
+	<div class="packageList" id="packageList">
+		 <!--<h3>优惠套餐</h3>
+		<ul> 
+			 
+			<li>
+				<blockquote>
+					<h4>大保养服务</h4>
+					<div class="price">
+						<span class="new">￥300</span>
+						<span class="old">￥700</span>
+					</div>	
+					<p>适用车型：宝马全系</p>
+				</blockquote>
+			</li> 
+			<li>
+				<blockquote>
+					<h4>大保养服务</h4>
+					<div class="price">
+						<span class="new">￥300</span>
+						<span class="old">￥700</span>
+					</div>	
+					<p>适用车型：宝马全系</p>
+				</blockquote>
+			</li> 
+			<li>
+				<blockquote>
+					<h4>大保养服务</h4>
+					<div class="price">
+						<span class="new">￥300</span>
+						<span class="old">￥700</span>
+					</div>	
+					<p>适用车型：宝马全系</p>
+				</blockquote>
+			</li> 
+			<li>
+				<blockquote>
+					<h4>大保养服务</h4>
+					<div class="price">
+						<span class="new">￥300</span>
+						<span class="old">￥700</span>
+					</div>	
+					<p>适用车型：宝马全系</p>
+				</blockquote>
+			</li> 
+		 </ul> -->
+		 
+	</div>
+
+	<div class="find_him">
+		<a href="#">找他保养</a>
+	</div>
+</div>
+
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="correct">确定</a>
+</div>
+
+<div class="loading" id='loading' ></div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/fastClick.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_common.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/bm_2.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/con_detail.js"></script>
+</body>
+</html>

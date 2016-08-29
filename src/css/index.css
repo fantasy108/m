@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url(reset.css);
+img, .slider img { display: block; border: none; }
+
+#news .hd, #sub_nav ul, #nav ul, #sub_menu li, #news .bd li, footer .foot_menu, footer .foot_menu li { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+#sub_nav ul li, #nav ul li, #sub_menu li p, #news .bd .desc, footer .foot_menu li a { flex: 1; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+
+.app_download .close_download i { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.app_download .download_link, .app_download .text { -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); position: absolute; top: 50%; }
+
+#news .hd { -ms-flex-align: center; -webkit-box-align: center; box-align: center; -webkit-align-items: center; align-items: center; }
+
+.img_wrap:after { content: ''; display: block; width: 100%; }
+
+.img_wrap:after { background-image: url("http://img.autostreetscdn.com/m/src/images/xj_no_pic.jpg"); background-repeat: no-repeat; }
+
+.img_wrap { position: relative; }
+.img_wrap img { position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+.img_wrap:after { background-size: 100% 100%; }
+
+.hide { display: none; }
+
+/*头部*/
+.headerSection, header section { background: #fff; height: 44px; line-height: 44px; font-size: 18px; color: #333; text-align: center; z-index: 99; border-bottom: 1px solid #ddd; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: fixed; width: 100%; top: 0; left: 0; }
+
+header { height: 44px; z-index: 99; position: relative; }
+
+/*返回按钮*/
+.back { display: block; height: 100%; width: 38px; position: absolute; }
+
+.back::after { width: 12px; height: 12px; border-top: 1px solid #999; border-left: 1px solid #999; display: inline-block; position: absolute; left: 13px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); top: 14px; content: ' '; }
+
+/*公用底部*/
+#sub_nav { position: fixed; bottom: 0; width: 100%; background-color: #000; height: 45px; }
+#sub_nav ul { height: 100%; }
+#sub_nav ul li { text-align: center; height: 100%; }
+#sub_nav ul li a { display: block; width: 100%; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 5px; }
+#sub_nav ul li a .icon { -webkit-background-size: contain; background-size: contain; background-repeat: no-repeat; display: block; margin: 0 auto 3px; }
+#sub_nav ul li a b { font-weight: normal; display: block; }
+#sub_nav ul .curr { background-color: #adb33c; }
+#sub_nav ul > :nth-child(1) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav1.png"); width: 20px; height: 20px; }
+#sub_nav ul > :nth-child(2) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav2.png"); width: 20px; height: 21px; }
+#sub_nav ul > :nth-child(3) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav3.png"); width: 20px; height: 20px; }
+#sub_nav ul > :nth-child(4) a .icon { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/f_nav4.png"); width: 22px; height: 21.5px; }
+
+.right_arr { position: absolute; border-right: 1px solid #d0d0d0; border-bottom: 1px solid #d0d0d0; width: 10px; height: 10px; right: 15px; -webkit-transform: translateY(-50%) rotate(-45deg); -moz-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); -o-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); top: 50%; }
+
+.ui_mask { position: fixed; width: 100%; height: 100%; background: #000; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); opacity: 0; /*visibility:hidden;*/ z-index: 99; -webkit-transition: opacity .3s; -moz-transition: opacity .3s; -ms-transition: opacity .3s; -o-transition: opacity .3s; transition: opacity .3s; pointer-events: none; }
+
+.ui_mask_show { opacity: 1; /*visibility:visible;*/ pointer-events: auto; }
+
+.loading { background: url("http://img.autostreetscdn.com/m/src/images/loading.gif"); background-size: 16px 16px; background-repeat: no-repeat; height: 32px; top: 0; left: 0; bottom: 0; right: 0; position: fixed; margin: auto; z-index: 999; background-position: center center; display: none; width: 32px; }
+
+a { text-decoration: none; color: #fff; }
+
+#tel { right: 0; height: 44px; width: 44px; background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/phone_icon.png"); background-repeat: no-repeat; background-position: center center; -webkit-background-size: 20px 20px; background-size: 20px 20px; position: absolute; }
+
+#content { width: 10rem; margin: 0 auto; background: #fff; }
+
+.slider { overflow: hidden; position: relative; margin: 0 auto; width: 100%; max-width: 10rem; }
+.slider img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.slider:after { content: ''; display: block; width: 100%; padding-top: 50%; }
+.slider ul { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.slider li { position: absolute; left: 0; top: 0; list-style: none; width: 100%; height: 100%; }
+
+.trigger { position: absolute; bottom: 0.07813rem; width: 100%; text-align: center; font-size: 0; }
+.trigger a { display: inline-block; width: 0.15625rem; height: 0.15625rem; background-color: #555; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; margin: 0.07813rem; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
+.trigger a.curr { background-color: #fff; }
+
+#nav { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/nav_bg.png"); background-repeat: no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; height: 2.03125rem; }
+#nav ul { height: 100%; }
+#nav ul li { height: 100%; background-position: center 0.3125rem; }
+#nav ul li a { display: block; text-align: center; width: 100%; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 1.32813rem; }
+#nav ul > :nth-child(1) { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/nav_1.png"); background-repeat: no-repeat; background-size: 1rem 0.78125rem; }
+#nav ul > :nth-child(2) { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/nav_2.png"); background-repeat: no-repeat; background-size: 0.96875rem 0.76563rem; }
+#nav ul > :nth-child(3) { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/nav_3.png"); background-repeat: no-repeat; background-size: 0.5rem 0.71875rem; }
+#nav ul > :nth-child(4) { background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/nav_4.png"); background-repeat: no-repeat; background-size: 0.875rem 0.65625rem; }
+
+#sub_menu { padding: 0.46875rem; }
+#sub_menu li { margin-bottom: 0.15625rem; height: 2.03125rem; }
+#sub_menu li p { height: 100%; display: block; }
+#sub_menu li p a { width: 100%; height: 100%; display: block; }
+#sub_menu li p a img { width: 100%; }
+#sub_menu li > :nth-child(1) { margin-right: 0.15625rem; }
+
+#news .hd { position: relative; border-bottom: 1px solid #f6f6f6; padding: 0 0.46875rem 0.25rem; }
+#news .hd h2 { font-size: 12px; }
+#news .hd .more { color: #6775cb; position: absolute; right: 0.46875rem; top: 0; background-image: url("http://img.autostreetscdn.com/m/src/images/wap_index/arr_blue.png"); background-repeat: no-repeat; background-size: 0.15625rem 0.1875rem; background-position: right center; padding-right: 0.23438rem; }
+#news .bd { padding: 0.46875rem 0.46875rem 0; }
+#news .bd li { padding-bottom: 15px; border-bottom: 1px solid #f6f6f6; margin-bottom: 15px; }
+#news .bd .img_wrap { width: 1.875rem; height: 1.40625rem; display: block; }
+#news .bd .img_wrap:after { background-image: url("http://img.autostreetscdn.com/m/src/images/xj_no_pic.jpg"); padding-top: 75%; }
+#news .bd .desc { margin-left: 0.15625rem; }
+#news .bd .desc h3 { font-weight: normal; }
+#news .bd .news_title { color: #333; font-size: 14px; line-height: 14px; margin-bottom: 0.15625rem; display: block; width: 100%; -ms-text-overflow: ellipsis; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#news .bd .news_content { color: #858585; font-size: 12px; }
+
+footer { background-color: #535a6c; padding: 0.46875rem; text-align: center; margin-top: -0.46875rem; color: #d1d4d8; margin-bottom: 44px; }
+footer .foot_menu { margin-bottom: 0.46875rem; }
+footer .foot_menu li a { color: #d1d4d8; font-size: 12px; display: block; border: 1px solid #495064; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-left: 0.3125rem; height: 0.9375rem; line-height: 0.9375rem; -webkit-border-radius: 0.125rem; -moz-border-radius: 0.125rem; border-radius: 0.125rem; background-color: #5b6379; }
+footer .foot_menu .user_login { width: 40%; }
+footer .foot_menu .user_login :nth-child(1) { margin-left: 0; }
+footer .foot_menu .site_version { width: 60%; }
+footer .copy_right { -webkit-transform: scale(0.75); -moz-transform: scale(0.75); -ms-transform: scale(0.75); -o-transform: scale(0.75); transform: scale(0.75); }
+
+.app_download { display: none; height: 1.375rem; background-color: rgba(0, 0, 0, 0.95); width: 100%; position: fixed; top: 0; left: 0; z-index: 99; }
+.app_download .close_download { width: 1.375rem; height: 1.375rem; position: absolute; left: 0; top: 0; }
+.app_download .close_download span { width: 0.9375rem; height: 0.9375rem; position: absolute; background: #424141; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.app_download .close_download i { font-size: 0.625rem; line-height: 0.375rem; position: absolute; right: 0.09375rem; bottom: 0.09375rem; font-style: normal; }
+.app_download .download_link { right: 0.3125rem; background-color: #ff8800; border-radius: 0.07813rem; height: 0.78125rem; line-height: 0.78125rem; padding: 0 0.3125rem; font-size: 0.3125rem; }
+.app_download .text { width: 4.6875rem; left: 0.625rem; color: #fff; }
+.app_download .text img { width: 0.9375rem; height: 0.9375rem; float: left; margin-right: 0.34375rem; }
+.app_download .text p { font-size: 0.375rem; font-weight: bold; }
+.app_download .text span { font-size: 0.28125rem; }
+
+.hide_app_download { -webkit-transition: transform .3s; -moz-transition: transform .3s; -ms-transition: transform .3s; -o-transition: transform .3s; transition: transform .3s; -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); }
+
+/*# sourceMappingURL=index.css.map */

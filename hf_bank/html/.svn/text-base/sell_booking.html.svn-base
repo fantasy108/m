@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>预约卖车-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/services.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        预约卖车
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="main.html" class="home_icon"><span>首页</span></a>
+			<a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+
+<div id="wrapper">
+
+	<ul class="personal_list">
+		<li>
+			<label for="">姓名</label>
+			<input type="text" class="name" placeholder="请输入姓名">
+		</li>
+		<li>
+			<label for="">手机</label>
+			<input type="text" class="mobile" placeholder="请输入手机号码">
+		</li>
+		<li>
+			<label for="">车辆所在省</label>
+			<div class="province">
+				<select name="area" id="area">
+					<option value="请选择省" >请选择省</option>
+					<option value="浙江" >浙江</option>
+					<option value="山东" >山东</option>
+					<option value="江苏" >江苏</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">车辆所在市</label>
+			<div class="province">
+				<select name="city" id="city">
+					<option value="请选择市">请选择市</option>
+					<option value="浙江">浙江</option>
+					<option value="山东">山东</option>
+					<option value="江苏">江苏</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">车型名称</label>
+			<input type="text" class="model" placeholder="请输入车型" value="">
+		</li>
+	</ul>
+	<div class="clearfix"></div>
+	<a href="#" class="form_btn">提交</a>
+    <p class="bt_tip">客服人员将在2小时内与您联系</p>
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script>
+$(function(){
+	$(".form_btn").click(function(){
+		if( validate.input($(".name"),"请输入姓名") &&　validate.mobile($(".mobile"),"请输入手机号","手机号格式错误") && validate.select($("#area").val(),"请选择省","请选择所在省") && validate.select($("#city").val(),"请选择市","请选择所在市") && validate.input($(".model"),"请输入车型") ){
+
+			window.location.href="apply_success_f.html"
+		}
+	})
+})
+</script>
+</body>
+</html>

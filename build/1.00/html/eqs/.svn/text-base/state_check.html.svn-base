@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>车况检测</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs2.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:;" class='back'>返回</a>
+        车况检测
+        <a href="javascript:;" class="form green">保存</a>
+    </section>
+</header>
+<div id="container" class="state_check">
+	<!-- <div class="car_title">
+		<h3>驾驶舱</h3>
+	</div>
+	<ul class="driver">
+		<li>
+			<span>车辆不启动踩下制动器踏板，保持10秒踏板无下移现象</span>
+			<div class="other_radio">
+				<input type="radio" name="driver1"><label>是</label>
+				<input type="radio" name="driver1"><label>否</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="driver2"><label>是</label>
+				<input type="radio" name="driver2"><label>否</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="driver3"><label>是</label>
+				<input type="radio" name="driver3"><label>否</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="driver4"><label>是</label>
+				<input type="radio" name="driver4"><label>否</label>
+			</div>
+		</li>
+	</ul>
+	<div class="car_title">
+		<h3>启动检查</h3>
+	</div>
+	<ul class="start">
+		<li>
+			<span>车辆不启动踩下制动器踏板，保持10秒踏板无下移现象</span>
+			<div class="other_radio">
+				<input type="radio" name="start1" value="yes"><label>是</label>
+				<input type="radio" name="start1" value="no"><label>否</label>
+			</div>
+			<ul class="leak">
+				<li>1个渗漏点</li>
+				<li>2个渗漏点</li>
+				<li>3个渗漏点</li>
+				<li>4个渗漏点</li>
+				<li>5个渗漏点</li>
+				<li>6个渗漏点</li>
+			</ul>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="start2"><label>是</label>
+				<input type="radio" name="start2"><label>否</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="start3"><label>是</label>
+				<input type="radio" name="start3"><label>否</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="start4"><label>是</label>
+				<input type="radio" name="start4"><label>否</label>
+			</div>
+		</li>
+	</ul>
+	<div class="car_title">
+		<h4>其他<span>以下项目有缺陷显示再报告里，但不扣分</span></h4>
+	</div>
+	<ul class="other">
+		<li>
+			<span>车辆不启动踩下制动器踏板，保持10秒踏板无下移现象</span>
+			<div class="other_radio">
+				<input type="radio" name="other1"><label>是</label>
+				<input type="radio" name="other1"><label>否</label>
+				<input type="radio" name="other1"><label>无</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="other2"><label>是</label>
+				<input type="radio" name="other2"><label>否</label>
+				<input type="radio" name="other2"><label>无</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="other3"><label>是</label>
+				<input type="radio" name="other3"><label>否</label>
+				<input type="radio" name="other3"><label>无</label>
+			</div>
+		</li>
+		<li>
+			<span for="">发动机是否无冷却液混入</span>
+			<div class="other_radio">
+				<input type="radio" name="other4"><label>是</label>
+				<input type="radio" name="other4"><label>否</label>
+				<input type="radio" name="other4"><label>无</label>
+			</div>
+		</li>
+	</ul> -->
+</div>
+
+<div class="error_layer2">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="cancel">取消</a>
+	<a href="javascript:;" class="correct">退出</a>
+</div>
+
+<div class="loading" id="loading"></div>
+<div class="tipbg" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/eqs2.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/state_check.js"></script>
+</body>
+</html>

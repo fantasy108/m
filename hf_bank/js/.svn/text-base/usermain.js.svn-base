@@ -1,0 +1,32 @@
+$(".loginBtn").on("click", function() {
+    //if (!userUtils.checkLogin()) {
+        ui_fix();
+        $(".more_sub").addClass("show_more_sub");
+        $(".more_panel_mask").addClass("ui_show");
+        document.body.addEventListener("touchmove", preventScroll);
+    //} else {
+    //    location.href = siteurl + "/user_center/uc-info-1.html";
+    //}
+
+});
+$(".cancel_login,.more_panel_mask").on("click", function() {
+    ui_auto();
+    $(".more_sub").removeClass("show_more_sub");
+    $(".more_panel_mask").removeClass("ui_show");
+    document.body.removeEventListener("touchmove", preventScroll)
+});
+
+
+function ui_fix() {
+    $("body").addClass('ui_fix');
+}
+
+function ui_auto() {
+    $("body").removeClass('ui_fix');
+}
+
+
+function preventScroll(event) {
+    event.preventDefault();
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>新车商城,车辆详情-汽车街</title>
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+    <link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/new_mall.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        <div class="area_show">
+            <span>全国门店</span>
+            <img src="http://img.autostreetscdn.com/m/src/images/arrow.png" width="10" alt="">
+            <select name="" id="cityList" class="area">
+                <!--<option value="全国门店">全国门店</option>
+                <option value="克拉玛依市">克拉玛依市</option>
+                <option value="上海">上海</option>
+                <option value="广州">广州</option>-->
+            </select>
+        </div>
+        <div class="top_nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="top_pop">
+            <a href="../main.html" class="home_icon"><span>首页</span></a>
+            <a href="../uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+            <i></i>
+        </div>
+    </section>
+</header>
+
+<div id="wrapper">
+    <div id="shops">
+        <div class="prod_pic">
+            <!--<img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt="">-->
+            <!--<canvas id="car_big_pic"></canvas>-->
+        </div>
+        <!--<div id="scroller_wrap">
+
+            <div id="nav">
+                &lt;!&ndash; <div id="prev" onclick="myScroll.scrollToPage('prev', 0);return false">&larr; prev</div> &ndash;&gt;
+                <ul id="indicator">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                &lt;!&ndash; <div id="next" onclick="myScroll.scrollToPage('next', 0);return false">next &rarr;</div> &ndash;&gt;
+            </div>
+        </div>-->
+        <div class="title_wrap">
+            <div class="title_inner">
+                <div class="title">
+                    <h3>2014款北京现代2.4 GLS 6AT4 5P V1 PIO(选装氙灯+LED尾灯+副驾驶电动座椅)</h3>
+                    <p>指导价：<span>26.88万</span></p>
+                </div>
+            </div>
+        </div>
+        <!--参数配置-->
+        <div class="mainbox topborder">
+            <a id="configParameters" href="/replacement/toPatameter?modelSid=5302">参数配置<span></span></a>
+        </div>
+        <!--图片缩略-->
+        <div class="pic_thumbs">
+            <ul class="cfx">
+                <!--<li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>
+                <li><p><img src="http://img.autostreetscdn.com/m/src/images/new_mall/prod_pic.png" alt=""/></p></li>-->
+
+            </ul>
+            <p class="loadMorePic">查看更多图片<i></i></p>
+        </div>
+        <div class="dealer_tab">
+            <div class="tab_inner">
+               <p>
+                   <a class="renzheng_tab active" data-type="Y" href="javascript:void(0)">认证经销商</a>
+                   <a class="jiameng_tab" data-type="N" href="javascript:void(0)">加盟经销商</a>
+               </p>
+            </div>
+        </div>
+        <ul class="shops_list renzheng_dealer">
+
+        </ul>
+        <ul class="shops_list jiameng_dealer">
+        </ul>
+    </div>
+</div>
+<div class="shop_info">
+    <div class="shop_info_wrap">
+        <div class="inner">
+            <div class="hd">
+                <p></p>
+                <span class="vehicleDesc"></span>
+            </div>
+            <ul>
+                <li>
+                    <a class="lower_price link_item" href=""><i></i><span>询最低价</span></a>
+                    <a  class="drive link_item" href=""><i></i><span>预约试驾</span></a>
+                </li>
+                <li>
+                    <a  class="exchange link_item" href=""><i></i><span>申请置换</span></a>
+                    <a  class="order link_item" href=""><i></i><span>立即下订</span></a>
+                </li>
+                <li>
+                    <a class="tel" href=""><i></i><span>电话咨询</span></a>
+                    <a class="consult" href=""><i></i><span>咨询中心</span></a>
+                </li>
+            </ul>
+            <div class="shop_desc">
+                <h3>宝鸡燕德宝</h3>
+                <p class="address">宝鸡市陈仓区南环路（会展中心向东200米）鸡市陈仓区南环路</p>
+                <p class="tel">021-34315555</p>
+            </div>
+            <!--经销商礼包-->
+            <a href="" class="gift_info link_item"><i></i>查看经销商礼包</a>
+            <img src="http://img.autostreetscdn.com/m/src/images/new_mall/pro_173_130.png" alt="" class="car_img"/>
+
+            <a href="javascript:void(0)" class="shop_info_close"></a>
+        </div>
+    </div>
+</div>
+<div class="tipbg" ></div>
+<div class="loading" id="loading" style="display: none;"></div>
+<!--弹出提示框-->
+<div class="error_layer">
+    <p class="error_txt"></p>
+    <a href="javascript:;" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/lib/touch.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/new_mall.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/validate.js"></script>
+</body>
+</html>

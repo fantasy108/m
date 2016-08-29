@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<title>客户需求</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/eqs/eqs2.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:;" class='back'>返回</a>
+        客户需求
+        <a href="javascript:;" class="form green">保存</a>
+    </section>
+</header>
+<div id="container" class="customer_need">
+	<ul class="group">
+		<li id='group_name'>
+			<label for="">集团名称</label><i>*</i>
+			<select name="" id="">
+			</select>
+		</li>
+		<li id='detail_shop'>
+			<label for="">详细门店</label><i>*</i>
+			<select name="" id="" disabled>
+				<option value="">请选择</option>
+			</select>
+		</li>
+	</ul>
+	<div class="car_from">
+		<p>车辆来源</p>
+		<div class="from_select">
+			<input type="radio" name="from" id="group" checked=""><label for="group">集团</label>
+			<input type="radio" name="from" id="personal"><label for="personal">个人</label>
+		</div>
+	</div>
+	<ul class="group2">
+		<li id='car_nature'>
+			<label for="">车辆性质</label><i>&nbsp;</i>
+			<select name="" id="">
+				<option value="">请选择</option>
+			</select>
+		</li>
+	</ul>
+	<ul class="personal">
+		<li>
+			<label for="">姓名</label><i>*</i>
+			<input type="text">
+		</li>
+		<li>
+			<label for="">联系电话</label><i>*</i>
+			<input type="text">
+		</li>
+		<li id='province'>
+			<label for="">所在省</label><i>*</i>
+			<select name="" id="abc">
+				<option value="">请选择</option>
+				<!-- <option value="">1</option> -->
+			</select>
+		</li>
+		<li id='city'>
+			<label for="">所在市</label><i>*</i>
+			<select name="" id="" disabled>
+				<option value="">请选择</option>
+			</select>
+		</li>
+		<li>
+			<label for="">详细地址</label>
+			<input type="text">
+		</li>
+	</ul>
+	<ul class="need">
+		<li id='sale_need'>
+			<label for="">销售需求</label><i>*</i>
+			<select name="" id="">
+				<!-- <option value="">展厅寄售</option> -->
+			</select>
+		</li>
+		<li id='start_pr'>
+			<label for="">起拍价</label><i>*</i>
+			<span>元</span>
+			<input type="text">
+		</li>
+		<li id='bottom_pr'>
+			<label for="">保底价</label><i>*</i>
+			<span>元</span>
+			<input type="text">
+		</li>
+		<li id='sale_pr'>
+			<label for="">展售价格</label><i>*</i>
+			<span>元</span>
+			<input type="text">
+		</li>
+	</ul>
+	<ul class="other">
+		<li>
+			<span>如有违章，相关费用由</span>
+			<div class="other_radio">
+				<input type="radio" name="from" id="seller" class="cur"><label for="seller">上家承担</label>
+				<input type="radio" name="from" id="buyer"><label for="buyer">下家承担</label>
+			</div>
+		</li>
+		<li>
+			<span for="">保险是否随车销售</span>
+			<div class="other_radio">
+				<input type="radio" name="bx" id="yes" class="cur"><label for="yes">是</label>
+				<input type="radio" name="bx" id="no"><label for="no">否</label>
+			</div>
+		</li>
+	</ul>
+	<div class="car_title">
+		<h3>特殊约定<span>(仅网站后台展示)</span></h3>
+		<div class="remark_amount"><span>0</span>/100</div>
+	</div>
+	<div class="txt-area">
+		<textarea name="" id="remark" Maxlength="100" ></textarea>
+	</div>
+	<div class="car_title">
+		<h3>车辆描述<span>(仅网站后台展示)</span></h3>
+		<a href="javascript:;" class="describe">损伤描述汇总</a>
+	</div>
+	<!-- <textarea name="" id="cic" Maxlength="100"></textarea> -->
+	<div class="textarea">
+		<p id="cic" contenteditable="true"></p>
+	</div>
+	<div class="car_title">
+		<h3>其他备注</h3>
+		<div class="other_remark_amount"><span>0</span>/100</div>
+	</div>
+	<div class="txt-area">
+		<textarea name="" id="other_remark" Maxlength="100" ></textarea>
+	</div>
+	<div class="add" id="need_photo1"> 
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/add.png" alt="" class="damagePhoto1">
+		
+	</div>
+	<div class="clip_pop1">
+		<canvas id="myCanvas1"></canvas>
+		<div class="detail_head">
+			<a href="javascript:;" class="canvas_close">关闭</a>
+			<!-- <a href="javascript:;" class="canvas_save gley" id="save1">保存</a> -->
+		</div>
+		<ul class="process2">
+			<li><span class="cur">1</span>上传图片</li>
+			<li><span class="cur">2</span>截取</li>
+			<li><span>3</span>保存</li>
+		</ul>
+		<div id="clipArea1"></div>
+		<div id="view1"></div>
+		
+		<div class="gesture">
+			<p>手势说明：</p>
+			<div class="process_notice">你可以移动、缩放、旋转图片，以保证所要拍摄的内容在虚框内显示</div>
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/gesture2.png" alt="">
+		</div>
+		<div class="canvas_btn">
+			<div class="upload">
+				<div id="fileBtn">重新选择照片</div>
+				<input type="file" id="file1">
+			</div>
+			<div id="clipBtn1">截取图片</div>
+			<div class="canvas_save" id="save1">保存</div>
+		</div>
+
+	</div>
+	
+	<div class="add" id="need_photo2"> 
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/add.png" alt="" class="damagePhoto2">
+	</div>
+	<div class="clip_pop2">
+		<canvas id="myCanvas2"></canvas>
+		<div class="detail_head">
+			<a href="javascript:;" class="canvas_close">关闭</a>
+			<!-- <a href="javascript:;" class="canvas_save gley" id="save2">保存</a> -->
+		</div>
+		<ul class="process2">
+			<li><span class="cur">1</span>上传图片</li>
+			<li><span class="cur">2</span>截取</li>
+			<li><span>3</span>保存</li>
+		</ul>
+		<div id="clipArea2"></div>
+		<div id="view2"></div>
+		
+		<div class="gesture">
+			<p>手势说明：</p>
+			<div class="process_notice">你可以移动、缩放、旋转图片，以保证所要拍摄的内容在虚框内显示</div>
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/gesture2.png" alt="">
+		</div>
+		<div class="canvas_btn">
+			<div class="upload">
+				<div id="fileBtn">重新选择照片</div>
+				<input type="file" id="file2">
+			</div>
+			<div id="clipBtn2">截取图片</div>
+			<div class="canvas_save" id="save2">保存</div>
+		</div>
+		
+	</div>
+
+	<div class="add" id="need_photo3"> 
+		<img src="http://img.autostreetscdn.com/m/src/images/eqs/add.png" alt="" class="damagePhoto3">
+	</div>
+	<div class="clip_pop3">
+		<canvas id="myCanvas3"></canvas>
+		<div class="detail_head">
+			<a href="javascript:;" class="canvas_close">关闭</a>
+			<!-- <a href="javascript:;" class="canvas_save gley" id="save3">保存</a> -->
+		</div>
+		<ul class="process2">
+			<li><span class="cur">1</span>上传图片</li>
+			<li><span class="cur">2</span>截取</li>
+			<li><span>3</span>保存</li>
+		</ul>
+		<div id="clipArea3"></div>
+		<div id="view3"></div>
+
+		<div class="gesture">
+			<p>手势说明：</p>
+			<div class="process_notice">你可以移动、缩放、旋转图片，以保证所要拍摄的内容在虚框内显示</div>
+			<img src="http://img.autostreetscdn.com/m/src/images/eqs/gesture2.png" alt="">
+		</div>
+		<div class="canvas_btn">
+			<div class="upload">
+				<div id="fileBtn">重新选择照片</div>
+				<input type="file" id="file3">
+			</div>
+			<div id="clipBtn3">截取图片</div>
+			<div class="canvas_save" id="save3">保存</div>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="error_layer2">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="cancel">取消</a>
+	<a href="javascript:;" class="correct">确定</a>
+</div>
+
+<div class="loading" id="loading"></div>
+<div class="tipbg" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery-2.1.3.min.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/iscroll-zoom.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/hammer.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/jquery.photoClip.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/eqs2.js"></script>
+<script src="http://img.autostreetscdn.com/m/src/js/eqs/customer_need.js"></script>
+</body>
+</html>

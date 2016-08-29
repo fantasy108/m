@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.index_ad, .menu_slider_wrap #menu_slider li p a img, .service_slider_wrap #service_slider .ser_icon { display: block; border: none; }
+
+/*背景占位*/
+#wap_index { top: 0; left: 0; height: 100%; background-size: cover; background-image: url(http://img.autostreetscdn.com/m/src/images/new_index_bg.png); background-repeat: no-repeat; background-attachment: fixed; }
+
+.index_header { height: auto; max-width: 640px; margin: 0 auto; }
+.index_header .inner { margin: 0rem 0.84375rem; }
+.index_header .index_logo { width: 100%; display: block; border: none; padding-top: 0.19687rem; }
+.index_user_btn { background: url(http://img.autostreetscdn.com/m/src/images/index_center.png) no-repeat; background-size: contain; position: fixed; right: 0; top: 0.315rem; width: 0.51187rem; height: 0.4275rem; }
+
+.index_main { max-width: 640px; margin: 0 auto; padding: 0.1125rem; }
+.index_main .index_ad_wrap { overflow: hidden; -webkit-box-shadow: 0rem 0rem 0.15187rem 0rem rgba(102, 100, 100, 0.69); -moz-box-shadow: 0rem 0rem 0.15187rem 0rem rgba(102, 100, 100, 0.69); box-shadow: 0rem 0rem 0.15187rem 0rem rgba(102, 100, 100, 0.69); }
+.index_main .index_ad_wrap #ad_slider { position: relative; }
+.index_main .index_ad_wrap #ad_slider li { position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+.index_main .index_ad_wrap #ad_slider:after { content: ''; display: block; width: 100%; padding-top: 33.33333%; }
+.index_ad { width: 100%; height: auto; -webkit-border-radius: 0.05625rem; -moz-border-radius: 0.05625rem; border-radius: 0.05625rem; }
+
+.menu_slider_wrap { overflow: hidden; }
+.menu_slider_wrap #menu_slider { position: relative; }
+.menu_slider_wrap #menu_slider li { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; position: absolute; }
+.menu_slider_wrap #menu_slider li p { flex: 1; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; box-sizing: border-box; -webkit-box-shadow: 0rem 0rem 0.1125rem 0rem rgba(0, 0, 0, 0.24); -moz-box-shadow: 0rem 0rem 0.1125rem 0rem rgba(0, 0, 0, 0.24); box-shadow: 0rem 0rem 0.1125rem 0rem rgba(0, 0, 0, 0.24); }
+.menu_slider_wrap #menu_slider li p a { display: block; position: relative; }
+.menu_slider_wrap #menu_slider li p a img { width: 100%; height: auto; position: absolute; width: 100%; height: 100%; }
+.menu_slider_wrap #menu_slider li p a:after { content: ''; display: block; width: 100%; padding-top: 136.84%; }
+.menu_slider_wrap #menu_slider li p:empty { visibility: hidden; }
+.menu_slider_wrap #menu_slider li p:nth-child(2) { margin: 0 0.08437rem; }
+.menu_slider_wrap #menu_slider > :not(:first-child) { -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); }
+.menu_slider_wrap #menu_slider:after { content: ''; display: block; width: 100%; padding-top: 43.444%; }
+
+.slider_idx { text-align: center; font-size: 0; margin: 0.1125rem 0; }
+.slider_idx li { display: inline-block; width: 0.07875rem; height: 0.07875rem; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; background: #fff; opacity: .5; margin: 0 0.05625rem; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
+.slider_idx .curr { opacity: 1; }
+
+.index_sub { background: url(http://img.autostreetscdn.com/m/src/images/index_sub_bg.png) no-repeat; background-size: 100%; position: fixed; width: 100%; font-size: 0.135rem; top: 100%; margin-top: -0.72rem; height: 3.52687rem; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s; -webkit-animation-duration: 0.3s; -webkit-animation-delay: .1s; -webkit-animation-timing-function: ease; -webkit-animation-fill-mode: both; animation-duration: 0.3s; animation-delay: .1s; animation-timing-function: ease; animation-fill-mode: both; z-index: 999; }
+.index_sub .trigger_handle { width: 100%; position: absolute; top: 0; left: 0; height: 0.59625rem; text-align: center; }
+.index_sub .trigger_handle .arrow { background: url(http://img.autostreetscdn.com/m/src/images/sub_arrow.png) no-repeat; background-size: 0.25875rem 0.16875rem; position: absolute; left: 50%; top: 0.0675rem; margin-left: -0.12937rem; width: 0.25875rem; height: 0.16875rem; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s; -webkit-transform-origin: 50% 50%; -moz-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; -o-transform-origin: 50% 50%; transform-origin: 50% 50%; }
+.index_sub .trigger_handle .trigger_arrow { -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -o-transform: rotate(-180deg); transform: rotate(-180deg); }
+.index_sub .trigger_handle .sub_title { width: 0.78187rem; height: 0.18rem; display: inline-block; margin-top: 0.3375rem; }
+.index_sub .inner { margin: 0.72rem auto 0; max-width: 640px; }
+
+.show_index_sub { -webkit-transform: translateY(-79.58%); -moz-transform: translateY(-79.58%); -ms-transform: translateY(-79.58%); -o-transform: translateY(-79.58%); transform: translateY(-79.58%); }
+
+@-webkit-keyframes bounceInUp { 0%, 60%, 75%, 90%, 100% { -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+  60% { -webkit-transform: translate3d(0, -79.58%, 0); transform: translate3d(0, -79.58%, 0); }
+  75% { -webkit-transform: translate3d(0, -77.58%, 0); transform: translate3d(0, -79.58%, 0); }
+  90% { -webkit-transform: translate3d(0, -76.58%, 0); transform: translate3d(0, -78.58%, 0); }
+  100% { -webkit-transform: translate3d(0, -79.58%, 0); transform: translate3d(0, -79.58%, 0); } }
+@-webkit-keyframes bounceInDown { 0%, 60%, 75%, 90%, 100% { -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% { -webkit-transform: translate3d(0, -79.58%, 0); transform: translate3d(0, -79.58%, 0); }
+  100% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+.bounceInUp { -webkit-animation-name: bounceInUp; animation-name: bounceInUp; }
+
+.bounceInDown { -webkit-animation-name: bounceInDown; animation-name: bounceInDown; }
+
+.service_slider_wrap { margin: 0 0.30937rem; overflow: hidden; }
+.service_slider_wrap #service_slider { position: relative; }
+.service_slider_wrap #service_slider li { position: absolute; width: 100%; height: 100%; }
+.service_slider_wrap #service_slider li p { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.service_slider_wrap #service_slider li .ser_item:nth-child(2) { margin: 0 0.30937rem; }
+.service_slider_wrap #service_slider > :not(:first-child) { -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); }
+.service_slider_wrap #service_slider .ser_item { text-decoration: none; display: block; flex: 1; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+.service_slider_wrap #service_slider .ser_item span { display: block; text-align: center; padding: 0.14062rem 0 0.19687rem; color: #fff; font-size: 0.135rem; }
+.service_slider_wrap #service_slider .ser_icon { width: 100%; height: auto; }
+.service_slider_wrap #service_slider:after { content: ''; display: block; width: 100%; padding-top: 85.85%; }
+.service_slider_wrap .slider_idx { margin-top: -0.05625rem; position: relative; z-index: 9; }
+
+.vis_hid { visibility: hidden; }
+
+.ui_mask { position: fixed; width: 100%; height: 100%; background: #000; top: 0; background: rgba(0, 0, 0, 0.5); opacity: 0; /*visibility:hidden;*/ z-index: 99; -webkit-transition: opacity .3s; -moz-transition: opacity .3s; -ms-transition: opacity .3s; -o-transition: opacity .3s; transition: opacity .3s; pointer-events: none; }
+
+.ui_show { opacity: 1; /*visibility:visible;*/ pointer-events: auto; }
+
+/*# sourceMappingURL=index.css.map */

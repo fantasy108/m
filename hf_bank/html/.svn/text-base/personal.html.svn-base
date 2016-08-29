@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+	<title>个人金融-汽车街</title>
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/services.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <a href="javascript:history.back();" class='back'></a>
+        个人金融
+		<div class="top_nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="top_pop">
+			<a href="main.html" class="home_icon"><span>首页</span></a>
+			<a href="uc-info-1.html" class="userCenter_icon"><span>个人中心</span></a>
+			<i></i>
+		</div>
+    </section>
+</header>
+
+<div id="wrapper">
+	<div class="service_title">
+		<img src="http://img.autostreetscdn.com/m/src/images/important.png" alt="">
+		<h2><a href="personal_apply.html">个人贷款申请相关流程</a></h2>
+	</div>
+	<ul class="personal_list">
+		<li>
+			<label for="">意向车型</label>
+			<input type="text" class="model" placeholder="请输入车型" value="">
+		</li>
+		<li>
+			<label for="">所在省</label>
+			<div class="province">
+				<select name="area" id="area">
+					<option value="请选择省" >请选择省</option>
+					<option value="浙江" >浙江</option>
+					<option value="山东" >山东</option>
+					<option value="江苏" >江苏</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">所在市</label>
+			<div class="province">
+				<select name="city" id="city">
+					<option value="请选择市">请选择市</option>
+					<option value="浙江">浙江</option>
+					<option value="山东">山东</option>
+					<option value="江苏">江苏</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">贷款金额</label>
+			<input type="text" class="price input-150" placeholder="请输入贷款金额"><span>(万元)</span>
+		</li>
+		<li>
+			<label for="">姓名</label>
+			<input type="text" class="name" placeholder="请输入姓名">
+		</li>
+		<li>
+			<label for="">性别</label>
+			<div class="province">
+				<select name="gender" id="gender">
+					<option value="请选择性别">请选择性别</option>
+					<option value="男">男</option>
+					<option value="女">女</option>
+				</select>
+				<div class="arrow"></div>
+			</div>
+		</li>
+		<li>
+			<label for="">手机</label>
+			<input type="text" class="mobile" placeholder="请输入手机号码">
+		</li>
+		<li>
+			<label for="">邮箱</label>
+			<input type="text" class="mail" placeholder="请输入邮箱">
+		</li>
+		
+	</ul>
+	<div class="clearfix"></div>
+	<a href="#" class="form_btn">提交</a>
+</div>
+
+<!--弹出提示框-->
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="#" class="correct">确定</a>
+</div>
+<div class="tipbg"></div>
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/services.js"></script>
+<script>
+$(function(){
+	$(".form_btn").click(function(){
+		if( validate.input($(".model"),"请输入车型") && validate.select($("#area").val(),"请选择省","请选择所在省") && validate.select($("#city").val(),"请选择市","请选择所在市") &&　validate.price($(".price"),"请输入贷款金额","贷款金额错误") && validate.input($(".name"),"请输入姓名") &&　validate.mobile($(".mobile"),"请输入手机号","手机号格式错误") &&　validate.mail($(".mail"),"请输入邮箱","邮箱格式错误") ){
+
+			var vehicleModel =  $(".model").val();
+			var province = $("#area").val();
+			var city = $("#city").val();
+			var loanAmt = $(".price").val();
+			var name = $(".name").val();
+			var cellphone = $(".mobile").val();
+			var mail = $(".mail").val();
+
+			$.ajax({
+			    type: "POST",
+			    url: "http://img01.autostreets.com/service/finance/personal/apply",
+			    dataType: 'json',
+			    data : {
+					'vehicleModel' : vehicleModel,
+					'province' : province,
+					'city' : city,
+					'loanAmt' : loanAmt,
+					'name' : name,
+					'cellphone' : cellphone,
+					'mail' : mail
+				},
+			    success: function (data) {
+			        console.log("post sucess");
+			    }
+			});
+
+			//window.location.href="apply_success.html"
+		}
+	})
+})
+</script>
+</body>
+</html>

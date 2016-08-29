@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+    <link rel="stylesheet" href="../../css/b.css" type="text/css">
+    <link rel="stylesheet" href="../../css/bmw_x1.css" type="text/css">
+</head>
+<body>
+<div class="test_drive">
+	<div class="bg"></div>
+	<h2>预约试驾</h2>
+	<h3>我们邀您亲身体验BMW的卓越发动机技术，感受澎湃的驾驶动力。</h3>
+	<ul>
+		<li><label>姓*</label><input type="text" placeholder="请输入" class=""></li>
+		<li><label>名*</label><input type="text" placeholder="请输入"></li>
+		<li><label>称谓*</label>
+			<select name="" id="sex" class="">
+				<option value="请选择" selected="selected">请选择</option>
+				<option value="先生">先生</option>
+				<option value="女士">女士</option>
+			</select>
+		</li>
+		<li><label>手机*</label><input type="text" placeholder="请输入" class="mobile"></li>
+	</ul>
+
+	<div class="read_txt">请阅读并同意接受个人信息保护法律声明</div>
+	<div class="read">
+		<i class=""></i>
+		<p>我已阅读并接受个人信息保护*<a href="#">法律声明</a></p>
+	</div>
+	<div class="form">
+		<a href="#" class="form_btn">提交</a>
+		<span>点此链接同时注册为汽车街会员</span>
+	</div>
+</div>
+
+<div class="error_layer">
+	<p class="error_txt"></p>
+	<a href="javascript:;" class="correct">确定</a>
+</div>
+<div class="tipbg hide" id="tipbg"></div>
+
+<script src="http://img.autostreetscdn.com/m/src/js/lib/zepto.js"></script>
+
+<script>
+$(function(){
+	$('.read i').click(function(){
+		$(this).hasClass('selected') ? $(this).removeClass('selected') : $(this).addClass('selected')
+	})
+
+	$('.form_btn').click(function(){
+		seleVerify()
+		inpVerify()
+		readVerify()
+		if( inpVerify() && seleVerify() && readVerify() ){
+			alert('ok')		//验证成功并提交
+		}
+	})
+	$('.correct').click(function(){
+		$('.error_layer').hide()
+		$('#tipbg').hide()
+	})
+})
+
+function inpVerify(){
+	var inpLen = 0;
+	$('.test_drive ul>li>input').each(function(){
+		if($(this).val() == ''){
+			$(this).addClass('error')
+			$('.error_txt').text('请完善您的个人信息!')
+			$('.error_layer').show()
+			$('#tipbg').show()
+		}else{
+			if( $(this).hasClass('mobile') ){
+				if(isMobile($(this).val())){
+					$(this).removeClass('error')
+					inpLen++
+				}else{
+					$('.error_txt').text('手机号码格式有误!')
+					$('.error_layer').show()
+					$('#tipbg').show()
+				}
+			}else{
+				$(this).removeClass('error')
+				inpLen++
+			}
+		}
+	})
+	if(inpLen == 3){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+function seleVerify(){
+	if($('.test_drive ul>li>select').val() == '请选择'){
+		$('#sex').addClass('error')
+		$('.error_txt').text('请完善您的个人信息!')
+		$('.error_layer').show()
+		$('#tipbg').show()
+		return false;
+	}else{
+		$('#sex').removeClass('error')
+		return true;
+	}
+}
+
+function readVerify(){
+	if($('.read i').hasClass('selected')){
+		$('.read_txt').hide()
+		return true
+	}else{
+		$('.read_txt').show()
+		return false
+	}
+}
+
+function isMobile(s){
+    var regex = /^0?(13[0-9]|15[0-9]|18[0-9]|14[0-9]|17[0-9])[0-9]{8}$/;
+    if (!regex.exec(s)) return false;
+    return true
+}
+
+</script>
+</body>
+</html>

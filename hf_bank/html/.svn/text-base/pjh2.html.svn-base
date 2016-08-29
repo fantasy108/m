@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/b.css" type="text/css">
+<link rel="stylesheet" href="http://img.autostreetscdn.com/m/src/css/pjh_wx.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+	<img src="http://img.autostreetscdn.com/m/src/images/pjh2.png" alt="" class="pjh2_bn">
+	<div class="pjh_wx bl">
+		<ul class="pjh_list">
+			<li><img src="http://img.autostreetscdn.com/m/src/images/pjh_time.png" alt=""><p>时间：2014年10月31日-11月3日</p></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/pjh_addr.png" alt=""><p>地址：金沪路1000号，近川桥路</p></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/pjh_site.png" alt=""><p>网址：www.autostreets.com</p></li>
+			<li><img src="http://img.autostreetscdn.com/m/src/images/pjh_phone.png" alt=""><p>电话：400-821-8889</p></li>
+			<li><label>姓名：</label><input type="text" value="" class="name"/></li>
+			<li><label>手机号：</label><input type="text" value="" class="phone"/></li>
+			<li><label>意向车型：</label><input type="text" value="" /></li>
+		</ul>
+		<div class="clearfix"></div>
+		<a href="#" id="baoming">报名活动</a>
+		<h3>沪上最大规模的豪华精品二手车品鉴会</h3>
+		<p class="content">汽车街豪华精品二手车品鉴会将于2014年10月31日-11月3日登入上海浦东线下运营中心。本次活将是继汽车街正式开业后的，又一次沪上超大规模、超凡品质的豪车品鉴会。
+活动当天将聚集超过200台的豪华轿车，以宝马、奔驰、奥迪、路虎、捷豹、马萨拉蒂等多款品牌为主、向您展示汽车街高品质的二手车型，并安排经验丰富的产品顾问和二手车销售经理为您提供专业、规范的现场服务。现场还将设置精彩的互动体验环节，全方位诠释汽车街精品二手车严苛的百项售前检测与细致入微的售后服务流程。</p>
+
+		<h3>一元起拍，超值优惠，抢购您的爱车</h3>
+		<p class="content">品鉴会期间，汽车街将为广大赏车客户带来一元拍卖活动环节，现场推出2辆汽车街论证二手车，全部以一元开始拍卖，实实在在的优惠放在客户眼前，抢到就是超级赚！！汽车街真心回馈给客户优惠！是您最信赖的伙伴！</p>
+
+		<h3>汽车街精品二手车质量标准：</h3>
+		<p class="content">汽车街精品二手车的每一个细节都以质量为基准。必须通过谨慎的选拨程序、严格的测试过程：需通过汽车街的100项专业技术检测并录入EQS系统；另外还要全部使用原厂配件维修。通过了汽车街二手车的品质认定，意味着它具备了超凡品质，尽可放心信赖。</p>
+
+		<h3>便捷服务，全无后顾之忧：</h3>
+		<p class="content">汽车街精品二手车，始终以便捷服务助您拥有经典。汽车街优质回购服务，免费专业的检测与评估，透明可靠的快捷交易流程，全面保障您的利益。一站式置换服务，帮您节省时间，免去四处奔波的烦劳，让您轻松易手，安享便捷。</p>
+
+		<h3>汽车金融，让你轻松拥有</h3>
+		<p class="content">汽车街精品二手车，将为您提供多套金融产品，门槛低，到账快，申请便利，帮您早日拥有爱车，轻松乐无忧</p>
+
+		<h3>汽车街精品二手车品鉴会活动安排：</h3>
+		<p class="content">时间：2014年10月31日-11月3日<br />
+		   地址：上海市浦东新区汽车街线下运营中心（金沪路1000号，近川桥路）<br />
+		   网址：www.autostreets.com<br />
+		   电话：400-821-8889<br />
+		</p>
+	</div>
+</div>
+
+<script language="javascript" src="http://img.autostreetscdn.com/m/src/js/lib/zepto.min.js"></script>
+<script>
+$(function(){
+	$("#baoming").click(function(){
+		if($(".name").val() == ""){
+			alert("请输入姓名")
+			return false;
+		}
+		if($(".phone").val() == ""){
+			alert("请输入手机号")
+			return false;
+		}else if(!isMobile($(".phone").val())){
+			alert("手机号格式错误")
+			return false;
+		}
+		alert("ok")
+	})
+})
+
+function　isMobile(s){
+	var regex = /^0?(13[0-9]|15[0-9]|18[0-9]|14[0-9]|17[0-9])[0-9]{8}$/;
+    if (!regex.exec(s)) return false
+    return true
+}
+</script>
+
+</body>
+</html>
+
+
+
